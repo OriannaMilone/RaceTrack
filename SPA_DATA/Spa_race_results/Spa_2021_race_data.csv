@@ -1,0 +1,61 @@
+LapNumber,Driver,Team,LapTime,Position,IsPersonalBest,Sector1Time,Sector2Time,Sector3Time
+1.0,VER,Red Bull Racing,0 days 00:03:27.071000,1.0,False,,0 days 00:01:36.992000,0 days 00:00:53.620000
+2.0,VER,Red Bull Racing,,1.0,False,0 days 00:00:54.169000,0 days 00:01:32.540000,0 days 00:00:51.665000
+3.0,VER,Red Bull Racing,,1.0,False,0 days 00:00:52.264000,0 days 00:01:32.729000,0 days 00:00:59.005000
+1.0,RUS,Williams,0 days 00:03:29.066000,2.0,False,,0 days 00:01:36.790000,0 days 00:00:54.536000
+2.0,RUS,Williams,,2.0,False,0 days 00:00:54.706000,0 days 00:01:32.105000,0 days 00:00:51.993000
+3.0,RUS,Williams,,2.0,False,0 days 00:00:51.848000,0 days 00:01:32.934000,0 days 00:00:58.604000
+1.0,HAM,Mercedes,0 days 00:03:29.672000,3.0,False,,0 days 00:01:36.890000,0 days 00:00:53.917000
+2.0,HAM,Mercedes,,3.0,False,0 days 00:00:55.741000,0 days 00:01:32.236000,0 days 00:00:51.124000
+3.0,HAM,Mercedes,,3.0,False,0 days 00:00:53.382000,0 days 00:01:31.206000,0 days 00:01:00.572000
+1.0,RIC,McLaren,0 days 00:03:31.567000,4.0,False,,0 days 00:01:36.334000,0 days 00:00:54.696000
+2.0,RIC,McLaren,,4.0,False,0 days 00:00:55.219000,0 days 00:01:31.923000,0 days 00:00:52.045000
+3.0,RIC,McLaren,,4.0,False,0 days 00:00:54.072000,0 days 00:01:30.090000,0 days 00:01:02.308000
+1.0,VET,Aston Martin,0 days 00:03:34.550000,5.0,False,,0 days 00:01:37.122000,0 days 00:00:55.188000
+2.0,VET,Aston Martin,,5.0,False,0 days 00:00:54.306000,0 days 00:01:32.277000,0 days 00:00:51.913000
+3.0,VET,Aston Martin,,5.0,False,0 days 00:00:52.916000,0 days 00:01:31.267000,0 days 00:01:04.298000
+1.0,GAS,AlphaTauri,0 days 00:03:37.248000,6.0,False,,0 days 00:01:36.460000,0 days 00:00:56.332000
+2.0,GAS,AlphaTauri,,6.0,False,0 days 00:00:54.363000,0 days 00:01:30.553000,0 days 00:00:54.368000
+3.0,GAS,AlphaTauri,,6.0,False,0 days 00:00:51.854000,0 days 00:01:30.865000,0 days 00:01:06.519000
+1.0,OCO,Alpine,0 days 00:03:38.650000,7.0,False,,0 days 00:01:33.383000,0 days 00:00:56.607000
+2.0,OCO,Alpine,,7.0,False,0 days 00:00:58.745000,0 days 00:01:25.828000,0 days 00:00:53.947000
+3.0,OCO,Alpine,,7.0,False,0 days 00:00:54.742000,0 days 00:01:28.837000,0 days 00:01:06.524000
+1.0,LEC,Ferrari,0 days 00:03:39.679000,8.0,False,,0 days 00:01:29.989000,0 days 00:00:56.823000
+2.0,LEC,Ferrari,,8.0,False,0 days 00:00:59.842000,0 days 00:01:24.586000,0 days 00:00:54.753000
+3.0,LEC,Ferrari,,8.0,False,0 days 00:00:55.385000,0 days 00:01:27.900000,0 days 00:01:07.960000
+1.0,LAT,Williams,0 days 00:03:42.556000,9.0,False,,0 days 00:01:27.578000,0 days 00:00:58.139000
+2.0,LAT,Williams,,9.0,False,0 days 00:00:58.061000,0 days 00:01:25.074000,0 days 00:00:55.732000
+3.0,LAT,Williams,,9.0,False,0 days 00:00:55.110000,0 days 00:01:28.592000,0 days 00:01:06.688000
+1.0,SAI,Ferrari,0 days 00:03:43.237000,10.0,False,,0 days 00:01:25.427000,0 days 00:00:58.115000
+2.0,SAI,Ferrari,,10.0,False,0 days 00:00:58.724000,0 days 00:01:24.409000,0 days 00:00:55.793000
+3.0,SAI,Ferrari,,10.0,False,0 days 00:00:57.385000,0 days 00:01:26.232000,0 days 00:01:07.481000
+1.0,ALO,Alpine,0 days 00:03:47.661000,11.0,False,,0 days 00:01:23.599000,0 days 00:01:00.543000
+2.0,ALO,Alpine,,11.0,False,0 days 00:00:57.174000,0 days 00:01:23.375000,0 days 00:00:57.520000
+3.0,ALO,Alpine,,11.0,False,0 days 00:00:56.004000,0 days 00:01:27.393000,0 days 00:01:08.220000
+1.0,BOT,Mercedes,0 days 00:03:49.485000,12.0,False,,0 days 00:01:21.074000,0 days 00:01:01.158000
+2.0,BOT,Mercedes,,12.0,False,0 days 00:00:58.411000,0 days 00:01:22.024000,0 days 00:00:57.601000
+3.0,BOT,Mercedes,,12.0,False,0 days 00:00:56.820000,0 days 00:01:26.713000,0 days 00:01:08.230000
+1.0,GIO,Alfa Romeo Racing,0 days 00:03:51.234000,13.0,False,,0 days 00:01:20.343000,0 days 00:01:01.243000
+2.0,GIO,Alfa Romeo Racing,,13.0,False,0 days 00:00:58.328000,0 days 00:01:21.342000,0 days 00:00:58.532000
+3.0,GIO,Alfa Romeo Racing,,13.0,False,0 days 00:00:56.479000,0 days 00:01:26.564000,0 days 00:01:09.553000
+1.0,NOR,McLaren,0 days 00:03:54.181000,14.0,False,,0 days 00:01:15.041000,0 days 00:01:02.819000
+2.0,NOR,McLaren,,14.0,False,0 days 00:01:00.429000,0 days 00:01:17.961000,0 days 00:01:00.087000
+3.0,NOR,McLaren,,14.0,False,0 days 00:00:57.001000,0 days 00:01:24.044000,0 days 00:01:14.788000
+1.0,TSU,AlphaTauri,0 days 00:03:55.400000,15.0,False,,0 days 00:01:15.657000,0 days 00:01:00.882000
+2.0,TSU,AlphaTauri,,15.0,False,0 days 00:01:02.364000,0 days 00:01:16.474000,0 days 00:00:59.470000
+3.0,TSU,AlphaTauri,,15.0,False,0 days 00:00:57.867000,0 days 00:01:24.634000,0 days 00:01:18.654000
+1.0,MSC,Haas F1 Team,0 days 00:03:56.578000,16.0,False,,0 days 00:01:14.604000,0 days 00:00:59.261000
+2.0,MSC,Haas F1 Team,,16.0,False,0 days 00:01:02.079000,0 days 00:01:17.080000,0 days 00:00:59.674000
+3.0,MSC,Haas F1 Team,,16.0,False,0 days 00:00:57.823000,0 days 00:01:25.365000,0 days 00:01:26.618000
+1.0,MAZ,Haas F1 Team,0 days 00:03:59.064000,17.0,False,,0 days 00:01:13.457000,0 days 00:01:00.294000
+2.0,MAZ,Haas F1 Team,,17.0,False,0 days 00:01:02.656000,0 days 00:01:15.041000,0 days 00:01:00.319000
+3.0,MAZ,Haas F1 Team,,17.0,False,0 days 00:00:57.519000,0 days 00:01:25.715000,0 days 00:01:31.814000
+1.0,RAI,Alfa Romeo Racing,0 days 00:04:03.125000,19.0,False,,0 days 00:01:12.941000,0 days 00:00:56.431000
+2.0,RAI,Alfa Romeo Racing,,19.0,False,0 days 00:01:04.823000,0 days 00:01:13.226000,0 days 00:01:00.914000
+3.0,RAI,Alfa Romeo Racing,,19.0,False,0 days 00:00:58.518000,0 days 00:01:24.196000,
+1.0,PER,Red Bull Racing,0 days 00:04:05.276000,20.0,False,,0 days 00:01:13.949000,0 days 00:00:53.441000
+2.0,PER,Red Bull Racing,,20.0,False,0 days 00:01:06.794000,0 days 00:01:12.980000,0 days 00:00:59.666000
+3.0,PER,Red Bull Racing,,20.0,False,0 days 00:00:59.892000,0 days 00:01:21.614000,
+1.0,STR,Aston Martin,0 days 00:04:01.179000,18.0,False,,0 days 00:01:13.452000,0 days 00:00:59.742000
+2.0,STR,Aston Martin,,18.0,False,0 days 00:01:03.327000,0 days 00:01:13.509000,0 days 00:01:01.197000
+3.0,STR,Aston Martin,,18.0,False,0 days 00:00:56.964000,0 days 00:01:26.049000,0 days 00:01:39.664000
