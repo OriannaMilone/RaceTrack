@@ -2,7 +2,7 @@ import pandas as pd
 import uuid
 from db_connection import get_connection
 
-def insert_pilotos_from_csv(csv_files):
+def insertar_pilotos_csv(csv_files):
     conn = get_connection()
     if not conn:
         return
@@ -30,7 +30,7 @@ def insert_pilotos_from_csv(csv_files):
         cursor.close()
         conn.close()
 
-def insert_equipos_from_csv(csv_files):
+def insertar_equipos_csv(csv_files):
     conn = get_connection()
     if not conn:
         return
@@ -57,7 +57,7 @@ def insert_equipos_from_csv(csv_files):
         cursor.close()
         conn.close()
             
-def insert_pilotos_equipos_from_csv(csv_file, season):
+def insertar_pilotos_equipos_csv(csv_file, season):
     conn = get_connection()
     if not conn:
         return
@@ -97,3 +97,25 @@ def insert_pilotos_equipos_from_csv(csv_file, season):
     finally:
         cursor.close()
         conn.close()  
+        
+def insertar_carrera_datos(year, name, circuit, type):
+    conn = get_connection()
+    if not conn:
+        return
+
+    try:
+        cursor = conn.cursor()
+        
+        cursor.execute(
+            "INSERT INTO Carrera (id, nombre, circuito, tipo, temporada) VALUES (%s, %s, %s, %s, %s)",
+            (str(uuid.uuid4()), name, circuit, type, year)
+        )
+
+        conn.commit()
+        print("Datos de carrera insertados correctamente.")
+
+    except Exception as e:
+        print("Error al insertar datos:", e)
+    finally:
+        cursor.close()
+        conn.close()
