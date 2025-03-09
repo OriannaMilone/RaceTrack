@@ -14,4 +14,10 @@ if __name__ == "__main__":
     
     # for year in range(2018, 2025):
     #     insertar_carrera_datos(year, "GP Belgica", "Spa-Francorchamps", "historica")
+    
+    # for year in range(2018, 2025):
+    #     csv_file = f"../SPA_DATA/race_status/Spa_{year}_race_status.csv"
+    #     insertar_estado_carrera_csv(csv_file, year)
+    
+    
     print("Away we go!")

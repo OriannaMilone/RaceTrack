@@ -119,3 +119,48 @@ def insertar_carrera_datos(year, name, circuit, type):
     finally:
         cursor.close()
         conn.close()
+    
+def insertar_estado_carrera_csv(csv_file, year):
+    conn = get_connection()
+    if not conn:
+        return
+
+    try:
+        cursor = conn.cursor()
+        
+        df = pd.read_csv(csv_file)
+
+        df["FisingPosition"] = df["FisingPosition"].astype(int)
+        df["GridPosition"] = df["GridPosition"].astype(int)
+        
+        print(df)
+        
+        cursor.execute("SELECT id FROM Carrera WHERE temporada = %s", (year,))
+        race_id = cursor.fetchone()
+
+        race_id = race_id[0]
+
+        drivers_ids = []
+
+        for _, row in df.iterrows():
+            cursor.execute("SELECT id FROM Piloto WHERE nombre = %s", (row["Driver"],))
+            driver_id = cursor.fetchone()
+            if driver_id:
+                drivers_ids.append(driver_id[0])
+
+
+        for driver_id, (_, row) in zip(drivers_ids, df.iterrows()):
+            cursor.execute(
+                """INSERT INTO ParticipacionCarrera (id_piloto, id_carrera, estado, posicioninicio, posicionfinal) 
+                VALUES (%s, %s, %s, %s, %s)""",
+                (driver_id, race_id, row["FinialStatus"], row["GridPosition"], row["FisingPosition"])
+            )
+
+        conn.commit()
+        print("Datos de estado de carrera insertados correctamente.")
+
+    except Exception as e:
+        print("Error al insertar datos:", e)
+    finally:
+        cursor.close()
+        conn.close()

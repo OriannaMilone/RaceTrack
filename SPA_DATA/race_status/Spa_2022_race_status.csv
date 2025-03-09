@@ -1,0 +1,21 @@
+Driver,FisingPosition,GridPosition,FinialStatus
+VER,1.0,14.0,Finished
+PER,2.0,2.0,Finished
+SAI,3.0,1.0,Finished
+RUS,4.0,5.0,Finished
+ALO,5.0,3.0,Finished
+LEC,6.0,15.0,Finished
+OCO,7.0,16.0,Finished
+VET,8.0,10.0,Finished
+GAS,9.0,0.0,Finished
+ALB,10.0,6.0,Finished
+STR,11.0,9.0,Finished
+NOR,12.0,17.0,Finished
+TSU,13.0,0.0,Finished
+ZHO,14.0,18.0,Finished
+RIC,15.0,7.0,Finished
+MAG,16.0,12.0,+1 Lap
+MSC,17.0,19.0,+1 Lap
+LAT,18.0,11.0,+1 Lap
+BOT,19.0,13.0,Accident
+HAM,20.0,4.0,Collision damage
