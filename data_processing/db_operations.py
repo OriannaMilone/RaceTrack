@@ -2,6 +2,14 @@ import pandas as pd
 import uuid
 from db_connection import get_connection
 
+def format_timedelta(td):
+    """Convierte Timedelta a mm:ss.SSS"""
+    if pd.isna(td):
+        return None
+    total_seconds = td.total_seconds()
+    minutes, seconds = divmod(total_seconds, 60)
+    return f"{int(minutes):02}:{seconds:06.3f}"
+
 def insertar_pilotos_csv(csv_files):
     conn = get_connection()
     if not conn:
@@ -164,3 +172,61 @@ def insertar_estado_carrera_csv(csv_file, year):
     finally:
         cursor.close()
         conn.close()
+        
+def insertar_vueltas_csv(csv_file, year):
+    conn = get_connection()
+    if not conn:
+        return
+
+    try:
+        cursor = conn.cursor()
+        
+        df = pd.read_csv(csv_file)
+        
+        df = df.drop(columns=["Team"])
+        df = df.drop(columns=["TyreLife"])
+        df["LapNumber"] = df["LapNumber"].astype(int)
+        df["Position"] = df["Position"].fillna(0).astype(int)
+        df["Compound"] = df["Compound"].fillna("TBD") #TBD --> To be defined
+        
+        df["LapTime"] = pd.to_timedelta(df["LapTime"], errors="coerce")
+        df["Sector1Time"] = pd.to_timedelta(df["Sector1Time"], errors="coerce")
+        df["Sector2Time"] = pd.to_timedelta(df["Sector2Time"], errors="coerce")
+        df["Sector3Time"] = pd.to_timedelta(df["Sector3Time"], errors="coerce")
+
+        df["LapTime"] = df["LapTime"].apply(format_timedelta)
+        df["Sector1Time"] = df["Sector1Time"].apply(format_timedelta)
+        df["Sector2Time"] = df["Sector2Time"].apply(format_timedelta)
+        df["Sector3Time"] = df["Sector3Time"].apply(format_timedelta)
+        
+        print(df)
+        
+        cursor.execute("SELECT id FROM Carrera WHERE temporada = %s", (year,))
+        race_id = cursor.fetchone()
+
+        drivers_ids = []
+
+        for _, row in df.iterrows():
+            cursor.execute("SELECT id FROM Piloto WHERE nombre = %s", (row["Driver"],))
+            driver_id = cursor.fetchone()
+            if driver_id:
+                drivers_ids.append(driver_id[0])
+
+
+        for driver_id, (_, row) in zip(drivers_ids, df.iterrows()):
+            cursor.execute(
+                """INSERT INTO vuelta (id, id_piloto, id_carrera, numerovuelta, posicion, tiempovuelta, sector1tiempo, sector2tiempo, sector3tiempo, compuestoneumatico, mejorvueltapersonal) 
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""",
+                (str(uuid.uuid4()), driver_id, race_id, row["LapNumber"], row["Position"], row["LapTime"], row["Sector1Time"], row["Sector2Time"], row["Sector3Time"], row["Compound"], row["IsPersonalBest"])
+            )
+
+        conn.commit()
+        print("Datos de vuelta insertados correctamente.")
+
+    except Exception as e:
+        print("Error al insertar datos:", e)
+    finally:
+        cursor.close()
+        conn.close()
+        
+      
