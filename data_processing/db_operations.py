@@ -229,4 +229,60 @@ def insertar_vueltas_csv(csv_file, year):
         cursor.close()
         conn.close()
         
-      
+def insertar_paradasboxes_csv(csv_file, year):
+    conn = get_connection()
+    if not conn:
+        return
+
+    try:
+        cursor = conn.cursor()
+        
+        df = pd.read_csv(csv_file)
+        
+        df = df.drop(columns=["LapNumber_Out"])
+        df["LapNumber_In"] = df["LapNumber_In"].astype(int)
+        
+        df["PitInTime"] = pd.to_timedelta(df["PitInTime"], errors="coerce")
+        df["PitOutTime"] = pd.to_timedelta(df["PitOutTime"], errors="coerce")
+        df["PitStopDuration"] = pd.to_timedelta(df["PitStopDuration"], errors="coerce")
+        
+        df["PitInTime"] = df["PitInTime"].apply(format_timedelta)
+        df["PitOutTime"] = df["PitOutTime"].apply(format_timedelta)
+        df["PitStopDuration"] = df["PitStopDuration"].apply(format_timedelta)
+        
+        print(df)
+        
+        cursor.execute("SELECT id FROM Carrera WHERE temporada = %s", (year))
+        race_id = cursor.fetchone()
+
+        drivers_ids = []
+        laps_ids = []
+
+        for _, row in df.iterrows():
+            cursor.execute("SELECT id FROM Piloto WHERE nombre = %s", (row["Driver"],))
+            driver_id = cursor.fetchone()
+            if driver_id:
+                drivers_ids.append(driver_id[0])
+
+        for _, row in df.iterrows():
+            cursor.execute("SELECT id FROM Vuelta WHERE numerovuelta = %s", (row["LapNumber"],))
+            lap_id = cursor.fetchone()
+            if lap_id:
+                laps_ids.append(lap_id[0])
+
+        #No se si por driver o por lap
+        for driver_id, (_, row) in zip(drivers_ids, df.iterrows()):
+            cursor.execute(
+                """INSERT INTO vuelta (id, id_piloto, id_carrera, numerovuelta, posicion, tiempovuelta, sector1tiempo, sector2tiempo, sector3tiempo, compuestoneumatico, mejorvueltapersonal) 
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""",
+                (str(uuid.uuid4()), driver_id, race_id, row["LapNumber"], row["Position"], row["LapTime"], row["Sector1Time"], row["Sector2Time"], row["Sector3Time"], row["Compound"], row["IsPersonalBest"])
+            )
+
+        conn.commit()
+        print("Datos de paradas en boxes insertados correctamente.")
+
+    except Exception as e:
+        print("Error al insertar datos:", e)
+    finally:
+        cursor.close()
+        conn.close()
