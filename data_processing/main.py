@@ -19,8 +19,16 @@ if __name__ == "__main__":
     #     csv_file = f"../SPA_DATA/race_status/Spa_{year}_race_status.csv"
     #     insertar_estado_carrera_csv(csv_file, year)
     
-    # for year in range(2019, 2025):
+    # for year in range(2018, 2025):
     #     csv_file = f"../SPA_DATA/spa_race_results/Spa_{year}_race_laps.csv"
     #     insertar_vueltas_csv(csv_file, year)
+    
+    # for year in range(2018, 2025):
+    #     csv_file = f"../SPA_DATA/pitstops/Spa_{year}_pitstops_data.csv"
+    #     insertar_paradas_csv(csv_file)
+    
+    # for year in range(2018, 2025):
+    #     csv_file = f"../SPA_DATA/full_data_race/SPA_{year}_full_H_data.csv"
+    #     insertar_datos_full_carrera(csv_file)
     
     print("Away we go!")
