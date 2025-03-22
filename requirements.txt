@@ -4,3 +4,6 @@ pandas=2.2.3
 scipy=1.15.2
 psycopg2 
 python-dotenv
+prophet
+plotly
+scikit-learn
