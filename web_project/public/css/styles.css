@@ -109,14 +109,14 @@
      * color-2(#eb5e55)
      * color-3(#f2d0a4)
      */
-    --color-1: hsla(345, 93%, 44%, 1);
+    --color-1: rgb(185, 9, 9);
     --color-2: hsla(4, 79%, 63%, 1);
     --color-3: hsla(34, 75%, 80%, 1);
 
     /* theme color variations
      */
     --color-1-lighter: hsla(345, 93%, 64%, 1);
-    --color-1-light  : hsla(345, 93%, 54%, 1);
+    --color-1-light  : rgb(167, 10, 10);
     --color-1-dark   : hsla(345, 93%, 34%, 1);
     --color-1-darker : hsla(345, 93%, 24%, 1);
     --color-2-lighter: hsla(4, 79%, 83%, 1);
