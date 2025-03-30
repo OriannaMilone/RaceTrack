@@ -139,37 +139,113 @@
         <div class="horizontal-line"></div>
 
         <div class="row">
-            <div class="column large-12">
-
-                <div class="section-title" data-num="01" data-aos="fade-up">
-                    <h3 class="h6">Who We Are</h3>
-                </div>
-
-            </div>
-
+            <h1>Simulación en Tiempo Real</h1>
+            <h3 id="vuelta-titulo">Esperando datos de la simulación...</h3>
+            <canvas id="graficoCarrera" width="800" height="400"></canvas>
             
-            <h1>Simulación de Carrera</h1>
-            <div id="vueltas"></div>
-
             <script src="/socket.io/socket.io.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            
             <script>
-                const socket = io();
-
-                socket.on('nueva-vuelta', (data) => {
-                    const contenedor = document.getElementById('vueltas');
-                    const vueltaDiv = document.createElement('div');
-                    vueltaDiv.innerHTML = `<h3>Vuelta ${data.vuelta}</h3>`;
-                    
-                    data.pilotos.forEach(piloto => {
-                      const p = document.createElement('p');
-                      p.innerText = `${piloto.Driver} - Pos: ${piloto.Position} - Compuesto: ${piloto.Compound}`;
-                      vueltaDiv.appendChild(p);
+                window.onload = () => {
+                  const socket = io();
+                  const ctx = document.getElementById('graficoCarrera').getContext('2d');
+                
+                  // 🟡 1. Colores asignados a equipos
+                  const coloresPorEquipo = {
+                    'Mercedes': 'rgba(0, 210, 190, 0.7)',
+                    'Ferrari': 'rgba(220, 0, 0, 0.7)',
+                    'Red Bull': 'rgba(0, 0, 255, 0.7)',
+                    'McLaren': 'rgba(255, 128, 0, 0.7)',
+                    'Renault': 'rgba(255, 255, 0, 0.7)',
+                    'Force India': 'rgba(255, 105, 180, 0.7)',
+                    'Williams': 'rgba(0, 180, 255, 0.7)',
+                    'Toro Rosso': 'rgba(0, 0, 153, 0.7)',
+                    'Haas': 'rgba(128, 128, 128, 0.7)',
+                    'Sauber': 'rgba(102, 0, 204, 0.7)'
+                  };
+                
+                  // 🟣 2. Asociación de piloto → equipo
+                  const equipoPorPiloto = {
+                    'HAM': 'Mercedes',
+                    'BOT': 'Mercedes',
+                    'VET': 'Ferrari',
+                    'RAI': 'Ferrari',
+                    'VER': 'Red Bull',
+                    'RIC': 'Red Bull',
+                    'ALO': 'McLaren',
+                    'VAN': 'McLaren',
+                    'HUL': 'Renault',
+                    'SAI': 'Renault',
+                    'PER': 'Force India',
+                    'OCO': 'Force India',
+                    'STR': 'Williams',
+                    'SIR': 'Williams',
+                    'GAS': 'Toro Rosso',
+                    'HAR': 'Toro Rosso',
+                    'GRO': 'Haas',
+                    'MAG': 'Haas',
+                    'LEC': 'Sauber',
+                    'ERI': 'Sauber'
+                  };
+                
+                  // 🟢 3. Crear gráfico con Chart.js
+                  const grafico = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                      labels: [],
+                      datasets: [{
+                        label: 'Posición en carrera',
+                        data: [],
+                        backgroundColor: [],
+                        borderWidth: 1
+                      }]
+                    },
+                    options: {
+                      indexAxis: 'x',
+                      responsive: true,
+                      animation: false,
+                      plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                          callbacks: {
+                            label: (ctx) => `Posición: ${ctx.parsed.y}`
+                          }
+                        }
+                      },
+                      scales: {
+                        y: {
+                          reverse: true,
+                          ticks: { stepSize: 1, precision: 0 },
+                          title: { display: true, text: 'Posición (1 = líder)' }
+                        },
+                        x: {
+                          title: { display: true, text: 'Pilotos' }
+                        }
+                      }
+                    }
+                  });
+                
+                  // 🔵 4. Escuchar eventos y actualizar el gráfico
+                  socket.on('nueva-vuelta', (data) => {
+                    document.getElementById('vuelta-titulo').innerText = `Vuelta ${data.vuelta}`;
+                
+                    const pilotosOrdenados = data.pilotos
+                      .filter(p => p.Position !== null && !isNaN(p.Position))
+                      .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
+                
+                    grafico.data.labels = pilotosOrdenados.map(p => p.Driver);
+                    grafico.data.datasets[0].data = pilotosOrdenados.map(p => parseFloat(p.Position));
+                    grafico.data.datasets[0].backgroundColor = pilotosOrdenados.map(p => {
+                      const equipo = equipoPorPiloto[p.Driver];
+                      return coloresPorEquipo[equipo] || 'gray';
                     });
-                  
-                    contenedor.appendChild(vueltaDiv);
-                });
-                  
-            </script>
+                
+                    grafico.update();
+                  });
+                };
+                </script>
+                
         </div>
 
     </section> <!-- end s-about -->

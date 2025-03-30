@@ -20,6 +20,16 @@ def disconnect():
 def connect_error(data):
     print("❌ Error de conexión:", data)
 
+def formatear_lap_time(td):
+    if pd.isnull(td):
+        return "00:00.000"
+    if isinstance(td, str):
+        td = pd.to_timedelta(td)
+    total_seconds = td.total_seconds()
+    minutos = int(total_seconds // 60)
+    segundos = int(total_seconds % 60)
+    milisegundos = int((total_seconds % 1) * 1000)
+    return f"{minutos:02}:{segundos:02}.{milisegundos:03}"
 
 def main():
     # Conectar justo antes de simular
@@ -39,11 +49,18 @@ def main():
             vuelta = simulador.get_vuelta_actual()
 
             print(f"\nVuelta {vuelta}:")
-            vuel = datos_vuelta[["Driver", "Position", "Compound", "FinishingPosition", "GridPosition"]].sort_values(by="Position")
-            print(vuel.to_string(index=False))
-
-            vuel = vuel.fillna("N/A")
+            vuel = datos_vuelta[["Driver", "Position", "Team", "LapTime", "Compound", "IsPersonalBest"]].sort_values(by="Position")
+            starting_values = datos_vuelta[["Driver", "GridPosition", "FinishingPosition", "FinalStatus"]]
+            extra_values = datos_vuelta[["Driver", "Position", "Sector1Time","Sector2Time","Sector3Time","PitInTime","PitOutTime","PitStopDuration"]]
+            vuel["Compound"] = vuel["Compound"].fillna("TBD")
+            vuel["LapTime"] = vuel["LapTime"].apply(lambda x: pd.to_timedelta(x) if isinstance(x, str) else x)
+            vuel["IsPersonalBest"] = vuel["IsPersonalBest"].replace({True: "Yes", False: "No"})
             
+            if "LapTime" in vuel.columns:
+                vuel["LapTime"] = vuel["LapTime"].apply(formatear_lap_time)
+            
+            vuel = vuel.fillna("N/A")
+            print(vuel.to_string(index=False))
             # Enviar vuelta completa
             vuelta_completa = {
                 "vuelta": vuelta,
