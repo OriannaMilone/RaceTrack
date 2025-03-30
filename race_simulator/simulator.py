@@ -7,6 +7,7 @@ import pandas as pd
 
 sio = socketio.Client()
 
+
 @sio.event(namespace='/simulador')
 def connect():
     print("✅ Conectado al servidor Node.js (/simulador) [handler activado]")
