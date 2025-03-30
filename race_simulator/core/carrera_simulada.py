@@ -39,7 +39,7 @@ class SimuladorDeCarrera:
         """
         return self.df_simulado.copy()
 
-    def exportar_resultado(self, ruta: str = "data/carrera_simulada.csv"):
+    def exportar_resultado(self, ruta: str = "SPA_DATA/carrera_simulada.csv"):
         self.df_simulado.to_csv(ruta, index=False)
 
     def esta_finalizada(self) -> bool:

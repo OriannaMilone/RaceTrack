@@ -147,61 +147,29 @@
 
             </div>
 
-            <div class="column large-6 w-900-stack s-about__intro-text">
-                <h1 class="display-1" data-aos="fade-up">
-                    Flare is a branding agency based in somewhere. We design thoughtful digital experiences and beautiful brand aesthetics.
-                </h1>
+            
+            <h1>Simulación de Carrera</h1>
+            <div id="vueltas"></div>
 
-                <p class="lead" data-aos="fade-up">
-                    Non amet venenatis dolor id pellentesque mattis erat. Fermentum nunc, 
-                    tincidunt sit elit amet scelerisque. Ac quisque quis eu nibh rutrum 
-                    risus tellus egestas neque. Vestibulum ante ipsum primis in faucibus 
-                    orci luctus et. 
-                </p>
-            </div>
+            <script src="/socket.io/socket.io.js"></script>
+            <script>
+                const socket = io();
 
-            <div class="column large-6 w-900-stack s-about__photo-block">
-                <div class="s-about__photo" data-aos="fade-up"></div>
-            </div>
-        </div>
-
-        <div class="row block-large-1-2 block-tab-full s-about__process item-list">
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Define</h3>
-                <p>
-                Deserunt rerum perspiciatis quaerat quam numquam assumenda neque. 
-                Quis dolores totam voluptatibus molestiae non. Quae exercitationem 
-                cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod 
-                ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Design</h3>
-                <p>
-                Deserunt rerum perspiciatis quaerat quam numquam assumenda neque. 
-                Quis dolores totam voluptatibus molestiae non. Quae exercitationem 
-                cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod 
-                ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Build</h3>
-                <p>
-                Deserunt rerum perspiciatis quaerat quam numquam assumenda neque. 
-                Quis dolores totam voluptatibus molestiae non. Quae exercitationem 
-                cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod 
-                ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Launch</h3>
-                <p>
-                Deserunt rerum perspiciatis quaerat quam numquam assumenda neque. 
-                Quis dolores totam voluptatibus molestiae non. Quae exercitationem 
-                cum numquam repudiandae. Beatae eum quae. Ut ex unde rem quod 
-                ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
-                </p>
-            </div>
+                socket.on('nueva-vuelta', (data) => {
+                    const contenedor = document.getElementById('vueltas');
+                    const vueltaDiv = document.createElement('div');
+                    vueltaDiv.innerHTML = `<h3>Vuelta ${data.vuelta}</h3>`;
+                    
+                    data.pilotos.forEach(piloto => {
+                      const p = document.createElement('p');
+                      p.innerText = `${piloto.Driver} - Pos: ${piloto.Position} - Compuesto: ${piloto.Compound}`;
+                      vueltaDiv.appendChild(p);
+                    });
+                  
+                    contenedor.appendChild(vueltaDiv);
+                });
+                  
+            </script>
         </div>
 
     </section> <!-- end s-about -->

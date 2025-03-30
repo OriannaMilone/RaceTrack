@@ -1,26 +1,67 @@
-import pandas as pd
+import socketio
 import time
+from core.carrera import Carrera
+from race_simulator.core.carrera_simulada import SimuladorDeCarrera
+from pathlib import Path
+import pandas as pd
 
-df_original = pd.read_csv("../SPA_DATA/full_data_race/SPA_2018_full_H_data.csv")
+sio = socketio.Client()
 
-df_original = df_original.sort_values(by=["LapNumber", "DriverNumber"])
+@sio.event(namespace='/simulador')
+def connect():
+    print("✅ Conectado al servidor Node.js (/simulador) [handler activado]")
 
-df_simulado = pd.DataFrame()
+@sio.event(namespace='/simulador')
+def disconnect():
+    print("❌ Desconectado del servidor (/simulador) [handler activado]")
+    
+@sio.event(namespace='/simulador')
+def connect_error(data):
+    print("❌ Error de conexión:", data)
 
-# 4. Obtener el número total de vueltas en la carrera
-vueltas_totales = int(df_original["LapNumber"].max())
 
-# 5. Iterar vuelta por vuelta
-for vuelta in range(1, vueltas_totales + 1):
-    print(f"Simulando vuelta {vuelta}...")
+def main():
+    # Conectar justo antes de simular
+    sio.connect('http://localhost:3000', namespaces=['/simulador'])
 
-    datos_vuelta = df_original[df_original["LapNumber"] == vuelta]
-    df_simulado = pd.concat([df_simulado, datos_vuelta], ignore_index=True)
+    csv_path = Path(__file__).resolve().parent.parent / "SPA_DATA" / "full_data_race" / "SPA_2018_full_H_data.csv"
+    df = pd.read_csv(csv_path)
 
-    print("Datos de la vuelta:")
-    print(df_simulado)
-    print("Siguiente vuelta en 90 segundos...")
-    time.sleep(10)
+    carrera = Carrera(df)
+    simulador = SimuladorDeCarrera(carrera, tiempo_entre_vueltas=1)
 
-# 6. Guardar el resultado final en un CSV
-df_simulado.to_csv("carrera_simulada.csv", index=False)
+    print("🏁 Comienza la simulación de carrera...\n")
+
+    try:
+        while not simulador.esta_finalizada():
+            datos_vuelta = simulador.simular_siguiente_vuelta()
+            vuelta = simulador.get_vuelta_actual()
+
+            print(f"\nVuelta {vuelta}:")
+            vuel = datos_vuelta[["Driver", "Position", "Compound", "FinishingPosition", "GridPosition"]].sort_values(by="Position")
+            print(vuel.to_string(index=False))
+
+            vuel = vuel.fillna("N/A")
+            
+            # Enviar vuelta completa
+            vuelta_completa = {
+                "vuelta": vuelta,
+                "pilotos": vuel.to_dict(orient="records")
+            }
+
+            # Esperar un pequeño delay antes del primer envío (por seguridad)
+            time.sleep(0.1)
+            print(f"📤 Enviando vuelta {vuelta} al servidor...\n")
+            sio.emit('nueva-vuelta', vuelta_completa, namespace='/simulador')
+
+
+    except StopIteration as e:
+        print(f"\n⛔ Simulación detenida: {e}")
+
+    finally:
+        simulador.exportar_resultado("carrera_simulada.csv")
+        sio.disconnect()
+        print("✅ Simulación finalizada. Datos exportados a carrera_simulada.csv")
+
+if __name__ == "__main__":
+    main()
