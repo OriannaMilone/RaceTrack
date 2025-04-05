@@ -303,12 +303,13 @@
                 const grafico = new Chart(ctx, {
                     type: 'bar',
                     data: {
-                        labels: pilotosFijos,
+                        labels: [],
                         datasets: [{
                             label: 'Race Position',
-                            data: new Array(pilotosFijos.length).fill(null),
-                            backgroundColor: pilotosFijos.map(p => 'gray'),
-                            borderWidth: 1
+                            data: [],
+                            backgroundColor: [],
+                            borderWidth: 1,
+                            borderColor: []
                         }]
                     },
                     options: {
@@ -359,67 +360,44 @@
                     window.ultimoEstadoPilotos = data.pilotos;
                     document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
                     agregarSeparadorDeVuelta(`Lap ${data.vuelta}`);
-
-
-                    // 👇 Logs: Best laps
+                  
+                    // 🚀 Logs: Best laps
                     data.pilotos.forEach(p => {
-                        if (p.IsPersonalBest === 'Yes') {
-                            agregarLog(`🚀 ${p.Driver} set a new personal best: ${p.LapTime}`);
-                        }
+                      if (p.IsPersonalBest === 'Yes') {
+                        agregarLog(`🚀 ${p.Driver} set a new personal best: ${p.LapTime}`);
+                      }
                     });
-
-                    // 👇 Logs: Retired drivers
+                  
+                    // ❌ Logs: Retired drivers / +1 Lap
                     if (window.pilotosEnVueltaAnterior) {
-                        const retirados = window.pilotosEnVueltaAnterior.filter(prev =>
-                            !data.pilotos.some(p => p.Driver === prev.Driver)
-                        );
-
-                        retirados.forEach(p => {
-                            if (data.vuelta === ULTIMA_VUELTA) {
-                              agregarLog(`🔵 ${p.Driver} finished +1 Lap`);
-                            } else {
-                              agregarLog(`❌ ${p.Driver} has retired from the race`);
-                            }
-                          });
-                          
+                      const retirados = window.pilotosEnVueltaAnterior.filter(prev =>
+                        !data.pilotos.some(p => p.Driver === prev.Driver)
+                      );
+                  
+                      retirados.forEach(p => {
+                        if (data.vuelta === ULTIMA_VUELTA) {
+                          agregarLog(`🔵 ${p.Driver} finished +1 Lap`);
+                        } else {
+                          agregarLog(`❌ ${p.Driver} has retired from the race`);
+                        }
+                      });
                     }
+                  
                     window.pilotosEnVueltaAnterior = data.pilotos;
-
-                    // Posiciones
-                    grafico.data.datasets[0].data = pilotosFijos.map(piloto => {
-                        const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                        return (datosPiloto && datosPiloto.Position) ? 21 - parseFloat(datosPiloto.Position) : null;
-                    });
-
-                    // Colores
-                    grafico.data.datasets[0].backgroundColor = pilotosFijos.map(piloto => {
-                        const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                        return datosPiloto ? obtenerColorPorEquipo(datosPiloto.Team) : 'rgba(180, 180, 180, 0.8)';
-                    });
-
-                    // Mejores vueltas (borde blanco)
-                    grafico.data.datasets[0].borderWidth = pilotosFijos.map(piloto => {
-                        const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                        return datosPiloto?.IsPersonalBest === 'Yes' ? 4 : 1;
-                    });
-
-                    grafico.data.datasets[0].borderColor = pilotosFijos.map(piloto => {
-                        const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                        return datosPiloto?.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)';
-                    });
-
+                  
+                    // Ordenar y mostrar pilotos
+                    const pilotosOrdenados = data.pilotos
+                      .filter(p => p.Position !== null && !isNaN(p.Position))
+                      .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
+                  
+                    grafico.data.labels = pilotosOrdenados.map(p => p.Driver);
+                    grafico.data.datasets[0].data = pilotosOrdenados.map(p => 21 - parseFloat(p.Position));
+                    grafico.data.datasets[0].backgroundColor = pilotosOrdenados.map(p => obtenerColorPorEquipo(p.Team));
+                    grafico.data.datasets[0].borderWidth = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? 4 : 1);
+                    grafico.data.datasets[0].borderColor = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)');
+                  
                     grafico.update();
-                });
-
-                // 👉 Función para agregar línea al log
-                function agregarLog(texto) {
-                    const logList = document.getElementById('log-list');
-                    const item = document.createElement('li');
-                    item.textContent = texto;
-                    item.style.padding = '4px 0';
-                    item.style.borderBottom = '1px solid #eee';
-                    logList.prepend(item);
-                }
+                  });
             };
         </script>
 
