@@ -132,7 +132,7 @@
     </section> <!-- end s-hero -->
 
 
-    <!-- about
+    <!-- Race 
     ================================================== -->
     <section id="about" class="s-about">
 
@@ -202,28 +202,40 @@
                       }]
                     },
                     options: {
-                      indexAxis: 'x',
-                      responsive: true,
-                      animation: false,
-                      plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                          callbacks: {
-                            label: (ctx) => `Posición: ${ctx.parsed.y}`
+                        responsive: true,
+                        animation: false,
+                        plugins: {
+                          legend: { display: false },
+                          tooltip: {
+                            callbacks: {
+                              label: (ctx) => {
+                                const valor = ctx.parsed.y;
+                                const posicionReal = 21 - valor;
+                                return `Posición: ${posicionReal}`;
+                              }
+                            }                          
+                          }
+                        },
+                        scales: {
+                            y: {
+                                reverse: false,
+                                min: 1,
+                                max: 20,
+                                ticks: {
+                                  stepSize: 1,
+                                  precision: 0,
+                                  callback: function (value) {
+                                    return 21 - value; 
+                                  }
+                                },
+                                title: { display: true, text: 'Posición (1 = lider)' }
+                              },
+                          x: {
+                            title: { display: true, text: 'Pilotos' }
                           }
                         }
-                      },
-                      scales: {
-                        y: {
-                          reverse: true,
-                          ticks: { stepSize: 1, precision: 0 },
-                          title: { display: true, text: 'Posición (1 = líder)' }
-                        },
-                        x: {
-                          title: { display: true, text: 'Pilotos' }
-                        }
                       }
-                    }
+                      
                   });
                 
                   // 🔵 4. Escuchar eventos y actualizar el gráfico
@@ -235,7 +247,7 @@
                       .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
                 
                     grafico.data.labels = pilotosOrdenados.map(p => p.Driver);
-                    grafico.data.datasets[0].data = pilotosOrdenados.map(p => parseFloat(p.Position));
+                    grafico.data.datasets[0].data = pilotosOrdenados.map(p => 21 - parseFloat(p.Position));
                     grafico.data.datasets[0].backgroundColor = pilotosOrdenados.map(p => {
                       const equipo = equipoPorPiloto[p.Driver];
                       return coloresPorEquipo[equipo] || 'gray';
@@ -248,7 +260,7 @@
                 
         </div>
 
-    </section> <!-- end s-about -->
+    </section> <!-- end s-Race -->
 
 
     <!-- services
