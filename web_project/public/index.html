@@ -35,24 +35,24 @@
 
     <style>
         #compound-buttons button {
-          flex: 1 0 120px; 
-          padding: 10px 12px;
-          border: none;
-          background-color: #222;
-          color: #fff;
-          border-radius: 5px;
-          font-weight: bold;
-          cursor: pointer;
-          transition: background 0.2s;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
+            flex: 1 0 120px;
+            padding: 10px 12px;
+            border: none;
+            background-color: #222;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        
+
         #compound-buttons button:hover {
-          background-color: #444;
+            background-color: #444;
         }
-        </style>
-        
+    </style>
+
 </head>
 
 <body id="top">
@@ -174,215 +174,232 @@
             <canvas id="graficoCarrera" width="800" height="400"></canvas>
             <script src="/socket.io/socket.io.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            
+
             <div style="margin-top: 30px; width: 100%;">
                 <p style="font-weight: bold; font-size: 1.7rem; color: #f0f0f0; margin-bottom: 15px;">
                     Tyre Compounds <span style="font-weight: normal;"></span>
-                </p>                  
+                </p>
                 <div id="compound-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                  <button onclick="filtrarPorCompuesto('SUPERSOFT')">SUPERSOFT</button>
-                  <button onclick="filtrarPorCompuesto('SOFT')">SOFT</button>
-                  <button onclick="filtrarPorCompuesto('MEDIUM')">MEDIUM</button>
-                  <button onclick="filtrarPorCompuesto('HARD')">HARD</button>
+                    <button onclick="filtrarPorCompuesto('SUPERSOFT')">SUPERSOFT</button>
+                    <button onclick="filtrarPorCompuesto('SOFT')">SOFT</button>
+                    <button onclick="filtrarPorCompuesto('MEDIUM')">MEDIUM</button>
+                    <button onclick="filtrarPorCompuesto('HARD')">HARD</button>
                 </div>
             </div>
-              
+
             <!-- Race Logs -->
             <div id="race-logs" style="margin-top: 30px; width: 100%;">
                 <h3 style="margin-bottom: 10px;">Race Events</h3>
                 <div id="log-box" style="
-                  max-height: 200px;
-                  overflow-y: auto;
-                  background-color: #f9f9f9;
-                  border: 1px solid #ccc;
-                  padding: 10px;
-                  font-family: monospace;
-                  font-size: 0.95em;
-                  border-radius: 5px;
-                  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-                  width: 100%;
-                  box-sizing: border-box;
-                ">
-                  <ul id="log-list" style="list-style: none; padding-left: 0; margin: 0;"></ul>
+                    min-height: 175px;
+                    max-height: 300px;
+                    overflow-y: auto;
+                    background-color: #f9f9f9;
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    font-family: monospace;
+                    font-size: 0.95em;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+                    width: 100%;
+                    box-sizing: border-box;
+                    ">
+                    <ul id="log-list" style="list-style: none; padding-left: 0; margin: 0;"></ul>
                 </div>
-              </div>
-                    
 
-            <script>
-                function filtrarPorCompuesto(compuestoSeleccionado) {
-                    const pilotos = window.ultimoEstadoPilotos || [];
-                  
-                    const enEseCompuesto = pilotos
-                      .filter(p => {
+                <ul id="log-list" style="list-style: none; padding-left: 0; margin: 0;"></ul>
+            </div>
+        </div>
+
+
+        <script>
+            function filtrarPorCompuesto(compuestoSeleccionado) {
+                const pilotos = window.ultimoEstadoPilotos || [];
+
+                const enEseCompuesto = pilotos
+                    .filter(p => {
                         const compuestoActual = (p.Compound || '').trim().toUpperCase();
                         return compuestoActual === compuestoSeleccionado;
-                      })
-                      .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
-                  
-                    if (enEseCompuesto.length === 0) {
-                      agregarLog(`🟡 No drivers are currently using ${compuestoSeleccionado} tyres`);
-                      return;
-                    }
-                  
-                    agregarLog(`🔍 Drivers on ${compuestoSeleccionado} tyres:`);
-                  
-                    enEseCompuesto.forEach(p => {
-                      agregarLog(`• ${p.Driver} (P${p.Position})`);
-                    });
-                  }
-                  
-                function agregarLog(texto) {
+                    })
+                    .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
+
+                if (enEseCompuesto.length === 0) {
+                    agregarLog(`🟡 No drivers are currently using ${compuestoSeleccionado} tyres`);
+                    return;
+                }
+
+                agregarLog(`🔍 Drivers on ${compuestoSeleccionado} tyres:`);
+
+                enEseCompuesto.forEach(p => {
+                    agregarLog(`• ${p.Driver} (P${p.Position})`);
+                });
+            }
+
+            function agregarLog(texto) {
                 const logList = document.getElementById('log-list');
                 const item = document.createElement('li');
                 item.textContent = texto;
                 item.style.padding = '4px 0';
                 item.style.borderBottom = '1px solid #eee';
-                logList.prepend(item); 
-                }
-                  
-                  
-                window.onload = () => {
-                    const socket = io();
-                    const ctx = document.getElementById('graficoCarrera').getContext('2d');
+                logList.prepend(item);
+            }
 
-                    const pilotosFijos = [
-                        'VET', 'HAM', 'VER', 'BOT', 'PER', 'OCO', 'GRO', 'MAG', 'GAS',
-                        'ERI', 'SAI', 'STR', 'RIC', 'HAR', 'LEC', 'RAI', 'VAN', 'ALO',
-                        'VAN', 'HUL'
-                    ];
+            function agregarSeparadorDeVuelta(texto) {
+                const logList = document.getElementById('log-list');
+                const item = document.createElement('li');
+                item.textContent = `🟢 ${texto}`;
+                item.style.padding = '6px 0';
+                item.style.fontWeight = 'bold';
+                item.style.backgroundColor = '#e8f5e9'; // verde suave
+                item.style.borderBottom = '1px solid #c8e6c9';
+                item.style.color = '#2e7d32'; // verde fuerte
+                logList.prepend(item);
+            }
+              
+            window.onload = () => {
+                const socket = io();
+                const ctx = document.getElementById('graficoCarrera').getContext('2d');
 
-                    const obtenerColorPorEquipo = (equipo) => {
-                        const coloresPorEquipo = {
-                            'Mercedes': 'rgba(0, 210, 190, 0.7)',
-                            'Ferrari': 'rgba(220, 0, 0, 0.7)',
-                            'Red Bull Racing': 'rgba(0, 0, 255, 0.7)',
-                            'McLaren': 'rgba(255, 128, 0, 0.7)',
-                            'Renault': 'rgba(255, 255, 0, 0.7)',
-                            'Racing Point': 'rgba(255, 105, 180, 0.7)',
-                            'Williams': 'rgba(0, 180, 255, 0.7)',
-                            'Toro Rosso': 'rgba(0, 0, 153, 0.7)',
-                            'Haas F1 Team': 'rgba(128, 128, 128, 0.7)',
-                            'Sauber': 'rgba(102, 0, 204, 0.7)'
-                        };
+                const pilotosFijos = [
+                    'VET', 'HAM', 'VER', 'BOT', 'PER', 'OCO', 'GRO', 'MAG', 'GAS',
+                    'ERI', 'SAI', 'STR', 'RIC', 'HAR', 'LEC', 'RAI', 'VAN', 'ALO',
+                    'VAN', 'HUL'
+                ];
 
-                        return coloresPorEquipo[equipo] || 'gray';
+                const obtenerColorPorEquipo = (equipo) => {
+                    const coloresPorEquipo = {
+                        'Mercedes': 'rgba(0, 210, 190, 0.7)',
+                        'Ferrari': 'rgba(220, 0, 0, 0.7)',
+                        'Red Bull Racing': 'rgba(0, 0, 255, 0.7)',
+                        'McLaren': 'rgba(255, 128, 0, 0.7)',
+                        'Renault': 'rgba(255, 255, 0, 0.7)',
+                        'Racing Point': 'rgba(255, 105, 180, 0.7)',
+                        'Williams': 'rgba(0, 180, 255, 0.7)',
+                        'Toro Rosso': 'rgba(0, 0, 153, 0.7)',
+                        'Haas F1 Team': 'rgba(128, 128, 128, 0.7)',
+                        'Sauber': 'rgba(102, 0, 204, 0.7)'
                     };
 
-                    const grafico = new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            labels: pilotosFijos,
-                            datasets: [{
-                                label: 'Race Position',
-                                data: new Array(pilotosFijos.length).fill(null),
-                                backgroundColor: pilotosFijos.map(p => 'gray'),
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            responsive: true,
-                            animation: {
-                                duration: 500,
-                                easing: 'easeOutQuart'
-                            },
-                            plugins: {
-                                legend: { display: false },
-                                tooltip: {
-                                    callbacks: {
-                                        label: function (ctx) {
-                                            const valor = ctx.parsed.y;
-                                            const posicionReal = 21 - valor;
-                                            const piloto = ctx.chart.data.labels[ctx.dataIndex];
-                                            const datosPiloto = window.ultimoEstadoPilotos?.find(p => p.Driver === piloto);
+                    return coloresPorEquipo[equipo] || 'gray';
+                };
 
-                                            if (!datosPiloto) return `Driver: ${piloto} | DNF`;
-                                            const equipo = datosPiloto.Team || 'Unknown Team';
-                                            return `Driver: ${piloto} | Position: ${posicionReal} | Team: ${equipo}`;
-                                        }
+                const grafico = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: pilotosFijos,
+                        datasets: [{
+                            label: 'Race Position',
+                            data: new Array(pilotosFijos.length).fill(null),
+                            backgroundColor: pilotosFijos.map(p => 'gray'),
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        animation: {
+                            duration: 500,
+                            easing: 'easeOutQuart'
+                        },
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: function (ctx) {
+                                        const valor = ctx.parsed.y;
+                                        const posicionReal = 21 - valor;
+                                        const piloto = ctx.chart.data.labels[ctx.dataIndex];
+                                        const datosPiloto = window.ultimoEstadoPilotos?.find(p => p.Driver === piloto);
+
+                                        if (!datosPiloto) return `Driver: ${piloto} | DNF`;
+                                        const equipo = datosPiloto.Team || 'Unknown Team';
+                                        return `Driver: ${piloto} | Position: ${posicionReal} | Team: ${equipo}`;
                                     }
                                 }
-                            },
-                            scales: {
-                                y: {
-                                    reverse: false,
-                                    min: 1,
-                                    max: 20,
-                                    ticks: {
-                                        stepSize: 1,
-                                        precision: 0,
-                                        callback: function (value) {
-                                            return 21 - value;
-                                        }
-                                    },
-                                    title: { display: true, text: 'Position (1 = leader)' }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                reverse: false,
+                                min: 1,
+                                max: 20,
+                                ticks: {
+                                    stepSize: 1,
+                                    precision: 0,
+                                    callback: function (value) {
+                                        return 21 - value;
+                                    }
                                 },
-                                x: {
-                                    title: { display: true, text: 'Drivers' }
-                                }
+                                title: { display: true, text: 'Position (1 = leader)' }
+                            },
+                            x: {
+                                title: { display: true, text: 'Drivers' }
                             }
                         }
-                    });
-
-                    socket.on('nueva-vuelta', (data) => {
-                        window.ultimoEstadoPilotos = data.pilotos;
-                        document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
-
-                        // 👇 Logs: Best laps
-                        data.pilotos.forEach(p => {
-                            if (p.IsPersonalBest === 'Yes') {
-                                agregarLog(`🚀 ${p.Driver} set a new personal best: ${p.LapTime}`);
-                            }
-                        });
-
-                        // 👇 Logs: Retired drivers
-                        if (window.pilotosEnVueltaAnterior) {
-                            const retirados = window.pilotosEnVueltaAnterior.filter(prev =>
-                                !data.pilotos.some(p => p.Driver === prev.Driver)
-                            );
-
-                            retirados.forEach(p => {
-                                agregarLog(`❌ ${p.Driver} has retired from the race`);
-                            });
-                        }
-                        window.pilotosEnVueltaAnterior = data.pilotos;
-
-                        // Posiciones
-                        grafico.data.datasets[0].data = pilotosFijos.map(piloto => {
-                            const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                            return (datosPiloto && datosPiloto.Position) ? 21 - parseFloat(datosPiloto.Position) : null;
-                        });
-
-                        // Colores
-                        grafico.data.datasets[0].backgroundColor = pilotosFijos.map(piloto => {
-                            const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                            return datosPiloto ? obtenerColorPorEquipo(datosPiloto.Team) : 'rgba(180, 180, 180, 0.8)';
-                        });
-
-                        // Mejores vueltas (borde blanco)
-                        grafico.data.datasets[0].borderWidth = pilotosFijos.map(piloto => {
-                            const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                            return datosPiloto?.IsPersonalBest === 'Yes' ? 4 : 1;
-                        });
-
-                        grafico.data.datasets[0].borderColor = pilotosFijos.map(piloto => {
-                            const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                            return datosPiloto?.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)';
-                        });
-
-                        grafico.update();
-                    });
-
-                    // 👉 Función para agregar línea al log
-                    function agregarLog(texto) {
-                        const logList = document.getElementById('log-list');
-                        const item = document.createElement('li');
-                        item.textContent = texto;
-                        item.style.padding = '4px 0';
-                        item.style.borderBottom = '1px solid #eee';
-                        logList.prepend(item);
                     }
-                };
-            </script>
+                });
+
+                socket.on('nueva-vuelta', (data) => {
+                    window.ultimoEstadoPilotos = data.pilotos;
+                    document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
+                    agregarSeparadorDeVuelta(`Lap ${data.vuelta}`);
+
+
+                    // 👇 Logs: Best laps
+                    data.pilotos.forEach(p => {
+                        if (p.IsPersonalBest === 'Yes') {
+                            agregarLog(`🚀 ${p.Driver} set a new personal best: ${p.LapTime}`);
+                        }
+                    });
+
+                    // 👇 Logs: Retired drivers
+                    if (window.pilotosEnVueltaAnterior) {
+                        const retirados = window.pilotosEnVueltaAnterior.filter(prev =>
+                            !data.pilotos.some(p => p.Driver === prev.Driver)
+                        );
+
+                        retirados.forEach(p => {
+                            agregarLog(`❌ ${p.Driver} has retired from the race`);
+                        });
+                    }
+                    window.pilotosEnVueltaAnterior = data.pilotos;
+
+                    // Posiciones
+                    grafico.data.datasets[0].data = pilotosFijos.map(piloto => {
+                        const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
+                        return (datosPiloto && datosPiloto.Position) ? 21 - parseFloat(datosPiloto.Position) : null;
+                    });
+
+                    // Colores
+                    grafico.data.datasets[0].backgroundColor = pilotosFijos.map(piloto => {
+                        const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
+                        return datosPiloto ? obtenerColorPorEquipo(datosPiloto.Team) : 'rgba(180, 180, 180, 0.8)';
+                    });
+
+                    // Mejores vueltas (borde blanco)
+                    grafico.data.datasets[0].borderWidth = pilotosFijos.map(piloto => {
+                        const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
+                        return datosPiloto?.IsPersonalBest === 'Yes' ? 4 : 1;
+                    });
+
+                    grafico.data.datasets[0].borderColor = pilotosFijos.map(piloto => {
+                        const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
+                        return datosPiloto?.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)';
+                    });
+
+                    grafico.update();
+                });
+
+                // 👉 Función para agregar línea al log
+                function agregarLog(texto) {
+                    const logList = document.getElementById('log-list');
+                    const item = document.createElement('li');
+                    item.textContent = texto;
+                    item.style.padding = '4px 0';
+                    item.style.borderBottom = '1px solid #eee';
+                    logList.prepend(item);
+                }
+            };
+        </script>
 
 
         </div>
