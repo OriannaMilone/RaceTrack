@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
 
     <!--- basic page needs
@@ -54,28 +55,30 @@
 
         <div class="s-header__logo">
             <a href="index.html"> <!-- <h5>RaceTrack</h5> -->
-                <img src="images/logo.png" alt="Homepage" style="height: 125px; width: 100px;"> 
+                <img src="images/logo.png" alt="Homepage" style="height: 125px; width: 100px;">
             </a>
         </div>
 
         <div class="s-header__content">
-    
+
             <nav class="s-header__nav-wrap">
                 <ul class="s-header__nav">
                     <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
                     <li><a class="smoothscroll" href="#about" title="About">Races</a></li>
                     <li><a class="smoothscroll" href="#clients" title="About">About Us</a></li>
-                    <li><a href="https://f1tv.formula1.com/" title="Official F1 Site" target="_blank" rel="noopener noreferrer">Official F1</a></li>
+                    <li><a href="https://f1tv.formula1.com/" title="Official F1 Site" target="_blank"
+                            rel="noopener noreferrer">Official F1</a></li>
                 </ul>
             </nav> <!-- end s-header__nav-wrap -->
 
             <a href="images/F12025Calendar.jpg" class="btn btn--primary btn--small" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/>
+                    <path
+                        d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
                 </svg>
                 Race Calendar
             </a>
-            
+
 
         </div> <!-- end header-content -->
 
@@ -99,10 +102,10 @@
                 <div class="s-hero__content-about">
 
                     <p>
-                    Real time race predictions.<br>
-                    by Orianna Milone Salas.
+                        Real time race predictions.<br>
+                        by Orianna Milone Salas.
                     </p>
-    
+
                     <!-- <footer>
                         <div class="s-hero__content-social">
                             <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
@@ -117,8 +120,12 @@
         </div>
 
         <div class="s-hero__video">
-            <a class="s-hero__video-link" href="https://player.vimeo.com/video/117310401?color=01aef0&amp;title=0&amp;byline=0&amp;portrait=0" data-lity="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21 12l-18 12v-24z"/></svg>
+            <a class="s-hero__video-link"
+                href="https://player.vimeo.com/video/117310401?color=01aef0&amp;title=0&amp;byline=0&amp;portrait=0"
+                data-lity="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M21 12l-18 12v-24z" />
+                </svg>
                 <span class="s-hero__video-text">Play Video</span>
             </a>
         </div>
@@ -143,136 +150,162 @@
                 <h1 style="margin: 0;">Real-Time Race Simulation</h1>
                 <h3 id="vuelta-titulo" style="margin-top: 5px; font-weight: normal;">Waiting for simulation data...</h3>
             </div>
-              
+
             <canvas id="graficoCarrera" width="800" height="400"></canvas>
-            
             <script src="/socket.io/socket.io.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            
+            <!-- Race Logs -->
+            <div id="race-logs" style="margin-top: 30px;">
+                <h3>Race Events</h3>
+                <ul id="log-list" style="list-style: none; padding-left: 0; font-family: monospace; font-size: 0.95em;">
+                </ul>
+            </div>
+
             <script>
                 window.onload = () => {
-                  const socket = io();
-                  const ctx = document.getElementById('graficoCarrera').getContext('2d');
-                
-                  const pilotosFijos = [
-                    'VET', 'HAM', 'VER', 'BOT', 'PER', 'OCO', 'GRO', 'MAG', 'GAS',
-                    'ERI', 'SAI', 'STR', 'RIC', 'HAR', 'LEC', 'RAI', 'VAN', 'ALO',
-                    'VAN', 'HUL'
+                    const socket = io();
+                    const ctx = document.getElementById('graficoCarrera').getContext('2d');
+
+                    const pilotosFijos = [
+                        'VET', 'HAM', 'VER', 'BOT', 'PER', 'OCO', 'GRO', 'MAG', 'GAS',
+                        'ERI', 'SAI', 'STR', 'RIC', 'HAR', 'LEC', 'RAI', 'VAN', 'ALO',
+                        'VAN', 'HUL'
                     ];
-                
+
                     const obtenerColorPorEquipo = (equipo) => {
                         const coloresPorEquipo = {
-                        'Mercedes': 'rgba(0, 210, 190, 0.7)',
-                        'Ferrari': 'rgba(220, 0, 0, 0.7)',
-                        'Red Bull Racing': 'rgba(0, 0, 255, 0.7)',
-                        'McLaren': 'rgba(255, 128, 0, 0.7)',
-                        'Renault': 'rgba(255, 255, 0, 0.7)',
-                        'Racing Point': 'rgba(255, 105, 180, 0.7)',
-                        'Williams': 'rgba(0, 180, 255, 0.7)',
-                        'Toro Rosso': 'rgba(0, 0, 153, 0.7)',
-                        'Haas F1 Team': 'rgba(128, 128, 128, 0.7)',
-                        'Sauber': 'rgba(102, 0, 204, 0.7)',
-                    };
-                    
+                            'Mercedes': 'rgba(0, 210, 190, 0.7)',
+                            'Ferrari': 'rgba(220, 0, 0, 0.7)',
+                            'Red Bull Racing': 'rgba(0, 0, 255, 0.7)',
+                            'McLaren': 'rgba(255, 128, 0, 0.7)',
+                            'Renault': 'rgba(255, 255, 0, 0.7)',
+                            'Racing Point': 'rgba(255, 105, 180, 0.7)',
+                            'Williams': 'rgba(0, 180, 255, 0.7)',
+                            'Toro Rosso': 'rgba(0, 0, 153, 0.7)',
+                            'Haas F1 Team': 'rgba(128, 128, 128, 0.7)',
+                            'Sauber': 'rgba(102, 0, 204, 0.7)'
+                        };
+
                         return coloresPorEquipo[equipo] || 'gray';
                     };
-                  
-                    
-                  const grafico = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: pilotosFijos,
-                        datasets: [{
-                          label: 'Posición en carrera',
-                          data: new Array(pilotosFijos.length).fill(null),
-                          backgroundColor: pilotosFijos.map(p => 'gray'),
-                          borderWidth: 1
-                        }]
-                      },
-                    options: {
-                        responsive: true,
-                        animation: {
-                            duration: 500,
-                            easing: 'easeOutQuart'
-                          },
-                        plugins: {
-                          legend: { display: false },
-                          tooltip: {
-                            callbacks: {
-                                label: function (ctx) {
-                                    const valor = ctx.parsed.y;
-                                    const posicionReal = 21 - valor;
-                                    const piloto = ctx.chart.data.labels[ctx.dataIndex];
-                                  
-                                    const datosPiloto = window.ultimoEstadoPilotos?.find(p => p.Driver === piloto);
-                                    const equipo = datosPiloto?.Team || 'Equipo desconocido';
-                                  
-                                    return `Driver: ${piloto} | Position: ${posicionReal} | Team: ${equipo}`;
-                                  }
-                                  
-                            }                          
-                          }
+
+                    const grafico = new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                            labels: pilotosFijos,
+                            datasets: [{
+                                label: 'Race Position',
+                                data: new Array(pilotosFijos.length).fill(null),
+                                backgroundColor: pilotosFijos.map(p => 'gray'),
+                                borderWidth: 1
+                            }]
                         },
-                        scales: {
-                            y: {
-                                reverse: false,
-                                min: 1,
-                                max: 20,
-                                ticks: {
-                                  stepSize: 1,
-                                  precision: 0,
-                                  callback: function (value) {
-                                    return 21 - value; 
-                                  }
+                        options: {
+                            responsive: true,
+                            animation: {
+                                duration: 500,
+                                easing: 'easeOutQuart'
+                            },
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    callbacks: {
+                                        label: function (ctx) {
+                                            const valor = ctx.parsed.y;
+                                            const posicionReal = 21 - valor;
+                                            const piloto = ctx.chart.data.labels[ctx.dataIndex];
+                                            const datosPiloto = window.ultimoEstadoPilotos?.find(p => p.Driver === piloto);
+
+                                            if (!datosPiloto) return `Driver: ${piloto} | DNF`;
+                                            const equipo = datosPiloto.Team || 'Unknown Team';
+                                            return `Driver: ${piloto} | Position: ${posicionReal} | Team: ${equipo}`;
+                                        }
+                                    }
+                                }
+                            },
+                            scales: {
+                                y: {
+                                    reverse: false,
+                                    min: 1,
+                                    max: 20,
+                                    ticks: {
+                                        stepSize: 1,
+                                        precision: 0,
+                                        callback: function (value) {
+                                            return 21 - value;
+                                        }
+                                    },
+                                    title: { display: true, text: 'Position (1 = leader)' }
                                 },
-                                title: { display: true, text: 'Position (1 = leader)' }
-                              },
-                          x: {
-                            title: { display: true, text: 'Drivers' }
-                          }
+                                x: {
+                                    title: { display: true, text: 'Drivers' }
+                                }
+                            }
                         }
-                      }
-                      
-                  });
-                
-                  socket.on('nueva-vuelta', (data) => {
-                    window.ultimoEstadoPilotos = data.pilotos;
-                    document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
-                  
-                    grafico.data.datasets[0].data = pilotosFijos.map(piloto => {
-                      const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                      if (datosPiloto && datosPiloto.Position !== null && !isNaN(datosPiloto.Position)) {
-                        return 21 - parseFloat(datosPiloto.Position);
-                      } else {
-                        return null;
-                      }
                     });
-                  
-                    grafico.data.datasets[0].backgroundColor = pilotosFijos.map(piloto => {
-                      const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                      if (datosPiloto) {
-                        return obtenerColorPorEquipo(datosPiloto.Team);
-                      } else {
-                        return 'gray';
-                      }
+
+                    socket.on('nueva-vuelta', (data) => {
+                        window.ultimoEstadoPilotos = data.pilotos;
+                        document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
+
+                        // 👇 Logs: Best laps
+                        data.pilotos.forEach(p => {
+                            if (p.IsPersonalBest === 'Yes') {
+                                agregarLog(`🚀 ${p.Driver} set a new personal best: ${p.LapTime}`);
+                            }
+                        });
+
+                        // 👇 Logs: Retired drivers
+                        if (window.pilotosEnVueltaAnterior) {
+                            const retirados = window.pilotosEnVueltaAnterior.filter(prev =>
+                                !data.pilotos.some(p => p.Driver === prev.Driver)
+                            );
+
+                            retirados.forEach(p => {
+                                agregarLog(`❌ ${p.Driver} has retired from the race`);
+                            });
+                        }
+                        window.pilotosEnVueltaAnterior = data.pilotos;
+
+                        // Posiciones
+                        grafico.data.datasets[0].data = pilotosFijos.map(piloto => {
+                            const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
+                            return (datosPiloto && datosPiloto.Position) ? 21 - parseFloat(datosPiloto.Position) : null;
+                        });
+
+                        // Colores
+                        grafico.data.datasets[0].backgroundColor = pilotosFijos.map(piloto => {
+                            const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
+                            return datosPiloto ? obtenerColorPorEquipo(datosPiloto.Team) : 'rgba(180, 180, 180, 0.8)';
+                        });
+
+                        // Mejores vueltas (borde blanco)
+                        grafico.data.datasets[0].borderWidth = pilotosFijos.map(piloto => {
+                            const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
+                            return datosPiloto?.IsPersonalBest === 'Yes' ? 4 : 1;
+                        });
+
+                        grafico.data.datasets[0].borderColor = pilotosFijos.map(piloto => {
+                            const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
+                            return datosPiloto?.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)';
+                        });
+
+                        grafico.update();
                     });
-                  
-                    grafico.data.datasets[0].borderWidth = pilotosFijos.map(piloto => {
-                      const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                      return datosPiloto?.IsPersonalBest === 'Yes' ? 4 : 1;
-                    });
-                  
-                    grafico.data.datasets[0].borderColor = pilotosFijos.map(piloto => {
-                      const datosPiloto = data.pilotos.find(p => p.Driver === piloto);
-                      return datosPiloto?.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)';
-                    });
-                  
-                    grafico.update();
-                  });
-                  
+
+                    // 👉 Función para agregar línea al log
+                    function agregarLog(texto) {
+                        const logList = document.getElementById('log-list');
+                        const item = document.createElement('li');
+                        item.textContent = texto;
+                        item.style.padding = '4px 0';
+                        item.style.borderBottom = '1px solid #eee';
+                        logList.prepend(item);
+                    }
                 };
-                </script>
-                
+            </script>
+
+
         </div>
 
     </section> <!-- end s-Race -->
@@ -383,8 +416,8 @@
                     free to check them out.
                 </h1>
             </div> -->
-        <!--</div>  end s-portfolio__top-->
-<!-- 
+    <!--</div>  end s-portfolio__top-->
+    <!-- 
         <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
 
             <div class="column" data-aos="fade-up">
@@ -404,8 +437,8 @@
                         <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                     </div>
                 </div> -->
-            <!--</div>  end column -->
-            <!-- <div class="column" data-aos="fade-up">
+    <!--</div>  end column -->
+    <!-- <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-music-life.jpg" title="Music Life" data-size="1050x700">
@@ -422,8 +455,8 @@
                         <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                     </div>
                 </div> -->
-            <!--</div>  end column -->
-            <!-- <div class="column" data-aos="fade-up">
+    <!--</div>  end column -->
+    <!-- <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-oi-logo.jpg" Title="OI Logo" data-size="1050x700">
@@ -440,8 +473,8 @@
                         <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                     </div>
                 </div> -->
-             <!--</div> end column -->
-            <!-- <div class="column" data-aos="fade-up">
+    <!--</div> end column -->
+    <!-- <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-corrugated-sheets.jpg" title="Corrugated Sheets" data-size="1050x700">
@@ -458,8 +491,8 @@
                         <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                     </div>
                 </div> -->
-            <!--</div>  end column -->
-            <!-- <div class="column" data-aos="fade-up">
+    <!--</div>  end column -->
+    <!-- <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="Sand Dunes" data-size="1050x700">
@@ -478,8 +511,8 @@
                         <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                     </div>
                 </div> -->
-             <!--</div> end column -->
-            <!-- <div class="column" data-aos="fade-up">
+    <!--</div> end column -->
+    <!-- <div class="column" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
                         <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="The Lamp" data-size="1050x700">
@@ -496,11 +529,11 @@
                         <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
                     </div>
                 </div> -->
-             <!--</div> end column -->
+    <!--</div> end column -->
 
-         <!--</div> folio-list -->
+    <!--</div> folio-list -->
 
-     <!--</section> end s-portfolio -- 
+    <!--</section> end s-portfolio -- 
 
 
     <!-- clients
@@ -510,12 +543,13 @@
         <div class="row narrower s-clients__top h-text-center">
             <div class="column">
                 <h1 class="display-1" data-aos="fade-up">
-                Learn about the student, the university journey, and the idea that sparked this racing prediction tool.
+                    Learn about the student, the university journey, and the idea that sparked this racing prediction
+                    tool.
                 </h1>
             </div>
         </div> <!-- s-clients__top -->
 
-        
+
 
         <div class="row testimonials collapse">
 
@@ -525,7 +559,11 @@
 
                     <div class="testimonial-slider__slide">
                         <p>
-                         I am a final-year Computer Engineering student with a lifelong passion for Formula 1—something deeply rooted in my family. I’m fascinated by data and how it can be used to understand, predict, and solve real-world problems. My inspiration for this project comes from the desire to harness the complexity of race telemetry and transform it into accessible, intelligent solutions that bring insight and value to the sport.
+                            I am a final-year Computer Engineering student with a lifelong passion for Formula
+                            1—something deeply rooted in my family. I’m fascinated by data and how it can be used to
+                            understand, predict, and solve real-world problems. My inspiration for this project comes
+                            from the desire to harness the complexity of race telemetry and transform it into
+                            accessible, intelligent solutions that bring insight and value to the sport.
                         </p>
                         <div class="testimonial-slider__author">
                             <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
@@ -535,11 +573,15 @@
                             </cite>
                         </div>
                     </div> <!-- end testimonials__slide -->
-    
+
                     <div class="testimonial-slider__slide">
                         <p>
-                            The university CEU San Pablo is a private Catholic university located in Madrid, Spain. Established in 1993, it is part of the CEU educational group, one of Spain's largest and most traditional private educational institutions, founded in 1933 by the Catholic Association of Propagandists (ACdP).
-                            The Higher Polytechnic School at Universidad CEU San Pablo actively promotes research and the development of final degree projects that integrate innovative and complex tools. 
+                            The university CEU San Pablo is a private Catholic university located in Madrid, Spain.
+                            Established in 1993, it is part of the CEU educational group, one of Spain's largest and
+                            most traditional private educational institutions, founded in 1933 by the Catholic
+                            Association of Propagandists (ACdP).
+                            The Higher Polytechnic School at Universidad CEU San Pablo actively promotes research and
+                            the development of final degree projects that integrate innovative and complex tools.
                         </p>
                         <div class="testimonial-slider__author">
                             <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
@@ -549,10 +591,14 @@
                             </cite>
                         </div>
                     </div> <!-- end testimonials__slide -->
-    
+
                     <div class="testimonial-slider__slide">
                         <p>
-                            This project was developed as part of a Final Degree Project in Computer Engineering, with the goal of applying predictive techniques to real-time motorsport race analysis. By leveraging time series models and historical data, the platform aims to forecast drivers' future positions and offer a dynamic view of race progression. It’s a blend of motorsport passion, data analysis, and web development.
+                            This project was developed as part of a Final Degree Project in Computer Engineering, with
+                            the goal of applying predictive techniques to real-time motorsport race analysis. By
+                            leveraging time series models and historical data, the platform aims to forecast drivers'
+                            future positions and offer a dynamic view of race progression. It’s a blend of motorsport
+                            passion, data analysis, and web development.
                         </p>
                         <div class="testimonial-slider__author">
                             <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
@@ -564,7 +610,7 @@
                     </div> <!-- end testimonials__slide -->
 
                 </div> <!-- end testimonial slider -->
-                
+
             </div> <!-- end column -->
 
         </div> <!-- end row -->
@@ -573,9 +619,10 @@
                 <!-- <div class="clients" data-aos="fade-up"> -->
                 <div class="clients">
                     <p>... for further and technical information check the repository...</p>
-                    <a href="https://github.com/OriannaMilone/RaceTrack" target="_blank" rel="noopener noreferrer"class="clients__slide"><img src="images/icons/clients/github.svg" /></a>
+                    <a href="https://github.com/OriannaMilone/RaceTrack" target="_blank" rel="noopener noreferrer"
+                        class="clients__slide"><img src="images/icons/clients/github.svg" /></a>
                     <!-- <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/spotify.svg" /></a -->
-                 </div> <!--end clients -->
+                </div> <!--end clients -->
             </div> <!-- end column -->
         </div> <!-- end clients-outer -->
 
@@ -590,7 +637,7 @@
             <div class="column">
                 <h3 class="h6">Get In Touch</h3>
                 <h1 class="display-1">
-                Got suggestions or feedback? Feel free to reach out and help us make this project even better.
+                    Got suggestions or feedback? Feel free to reach out and help us make this project even better.
                 </h1>
             </div>
         </div> <!-- s-footer__top -->
@@ -603,7 +650,7 @@
             </div>
         </div>
 
-    </section>  <!-- end s-contact -->
+    </section> <!-- end s-contact -->
 
 
     <!-- footer
@@ -615,20 +662,20 @@
                 <div class="row">
                     <div class="column large-7 tab-12 s-footer__block">
                         <h4 class="h6">Where to Find Us</h4>
-        
+
                         <p>
-                        Universidad CEU San Pablo. <br>
-                        Escuela Politécnica Superior, Av. de Montepríncipe,<br>
-                        28668 Boadilla del Monte, MAD <br>
-                        <a href="tel:197-543-2345">+197 543 2345</a>
+                            Universidad CEU San Pablo. <br>
+                            Escuela Politécnica Superior, Av. de Montepríncipe,<br>
+                            28668 Boadilla del Monte, MAD <br>
+                            <a href="tel:197-543-2345">+197 543 2345</a>
                         </p>
                     </div>
-        
+
                     <div class="column large-5 tab-12 s-footer__block">
                         <h4 class="h6">More information</h4 class="h6">
-        
+
                         <ul class="s-footer__list">
-                            <li><a  href="https://github.com/OriannaMilone/RaceTrack" target="_blank">Github</a></li>
+                            <li><a href="https://github.com/OriannaMilone/RaceTrack" target="_blank">Github</a></li>
                             <li><a href="#0">Thesis Documentation</a></li>
                         </ul>
                     </div>
@@ -639,7 +686,7 @@
                 <a href="mailto:#0" class="btn h-full-width">Let's Talk</a>
 
                 <div class="ss-copyright">
-                    <span>Copyright Flare 2020</span> 
+                    <span>Copyright Flare 2020</span>
                     <span>Design by <a href="https://www.styleshout.com/" target="_blank">StyleShout</a></span>
                 </div>
             </div>
@@ -652,7 +699,7 @@
 
         </div>
     </footer>
-    
+
 
     <!-- photoswipe background
     ================================================== -->
@@ -669,9 +716,11 @@
 
             <div class="pswp__ui pswp__ui--hidden">
                 <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
                     <div class="pswp__preloader">
                         <div class="pswp__preloader__icn">
                             <div class="pswp__preloader__cut">
@@ -682,8 +731,8 @@
                 </div>
                 <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
                     <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
                 <div class="pswp__caption">
                     <div class="pswp__caption__center"></div>
                 </div>
