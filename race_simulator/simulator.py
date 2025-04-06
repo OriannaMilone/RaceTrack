@@ -68,7 +68,8 @@ def main():
             }
 
             # Esperar un pequeño delay antes del primer envío (por seguridad)
-            time.sleep(0.1)
+            # time.sleep(0.1)
+            time.sleep(2) 
             print(f"📤 Enviando vuelta {vuelta} al servidor...\n")
             sio.emit('nueva-vuelta', vuelta_completa, namespace='/simulador')
 
