@@ -1,12 +1,14 @@
+from prediction_model.randomFRegressorModel.predict_interface import predecir_siguiente_vuelta
+from prediction_model.randomFRegressorModel.predict_next_lap import load_model
+from race_simulator.core.carrera_simulada import SimuladorDeCarrera
+from core.carrera import Carrera
+from pathlib import Path
+
 import socketio
 import time
-from core.carrera import Carrera
-from race_simulator.core.carrera_simulada import SimuladorDeCarrera
-from pathlib import Path
 import pandas as pd
 
 sio = socketio.Client()
-
 
 @sio.event(namespace='/simulador')
 def connect():
@@ -32,12 +34,13 @@ def formatear_lap_time(td):
     return f"{minutos:02}:{segundos:02}.{milisegundos:03}"
 
 def main():
-    # Conectar justo antes de simular
     sio.connect('http://localhost:3000', namespaces=['/simulador'])
 
     csv_path = Path(__file__).resolve().parent.parent / "SPA_DATA" / "full_data_race" / "SPA_2018_full_H_data.csv"
     df = pd.read_csv(csv_path)
 
+    modelo = load_model() 
+     
     carrera = Carrera(df)
     simulador = SimuladorDeCarrera(carrera, tiempo_entre_vueltas=1)
 
@@ -46,6 +49,14 @@ def main():
     try:
         while not simulador.esta_finalizada():
             datos_vuelta = simulador.simular_siguiente_vuelta()
+            
+            df_pred = predecir_siguiente_vuelta(datos_vuelta, modelo)
+            if not df_pred.empty:
+                df_pred["PredictedFinalPosition"] = df_pred["PredictedRank"].astype(int)
+                print("🔮 Predicción de posiciones para la próxima vuelta:")
+                print(df_pred[["Driver", "PredictedFinalPosition"]]
+                    .sort_values("PredictedFinalPosition").to_string(index=False))
+            
             vuelta = simulador.get_vuelta_actual()
 
             print(f"\nVuelta {vuelta}:")
@@ -69,9 +80,18 @@ def main():
 
             # Esperar un pequeño delay antes del primer envío (por seguridad)
             # time.sleep(0.1)
-            time.sleep(2) 
+            time.sleep(1) 
             print(f"📤 Enviando vuelta {vuelta} al servidor...\n")
             sio.emit('nueva-vuelta', vuelta_completa, namespace='/simulador')
+            
+            # Enviar predicción de la próxima vuelta
+            if not df_pred.empty:
+                prediccion_para_frontend = df_pred[["Driver", "PredictedFinalPosition"]].sort_values("PredictedFinalPosition")
+                sio.emit('prediccion-vuelta', {
+                    "vuelta": vuelta + 1,  # porque es la predicción de la siguiente
+                    "predicciones": prediccion_para_frontend.to_dict(orient="records")
+                }, namespace='/simulador')
+
 
 
     except StopIteration as e:

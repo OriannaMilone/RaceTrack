@@ -277,11 +277,6 @@
                 const socket = io();
                 const ctx = document.getElementById('graficoCarrera').getContext('2d');
 
-                const pilotosFijos = [
-                    'VET', 'HAM', 'VER', 'BOT', 'PER', 'OCO', 'GRO', 'MAG', 'GAS',
-                    'ERI', 'SAI', 'STR', 'RIC', 'HAR', 'LEC', 'RAI', 'VAN', 'ALO',
-                    'VAN', 'HUL'
-                ];
 
                 const obtenerColorPorEquipo = (equipo) => {
                     const coloresPorEquipo = {
@@ -310,6 +305,14 @@
                             backgroundColor: [],
                             borderWidth: 1,
                             borderColor: []
+                        },
+                        {
+                            label: 'Predicted Next Lap',
+                            data: [],
+                            backgroundColor: 'rgba(0, 255, 255, 0.3)',
+                            borderColor: 'rgba(0, 255, 255, 0.6)',
+                            borderWidth: 1,
+                            borderColor: 'rgba(200,200,200,0.5)',
                         }]
                     },
                     options: {
@@ -356,6 +359,40 @@
                     }
                 });
 
+                socket.on('prediccion-vuelta', (data) => {
+                    if (!data || !data.predicciones || data.predicciones.length === 0) {
+                        console.warn("⚠️ No llegaron predicciones válidas:", data);
+                        return;
+                    }
+                
+                    const predicciones = data.predicciones;
+                
+                    agregarSeparadorDeVuelta(`🔮 Predicción para vuelta ${data.vuelta}`);
+                    predicciones.forEach(p => {
+                        agregarLog(`• ${p.Driver} → Predicted P${p.PredictedFinalPosition}`);
+                    });
+                
+                    // Guardar predicciones para depuración
+                    console.log("📥 Predicciones recibidas:", predicciones);
+                    window.prediccionesUltimaVuelta = predicciones;
+                
+                    const pilotos = predicciones.map(p => p.Driver);
+                    const posicionesPredichas = predicciones.map(p => 21 - parseFloat(p.PredictedFinalPosition));
+                
+                    const ordenActual = grafico.data.labels;
+                    const prediccionesOrdenadas = ordenActual.map(driver => {
+                        const idx = pilotos.indexOf(driver);
+                        return idx !== -1 ? posicionesPredichas[idx] : null;
+                    });
+                
+                    console.log("🎯 Predicciones ordenadas:", prediccionesOrdenadas);
+                
+                    grafico.data.datasets[1].data = prediccionesOrdenadas;
+                    grafico.update();
+                });
+                
+                
+                
                 socket.on('nueva-vuelta', (data) => {
                     window.ultimoEstadoPilotos = data.pilotos;
                     document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
@@ -396,6 +433,8 @@
                     grafico.data.datasets[0].borderWidth = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? 4 : 1);
                     grafico.data.datasets[0].borderColor = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)');
                   
+                    grafico.data.datasets[1].data = [];
+
                     grafico.update();
                   });
             };

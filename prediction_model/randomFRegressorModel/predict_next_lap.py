@@ -1,9 +1,16 @@
-import pandas as pd
-import joblib
 from prediction_model.randomFRegressorModel.visualize_prediction import visualizar_orden_real_vs_predicho
-# from visualize_prediction import visualizar_orden_real_vs_predicho
+import pandas as pd
+import numpy as np
+import joblib
+import os
 
-def load_model(path="./rf_model.pkl"):
+def load_model(path=None):
+    if path is None:
+        path = os.path.join(os.path.dirname(__file__), "rf_model.pkl")
+    
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"⚠️ El modelo no se encontró en: {path}")
+    
     return joblib.load(path)
 
 def load_and_prepare_vuelta(df, lap_number):
@@ -37,7 +44,9 @@ def predecir_vuelta(modelo, df_vuelta):
     df_features = df_vuelta[modelo.feature_names_in_]
     pred = modelo.predict(df_features)
 
+    # df_vuelta["PredictedPosition"] = pred.round().astype(int)
     df_vuelta["PredictedPosition"] = pred
+    # df_vuelta["PredictedPosition"] = np.floor(pred).astype(int)
     df_vuelta["PredictedRank"] = df_vuelta["PredictedPosition"].rank(method="first")
     return df_vuelta.sort_values("PredictedRank")
 

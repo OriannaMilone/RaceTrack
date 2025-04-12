@@ -7,7 +7,6 @@ def visualizar_orden_real_vs_predicho(df_pred):
     orden_real = df_pred["Position_curr"]
     orden_pred = df_pred["PredictedRank"]
 
-    # Gráfico de líneas entre ambas posiciones
     for i in range(len(pilotos)):
         ax.plot([0, 1], [orden_real.iloc[i], orden_pred.iloc[i]], marker='o', label=pilotos.iloc[i])
 
