@@ -1,0 +1,44 @@
+import pandas as pd
+import joblib
+from prediction_model.randomFRegressorModel.visualize_prediction import visualizar_orden_real_vs_predicho
+# from visualize_prediction import visualizar_orden_real_vs_predicho
+
+def load_model(path="./rf_model.pkl"):
+    return joblib.load(path)
+
+def load_and_prepare_vuelta(df, lap_number):
+    df_vuelta = df[df["LapNumber"] == lap_number].copy()
+
+    df_vuelta["LapTime"] = pd.to_timedelta(df_vuelta["LapTime"], errors="coerce").dt.total_seconds().fillna(0)
+    df_vuelta["PitStopDuration"] = pd.to_timedelta(df_vuelta["PitStopDuration"], errors="coerce").dt.total_seconds().fillna(0)
+    df_vuelta["GridPosition"] = df_vuelta["GridPosition"].fillna(0).astype(int)
+    df_vuelta["Position"] = df_vuelta["Position"].fillna(0).astype(int)
+    df_vuelta["IsPersonalBest"] = df_vuelta["IsPersonalBest"].fillna("No")
+    df_vuelta["IsPersonalBest"] = df_vuelta["IsPersonalBest"].apply(lambda x: 1 if str(x).lower() == "yes" else 0)
+
+    df_vuelta = df_vuelta.rename(columns={
+        "LapTime": "LapTime_curr",
+        "Compound": "Compound_curr",
+        "IsPersonalBest": "IsPersonalBest_curr",
+        "Position": "Position_curr",
+        "PitStopDuration": "PitStopDuration_curr",
+        "GridPosition": "GridPosition_curr"
+    })
+
+    df_vuelta = pd.get_dummies(df_vuelta, columns=["Compound_curr"], prefix="Compound")
+
+    return df_vuelta
+
+def predecir_vuelta(modelo, df_vuelta):
+    for col in modelo.feature_names_in_:
+        if col not in df_vuelta.columns:
+            df_vuelta[col] = 0
+
+    df_features = df_vuelta[modelo.feature_names_in_]
+    pred = modelo.predict(df_features)
+
+    df_vuelta["PredictedPosition"] = pred
+    df_vuelta["PredictedRank"] = df_vuelta["PredictedPosition"].rank(method="first")
+    return df_vuelta.sort_values("PredictedRank")
+
+

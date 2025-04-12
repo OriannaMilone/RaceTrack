@@ -1,5 +1,5 @@
-from preprocessing import preprocess_dataframe
-from prophet_model import train_prophet_for_driver, predict_with_prophet
+from prediction_model.prophetModel.preprocessing import preprocess_dataframe
+from prediction_model.prophetModel.prophet_model import train_prophet_for_driver, predict_with_prophet
 from evaluation import evaluate_predictions
 import pandas as pd
 import matplotlib.pyplot as plt
