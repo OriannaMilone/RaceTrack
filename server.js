@@ -34,7 +34,7 @@ io.of('/simulador').on('connection', (socket) => {
 
   socket.on('prediccion-vuelta', (data) => {
       console.log(`🔮 Predicción recibida para vuelta ${data.vuelta}`);
-      io.of('/').emit('prediccion-vuelta', data);  // 👈 Aquí agregalo
+      io.of('/').emit('prediccion-vuelta', data);  
   });
 
 });

@@ -318,6 +318,13 @@
                 console.log("✅ Gráfico actualizado con predicciones");
             }
             
+            function crearDegradadoDesdeColor(ctx, colorBase) {
+                const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+                gradient.addColorStop(0, colorBase.replace('0.7', '0.4'));
+                gradient.addColorStop(1, colorBase.replace('0.7', '1'));
+                return gradient;
+            }
+            
 
             
             window.onload = () => {
@@ -325,6 +332,10 @@
 
                 const socket = io();
                 const ctx = document.getElementById('graficoCarrera').getContext('2d');
+
+                const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+                gradient.addColorStop(0, 'rgba(190, 120, 255, 0.6)');
+                gradient.addColorStop(1, 'rgba(60, 0, 90, 0.6)');
 
                 const obtenerColorPorEquipo = (equipo) => {
                     const coloresPorEquipo = {
@@ -357,7 +368,7 @@
                         {
                             label: 'Predicted Next Lap',
                             data: [],
-                            backgroundColor: 'rgba(0, 255, 255, 0.3)',
+                            backgroundColor: gradient,
                             borderColor: 'rgba(0, 255, 255, 0.6)',
                             borderWidth: 1,
                             borderColor: 'rgba(200,200,200,0.5)',
