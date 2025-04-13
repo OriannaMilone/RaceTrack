@@ -270,13 +270,61 @@
                 item.style.textAlign = 'center';
                 item.style.borderRadius = '5px';
             }
-              
+            
+            function actualizarPredicciones(data, grafico) {
+                console.log("🛬 Evento 'prediccion-vuelta' recibido. Data cruda:", data);
+            
+                if (!data || !data.predicciones || data.predicciones.length === 0) {
+                    console.warn("⚠️ No llegaron predicciones válidas:", data);
+                    return;
+                }
+            
+                const predicciones = data.predicciones;
+            
+                console.log(`📊 Procesando ${predicciones.length} predicciones para la vuelta ${data.vuelta}`);
+                agregarSeparadorDeVuelta(`🔮 Predicción para vuelta ${data.vuelta}`);
+            
+                predicciones.forEach(p => {
+                    agregarLog(`• ${p.Driver} → Predicted P${p.PredictedFinalPosition}`);
+                });
+            
+                console.log("📥 Predicciones crudas:", predicciones);
+            
+                // Normalizar nombres
+                const normalizar = (nombre) => (nombre || '').trim().toUpperCase();
+            
+                const pilotos = predicciones.map(p => normalizar(p.Driver));
+                const posicionesPredichas = predicciones.map(p => 21 - parseFloat(p.PredictedFinalPosition));
+            
+                console.log("🧪 Pilotos normalizados:", pilotos);
+                console.log("🧪 Posiciones predichas invertidas:", posicionesPredichas);
+            
+                const ordenActual = grafico.data.labels.map(normalizar);
+                console.log("🧾 Orden actual de labels en gráfico:", ordenActual);
+            
+                const prediccionesOrdenadas = ordenActual.map(driver => {
+                    const idx = pilotos.indexOf(driver);
+                    if (idx === -1) {
+                        console.warn(`❌ Piloto '${driver}' no encontrado en las predicciones`);
+                    }
+                    return idx !== -1 ? posicionesPredichas[idx] : null;
+                });
+            
+                console.log("🎯 Predicciones ordenadas:", prediccionesOrdenadas);
+            
+                grafico.data.datasets[1].data = prediccionesOrdenadas;
+                grafico.update();
+            
+                console.log("✅ Gráfico actualizado con predicciones");
+            }
+            
+
+            
             window.onload = () => {
                 const ULTIMA_VUELTA = 44; 
 
                 const socket = io();
                 const ctx = document.getElementById('graficoCarrera').getContext('2d');
-
 
                 const obtenerColorPorEquipo = (equipo) => {
                     const coloresPorEquipo = {
@@ -358,41 +406,11 @@
                         }
                     }
                 });
-
+                
                 socket.on('prediccion-vuelta', (data) => {
-                    if (!data || !data.predicciones || data.predicciones.length === 0) {
-                        console.warn("⚠️ No llegaron predicciones válidas:", data);
-                        return;
-                    }
-                
-                    const predicciones = data.predicciones;
-                
-                    agregarSeparadorDeVuelta(`🔮 Predicción para vuelta ${data.vuelta}`);
-                    predicciones.forEach(p => {
-                        agregarLog(`• ${p.Driver} → Predicted P${p.PredictedFinalPosition}`);
-                    });
-                
-                    // Guardar predicciones para depuración
-                    console.log("📥 Predicciones recibidas:", predicciones);
-                    window.prediccionesUltimaVuelta = predicciones;
-                
-                    const pilotos = predicciones.map(p => p.Driver);
-                    const posicionesPredichas = predicciones.map(p => 21 - parseFloat(p.PredictedFinalPosition));
-                
-                    const ordenActual = grafico.data.labels;
-                    const prediccionesOrdenadas = ordenActual.map(driver => {
-                        const idx = pilotos.indexOf(driver);
-                        return idx !== -1 ? posicionesPredichas[idx] : null;
-                    });
-                
-                    console.log("🎯 Predicciones ordenadas:", prediccionesOrdenadas);
-                
-                    grafico.data.datasets[1].data = prediccionesOrdenadas;
-                    grafico.update();
+                    actualizarPredicciones(data, grafico);
                 });
-                
-                
-                
+                                
                 socket.on('nueva-vuelta', (data) => {
                     window.ultimoEstadoPilotos = data.pilotos;
                     document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;

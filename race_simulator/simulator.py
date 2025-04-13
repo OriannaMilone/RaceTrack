@@ -84,6 +84,10 @@ def main():
             print(f"📤 Enviando vuelta {vuelta} al servidor...\n")
             sio.emit('nueva-vuelta', vuelta_completa, namespace='/simulador')
             
+            
+            print("🔎 Predicciones generadas por el modelo:")
+            print(df_pred)
+
             # Enviar predicción de la próxima vuelta
             if not df_pred.empty:
                 prediccion_para_frontend = df_pred[["Driver", "PredictedFinalPosition"]].sort_values("PredictedFinalPosition")
@@ -91,6 +95,9 @@ def main():
                     "vuelta": vuelta + 1,  # porque es la predicción de la siguiente
                     "predicciones": prediccion_para_frontend.to_dict(orient="records")
                 }, namespace='/simulador')
+                print("📡 Emitiendo predicción:")
+                print(prediccion_para_frontend.to_dict(orient="records"))
+
 
 
 
