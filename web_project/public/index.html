@@ -180,6 +180,12 @@
                 <h3 id="vuelta-titulo" style="margin-top: 5px; font-weight: normal;">Waiting for simulation data...</h3>
             </div>
 
+            <div style="margin-bottom: 15px;">
+                <button id="toggle-predicciones-btn" onclick="togglePredicciones()" style="padding: 8px 14px; font-size: 1rem;">
+                    Hide Predictions
+                </button>
+            </div>
+
             <canvas id="graficoCarrera" width="800" height="400"></canvas>
             <script src="/socket.io/socket.io.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -272,6 +278,11 @@
             }
             
             function actualizarPredicciones(data, grafico) {
+                if (!mostrarPredicciones) {
+                    console.log("🔕 Predicciones recibidas, pero ocultas por configuración del usuario.");
+                    return;
+                }
+
                 console.log("🛬 Evento 'prediccion-vuelta' recibido. Data cruda:", data);
             
                 if (!data || !data.predicciones || data.predicciones.length === 0) {
@@ -325,6 +336,20 @@
                 return gradient;
             }
             
+            let mostrarPredicciones = true;
+
+            function togglePredicciones() {
+                mostrarPredicciones = !mostrarPredicciones;
+
+                const btn = document.getElementById('toggle-predicciones-btn');
+                btn.textContent = mostrarPredicciones ? 'Hide Predictions' : 'Show Predictions';
+
+                const grafico = Chart.getChart("graficoCarrera");
+                if (grafico) {
+                    grafico.data.datasets[1].hidden = !mostrarPredicciones;
+                    grafico.update();
+                }
+            }
 
             
             window.onload = () => {
@@ -354,6 +379,7 @@
                     return coloresPorEquipo[equipo] || 'gray';
                 };
 
+                
                 const grafico = new Chart(ctx, {
                     type: 'bar',
                     data: {
