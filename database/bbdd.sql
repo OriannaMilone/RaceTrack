@@ -81,3 +81,16 @@ CREATE TABLE ParadaEnBoxes (
     CONSTRAINT fk_vuelta_entrada FOREIGN KEY (id_vuelta_entra) REFERENCES Vuelta(id),
     CONSTRAINT fk_vuelta_salida FOREIGN KEY (id_vuelta_sale) REFERENCES Vuelta(id)
 );
+
+CREATE TABLE carreras_programadas (
+    id SERIAL PRIMARY KEY,
+    circuito VARCHAR(100) NOT NULL,
+    vueltas INTEGER NOT NULL,
+    fecha DATE NOT NULL,
+    hora TIME NOT NULL,
+    temporada VARCHAR(10) NOT NULL,                      
+    gran_premio VARCHAR(100) NOT NULL,                
+    nombre_csv VARCHAR(150) NOT NULL,                  
+    hacer_prediccion BOOLEAN DEFAULT false,
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

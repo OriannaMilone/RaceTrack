@@ -55,20 +55,13 @@ function verificarAdmin(req, res, next) {
 // Servir frontend
 app.use(express.static(path.join(__dirname, 'web_project', 'public')));
 
-// app.get('/admin', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'web_project', 'views', 'admin.html'));
-// });
-
 app.get('/admin', verificarAdmin, (req, res) => {
   res.sendFile(path.join(__dirname, 'web_project', 'views', 'admin.html'));
 });
 
-
 app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'web_project', 'views', 'login.html'));
 });
-
-
 
 app.post('/login', async (req, res) => {
   const { username, password } = req.body;
@@ -118,11 +111,44 @@ app.post('/login', async (req, res) => {
   }
 });
 
-
 app.get('/logout', (req, res) => {
   req.session.destroy(() => {
     res.redirect('/');
   });
+});
+
+app.post('/admin/programar', verificarAdmin, async (req, res) => {
+  const {vueltas, fecha, hora, temporada, gran_premio, predicciones } = req.body;
+  circuito = "SPA"
+
+  // Generar nombre del CSV automáticamente
+  const nombre_csv = `${circuito.split(' ').join('_')}_${temporada}_full_H_data.csv`;
+
+  try {
+    const query = `
+      INSERT INTO carreras_programadas 
+      (circuito, vueltas, fecha, hora, temporada, gran_premio, nombre_csv, hacer_prediccion)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+    `;
+    const values = [
+      circuito,
+      parseInt(vueltas),
+      fecha,
+      hora,
+      temporada,
+      gran_premio,
+      nombre_csv,
+      predicciones ? true : false
+    ];
+
+    await pool.query(query, values);
+    console.log('✅ Carrera programada correctamente');
+    res.redirect('/admin');
+
+  } catch (err) {
+    console.error('❌ Error al programar carrera:', err);
+    res.status(500).send('Internal server error');
+  }
 });
 
 // WebSocket: cuando se conecta un cliente (el frontend)
