@@ -137,8 +137,18 @@ app.get('/admin/carreras/:id/editar', verificarAdmin, async (req, res) => {
 });
 
 app.post('/admin/carreras/:id/eliminar', verificarAdmin, async (req, res) => {
-  // eliminar carrera por ID
+  const carreraId = req.params.id;
+
+  try {
+    await pool.query('DELETE FROM carreras_programadas WHERE id = $1', [carreraId]);
+    console.log(`🗑️ Carrera ${carreraId} eliminada correctamente`);
+    res.redirect('/admin');
+  } catch (err) {
+    console.error('❌ Error al eliminar carrera:', err);
+    res.status(500).send('Internal server error');
+  }
 });
+
 
 app.post('/admin/programar', verificarAdmin, async (req, res) => {
   const {vueltas, fecha, hora, temporada, gran_premio, predicciones } = req.body;
