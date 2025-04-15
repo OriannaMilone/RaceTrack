@@ -133,8 +133,61 @@ app.get('/admin/carreras', verificarAdmin, async (req, res) => {
 
 
 app.get('/admin/carreras/:id/editar', verificarAdmin, async (req, res) => {
-  // mostrar formulario para editar carrera
+  const carreraId = req.params.id;
+
+  try {
+    const result = await pool.query('SELECT * FROM carreras_programadas WHERE id = $1', [carreraId]);
+
+    if (result.rows.length === 0) {
+      return res.status(404).send('Carrera no encontrada');
+    }
+
+    const carrera = result.rows[0];
+
+    res.send(`
+      <html>
+      <head><title>Edit Race</title></head>
+      <body style="font-family: sans-serif; background-color: #111; color: white; padding: 40px;">
+        <h2>Edit Race: ${carrera.gran_premio} (${carrera.temporada})</h2>
+        <form action="/admin/carreras/${carrera.id}/editar" method="POST">
+          <label>Time:</label><br>
+          <input type="time" name="hora" value="${carrera.hora.slice(0,5)}" required><br><br>
+
+          <label>
+            <input type="checkbox" name="hacer_prediccion" ${carrera.hacer_prediccion ? 'checked' : ''}>
+            Enable predictions
+          </label><br><br>
+
+          <button type="submit">Save Changes</button>
+          <a href="/admin" style="margin-left: 20px; color: #e10600;">Cancel</a>
+        </form>
+      </body>
+      </html>
+    `);
+  } catch (err) {
+    console.error('❌ Error al cargar carrera para edición:', err);
+    res.status(500).send('Internal server error');
+  }
 });
+
+app.post('/admin/carreras/:id/editar', verificarAdmin, async (req, res) => {
+  const carreraId = req.params.id;
+  const nuevaHora = req.body.hora;
+  const hacerPrediccion = req.body.hacer_prediccion === 'on';
+
+  try {
+    await pool.query(
+      'UPDATE carreras_programadas SET hora = $1, hacer_prediccion = $2 WHERE id = $3',
+      [nuevaHora, hacerPrediccion, carreraId]
+    );
+    console.log(`✏️ Carrera ${carreraId} actualizada`);
+    res.redirect('/admin');
+  } catch (err) {
+    console.error('❌ Error al editar carrera:', err);
+    res.status(500).send('Internal server error');
+  }
+});
+
 
 app.post('/admin/carreras/:id/eliminar', verificarAdmin, async (req, res) => {
   const carreraId = req.params.id;
