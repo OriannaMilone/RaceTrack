@@ -266,7 +266,25 @@
           try {
             const res = await fetch('/admin/carreras');
             const carreras = await res.json();
-      
+            
+            carreras.sort((a, b) => {
+                // Comparar temporada (como número)
+                const tempA = parseInt(a.temporada);
+                const tempB = parseInt(b.temporada);
+                if (tempA !== tempB) return tempA - tempB;
+              
+                // Mismo año: comparar fecha (YYYY-MM-DD)
+                const dateA = new Date(a.fecha);
+                const dateB = new Date(b.fecha);
+                if (dateA.getTime() !== dateB.getTime()) return dateA - dateB;
+              
+                // Misma fecha: comparar hora (HH:MM:SS)
+                const timeA = new Date(`1970-01-01T${a.hora}`);
+                const timeB = new Date(`1970-01-01T${b.hora}`);
+                return timeA - timeB;
+              });
+              
+
             const lista = document.getElementById('lista-carreras');
             lista.innerHTML = '';
       
