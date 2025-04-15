@@ -232,6 +232,24 @@ app.post('/admin/programar', verificarAdmin, async (req, res) => {
     res.redirect('/admin');
 
   } catch (err) {
+    if (err.code === '23505') {
+      // Ya existe una carrera con mismo nombre y temporada
+      return res.status(400).send(`
+        <html>
+          <head>
+            <title>RaceTrack - Error</title>
+            <link rel="stylesheet" href="/css/styles.css">
+          </head>
+          <body style="background-color: #111; color: white; font-family: sans-serif; text-align: center; padding: 80px;">
+            <img src="/images/logo.png" alt="RaceTrack Logo" style="height: 100px; margin-bottom: 40px;">
+            <h1 style="color: #e10600;">Duplicate Race</h1>
+            <p style="font-size: 1.2rem;">A race with this name and season already exists.</p>
+            <a href="/admin" class="btn btn--primary" style="margin-top: 30px; display: inline-block;">Back to Admin Panel</a>
+          </body>
+        </html>
+      `);
+    }
+
     console.error('❌ Error al programar carrera:', err);
     res.status(500).send('Internal server error');
   }
