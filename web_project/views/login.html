@@ -51,44 +51,15 @@
             white-space: pre-line; 
             margin-left: 100px;
           }
-        
-          .admin-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            background-color: #111;
-            padding: 40px;
-            border-radius: 10px;
-            color: #fff;
-            margin-top: 40px;
-        }
-        
-        .admin-form label {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .admin-form input,
-        .admin-form select {
+
+        .admin-form input {
             padding: 10px;
             border-radius: 5px;
             border: none;
-        }
-        
-        .admin-lista-carreras {
-            margin-top: 30px;
-            list-style: none;
-            padding-left: 0;
-            color: #fff;
-        }
-        
-        .admin-lista-carreras li {
-            padding: 10px;
-            background: #222;
+            width: 100%;
             margin-bottom: 10px;
-            border-radius: 5px;
         }
-
+        
         .s-hero {
             height: auto !important;
             overflow-y: auto;
@@ -119,34 +90,21 @@
     <header class="s-header">
 
         <div class="s-header__logo">
-            <a href="index.html"> <!-- <h5>RaceTrack</h5> -->
+            <a href="index.html"> 
                 <img src="images/logo.png" alt="Homepage" style="height: 125px; width: 100px;">
             </a>
         </div>
 
         <div class="s-header__content">
 
-            <nav class="s-header__nav-wrap">
-                <ul class="s-header__nav">
-                    <li><a class="smoothscroll" href="#scheduled-races" title="Racetrack agenda">Scheduled Races</a></li>
-                    <li><a href="/images/F12025Calendar.jpg" title="Official F1 race calendar" target="_blank" >F1 Race Calendar</a></li>
-                </ul>
-            </nav> 
-
             <a href="/" class="btn btn--primary btn--small" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path
                         d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
                 </svg>
-                RaceTrack Home Page 
+                Home Page 
             </a>
-
-            <h5>Admin RaceTrack.</h5>
-
         </div> <!-- end header-content -->
-
-        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-
     </header> <!-- end s-header -->
 
 
@@ -160,50 +118,23 @@
 
         <div class="row s-hero__content">
             <div class="column">
-                <h3 class="text-center" style="color: #fff;">Admin Panel</h3>
-            
-                <form action="/admin/programar" method="POST" class="admin-form">
-            
-                    <label for="circuito" style="color: #fff;">Circuit</label>
-                    <select id="circuito" name="circuito" disabled>
-                        <option selected>SPA Francorchamps</option>
-                    </select>
-            
-                    <label for="vueltas" style="color: #fff;">Laps</label>
-                    <input type="number" id="vueltas" name="vueltas" value="44" readonly>
-            
-                    <label for="fecha" style="color: #fff;">Date</label>
-                    <input type="date" id="fecha" name="fecha" required>
-            
-                    <label for="hora" style="color: #fff;">Time</label>
-                    <input type="time" id="hora" name="hora" required>
-            
-                    <label style="color: #fff;">
-                        <input type="checkbox" name="predicciones" id="predicciones">
-                        Enable predictions?
-                    </label>
-            
-                    <button type="submit" class="btn btn--primary">Schedule Race</button>
+                <h3 class="text-center" style="color: #fff;">Admin Login</h3>
+
+                <form action="/login" method="POST" class="admin-form" style="max-width: 400px; margin: 0 auto;">
+                
+                    <label for="username" style="color: #fff;">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter username">
+                
+                    <label for="password" style="color: #fff;">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter password">
+                
+                    <button type="submit" class="btn btn--primary" style="margin-top: 20px;">Log In</button>
                 </form>
-            
-                <hr style="margin: 40px 0; border-color: #444;">
-            
-                <h3 id="scheduled-races" class="text-center" style="color: #fff;">Scheduled Races</h3>
-                <ul class="admin-lista-carreras">
-                    <!-- Races will be dynamically inserted here -->
-                </ul>
+                  
             </div>
             
-            <a href="/logout" class="btn btn--small" style="opacity: 0.5;">Log out</a>
-
         </div>
 
-
-        <!-- <div class="s-hero__scroll">
-            <a href="#about" class="s-hero__scroll-link smoothscroll">
-                Scroll Down
-            </a>
-        </div> -->
 
     </section> <!-- end s-main page -->
 
