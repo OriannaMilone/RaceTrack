@@ -10,6 +10,10 @@ const io = new Server(server);
 // Servir frontend
 app.use(express.static(path.join(__dirname, 'web_project', 'public')));
 
+app.get('/admin', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web_project', 'views', 'admin.html'));
+});
+
 // WebSocket: cuando se conecta un cliente (el frontend)
 io.on('connection', (socket) => {
   console.log('Cliente conectado');

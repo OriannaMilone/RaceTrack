@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>RaceTrack</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <style>
+        h5 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #c40000; 
+            font-family: var(--font-2); 
+            line-height: 1.2;
+            text-align: left;
+            margin: 0;
+            white-space: pre-line; 
+            margin-left: 100px;
+          }
+        
+          .admin-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #111;
+            padding: 40px;
+            border-radius: 10px;
+            color: #fff;
+            margin-top: 40px;
+        }
+        
+        .admin-form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .admin-form input,
+        .admin-form select {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        .admin-lista-carreras {
+            margin-top: 30px;
+            list-style: none;
+            padding-left: 0;
+            color: #fff;
+        }
+        
+        .admin-lista-carreras li {
+            padding: 10px;
+            background: #222;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        
+    </style>
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="s-header__logo">
+            <a href="index.html"> <!-- <h5>RaceTrack</h5> -->
+                <img src="images/logo.png" alt="Homepage" style="height: 125px; width: 100px;">
+            </a>
+        </div>
+
+        <div class="s-header__content">
+
+            <nav class="s-header__nav-wrap">
+                <ul class="s-header__nav">
+                    <li><a class="smoothscroll" href="#" title="About">RaceTrack Agenda</a></li>
+                    <li><a class="smoothscroll" href="images/F12025Calendar.jpg" title="About">F1 Race Calendar</a></li>
+                </ul>
+            </nav> 
+
+            <a href="#/" class="btn btn--primary btn--small" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
+                </svg>
+                Exit 
+            </a>
+
+            <h5>Admin RaceTrack.</h5>
+
+        </div> <!-- end header-content -->
+
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- main page
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg">
+            <div class="gradient-overlay"></div>
+        </div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+                <h3 class="text-center" style="color: #fff;">Panel de Administración</h3>
+
+                <form action="/admin/programar" method="POST" class="admin-form">
+
+                    <label for="circuito" style="color: #fff;">Circuito</label>
+                    <select id="circuito" name="circuito" disabled>
+                        <option selected>SPA Francorchamps</option>
+                    </select>
+
+                    <label for="vueltas" style="color: #fff;">Vueltas</label>
+                    <input type="number" id="vueltas" name="vueltas" value="44" readonly>
+
+                    <label for="fecha" style="color: #fff;">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="hora" style="color: #fff;">Hora</label>
+                    <input type="time" id="hora" name="hora" required>
+
+                    <label style="color: #fff;">
+                        <input type="checkbox" name="predicciones" id="predicciones">
+                        ¿Activar predicciones?
+                    </label>
+
+                    <button type="submit" class="btn btn--primary">Programar carrera</button>
+                </form>
+
+                <hr style="margin: 40px 0; border-color: #444;">
+
+                <h3 class="text-center" style="color: #fff;">Carreras Programadas</h3>
+                <ul class="admin-lista-carreras">
+                    <!-- Aquí se insertarán dinámicamente desde Express -->
+                </ul>
+
+
+            </div>
+        </div>
+
+
+        <!-- <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                Scroll Down
+            </a>
+        </div> -->
+
+    </section> <!-- end s-main page -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
