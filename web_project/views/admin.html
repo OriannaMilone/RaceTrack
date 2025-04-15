@@ -95,6 +95,31 @@
             padding-top: 150px;
             padding-bottom: 100px;
         }
+        .estado-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: white;
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+          }
+          
+          .estado-upcoming {
+            background-color: #00c853; 
+          }
+          
+          .estado-ongoing {
+            background-color: #ffd600; 
+            color: black;
+          }
+          
+          .estado-finished {
+            background-color: #d32f2f;
+          }
+          
     </style>
 
 </head>
@@ -262,62 +287,110 @@
     <!-- Java Script
     ================================================== -->
     <script>
+        document.querySelector('.admin-form').addEventListener('submit', function (e) {
+            const fecha = document.getElementById('fecha').value;
+            const temporada = document.getElementById('temporada').value;
+        
+            if (fecha && temporada) {
+              const anioFecha = new Date(fecha).getFullYear().toString();
+              const anioTemporada = temporada.trim();
+        
+              if (anioFecha !== anioTemporada) {
+                e.preventDefault(); // Bloquear el envío del formulario
+                alert(`⚠️ The selected date is from ${anioFecha}, but the season entered is ${anioTemporada}. They must match.`);
+              }
+            }
+          });
+
+          
         async function cargarCarreras() {
-          try {
-            const res = await fetch('/admin/carreras');
-            const carreras = await res.json();
-            
-            carreras.sort((a, b) => {
-                // Comparar temporada (como número)
+            try {
+              const res = await fetch('/admin/carreras');
+              const carreras = await res.json();
+          
+              // Ordenar por temporada, fecha, hora
+              carreras.sort((a, b) => {
                 const tempA = parseInt(a.temporada);
                 const tempB = parseInt(b.temporada);
                 if (tempA !== tempB) return tempA - tempB;
-              
-                // Mismo año: comparar fecha (YYYY-MM-DD)
+          
                 const dateA = new Date(a.fecha);
                 const dateB = new Date(b.fecha);
                 if (dateA.getTime() !== dateB.getTime()) return dateA - dateB;
-              
-                // Misma fecha: comparar hora (HH:MM:SS)
+          
                 const timeA = new Date(`1970-01-01T${a.hora}`);
                 const timeB = new Date(`1970-01-01T${b.hora}`);
                 return timeA - timeB;
               });
-              
-
-            const lista = document.getElementById('lista-carreras');
-            lista.innerHTML = '';
-      
-            carreras.forEach(carrera => {
-              const li = document.createElement('li');
-              const fechaObj = new Date(carrera.fecha);
-              const fechaStr = fechaObj.toLocaleDateString('en-GB'); 
-              const horaStr = carrera.hora.slice(0, 5); // extrae solo "HH:MM"
-
-              li.innerHTML = `
-              <strong>${carrera.gran_premio}</strong> (${carrera.temporada}) <br>
-              ${fechaStr} - ${horaStr} <br>
-              Predictions: ${carrera.hacer_prediccion ? '✅' : '❌'}
-              <div style="margin-top: 10px;">
-                <form action="/admin/carreras/${carrera.id}/eliminar" method="POST" style="display: inline;">
-                    <button type="submit" class="btn btn--small" style="background-color: #e10600;">Delete</button>
-                </form>
-                <form action="/admin/carreras/${carrera.id}/editar" method="GET" style="display: inline;">
-                  <button type="submit" class="btn btn--small" style="margin-left: 10px;">Edit</button>
-                </form>
-              </div>
-            `;
-            
-
-              lista.appendChild(li);
-            });
-          } catch (err) {
-            console.error('❌ Error al cargar carreras:', err);
+          
+              const lista = document.getElementById('lista-carreras');
+              lista.innerHTML = '';
+          
+              carreras.forEach(carrera => {
+                // Validar que tenga datos válidos de fecha y hora
+                if (!carrera.fecha || !carrera.hora || !/^\d{2}:\d{2}/.test(carrera.hora)) {
+                  console.warn(`⚠️ Carrera inválida omitida:`, carrera);
+                  return;
+                }
+          
+                const li = document.createElement('li');
+          
+                // Mostrar fecha y hora en formato visual
+                const fechaObj = new Date(carrera.fecha);
+                const fechaStr = fechaObj.toLocaleDateString('en-GB');
+                const horaStr = carrera.hora.slice(0, 5);
+          
+                // Crear fecha y hora real del evento (como objeto Date)
+                const [year, month, day] = carrera.fecha.split('-').map(Number);
+                const [hour, minute] = carrera.hora.split(':').map(Number);
+                const carreraDateTime = new Date(year, month - 1, day, hour, minute);
+                const carreraFin = new Date(carreraDateTime.getTime() + 2 * 60 * 60 * 1000); // +2h
+          
+                const ahora = new Date();
+                const carreraTimestamp = carreraDateTime.getTime();
+                const ahoraTimestamp = ahora.getTime();
+          
+                let estado = '';
+                let claseEstado = '';
+          
+                if (ahoraTimestamp < carreraTimestamp) {
+                  estado = 'Upcoming';
+                  claseEstado = 'estado-upcoming';
+                } else if (ahoraTimestamp >= carreraTimestamp && ahoraTimestamp <= carreraFin.getTime()) {
+                  estado = 'Ongoing';
+                  claseEstado = 'estado-ongoing';
+                } else {
+                  estado = 'Finished';
+                  claseEstado = 'estado-finished';
+                }
+          
+                li.innerHTML = `
+                  <strong>${carrera.gran_premio}</strong> (${carrera.temporada}) <br>
+                  ${fechaStr} - ${horaStr} <br>
+                  <span class="estado-tag ${claseEstado}">${estado}</span><br>
+                  Predictions: ${carrera.hacer_prediccion ? '✅' : '❌'}
+                  <div style="margin-top: 10px;">
+                    <form action="/admin/carreras/${carrera.id}/eliminar" method="POST" style="display: inline;">
+                      <button type="submit" class="btn btn--small" style="background-color: #e10600;">Delete</button>
+                    </form>
+                    <form action="/admin/carreras/${carrera.id}/editar" method="GET" style="display: inline;">
+                      <button type="submit" class="btn btn--small" style="margin-left: 10px;">Edit</button>
+                    </form>
+                  </div>
+                `;
+          
+                lista.appendChild(li);
+              });
+          
+            } catch (err) {
+              console.error('❌ Error al cargar carreras:', err);
+            }
           }
-        }
+          
       
         window.addEventListener('DOMContentLoaded', cargarCarreras);
       </script>
+      
       
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
