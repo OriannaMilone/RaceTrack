@@ -117,6 +117,29 @@ app.get('/logout', (req, res) => {
   });
 });
 
+app.get('/admin/carreras', verificarAdmin, async (req, res) => {
+  try {
+    const result = await pool.query(`
+      SELECT id, gran_premio, temporada, hacer_prediccion, fecha, hora 
+      FROM carreras_programadas
+      ORDER BY fecha, hora
+    `);
+    res.json(result.rows);
+  } catch (err) {
+    console.error('❌ Error al obtener carreras:', err);
+    res.status(500).json({ error: 'Error loading races' });
+  }
+});
+
+
+app.get('/admin/carreras/:id/editar', verificarAdmin, async (req, res) => {
+  // mostrar formulario para editar carrera
+});
+
+app.post('/admin/carreras/:id/eliminar', verificarAdmin, async (req, res) => {
+  // eliminar carrera por ID
+});
+
 app.post('/admin/programar', verificarAdmin, async (req, res) => {
   const {vueltas, fecha, hora, temporada, gran_premio, predicciones } = req.body;
   circuito = "SPA"

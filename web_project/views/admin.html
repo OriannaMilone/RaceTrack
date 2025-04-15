@@ -195,10 +195,11 @@
             
                 <hr style="margin: 40px 0; border-color: #444;">
             
-                <h3 id="scheduled-races" class="text-center" style="color: #fff;">Scheduled Races</h3>
-                <ul class="admin-lista-carreras">
-                    <!-- Races will be dynamically inserted here -->
+                <h3 class="text-center" style="color: #fff;">Scheduled Races</h3>
+                <ul class="admin-lista-carreras" id="lista-carreras">
+                <!-- Las carreras se insertarán aquí con JS -->
                 </ul>
+
             </div>
             
             <a href="/logout" class="btn btn--small" style="opacity: 0.5;">Log out</a>
@@ -259,6 +260,46 @@
 
     <!-- Java Script
     ================================================== -->
+    <script>
+        async function cargarCarreras() {
+          try {
+            const res = await fetch('/admin/carreras');
+            const carreras = await res.json();
+      
+            const lista = document.getElementById('lista-carreras');
+            lista.innerHTML = '';
+      
+            carreras.forEach(carrera => {
+              const li = document.createElement('li');
+              const fechaObj = new Date(carrera.fecha);
+              const fechaStr = fechaObj.toLocaleDateString('en-GB'); 
+              const horaStr = carrera.hora.slice(0, 5); // extrae solo "HH:MM"
+
+              li.innerHTML = `
+              <strong>${carrera.gran_premio}</strong> (${carrera.temporada}) <br>
+              ${fechaStr} - ${horaStr} <br>
+              Predictions: ${carrera.hacer_prediccion ? '✅' : '❌'}
+              <div style="margin-top: 10px;">
+                <form action="/admin/carreras/${carrera.id}/eliminar" method="POST" style="display: inline;">
+                  <button type="submit" class="btn btn--small" style="background-color: #e10600;">Delete</button>
+                </form>
+                <form action="/admin/carreras/${carrera.id}/editar" method="GET" style="display: inline;">
+                  <button type="submit" class="btn btn--small" style="margin-left: 10px;">Edit</button>
+                </form>
+              </div>
+            `;
+            
+
+              lista.appendChild(li);
+            });
+          } catch (err) {
+            console.error('❌ Error al cargar carreras:', err);
+          }
+        }
+      
+        window.addEventListener('DOMContentLoaded', cargarCarreras);
+      </script>
+      
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
