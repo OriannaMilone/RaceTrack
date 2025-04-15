@@ -302,7 +302,7 @@
             }
           });
 
-          
+
         async function cargarCarreras() {
             try {
               const res = await fetch('/admin/carreras');
@@ -365,19 +365,25 @@
                 }
           
                 li.innerHTML = `
-                  <strong>${carrera.gran_premio}</strong> (${carrera.temporada}) <br>
-                  ${fechaStr} - ${horaStr} <br>
-                  <span class="estado-tag ${claseEstado}">${estado}</span><br>
-                  Predictions: ${carrera.hacer_prediccion ? '✅' : '❌'}
-                  <div style="margin-top: 10px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                    <strong>${carrera.gran_premio}</strong> (${carrera.temporada}) <br>
+                    ${fechaStr} - ${horaStr}
+                    </div>
+                    <span class="estado-tag ${claseEstado}">${estado}</span>
+                </div>
+                <br>
+                Predictions: ${carrera.hacer_prediccion ? '✅' : '❌'}
+                <div style="margin-top: 10px;">
                     <form action="/admin/carreras/${carrera.id}/eliminar" method="POST" style="display: inline;">
-                      <button type="submit" class="btn btn--small" style="background-color: #e10600;">Delete</button>
+                    <button type="submit" class="btn btn--small" style="background-color: #e10600;">Delete</button>
                     </form>
                     <form action="/admin/carreras/${carrera.id}/editar" method="GET" style="display: inline;">
-                      <button type="submit" class="btn btn--small" style="margin-left: 10px;">Edit</button>
+                    <button type="submit" class="btn btn--small" style="margin-left: 10px;">Edit</button>
                     </form>
-                  </div>
+                </div>
                 `;
+
           
                 lista.appendChild(li);
               });
