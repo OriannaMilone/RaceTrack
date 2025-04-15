@@ -60,6 +60,11 @@
           .log-flash {
             animation: logFlash 0.7s ease-out;
           }
+        
+        #toggle-predicciones-btn:hover {
+            background-color: #e10600;
+            color: #fff;
+        }
     </style>
 
 </head>
@@ -175,16 +180,28 @@
         <div class="horizontal-line"></div>
 
         <div class="row">
-            <div style="margin-bottom: 20px;">
-                <h1 style="margin: 0;">Real-Time Race Simulation</h1>
-                <h3 id="vuelta-titulo" style="margin-top: 5px; font-weight: normal;">Waiting for simulation data...</h3>
-            </div>
-
-            <div style="margin-bottom: 15px;">
-                <button id="toggle-predicciones-btn" onclick="togglePredicciones()" style="padding: 8px 14px; font-size: 1rem;">
+            <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                    <h1 style="margin: 0;">Real-Time Race Simulation</h1>
+                    <h3 id="vuelta-titulo" style="margin-top: 5px; font-weight: normal;">Waiting for simulation data...</h3>
+                </div>
+            
+                <button id="toggle-predicciones-btn" onclick="togglePredicciones()" style="
+                    padding: 10px 16px;
+                    font-size: 1rem;
+                    background-color: #333;
+                    color: #fff;
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    letter-spacing: 1px;
+                    margin-left: 480px; 
+                ">
                     Hide Predictions
                 </button>
             </div>
+            
 
             <canvas id="graficoCarrera" width="800" height="400"></canvas>
             <script src="/socket.io/socket.io.js"></script>
