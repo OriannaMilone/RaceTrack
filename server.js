@@ -25,7 +25,30 @@ function verificarAdmin(req, res, next) {
   if (req.session && req.session.usuario === 'admin') {
     return next();
   } else {
-    res.status(403).send('<h3 style="color: red;">Access denied: Admins only</h3>');
+    res.status(403).send(`
+      <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #111;
+        color: white;
+        font-family: sans-serif;
+        flex-direction: column;
+      ">
+        <h1 style="color: #e10600;">Access Denied</h1>
+        <p>Incorrect <strong>credentials</strong> to access.</p>
+        <a href="/login" style="
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #e10600;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+        ">Go back to Login</a>
+      </div>
+    `);
+    
   }
 }
 
@@ -64,7 +87,29 @@ app.post('/login', async (req, res) => {
       res.redirect('/admin');
     } else {
       console.log('❌ Login fallido');
-      res.status(401).send('<h3 style="color: red;">Invalid username or password</h3>');
+      res.status(403).send(`
+        <div style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #111;
+          color: white;
+          font-family: sans-serif;
+          flex-direction: column;
+        ">
+          <h1 style="color: #e10600;">Access Denied</h1>
+          <p>Incorrect <strong>credentials</strong> to access.</p>
+          <a href="/login" style="
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e10600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+          ">Go back to Login</a>
+        </div>
+      `);
     }
 
   } catch (err) {
