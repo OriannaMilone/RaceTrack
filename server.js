@@ -7,10 +7,13 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
+require('dotenv').config();
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const session = require('express-session');
+const pool = require('./web_project/backend/db'); 
 
 app.use(session({
   secret: 'clave-super-secreta',  
@@ -42,21 +45,34 @@ app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'web_project', 'views', 'login.html'));
 });
 
-app.post('/login', (req, res) => {
+
+
+app.post('/login', async (req, res) => {
   const { username, password } = req.body;
 
-  const validUsername = 'admin';
-  const validPassword = '1234';
+  try {
+    const query = `
+      SELECT * FROM usuarios_admin
+      WHERE username = $1
+      AND password_hash = crypt($2, password_hash)
+    `;
+    const result = await pool.query(query, [username, password]);
 
-  if (username === validUsername && password === validPassword) {
-    req.session.usuario = 'admin';  
-    console.log('✅ Admin logged in');
-    res.redirect('/admin');
-  } else {
-    console.log('❌ Invalid credentials');
-    res.status(401).send('<h3 style="color: red;">Invalid username or password</h3>');
+    if (result.rows.length > 0) {
+      req.session.usuario = 'admin';
+      console.log('✅ Login correcto desde la base de datos');
+      res.redirect('/admin');
+    } else {
+      console.log('❌ Login fallido');
+      res.status(401).send('<h3 style="color: red;">Invalid username or password</h3>');
+    }
+
+  } catch (err) {
+    console.error('❌ Error al validar login:', err);
+    res.status(500).send('Internal server error');
   }
 });
+
 
 app.get('/logout', (req, res) => {
   req.session.destroy(() => {
