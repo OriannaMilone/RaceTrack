@@ -346,18 +346,15 @@
                
                 
                 // 🔍 Logs de depuración
-                console.log(' A ahoraStr:', ahoraStr.toString());
-                console.log('📅 fechaStr:', fechaStr.toString());
-                console.log('🕒 horaStr:', horaStr.toString());
+                console.log(' A ahoraStr:', ahoraStr);
                 console.log("✅ carreraStr:", carreraStr);
               
 
                 const carreraTime = new Date(carreraStr);
                 const carreraFin = new Date(carreraTime.getTime() + 2 * 60 * 60 * 1000);
+                const carreraFinStr = carreraFin.toISOString();
 
-
-                console.log('⏰ carreraTime:', carreraTime.toString());
-                console.log('⏰ carreraFin:', carreraFin.toString());   
+                console.log('⏰ carreraFin:', carreraFinStr);   
 
                 let estado = '';
                 let claseEstado = '';
@@ -365,7 +362,7 @@
                 if (ahoraStr < carreraStr) {
                   estado = 'Upcoming';
                   claseEstado = 'estado-upcoming';
-                } else if (ahoraStr >= carreraStr && ahoraStr <= carreraFin.toISOString()) {
+                } else if (ahoraStr >= carreraStr && ahoraStr <= carreraFinStr) {
                   estado = 'Ongoing';
                   claseEstado = 'estado-ongoing';
                 } else {
