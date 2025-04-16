@@ -153,7 +153,7 @@
             </div>
         </div>
 
-        <div class="s-hero__video">
+        <!-- <div class="s-hero__video">
             <a class="s-hero__video-link"
                 href="https://player.vimeo.com/video/117310401?color=01aef0&amp;title=0&amp;byline=0&amp;portrait=0"
                 data-lity="">
@@ -162,7 +162,7 @@
                 </svg>
                 <span class="s-hero__video-text">Play Video</span>
             </a>
-        </div>
+        </div> -->
 
         <div class="s-hero__scroll">
             <a href="#about" class="s-hero__scroll-link smoothscroll">
@@ -202,7 +202,10 @@
                 </button>
             </div>
             
-
+            <div id="contador-carrera" style="margin-bottom: 20px; font-size: 1.5rem; color: #f5f5f5;">
+                Next race starts in: <span id="tiempo-restante">calculating...</span>
+            </div>
+            
             <canvas id="graficoCarrera" width="800" height="400"></canvas>
             <script src="/socket.io/socket.io.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
