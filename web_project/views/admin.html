@@ -327,66 +327,75 @@
               lista.innerHTML = '';
           
               carreras.forEach(carrera => {
-                // Validar que tenga datos válidos de fecha y hora
-                if (!carrera.fecha || !carrera.hora || !/^\d{2}:\d{2}/.test(carrera.hora)) {
+                if (!carrera.fecha || !carrera.hora || !/^\d{1,2}:\d{2}/.test(carrera.hora)) {
                   console.warn(`⚠️ Carrera inválida omitida:`, carrera);
                   return;
                 }
-          
+              
                 const li = document.createElement('li');
-          
-                // Mostrar fecha y hora en formato visual
+              
                 const fechaObj = new Date(carrera.fecha);
                 const fechaStr = fechaObj.toLocaleDateString('en-GB');
                 const horaStr = carrera.hora.slice(0, 5);
-          
-                // Crear fecha y hora real del evento (como objeto Date)
-                const [year, month, day] = carrera.fecha.split('-').map(Number);
-                const [hour, minute] = carrera.hora.split(':').map(Number);
-                const carreraDateTime = new Date(year, month - 1, day, hour, minute);
-                const carreraFin = new Date(carreraDateTime.getTime() + 2 * 60 * 60 * 1000); // +2h
-          
+
+                const [day, month, year] = fechaStr.split('/');
+                const carreraStr = `${year}-${month}-${day}T${horaStr}:00Z`; // UTC
+              
                 const ahora = new Date();
-                const carreraTimestamp = carreraDateTime.getTime();
-                const ahoraTimestamp = ahora.getTime();
-          
+                const ahoraStr = ahora.toISOString().slice(0, 10) + 'T' + ahora.toISOString().slice(11, 16) + ':00Z'; // UTC
+               
+                
+                // 🔍 Logs de depuración
+                console.log(' A ahoraStr:', ahoraStr.toString());
+                console.log('📅 fechaStr:', fechaStr.toString());
+                console.log('🕒 horaStr:', horaStr.toString());
+                console.log("✅ carreraStr:", carreraStr);
+              
+
+                const carreraTime = new Date(carreraStr);
+                const carreraFin = new Date(carreraTime.getTime() + 2 * 60 * 60 * 1000);
+
+
+                console.log('⏰ carreraTime:', carreraTime.toString());
+                console.log('⏰ carreraFin:', carreraFin.toString());   
+
                 let estado = '';
                 let claseEstado = '';
-          
-                if (ahoraTimestamp < carreraTimestamp) {
+              
+                if (ahoraStr < carreraStr) {
                   estado = 'Upcoming';
                   claseEstado = 'estado-upcoming';
-                } else if (ahoraTimestamp >= carreraTimestamp && ahoraTimestamp <= carreraFin.getTime()) {
+                } else if (ahoraStr >= carreraStr && ahoraStr <= carreraFin.toISOString()) {
                   estado = 'Ongoing';
                   claseEstado = 'estado-ongoing';
                 } else {
                   estado = 'Finished';
                   claseEstado = 'estado-finished';
                 }
-          
+              
                 li.innerHTML = `
-                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
                     <div>
-                    <strong>${carrera.gran_premio}</strong> (${carrera.temporada}) <br>
-                    ${fechaStr} - ${horaStr}
+                      <strong>${carrera.gran_premio}</strong> (${carrera.temporada}) <br>
+                      ${fechaStr} - ${horaStr}
                     </div>
                     <span class="estado-tag ${claseEstado}">${estado}</span>
-                </div>
-                <br>
-                Predictions: ${carrera.hacer_prediccion ? '✅' : '❌'}
-                <div style="margin-top: 10px;">
+                  </div>
+                  <br>
+                  Predictions: ${carrera.hacer_prediccion ? '✅' : '❌'}
+                  <div style="margin-top: 10px;">
                     <form action="/admin/carreras/${carrera.id}/eliminar" method="POST" style="display: inline;">
-                    <button type="submit" class="btn btn--small" style="background-color: #e10600;">Delete</button>
+                      <button type="submit" class="btn btn--small" style="background-color: #e10600;">Delete</button>
                     </form>
                     <form action="/admin/carreras/${carrera.id}/editar" method="GET" style="display: inline;">
-                    <button type="submit" class="btn btn--small" style="margin-left: 10px;">Edit</button>
+                      <button type="submit" class="btn btn--small" style="margin-left: 10px;">Edit</button>
                     </form>
-                </div>
+                  </div>
                 `;
-
-          
+              
                 lista.appendChild(li);
               });
+              
           
             } catch (err) {
               console.error('❌ Error al cargar carreras:', err);
