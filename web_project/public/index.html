@@ -65,6 +65,41 @@
             background-color: #e10600;
             color: #fff;
         }
+
+         #contador-carrera {
+        text-align: center;
+        margin: 40px 0;
+        }
+
+    #display-tiempo {
+        font-size: 3rem;
+        color: #ffffff;
+        font-family: inherit;;
+        letter-spacing: 2px;
+    }
+
+    #f1-luces-horizontal {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .lucecita {
+        width: 40px;
+        height: 40px;
+        background-color: #111;
+        border: 2px solid #444;
+        border-radius: 50%;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .lucecita.encendida {
+        background-color: red;
+        box-shadow: 0 0 12px red;
+    }
+        
     </style>
 
 </head>
@@ -183,7 +218,7 @@
             <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
                 <div>
                     <h1 style="margin: 0;">Real-Time Race Simulation</h1>
-                    <h3 id="vuelta-titulo" style="margin-top: 5px; font-weight: normal;">Waiting for simulation data...</h3>
+                    <!-- <h3 id="vuelta-titulo" style="margin-top: 5px; font-weight: normal;">Waiting for simulation data...</h3> -->
                 </div>
             
                 <button id="toggle-predicciones-btn" onclick="togglePredicciones()" style="
@@ -202,9 +237,20 @@
                 </button>
             </div>
             
-            <div id="contador-carrera" style="margin-bottom: 20px; font-size: 1.5rem; color: #f5f5f5;">
-                Next race starts in: <span id="tiempo-restante">calculating...</span>
-            </div>
+            <div id="contador-carrera">
+                <div id="contador-carrera">
+                    <div id="display-tiempo">--:--:--</div>
+                
+                    <div id="f1-luces-horizontal">
+                        <div class="lucecita"></div>
+                        <div class="lucecita"></div>
+                        <div class="lucecita"></div>
+                        <div class="lucecita"></div>
+                        <div class="lucecita"></div>
+                    </div>
+                </div>
+            </div>    
+            
             
             <canvas id="graficoCarrera" width="800" height="400"></canvas>
             <script src="/socket.io/socket.io.js"></script>
@@ -250,138 +296,73 @@
 
 
         <script>
-            function filtrarPorCompuesto(compuestoSeleccionado) {
-                const pilotos = window.ultimoEstadoPilotos || [];
+            // FECHA Y HORA DE LA PRÓXIMA CARRERA CAMBIAR ESTO
+            const proximaCarrera = new Date("2025-04-17T17:09:00"); 
+        
+            let simulacionActiva = false;
+        
+            // 🕒 Establecer tiempo total en milisegundos (a partir de cuando se cargó la página hasta la carrera)
+            const tiempoInicio = new Date(); // cuando se carga
+            const tiempoFinal = proximaCarrera;
+            const tiempoTotal = tiempoFinal - tiempoInicio;
 
-                const enEseCompuesto = pilotos
-                    .filter(p => {
-                        const compuestoActual = (p.Compound || '').trim().toUpperCase();
-                        return compuestoActual === compuestoSeleccionado;
-                    })
-                    .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
+            function actualizarContador() {
+                const ahora = new Date();
+                const diferencia = tiempoFinal - ahora;
+                const display = document.getElementById("display-tiempo");
+                const luces = document.querySelectorAll(".lucecita");
 
-                if (enEseCompuesto.length === 0) {
-                    agregarLog(`🟡 No drivers are currently using ${compuestoSeleccionado} tyres`);
-                    return;
-                }
-
-                agregarLog(`🔍 Drivers on ${compuestoSeleccionado} tyres:`);
-
-                enEseCompuesto.forEach(p => {
-                    agregarLog(`• ${p.Driver} (P${p.Position})`);
-                });
-            }
-
-            function agregarLog(texto) {
-                const logList = document.getElementById('log-list');
-                const item = document.createElement('li');
-                item.textContent = texto;
-                item.classList.add('log-flash');
-                item.style.padding = '4px 0';
-                item.style.borderBottom = '1px solid #eee';
-                logList.prepend(item);
-            }
-
-            function agregarSeparadorDeVuelta(texto) {
-                const logList = document.getElementById('log-list');
-                const item = document.createElement('li');
-                item.classList.add('log-flash');
-                item.textContent = `${texto}`;
-                item.style.padding = '6px 0';
-                item.style.fontWeight = 'bold';
-                item.style.borderBottom = '1px solid #c8e6c9';
-                logList.prepend(item);
-                item.style.backgroundColor = '#2e7d32'; // verde F1
-                item.style.color = '#ffffff';
-                item.style.textAlign = 'center';
-                item.style.borderRadius = '5px';
-            }
-            
-            function actualizarPredicciones(data, grafico) {
-                if (!mostrarPredicciones) {
-                    console.log("🔕 Predicciones recibidas, pero ocultas por configuración del usuario.");
-                    return;
-                }
-
-                console.log("🛬 Evento 'prediccion-vuelta' recibido. Data cruda:", data);
-            
-                if (!data || !data.predicciones || data.predicciones.length === 0) {
-                    console.warn("⚠️ No llegaron predicciones válidas:", data);
-                    return;
-                }
-            
-                const predicciones = data.predicciones;
-            
-                console.log(`📊 Procesando ${predicciones.length} predicciones para la vuelta ${data.vuelta}`);
-                agregarSeparadorDeVuelta(`🔮 Predicción para vuelta ${data.vuelta}`);
-            
-                predicciones.forEach(p => {
-                    agregarLog(`• ${p.Driver} → Predicted P${p.PredictedFinalPosition}`);
-                });
-            
-                console.log("📥 Predicciones crudas:", predicciones);
-            
-                // Normalizar nombres
-                const normalizar = (nombre) => (nombre || '').trim().toUpperCase();
-            
-                const pilotos = predicciones.map(p => normalizar(p.Driver));
-                const posicionesPredichas = predicciones.map(p => 21 - parseFloat(p.PredictedFinalPosition));
-            
-                console.log("🧪 Pilotos normalizados:", pilotos);
-                console.log("🧪 Posiciones predichas invertidas:", posicionesPredichas);
-            
-                const ordenActual = grafico.data.labels.map(normalizar);
-                console.log("🧾 Orden actual de labels en gráfico:", ordenActual);
-            
-                const prediccionesOrdenadas = ordenActual.map(driver => {
-                    const idx = pilotos.indexOf(driver);
-                    if (idx === -1) {
-                        console.warn(`❌ Piloto '${driver}' no encontrado en las predicciones`);
+                if (diferencia <= 0) {
+                    display.innerText = " ... and Away we Go!";
+                    luces.forEach(l => l.classList.add("encendida"));
+                    if (!simulacionActiva) {
+                        activarSimulacion();
+                        simulacionActiva = true;
                     }
-                    return idx !== -1 ? posicionesPredichas[idx] : null;
-                });
-            
-                console.log("🎯 Predicciones ordenadas:", prediccionesOrdenadas);
-            
-                grafico.data.datasets[1].data = prediccionesOrdenadas;
-                grafico.update();
-            
-                console.log("✅ Gráfico actualizado con predicciones");
-            }
-            
-            function crearDegradadoDesdeColor(ctx, colorBase) {
-                const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-                gradient.addColorStop(0, colorBase.replace('0.7', '0.4'));
-                gradient.addColorStop(1, colorBase.replace('0.7', '1'));
-                return gradient;
-            }
-            
-            let mostrarPredicciones = true;
-
-            function togglePredicciones() {
-                mostrarPredicciones = !mostrarPredicciones;
-
-                const btn = document.getElementById('toggle-predicciones-btn');
-                btn.textContent = mostrarPredicciones ? 'Hide Predictions' : 'Show Predictions';
-
-                const grafico = Chart.getChart("graficoCarrera");
-                if (grafico) {
-                    grafico.data.datasets[1].hidden = !mostrarPredicciones;
-                    grafico.update();
+                    return;
                 }
+
+                const horas = Math.floor(diferencia / (1000 * 60 * 60));
+                const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+                display.innerText = `${horas.toString().padStart(2, '0')}:${minutos
+                    .toString()
+                    .padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+
+                // 🟢 Estilo barra de carga: encender luces según el % de tiempo transcurrido
+                const tiempoTranscurrido = tiempoTotal - diferencia;
+                const porcentaje = tiempoTranscurrido / tiempoTotal;
+
+                const lucesTotales = luces.length;
+                const lucesEncendidas = Math.floor(porcentaje * lucesTotales);
+
+                luces.forEach((luz, idx) => {
+                    luz.classList.toggle("encendida", idx < lucesEncendidas);
+                });
             }
 
             
+        
+            function activarSimulacion() {
+                console.log("🚦 Activando simulación...");
+                iniciarSimulacion();
+            }
+        
             window.onload = () => {
+                setInterval(actualizarContador, 1000); 
+            };
+        
+            function iniciarSimulacion() {
                 const ULTIMA_VUELTA = 44; 
-
+        
                 const socket = io();
                 const ctx = document.getElementById('graficoCarrera').getContext('2d');
-
+        
                 const gradient = ctx.createLinearGradient(0, 0, 0, 400);
                 gradient.addColorStop(0, 'rgba(190, 120, 255, 0.6)');
                 gradient.addColorStop(1, 'rgba(60, 0, 90, 0.6)');
-
+        
                 const obtenerColorPorEquipo = (equipo) => {
                     const coloresPorEquipo = {
                         'Mercedes': 'rgba(0, 210, 190, 0.7)',
@@ -395,30 +376,31 @@
                         'Haas F1 Team': 'rgba(128, 128, 128, 0.7)',
                         'Sauber': 'rgba(102, 0, 204, 0.7)'
                     };
-
+        
                     return coloresPorEquipo[equipo] || 'gray';
                 };
-
-                
+        
                 const grafico = new Chart(ctx, {
                     type: 'bar',
                     data: {
                         labels: [],
-                        datasets: [{
-                            label: 'Race Position',
-                            data: [],
-                            backgroundColor: [],
-                            borderWidth: 1,
-                            borderColor: []
-                        },
-                        {
-                            label: 'Predicted Next Lap',
-                            data: [],
-                            backgroundColor: gradient,
-                            borderColor: 'rgba(0, 255, 255, 0.6)',
-                            borderWidth: 1,
-                            borderColor: 'rgba(200,200,200,0.5)',
-                        }]
+                        datasets: [
+                            {
+                                label: 'Race Position',
+                                data: [],
+                                backgroundColor: [],
+                                borderWidth: 1,
+                                borderColor: []
+                            },
+                            {
+                                label: 'Predicted Next Lap',
+                                data: [],
+                                backgroundColor: gradient,
+                                borderColor: 'rgba(0, 255, 255, 0.6)',
+                                borderWidth: 1,
+                                borderColor: 'rgba(200,200,200,0.5)'
+                            }
+                        ]
                     },
                     options: {
                         responsive: true,
@@ -435,7 +417,6 @@
                                         const posicionReal = 21 - valor;
                                         const piloto = ctx.chart.data.labels[ctx.dataIndex];
                                         const datosPiloto = window.ultimoEstadoPilotos?.find(p => p.Driver === piloto);
-
                                         if (!datosPiloto) return `Driver: ${piloto} | DNF`;
                                         const equipo = datosPiloto.Team || 'Unknown Team';
                                         return `Driver: ${piloto} | Position: ${posicionReal} | Team: ${equipo}`;
@@ -463,58 +444,54 @@
                         }
                     }
                 });
-                
+        
                 socket.on('prediccion-vuelta', (data) => {
                     actualizarPredicciones(data, grafico);
                 });
-                                
+        
                 socket.on('nueva-vuelta', (data) => {
                     window.ultimoEstadoPilotos = data.pilotos;
                     document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
                     agregarSeparadorDeVuelta(`Lap ${data.vuelta}`);
-                  
-                    // 🚀 Logs: Best laps
+        
                     data.pilotos.forEach(p => {
-                      if (p.IsPersonalBest === 'Yes') {
-                        agregarLog(`🚀 ${p.Driver} set a new personal best: ${p.LapTime}`);
-                      }
-                    });
-                  
-                    // ❌ Logs: Retired drivers / +1 Lap
-                    if (window.pilotosEnVueltaAnterior) {
-                      const retirados = window.pilotosEnVueltaAnterior.filter(prev =>
-                        !data.pilotos.some(p => p.Driver === prev.Driver)
-                      );
-                  
-                      retirados.forEach(p => {
-                        if (data.vuelta === ULTIMA_VUELTA) {
-                          agregarLog(`🔵 ${p.Driver} finished +1 Lap`);
-                        } else {
-                          agregarLog(`❌ ${p.Driver} has retired from the race`);
+                        if (p.IsPersonalBest === 'Yes') {
+                            agregarLog(`🚀 ${p.Driver} set a new personal best: ${p.LapTime}`);
                         }
-                      });
+                    });
+        
+                    if (window.pilotosEnVueltaAnterior) {
+                        const retirados = window.pilotosEnVueltaAnterior.filter(prev =>
+                            !data.pilotos.some(p => p.Driver === prev.Driver)
+                        );
+        
+                        retirados.forEach(p => {
+                            if (data.vuelta === ULTIMA_VUELTA) {
+                                agregarLog(`🔵 ${p.Driver} finished +1 Lap`);
+                            } else {
+                                agregarLog(`❌ ${p.Driver} has retired from the race`);
+                            }
+                        });
                     }
-                  
+        
                     window.pilotosEnVueltaAnterior = data.pilotos;
-                  
-                    // Ordenar y mostrar pilotos
+        
                     const pilotosOrdenados = data.pilotos
-                      .filter(p => p.Position !== null && !isNaN(p.Position))
-                      .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
-                  
+                        .filter(p => p.Position !== null && !isNaN(p.Position))
+                        .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
+        
                     grafico.data.labels = pilotosOrdenados.map(p => p.Driver);
                     grafico.data.datasets[0].data = pilotosOrdenados.map(p => 21 - parseFloat(p.Position));
                     grafico.data.datasets[0].backgroundColor = pilotosOrdenados.map(p => obtenerColorPorEquipo(p.Team));
                     grafico.data.datasets[0].borderWidth = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? 4 : 1);
                     grafico.data.datasets[0].borderColor = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)');
-                  
                     grafico.data.datasets[1].data = [];
-
+        
                     grafico.update();
-                  });
-            };
+                });
+            }
         </script>
-
+        
 
         </div>
 
