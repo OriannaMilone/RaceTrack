@@ -302,12 +302,11 @@
 
         <script>
             // FECHA Y HORA DE LA PRÓXIMA CARRERA CAMBIAR ESTO
-            const proximaCarrera = new Date("2025-04-19T14:23:00"); 
+            const proximaCarrera = new Date("2025-04-18T14:45:00"); 
         
             let simulacionActiva = false;
         
-            // 🕒 Establecer tiempo total en milisegundos (a partir de cuando se cargó la página hasta la carrera)
-            const tiempoInicio = new Date(); // cuando se carga
+            const tiempoInicio = new Date();
             const tiempoFinal = proximaCarrera;
             const tiempoTotal = tiempoFinal - tiempoInicio;
 
@@ -316,44 +315,38 @@
                 const diferencia = tiempoFinal - ahora;
                 const display = document.getElementById("display-tiempo");
                 const luces = document.querySelectorAll(".lucecita");
-
+            
                 if (diferencia <= 0) {
                     if (!simulacionActiva) {
                         activarSimulacion();
                         simulacionActiva = true;
                     }
-                
-                    const display = document.getElementById("display-tiempo");
+            
                     display.innerText = "and Away we go...";
-                
-                    const luces = document.querySelectorAll(".lucecita");
                     luces.forEach(l => l.classList.remove("encendida"));
-                
                     return;
                 }
-                
-                
-
+            
                 const horas = Math.floor(diferencia / (1000 * 60 * 60));
                 const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
                 const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
+            
                 display.innerText = `${horas.toString().padStart(2, '0')}:${minutos
                     .toString()
                     .padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
-
-                // 🟢 Estilo barra de carga: encender luces según el % de tiempo transcurrido
-                const tiempoTranscurrido = tiempoTotal - diferencia;
-                const porcentaje = tiempoTranscurrido / tiempoTotal;
-
-                const lucesTotales = luces.length;
-                const lucesEncendidas = Math.floor(porcentaje * lucesTotales);
-
-                luces.forEach((luz, idx) => {
-                    luz.classList.toggle("encendida", idx < lucesEncendidas);
-                });
+            
+                if (diferencia <= 10000) {
+                    const segundosRestantes = Math.floor(diferencia / 1000);
+                    const lucesEncendidas = Math.floor((10 - segundosRestantes) / 2);
+            
+                    luces.forEach((luz, idx) => {
+                        luz.classList.toggle("encendida", idx < lucesEncendidas);
+                    });
+                } else {
+                    luces.forEach(l => l.classList.remove("encendida"));
+                }
             }
-
+            
             
         
             function activarSimulacion() {
