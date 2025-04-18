@@ -302,6 +302,12 @@
 
 
         <script>
+            window.onload = () => {
+                setInterval(actualizarContador, 1000); 
+                obtenerProximaCarrera();
+                iniciarSimulacion();
+            };
+        
             const tiempoInicio = new Date();
 
             let proximaCarrera = null;
@@ -374,16 +380,12 @@
             }
     
             function activarSimulacion() {
-                console.log("🚦 Activando simulación...");
+                console.log("Activando simulación...");
                 iniciarSimulacion();
             }
         
-            window.onload = () => {
-                setInterval(actualizarContador, 1000); 
-                obtenerProximaCarrera();
-            };
-        
             function iniciarSimulacion() {
+                console.log("IniciarSimulacion() llamada");
                 const ULTIMA_VUELTA = 44; 
         
                 const socket = io();
