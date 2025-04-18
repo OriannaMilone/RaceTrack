@@ -66,40 +66,44 @@
             color: #fff;
         }
 
-         #contador-carrera {
-        text-align: center;
-        margin: 40px 0;
+        #contador-carrera {
+            text-align: center;
+            margin: 40px 0;
         }
-
-    #display-tiempo {
-        font-size: 3rem;
-        color: #ffffff;
-        font-family: inherit;;
-        letter-spacing: 2px;
-    }
-
-    #f1-luces-horizontal {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 14px;
-    }
-
-    .lucecita {
-        width: 40px;
-        height: 40px;
-        background-color: #111;
-        border: 2px solid #444;
-        border-radius: 50%;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .lucecita.encendida {
-        background-color: red;
-        box-shadow: 0 0 12px red;
-    }
         
+        #texto-explicativo {
+            color: #ccc;
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        
+        #display-tiempo {
+            font-size: 3rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+        
+        #f1-luces-horizontal {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+        }
+        
+        .lucecita {
+            width: 40px;
+            height: 40px;
+            background-color: #111;
+            border: 2px solid #444;
+            border-radius: 50%;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .lucecita.encendida {
+            background-color: red;
+            box-shadow: 0 0 12px red;
+        } 
     </style>
 
 </head>
@@ -237,10 +241,10 @@
                 </button>
             </div>
             
-            <div id="contador-carrera">
+            <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
                 <div id="contador-carrera">
+                    <p id="texto-explicativo">Next race in:</p>
                     <div id="display-tiempo">--:--:--</div>
-                
                     <div id="f1-luces-horizontal">
                         <div class="lucecita"></div>
                         <div class="lucecita"></div>
@@ -249,7 +253,8 @@
                         <div class="lucecita"></div>
                     </div>
                 </div>
-            </div>    
+            </div>
+            
             
             
             <canvas id="graficoCarrera" width="800" height="400"></canvas>
@@ -297,7 +302,7 @@
 
         <script>
             // FECHA Y HORA DE LA PRÓXIMA CARRERA CAMBIAR ESTO
-            const proximaCarrera = new Date("2025-04-17T17:09:00"); 
+            const proximaCarrera = new Date("2025-04-19T14:23:00"); 
         
             let simulacionActiva = false;
         
@@ -313,14 +318,21 @@
                 const luces = document.querySelectorAll(".lucecita");
 
                 if (diferencia <= 0) {
-                    display.innerText = " ... and Away we Go!";
-                    luces.forEach(l => l.classList.add("encendida"));
                     if (!simulacionActiva) {
                         activarSimulacion();
                         simulacionActiva = true;
                     }
+                
+                    const display = document.getElementById("display-tiempo");
+                    display.innerText = "and Away we go...";
+                
+                    const luces = document.querySelectorAll(".lucecita");
+                    luces.forEach(l => l.classList.remove("encendida"));
+                
                     return;
                 }
+                
+                
 
                 const horas = Math.floor(diferencia / (1000 * 60 * 60));
                 const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
