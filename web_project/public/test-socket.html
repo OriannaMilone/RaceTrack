@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Socket.IO</title>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+  <h1>Test de conexión WebSocket</h1>
+  <p id="estado-socket">⏳ Esperando conexión...</p>
+  <pre id="log" style="background:#eee; padding:1em; max-height:400px; overflow-y:auto;"></pre>
+
+  <script>
+    const log = (msg) => {
+      const pre = document.getElementById('log');
+      pre.textContent += msg + '\n';
+    };
+
+    const estado = document.getElementById('estado-socket');
+    const socket = io(); // Se conecta al namespace raíz
+
+    socket.on('connect', () => {
+      estado.textContent = "🟢 Conectado al socket.";
+      log("Conexión establecida. ID: " + socket.id);
+    });
+
+    socket.on('disconnect', () => {
+      estado.textContent = "🔴 Desconectado del socket.";
+      log("Desconectado del servidor.");
+    });
+
+    socket.on('nueva-vuelta', (data) => {
+      log("📈 NUEVA VUELTA:\n" + JSON.stringify(data, null, 2));
+    });
+
+    socket.on('prediccion-vuelta', (data) => {
+      log("🔮 PREDICCIÓN:\n" + JSON.stringify(data, null, 2));
+    });
+  </script>
+</body>
+</html>

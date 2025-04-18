@@ -121,3 +121,244 @@ LapNumber,Driver,DriverNumber,Team,Position,LapTime,IsPersonalBest,Sector1Time,S
 7.0,HAM,44,Mercedes,2.0,0 days 00:01:49.020000,True,0 days 00:00:31.592000,0 days 00:00:48.074000,0 days 00:00:29.354000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
 7.0,SAI,55,Renault,12.0,0 days 00:01:52.928000,True,0 days 00:00:31.618000,0 days 00:00:51.545000,0 days 00:00:29.765000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
 7.0,BOT,77,Mercedes,13.0,0 days 00:01:52.287000,True,0 days 00:00:31.944000,0 days 00:00:50.593000,0 days 00:00:29.750000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+8.0,VAN,2,McLaren,15.0,0 days 00:01:53.370000,True,0 days 00:00:32.223000,0 days 00:00:50.846000,0 days 00:00:30.301000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+8.0,RIC,3,Red Bull Racing,17.0,0 days 00:01:51.204000,True,0 days 00:00:31.464000,0 days 00:00:50.165000,0 days 00:00:29.575000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+8.0,VET,5,Ferrari,1.0,0 days 00:01:48.646000,True,0 days 00:00:31.609000,0 days 00:00:47.746000,0 days 00:00:29.291000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+8.0,RAI,7,Ferrari,16.0,,False,0 days 00:01:00.909000,0 days 00:00:55.789000,0 days 00:00:36.249000,MEDIUM,,,,17.0,6.0,Brakes,2018,GP Belgica,historica
+8.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:51.439000,True,0 days 00:00:31.824000,0 days 00:00:49.720000,0 days 00:00:29.895000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+8.0,ERI,9,Sauber,9.0,0 days 00:01:52.196000,False,0 days 00:00:31.879000,0 days 00:00:50.559000,0 days 00:00:29.758000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+8.0,GAS,10,Toro Rosso,8.0,0 days 00:01:52.186000,True,0 days 00:00:31.562000,0 days 00:00:50.864000,0 days 00:00:29.760000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+8.0,PER,11,Racing Point,3.0,0 days 00:01:50.670000,True,0 days 00:00:31.666000,0 days 00:00:49.521000,0 days 00:00:29.483000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+8.0,STR,18,Williams,11.0,0 days 00:01:53.039000,False,0 days 00:00:31.388000,0 days 00:00:51.824000,0 days 00:00:29.827000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+8.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:52.057000,True,0 days 00:00:31.852000,0 days 00:00:50.355000,0 days 00:00:29.850000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+8.0,HAR,28,Toro Rosso,14.0,0 days 00:01:52.764000,True,0 days 00:00:32.217000,0 days 00:00:50.534000,0 days 00:00:30.013000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+8.0,OCO,31,Racing Point,5.0,0 days 00:01:51.224000,True,0 days 00:00:31.621000,0 days 00:00:50.174000,0 days 00:00:29.429000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+8.0,VER,33,Red Bull Racing,4.0,0 days 00:01:49.993000,True,0 days 00:00:31.425000,0 days 00:00:49.112000,0 days 00:00:29.456000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+8.0,SIR,35,Williams,10.0,0 days 00:01:52.627000,True,0 days 00:00:32.056000,0 days 00:00:50.730000,0 days 00:00:29.841000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+8.0,HAM,44,Mercedes,2.0,0 days 00:01:48.834000,True,0 days 00:00:31.520000,0 days 00:00:48.070000,0 days 00:00:29.244000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+8.0,SAI,55,Renault,12.0,0 days 00:01:53.182000,False,0 days 00:00:31.311000,0 days 00:00:52.135000,0 days 00:00:29.736000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+8.0,BOT,77,Mercedes,13.0,0 days 00:01:53.164000,False,0 days 00:00:31.258000,0 days 00:00:52.166000,0 days 00:00:29.740000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+9.0,VAN,2,McLaren,15.0,0 days 00:01:52.810000,True,0 days 00:00:32.199000,0 days 00:00:50.374000,0 days 00:00:30.237000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+9.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:51.677000,False,0 days 00:00:31.444000,0 days 00:00:50.561000,0 days 00:00:29.672000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+9.0,VET,5,Ferrari,1.0,0 days 00:01:49.046000,False,0 days 00:00:31.690000,0 days 00:00:47.915000,0 days 00:00:29.441000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+9.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:51.473000,False,0 days 00:00:31.946000,0 days 00:00:49.587000,0 days 00:00:29.940000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+9.0,ERI,9,Sauber,9.0,0 days 00:01:52.210000,False,0 days 00:00:31.998000,0 days 00:00:50.304000,0 days 00:00:29.908000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+9.0,GAS,10,Toro Rosso,8.0,0 days 00:01:52.421000,False,0 days 00:00:31.320000,0 days 00:00:51.122000,0 days 00:00:29.979000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+9.0,PER,11,Racing Point,3.0,0 days 00:01:50.760000,False,0 days 00:00:31.655000,0 days 00:00:49.549000,0 days 00:00:29.556000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+9.0,STR,18,Williams,11.0,0 days 00:01:52.224000,True,0 days 00:00:31.962000,0 days 00:00:50.441000,0 days 00:00:29.821000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+9.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:52.055000,True,0 days 00:00:31.981000,0 days 00:00:50.032000,0 days 00:00:30.042000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+9.0,HAR,28,Toro Rosso,14.0,0 days 00:01:53.028000,False,0 days 00:00:32.179000,0 days 00:00:50.580000,0 days 00:00:30.269000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+9.0,OCO,31,Racing Point,5.0,0 days 00:01:51.016000,True,0 days 00:00:31.653000,0 days 00:00:49.826000,0 days 00:00:29.537000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+9.0,VER,33,Red Bull Racing,4.0,0 days 00:01:50.445000,False,0 days 00:00:31.199000,0 days 00:00:49.688000,0 days 00:00:29.558000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+9.0,SIR,35,Williams,10.0,0 days 00:01:52.140000,True,0 days 00:00:32.115000,0 days 00:00:50.141000,0 days 00:00:29.884000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+9.0,HAM,44,Mercedes,2.0,0 days 00:01:49.143000,False,0 days 00:00:31.723000,0 days 00:00:48.014000,0 days 00:00:29.406000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+9.0,SAI,55,Renault,13.0,0 days 00:01:53.535000,False,0 days 00:00:31.813000,0 days 00:00:51.812000,0 days 00:00:29.910000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+9.0,BOT,77,Mercedes,12.0,0 days 00:01:51.763000,True,0 days 00:00:31.048000,0 days 00:00:50.811000,0 days 00:00:29.904000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+10.0,VAN,2,McLaren,15.0,0 days 00:01:52.639000,True,0 days 00:00:32.192000,0 days 00:00:50.300000,0 days 00:00:30.147000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+10.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.547000,True,0 days 00:00:31.001000,0 days 00:00:49.912000,0 days 00:00:29.634000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+10.0,VET,5,Ferrari,1.0,0 days 00:01:48.749000,False,0 days 00:00:31.662000,0 days 00:00:47.794000,0 days 00:00:29.293000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+10.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:51.152000,True,0 days 00:00:31.993000,0 days 00:00:49.340000,0 days 00:00:29.819000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+10.0,ERI,9,Sauber,9.0,0 days 00:01:51.923000,False,0 days 00:00:31.687000,0 days 00:00:50.422000,0 days 00:00:29.814000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+10.0,GAS,10,Toro Rosso,8.0,0 days 00:01:51.866000,True,0 days 00:00:31.971000,0 days 00:00:50.021000,0 days 00:00:29.874000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+10.0,PER,11,Racing Point,4.0,0 days 00:01:51.534000,False,0 days 00:00:31.648000,0 days 00:00:50.373000,0 days 00:00:29.513000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+10.0,STR,18,Williams,11.0,0 days 00:01:51.976000,True,0 days 00:00:31.966000,0 days 00:00:50.194000,0 days 00:00:29.816000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+10.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:51.421000,True,0 days 00:00:31.950000,0 days 00:00:49.552000,0 days 00:00:29.919000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+10.0,HAR,28,Toro Rosso,14.0,0 days 00:01:52.798000,False,0 days 00:00:32.287000,0 days 00:00:50.513000,0 days 00:00:29.998000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+10.0,OCO,31,Racing Point,5.0,0 days 00:01:51.054000,False,0 days 00:00:31.719000,0 days 00:00:49.823000,0 days 00:00:29.512000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+10.0,VER,33,Red Bull Racing,3.0,0 days 00:01:48.932000,True,0 days 00:00:30.977000,0 days 00:00:48.493000,0 days 00:00:29.462000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+10.0,SIR,35,Williams,10.0,0 days 00:01:52.031000,True,0 days 00:00:32.092000,0 days 00:00:50.031000,0 days 00:00:29.908000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+10.0,HAM,44,Mercedes,2.0,0 days 00:01:49.179000,False,0 days 00:00:31.660000,0 days 00:00:48.141000,0 days 00:00:29.378000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+10.0,SAI,55,Renault,13.0,0 days 00:01:53.191000,False,0 days 00:00:31.932000,0 days 00:00:51.483000,0 days 00:00:29.776000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+10.0,BOT,77,Mercedes,12.0,0 days 00:01:51.548000,True,0 days 00:00:31.595000,0 days 00:00:50.208000,0 days 00:00:29.745000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+11.0,VAN,2,McLaren,15.0,0 days 00:01:52.448000,True,0 days 00:00:32.202000,0 days 00:00:50.174000,0 days 00:00:30.072000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+11.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.549000,False,0 days 00:00:31.259000,0 days 00:00:49.767000,0 days 00:00:29.523000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+11.0,VET,5,Ferrari,1.0,0 days 00:01:48.495000,True,0 days 00:00:31.643000,0 days 00:00:47.665000,0 days 00:00:29.187000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+11.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.904000,True,0 days 00:00:31.953000,0 days 00:00:49.059000,0 days 00:00:29.892000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+11.0,ERI,9,Sauber,9.0,0 days 00:01:51.669000,False,0 days 00:00:32.077000,0 days 00:00:49.773000,0 days 00:00:29.819000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+11.0,GAS,10,Toro Rosso,8.0,0 days 00:01:51.360000,True,0 days 00:00:31.864000,0 days 00:00:49.674000,0 days 00:00:29.822000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+11.0,PER,11,Racing Point,4.0,0 days 00:01:51.527000,False,0 days 00:00:31.571000,0 days 00:00:50.373000,0 days 00:00:29.583000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+11.0,STR,18,Williams,12.0,0 days 00:01:52.992000,False,0 days 00:00:31.949000,0 days 00:00:51.329000,0 days 00:00:29.714000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+11.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:51.117000,True,0 days 00:00:31.939000,0 days 00:00:49.284000,0 days 00:00:29.894000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+11.0,HAR,28,Toro Rosso,14.0,0 days 00:01:52.281000,True,0 days 00:00:32.214000,0 days 00:00:50.051000,0 days 00:00:30.016000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+11.0,OCO,31,Racing Point,5.0,0 days 00:01:50.855000,True,0 days 00:00:31.660000,0 days 00:00:49.716000,0 days 00:00:29.479000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+11.0,VER,33,Red Bull Racing,3.0,0 days 00:01:49.575000,False,0 days 00:00:31.776000,0 days 00:00:48.314000,0 days 00:00:29.485000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+11.0,SIR,35,Williams,10.0,0 days 00:01:51.722000,True,0 days 00:00:32.211000,0 days 00:00:49.686000,0 days 00:00:29.825000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+11.0,HAM,44,Mercedes,2.0,0 days 00:01:48.977000,False,0 days 00:00:31.663000,0 days 00:00:47.884000,0 days 00:00:29.430000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+11.0,SAI,55,Renault,13.0,0 days 00:01:52.305000,True,0 days 00:00:31.793000,0 days 00:00:50.665000,0 days 00:00:29.847000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+11.0,BOT,77,Mercedes,11.0,0 days 00:01:50.507000,True,0 days 00:00:31.103000,0 days 00:00:49.997000,0 days 00:00:29.407000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+12.0,VAN,2,McLaren,15.0,0 days 00:01:52.442000,True,0 days 00:00:32.121000,0 days 00:00:50.181000,0 days 00:00:30.140000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+12.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.872000,False,0 days 00:00:31.468000,0 days 00:00:49.863000,0 days 00:00:29.541000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+12.0,VET,5,Ferrari,1.0,0 days 00:01:48.663000,False,0 days 00:00:31.555000,0 days 00:00:47.841000,0 days 00:00:29.267000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+12.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.986000,False,0 days 00:00:31.904000,0 days 00:00:49.157000,0 days 00:00:29.925000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+12.0,ERI,9,Sauber,9.0,0 days 00:01:51.212000,True,0 days 00:00:31.878000,0 days 00:00:49.517000,0 days 00:00:29.817000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+12.0,GAS,10,Toro Rosso,8.0,0 days 00:01:51.232000,True,0 days 00:00:31.960000,0 days 00:00:49.440000,0 days 00:00:29.832000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+12.0,PER,11,Racing Point,4.0,0 days 00:01:50.665000,True,0 days 00:00:31.663000,0 days 00:00:49.524000,0 days 00:00:29.478000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+12.0,STR,18,Williams,12.0,0 days 00:01:53.092000,False,0 days 00:00:31.941000,0 days 00:00:51.261000,0 days 00:00:29.890000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+12.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:51.002000,True,0 days 00:00:31.929000,0 days 00:00:49.121000,0 days 00:00:29.952000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+12.0,HAR,28,Toro Rosso,14.0,0 days 00:01:52.454000,False,0 days 00:00:32.233000,0 days 00:00:50.030000,0 days 00:00:30.191000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+12.0,OCO,31,Racing Point,5.0,0 days 00:01:50.569000,True,0 days 00:00:31.583000,0 days 00:00:49.587000,0 days 00:00:29.399000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+12.0,VER,33,Red Bull Racing,3.0,0 days 00:01:49.224000,False,0 days 00:00:31.775000,0 days 00:00:48.120000,0 days 00:00:29.329000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+12.0,SIR,35,Williams,11.0,0 days 00:01:52.994000,False,0 days 00:00:31.982000,0 days 00:00:51.086000,0 days 00:00:29.926000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+12.0,HAM,44,Mercedes,2.0,0 days 00:01:48.665000,True,0 days 00:00:31.607000,0 days 00:00:47.755000,0 days 00:00:29.303000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+12.0,SAI,55,Renault,13.0,0 days 00:01:52.045000,True,0 days 00:00:31.905000,0 days 00:00:50.297000,0 days 00:00:29.843000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+12.0,BOT,77,Mercedes,10.0,0 days 00:01:50.661000,False,0 days 00:00:31.028000,0 days 00:00:49.839000,0 days 00:00:29.794000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+13.0,VAN,2,McLaren,15.0,0 days 00:01:52.370000,True,0 days 00:00:32.194000,0 days 00:00:50.017000,0 days 00:00:30.159000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+13.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.540000,True,0 days 00:00:31.125000,0 days 00:00:49.819000,0 days 00:00:29.596000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+13.0,VET,5,Ferrari,1.0,0 days 00:01:48.732000,False,0 days 00:00:31.568000,0 days 00:00:47.809000,0 days 00:00:29.355000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+13.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:51.174000,False,0 days 00:00:32.070000,0 days 00:00:49.040000,0 days 00:00:30.064000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+13.0,ERI,9,Sauber,9.0,0 days 00:01:51.360000,False,0 days 00:00:31.929000,0 days 00:00:49.635000,0 days 00:00:29.796000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+13.0,GAS,10,Toro Rosso,8.0,0 days 00:01:51.171000,True,0 days 00:00:32.115000,0 days 00:00:49.325000,0 days 00:00:29.731000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+13.0,PER,11,Racing Point,4.0,0 days 00:01:50.478000,True,0 days 00:00:31.700000,0 days 00:00:49.380000,0 days 00:00:29.398000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+13.0,STR,18,Williams,12.0,0 days 00:01:52.069000,False,0 days 00:00:32.125000,0 days 00:00:50.172000,0 days 00:00:29.772000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+13.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:51.115000,False,0 days 00:00:32.029000,0 days 00:00:49.063000,0 days 00:00:30.023000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+13.0,HAR,28,Toro Rosso,14.0,0 days 00:01:52.485000,False,0 days 00:00:32.270000,0 days 00:00:50.031000,0 days 00:00:30.184000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+13.0,OCO,31,Racing Point,5.0,0 days 00:01:50.581000,False,0 days 00:00:31.621000,0 days 00:00:49.480000,0 days 00:00:29.480000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+13.0,VER,33,Red Bull Racing,3.0,0 days 00:01:49.253000,False,0 days 00:00:31.739000,0 days 00:00:48.173000,0 days 00:00:29.341000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+13.0,SIR,35,Williams,11.0,0 days 00:01:53.170000,False,0 days 00:00:32.124000,0 days 00:00:51.129000,0 days 00:00:29.917000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+13.0,HAM,44,Mercedes,2.0,0 days 00:01:48.742000,False,0 days 00:00:31.459000,0 days 00:00:47.873000,0 days 00:00:29.410000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+13.0,SAI,55,Renault,13.0,0 days 00:01:51.817000,True,0 days 00:00:31.765000,0 days 00:00:50.335000,0 days 00:00:29.717000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+13.0,BOT,77,Mercedes,10.0,0 days 00:01:51.593000,False,0 days 00:00:31.683000,0 days 00:00:50.099000,0 days 00:00:29.811000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+14.0,VAN,2,McLaren,15.0,0 days 00:01:52.899000,False,0 days 00:00:32.268000,0 days 00:00:50.193000,0 days 00:00:30.438000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+14.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.383000,True,0 days 00:00:31.375000,0 days 00:00:49.359000,0 days 00:00:29.649000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+14.0,VET,5,Ferrari,1.0,0 days 00:01:48.748000,False,0 days 00:00:31.700000,0 days 00:00:47.753000,0 days 00:00:29.295000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+14.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:51.148000,False,0 days 00:00:32.177000,0 days 00:00:48.893000,0 days 00:00:30.078000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+14.0,ERI,9,Sauber,9.0,0 days 00:01:51.343000,False,0 days 00:00:32.121000,0 days 00:00:49.330000,0 days 00:00:29.892000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+14.0,GAS,10,Toro Rosso,8.0,0 days 00:01:51.225000,False,0 days 00:00:31.989000,0 days 00:00:49.388000,0 days 00:00:29.848000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+14.0,PER,11,Racing Point,4.0,0 days 00:01:50.433000,True,0 days 00:00:31.674000,0 days 00:00:49.305000,0 days 00:00:29.454000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+14.0,STR,18,Williams,12.0,0 days 00:01:52.270000,False,0 days 00:00:31.979000,0 days 00:00:50.380000,0 days 00:00:29.911000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+14.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:51.039000,False,0 days 00:00:31.997000,0 days 00:00:49.024000,0 days 00:00:30.018000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+14.0,HAR,28,Toro Rosso,14.0,0 days 00:01:51.956000,True,0 days 00:00:32.290000,0 days 00:00:49.499000,0 days 00:00:30.167000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+14.0,OCO,31,Racing Point,5.0,0 days 00:01:50.667000,False,0 days 00:00:31.738000,0 days 00:00:49.466000,0 days 00:00:29.463000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+14.0,VER,33,Red Bull Racing,3.0,0 days 00:01:49.377000,False,0 days 00:00:31.831000,0 days 00:00:48.129000,0 days 00:00:29.417000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+14.0,SIR,35,Williams,11.0,0 days 00:01:52.143000,False,0 days 00:00:32.470000,0 days 00:00:49.661000,0 days 00:00:30.012000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+14.0,HAM,44,Mercedes,2.0,0 days 00:01:48.939000,False,0 days 00:00:31.549000,0 days 00:00:48.054000,0 days 00:00:29.336000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+14.0,SAI,55,Renault,13.0,0 days 00:01:52.215000,False,0 days 00:00:31.758000,0 days 00:00:50.564000,0 days 00:00:29.893000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+14.0,BOT,77,Mercedes,10.0,0 days 00:01:51.075000,False,0 days 00:00:31.646000,0 days 00:00:49.753000,0 days 00:00:29.676000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+15.0,VAN,2,McLaren,15.0,0 days 00:01:52.424000,False,0 days 00:00:32.267000,0 days 00:00:49.855000,0 days 00:00:30.302000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+15.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.671000,False,0 days 00:00:31.492000,0 days 00:00:49.522000,0 days 00:00:29.657000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+15.0,VET,5,Ferrari,1.0,0 days 00:01:48.679000,False,0 days 00:00:31.722000,0 days 00:00:47.694000,0 days 00:00:29.263000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+15.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.777000,True,0 days 00:00:32.012000,0 days 00:00:48.756000,0 days 00:00:30.009000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+15.0,ERI,9,Sauber,9.0,0 days 00:01:50.874000,True,0 days 00:00:32.041000,0 days 00:00:49.048000,0 days 00:00:29.785000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+15.0,GAS,10,Toro Rosso,8.0,0 days 00:01:50.672000,True,0 days 00:00:31.863000,0 days 00:00:49.069000,0 days 00:00:29.740000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+15.0,PER,11,Racing Point,4.0,0 days 00:01:50.303000,True,0 days 00:00:31.675000,0 days 00:00:49.133000,0 days 00:00:29.495000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+15.0,STR,18,Williams,12.0,0 days 00:01:51.713000,True,0 days 00:00:31.896000,0 days 00:00:50.007000,0 days 00:00:29.810000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+15.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:50.729000,True,0 days 00:00:31.929000,0 days 00:00:48.796000,0 days 00:00:30.004000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+15.0,HAR,28,Toro Rosso,14.0,0 days 00:01:51.876000,True,0 days 00:00:32.212000,0 days 00:00:49.486000,0 days 00:00:30.178000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+15.0,OCO,31,Racing Point,5.0,0 days 00:01:50.403000,True,0 days 00:00:31.684000,0 days 00:00:49.286000,0 days 00:00:29.433000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+15.0,VER,33,Red Bull Racing,3.0,0 days 00:01:49.043000,False,0 days 00:00:31.716000,0 days 00:00:47.934000,0 days 00:00:29.393000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+15.0,SIR,35,Williams,11.0,0 days 00:01:51.527000,True,0 days 00:00:32.217000,0 days 00:00:49.392000,0 days 00:00:29.918000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+15.0,HAM,44,Mercedes,2.0,0 days 00:01:48.479000,True,0 days 00:00:31.618000,0 days 00:00:47.586000,0 days 00:00:29.275000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+15.0,SAI,55,Renault,13.0,0 days 00:01:51.696000,True,0 days 00:00:31.728000,0 days 00:00:50.222000,0 days 00:00:29.746000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+15.0,BOT,77,Mercedes,10.0,0 days 00:01:50.025000,True,0 days 00:00:31.608000,0 days 00:00:48.924000,0 days 00:00:29.493000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+16.0,VAN,2,McLaren,15.0,0 days 00:01:52.384000,False,0 days 00:00:32.314000,0 days 00:00:49.805000,0 days 00:00:30.265000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+16.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.146000,True,0 days 00:00:31.026000,0 days 00:00:49.600000,0 days 00:00:29.520000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+16.0,VET,5,Ferrari,1.0,0 days 00:01:48.399000,True,0 days 00:00:31.517000,0 days 00:00:47.604000,0 days 00:00:29.278000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+16.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.913000,False,0 days 00:00:32.094000,0 days 00:00:48.682000,0 days 00:00:30.137000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+16.0,ERI,9,Sauber,9.0,0 days 00:01:50.834000,True,0 days 00:00:32.040000,0 days 00:00:48.924000,0 days 00:00:29.870000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+16.0,GAS,10,Toro Rosso,8.0,0 days 00:01:51.106000,False,0 days 00:00:31.951000,0 days 00:00:49.251000,0 days 00:00:29.904000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+16.0,PER,11,Racing Point,4.0,0 days 00:01:50.304000,False,0 days 00:00:31.780000,0 days 00:00:48.986000,0 days 00:00:29.538000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+16.0,STR,18,Williams,12.0,0 days 00:01:51.672000,True,0 days 00:00:31.894000,0 days 00:00:49.900000,0 days 00:00:29.878000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+16.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:50.750000,False,0 days 00:00:31.987000,0 days 00:00:48.778000,0 days 00:00:29.985000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+16.0,HAR,28,Toro Rosso,14.0,0 days 00:01:51.533000,True,0 days 00:00:32.289000,0 days 00:00:49.131000,0 days 00:00:30.113000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+16.0,OCO,31,Racing Point,5.0,0 days 00:01:50.714000,False,0 days 00:00:31.699000,0 days 00:00:49.421000,0 days 00:00:29.594000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+16.0,VER,33,Red Bull Racing,3.0,0 days 00:01:49.219000,False,0 days 00:00:31.846000,0 days 00:00:47.934000,0 days 00:00:29.439000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+16.0,SIR,35,Williams,11.0,0 days 00:01:51.617000,False,0 days 00:00:32.328000,0 days 00:00:49.262000,0 days 00:00:30.027000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+16.0,HAM,44,Mercedes,2.0,0 days 00:01:48.208000,True,0 days 00:00:31.486000,0 days 00:00:47.487000,0 days 00:00:29.235000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+16.0,SAI,55,Renault,13.0,0 days 00:01:51.537000,True,0 days 00:00:31.652000,0 days 00:00:50.106000,0 days 00:00:29.779000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+16.0,BOT,77,Mercedes,10.0,0 days 00:01:50.111000,False,0 days 00:00:31.607000,0 days 00:00:49.012000,0 days 00:00:29.492000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+17.0,VAN,2,McLaren,15.0,0 days 00:01:52.134000,True,0 days 00:00:32.302000,0 days 00:00:49.713000,0 days 00:00:30.119000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+17.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.816000,False,0 days 00:00:31.402000,0 days 00:00:49.960000,0 days 00:00:29.454000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+17.0,VET,5,Ferrari,1.0,0 days 00:01:48.667000,False,0 days 00:00:31.702000,0 days 00:00:47.632000,0 days 00:00:29.333000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+17.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.938000,False,0 days 00:00:32.129000,0 days 00:00:48.672000,0 days 00:00:30.137000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+17.0,ERI,9,Sauber,10.0,0 days 00:01:52.135000,False,0 days 00:00:32.018000,0 days 00:00:50.208000,0 days 00:00:29.909000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+17.0,GAS,10,Toro Rosso,8.0,0 days 00:01:51.162000,False,0 days 00:00:31.992000,0 days 00:00:49.141000,0 days 00:00:30.029000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+17.0,PER,11,Racing Point,4.0,0 days 00:01:50.366000,False,0 days 00:00:31.703000,0 days 00:00:49.033000,0 days 00:00:29.630000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+17.0,STR,18,Williams,12.0,0 days 00:01:51.983000,False,0 days 00:00:32.235000,0 days 00:00:49.797000,0 days 00:00:29.951000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+17.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:51.070000,False,0 days 00:00:31.981000,0 days 00:00:49.011000,0 days 00:00:30.078000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+17.0,HAR,28,Toro Rosso,14.0,0 days 00:01:51.552000,False,0 days 00:00:32.322000,0 days 00:00:49.230000,0 days 00:00:30,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+17.0,OCO,31,Racing Point,5.0,0 days 00:01:50.658000,False,0 days 00:00:31.701000,0 days 00:00:49.408000,0 days 00:00:29.549000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+17.0,VER,33,Red Bull Racing,3.0,0 days 00:01:49.287000,False,0 days 00:00:31.863000,0 days 00:00:47.782000,0 days 00:00:29.642000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+17.0,SIR,35,Williams,11.0,0 days 00:01:51.284000,True,0 days 00:00:32.199000,0 days 00:00:49.101000,0 days 00:00:29.984000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+17.0,HAM,44,Mercedes,2.0,0 days 00:01:48.448000,False,0 days 00:00:31.527000,0 days 00:00:47.632000,0 days 00:00:29.289000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+17.0,SAI,55,Renault,13.0,0 days 00:01:51.853000,False,0 days 00:00:31.606000,0 days 00:00:50.536000,0 days 00:00:29.711000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+17.0,BOT,77,Mercedes,9.0,0 days 00:01:49.907000,True,0 days 00:00:31.083000,0 days 00:00:49.227000,0 days 00:00:29.597000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+18.0,VAN,2,McLaren,15.0,0 days 00:01:52.198000,False,0 days 00:00:32.364000,0 days 00:00:49.716000,0 days 00:00:30.118000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+18.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:49.399000,True,0 days 00:00:31.037000,0 days 00:00:48.902000,0 days 00:00:29.460000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+18.0,VET,5,Ferrari,1.0,0 days 00:01:48.600000,False,0 days 00:00:31.548000,0 days 00:00:47.848000,0 days 00:00:29.204000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+18.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.762000,True,0 days 00:00:32.085000,0 days 00:00:48.794000,0 days 00:00:29.883000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+18.0,ERI,9,Sauber,10.0,0 days 00:01:52.484000,False,0 days 00:00:32.083000,0 days 00:00:50.689000,0 days 00:00:29.712000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+18.0,GAS,10,Toro Rosso,9.0,0 days 00:01:52.419000,False,0 days 00:00:32.073000,0 days 00:00:50.569000,0 days 00:00:29.777000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+18.0,PER,11,Racing Point,4.0,0 days 00:01:50.256000,True,0 days 00:00:31.738000,0 days 00:00:49.097000,0 days 00:00:29.421000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+18.0,STR,18,Williams,12.0,0 days 00:01:51.818000,False,0 days 00:00:32.216000,0 days 00:00:49.652000,0 days 00:00:29.950000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+18.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:50.849000,False,0 days 00:00:32.015000,0 days 00:00:48.905000,0 days 00:00:29.929000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+18.0,HAR,28,Toro Rosso,14.0,0 days 00:01:51.791000,False,0 days 00:00:32.342000,0 days 00:00:49.388000,0 days 00:00:30.061000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+18.0,OCO,31,Racing Point,5.0,0 days 00:01:50.400000,True,0 days 00:00:31.698000,0 days 00:00:49.320000,0 days 00:00:29.382000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+18.0,VER,33,Red Bull Racing,3.0,0 days 00:01:48.879000,True,0 days 00:00:31.676000,0 days 00:00:47.849000,0 days 00:00:29.354000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+18.0,SIR,35,Williams,11.0,0 days 00:01:52.122000,False,0 days 00:00:32.377000,0 days 00:00:49.529000,0 days 00:00:30.216000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+18.0,HAM,44,Mercedes,2.0,0 days 00:01:48.706000,False,0 days 00:00:31.602000,0 days 00:00:47.801000,0 days 00:00:29.303000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+18.0,SAI,55,Renault,13.0,0 days 00:01:51.968000,False,0 days 00:00:31.654000,0 days 00:00:50.560000,0 days 00:00:29.754000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+18.0,BOT,77,Mercedes,8.0,0 days 00:01:49.596000,True,0 days 00:00:31.123000,0 days 00:00:48.941000,0 days 00:00:29.532000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+19.0,VAN,2,McLaren,15.0,0 days 00:01:52.122000,True,0 days 00:00:32.330000,0 days 00:00:49.782000,0 days 00:00:30.010000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+19.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:49.644000,False,0 days 00:00:31.483000,0 days 00:00:48.828000,0 days 00:00:29.333000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+19.0,VET,5,Ferrari,1.0,0 days 00:01:48.933000,False,0 days 00:00:31.682000,0 days 00:00:48.015000,0 days 00:00:29.236000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+19.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.606000,True,0 days 00:00:32.028000,0 days 00:00:48.610000,0 days 00:00:29.968000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+19.0,ERI,9,Sauber,10.0,0 days 00:01:51.074000,False,0 days 00:00:31.890000,0 days 00:00:49.446000,0 days 00:00:29.738000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+19.0,GAS,10,Toro Rosso,9.0,0 days 00:01:51.081000,False,0 days 00:00:31.929000,0 days 00:00:49.334000,0 days 00:00:29.818000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+19.0,PER,11,Racing Point,4.0,0 days 00:01:50.212000,True,0 days 00:00:31.698000,0 days 00:00:49.032000,0 days 00:00:29.482000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+19.0,STR,18,Williams,12.0,0 days 00:01:51.748000,False,0 days 00:00:32.055000,0 days 00:00:49.760000,0 days 00:00:29.933000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+19.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:50.754000,False,0 days 00:00:31.929000,0 days 00:00:48.900000,0 days 00:00:29.925000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+19.0,HAR,28,Toro Rosso,14.0,0 days 00:01:51.769000,False,0 days 00:00:32.260000,0 days 00:00:49.592000,0 days 00:00:29.917000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+19.0,OCO,31,Racing Point,5.0,0 days 00:01:50.452000,False,0 days 00:00:31.635000,0 days 00:00:49.379000,0 days 00:00:29.438000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+19.0,VER,33,Red Bull Racing,3.0,0 days 00:01:48.936000,False,0 days 00:00:31.623000,0 days 00:00:47.970000,0 days 00:00:29.343000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+19.0,SIR,35,Williams,11.0,0 days 00:01:51.590000,False,0 days 00:00:32.366000,0 days 00:00:49.186000,0 days 00:00:30.038000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+19.0,HAM,44,Mercedes,2.0,0 days 00:01:48.739000,False,0 days 00:00:31.621000,0 days 00:00:47.847000,0 days 00:00:29.271000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+19.0,SAI,55,Renault,13.0,0 days 00:01:51.578000,False,0 days 00:00:31.494000,0 days 00:00:50.433000,0 days 00:00:29.651000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+19.0,BOT,77,Mercedes,8.0,0 days 00:01:50.122000,False,0 days 00:00:31.595000,0 days 00:00:48.903000,0 days 00:00:29.624000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+20.0,VAN,2,McLaren,15.0,0 days 00:01:51.846000,True,0 days 00:00:32.237000,0 days 00:00:49.603000,0 days 00:00:30.006000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+20.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.130000,False,0 days 00:00:31.412000,0 days 00:00:49.108000,0 days 00:00:29.610000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+20.0,VET,5,Ferrari,1.0,0 days 00:01:48.781000,False,0 days 00:00:31.581000,0 days 00:00:47.934000,0 days 00:00:29.266000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+20.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.609000,False,0 days 00:00:32.118000,0 days 00:00:48.434000,0 days 00:00:30.057000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+20.0,ERI,9,Sauber,10.0,0 days 00:01:51.232000,False,0 days 00:00:32.094000,0 days 00:00:49.330000,0 days 00:00:29.808000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+20.0,GAS,10,Toro Rosso,9.0,0 days 00:01:52.237000,False,0 days 00:00:32.042000,0 days 00:00:50.336000,0 days 00:00:29.859000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+20.0,PER,11,Racing Point,4.0,0 days 00:01:50.092000,True,0 days 00:00:31.685000,0 days 00:00:48.917000,0 days 00:00:29.490000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+20.0,STR,18,Williams,12.0,0 days 00:01:51.366000,True,0 days 00:00:32.113000,0 days 00:00:49.450000,0 days 00:00:29.803000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+20.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:50.487000,True,0 days 00:00:31.860000,0 days 00:00:48.642000,0 days 00:00:29.985000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+20.0,HAR,28,Toro Rosso,14.0,0 days 00:01:51.835000,False,0 days 00:00:32.252000,0 days 00:00:49.628000,0 days 00:00:29.955000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+20.0,OCO,31,Racing Point,5.0,0 days 00:01:50.339000,True,0 days 00:00:31.657000,0 days 00:00:49.212000,0 days 00:00:29.470000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+20.0,VER,33,Red Bull Racing,3.0,0 days 00:01:48.937000,False,0 days 00:00:31.591000,0 days 00:00:47.910000,0 days 00:00:29.436000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+20.0,SIR,35,Williams,11.0,0 days 00:01:51.300000,False,0 days 00:00:32.239000,0 days 00:00:49.108000,0 days 00:00:29.953000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+20.0,HAM,44,Mercedes,2.0,0 days 00:01:48.736000,False,0 days 00:00:31.550000,0 days 00:00:47.849000,0 days 00:00:29.337000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+20.0,SAI,55,Renault,13.0,0 days 00:01:51.617000,False,0 days 00:00:31.455000,0 days 00:00:50.499000,0 days 00:00:29.663000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+20.0,BOT,77,Mercedes,8.0,0 days 00:01:49.922000,False,0 days 00:00:31.378000,0 days 00:00:49.004000,0 days 00:00:29.540000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+21.0,VAN,2,McLaren,15.0,0 days 00:01:51.764000,True,0 days 00:00:32.285000,0 days 00:00:49.454000,0 days 00:00:30.025000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+21.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:50.178000,False,0 days 00:00:31.298000,0 days 00:00:49.577000,0 days 00:00:29.303000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+21.0,VET,5,Ferrari,1.0,0 days 00:01:48.710000,False,0 days 00:00:31.494000,0 days 00:00:47.932000,0 days 00:00:29.284000,SUPERSOFT,,,,1.0,2.0,Finished,2018,GP Belgica,historica
+21.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.528000,True,0 days 00:00:32.037000,0 days 00:00:48.589000,0 days 00:00:29.902000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+21.0,ERI,9,Sauber,10.0,0 days 00:01:51.130000,False,0 days 00:00:31.955000,0 days 00:00:49.323000,0 days 00:00:29.852000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+21.0,GAS,10,Toro Rosso,9.0,0 days 00:01:50.697000,False,0 days 00:00:31.776000,0 days 00:00:49.242000,0 days 00:00:29.679000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+21.0,PER,11,Racing Point,4.0,0 days 00:01:50.108000,False,0 days 00:00:31.714000,0 days 00:00:48.937000,0 days 00:00:29.457000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+21.0,STR,18,Williams,12.0,0 days 00:01:51.286000,True,0 days 00:00:32.146000,0 days 00:00:49.331000,0 days 00:00:29.809000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+21.0,MAG,20,Haas F1 Team,7.0,0 days 00:01:50.403000,True,0 days 00:00:31.863000,0 days 00:00:48.692000,0 days 00:00:29.848000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+21.0,HAR,28,Toro Rosso,14.0,0 days 00:01:51.178000,True,0 days 00:00:32.187000,0 days 00:00:49.093000,0 days 00:00:29.898000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+21.0,OCO,31,Racing Point,5.0,0 days 00:01:50.199000,True,0 days 00:00:31.628000,0 days 00:00:49.153000,0 days 00:00:29.418000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+21.0,VER,33,Red Bull Racing,3.0,0 days 00:01:48.953000,False,0 days 00:00:31.710000,0 days 00:00:47.870000,0 days 00:00:29.373000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+21.0,SIR,35,Williams,11.0,0 days 00:01:51.407000,False,0 days 00:00:32.294000,0 days 00:00:49.170000,0 days 00:00:29.943000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+21.0,HAM,44,Mercedes,2.0,0 days 00:01:53.411000,False,0 days 00:00:31.499000,0 days 00:00:48.179000,0 days 00:00:33.733000,SUPERSOFT,0 days 01:00:48.913000,0 days 01:01:11.181000,0 days 00:00:22.268000,2.0,1.0,Finished,2018,GP Belgica,historica
+21.0,SAI,55,Renault,13.0,0 days 00:01:51.654000,False,0 days 00:00:31.593000,0 days 00:00:50.264000,0 days 00:00:29.797000,MEDIUM,,,,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+21.0,BOT,77,Mercedes,8.0,0 days 00:01:49.817000,False,0 days 00:00:31.174000,0 days 00:00:49.402000,0 days 00:00:29.241000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica
+22.0,VAN,2,McLaren,15.0,0 days 00:01:52.023000,False,0 days 00:00:32.263000,0 days 00:00:49.675000,0 days 00:00:30.085000,MEDIUM,,,,15.0,18.0,+1 Lap,2018,GP Belgica,historica
+22.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:49.334000,True,0 days 00:00:31.070000,0 days 00:00:48.747000,0 days 00:00:29.517000,SOFT,,,,16.0,8.0,Retired,2018,GP Belgica,historica
+22.0,VET,5,Ferrari,1.0,0 days 00:01:52.901000,False,0 days 00:00:31.622000,0 days 00:00:47.804000,0 days 00:00:33.475000,SUPERSOFT,0 days 01:02:33.922000,0 days 01:02:56.048000,0 days 00:00:22.126000,1.0,2.0,Finished,2018,GP Belgica,historica
+22.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:50.593000,False,0 days 00:00:32.067000,0 days 00:00:48.584000,0 days 00:00:29.942000,SUPERSOFT,,,,7.0,5.0,Finished,2018,GP Belgica,historica
+22.0,ERI,9,Sauber,10.0,0 days 00:01:51.024000,False,0 days 00:00:32.194000,0 days 00:00:49.015000,0 days 00:00:29.815000,SOFT,,,,10.0,13.0,+1 Lap,2018,GP Belgica,historica
+22.0,GAS,10,Toro Rosso,9.0,0 days 00:01:50.766000,False,0 days 00:00:32.029000,0 days 00:00:48.999000,0 days 00:00:29.738000,SUPERSOFT,,,,9.0,10.0,Finished,2018,GP Belgica,historica
+22.0,PER,11,Racing Point,4.0,0 days 00:01:50.248000,False,0 days 00:00:31.664000,0 days 00:00:49.029000,0 days 00:00:29.555000,SUPERSOFT,,,,5.0,4.0,Finished,2018,GP Belgica,historica
+22.0,STR,18,Williams,12.0,0 days 00:01:51.323000,False,0 days 00:00:32.089000,0 days 00:00:49.386000,0 days 00:00:29.848000,SOFT,,,,13.0,17.0,+1 Lap,2018,GP Belgica,historica
+22.0,MAG,20,Haas F1 Team,8.0,0 days 00:01:52.533000,False,0 days 00:00:31.973000,0 days 00:00:50.716000,0 days 00:00:29.844000,SUPERSOFT,,,,8.0,9.0,Finished,2018,GP Belgica,historica
+22.0,HAR,28,Toro Rosso,13.0,0 days 00:01:51.454000,False,0 days 00:00:32.177000,0 days 00:00:49.363000,0 days 00:00:29.914000,SOFT,,,,14.0,11.0,+1 Lap,2018,GP Belgica,historica
+22.0,OCO,31,Racing Point,5.0,0 days 00:01:50.448000,False,0 days 00:00:31.578000,0 days 00:00:49.388000,0 days 00:00:29.482000,SUPERSOFT,,,,6.0,3.0,Finished,2018,GP Belgica,historica
+22.0,VER,33,Red Bull Racing,2.0,0 days 00:01:49.194000,False,0 days 00:00:32.021000,0 days 00:00:47.782000,0 days 00:00:29.391000,SUPERSOFT,,,,3.0,7.0,Finished,2018,GP Belgica,historica
+22.0,SIR,35,Williams,11.0,0 days 00:01:51.538000,False,0 days 00:00:32.299000,0 days 00:00:49.234000,0 days 00:00:30.005000,SOFT,,,,12.0,16.0,+1 Lap,2018,GP Belgica,historica
+22.0,HAM,44,Mercedes,3.0,0 days 00:01:59.902000,False,0 days 00:00:44.885000,0 days 00:00:46.211000,0 days 00:00:28.806000,SOFT,,,,2.0,1.0,Finished,2018,GP Belgica,historica
+22.0,SAI,55,Renault,14.0,0 days 00:01:56.155000,False,0 days 00:00:31.763000,0 days 00:00:50.271000,0 days 00:00:34.121000,MEDIUM,0 days 01:03:45.427000,0 days 01:04:09.179000,0 days 00:00:23.752000,11.0,14.0,+1 Lap,2018,GP Belgica,historica
+22.0,BOT,77,Mercedes,7.0,0 days 00:01:49.654000,False,0 days 00:00:31.250000,0 days 00:00:49.020000,0 days 00:00:29.384000,SUPERSOFT,,,,4.0,19.0,Finished,2018,GP Belgica,historica

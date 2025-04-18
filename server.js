@@ -10,10 +10,85 @@ const io = new Server(server);
 require('dotenv').config();
 
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 app.use(express.json());
 
 const session = require('express-session');
 const pool = require('./web_project/backend/db'); 
+
+const cron = require('node-cron');
+const { exec } = require('child_process');
+
+let simulacionEnCurso = false;
+
+cron.schedule('* * * * *', async () => {
+  console.log("Cron job ejecutado a:", new Date());
+
+  if (simulacionEnCurso) {
+    console.log("Ya hay una simulación en curso, no se lanza otra.");
+    return;
+  }
+
+  try {
+    const ahora = new Date();
+    console.log("Fecha actual:", ahora.toISOString());
+
+    const result = await pool.query(`
+      SELECT *, fecha + hora AS fecha_hora
+      FROM carreras_programadas
+      WHERE (fecha + hora) <= CURRENT_TIMESTAMP
+        AND (fecha + hora) > CURRENT_TIMESTAMP - interval '1 minute'
+      ORDER BY (fecha + hora)
+      LIMIT 1;
+    `);
+
+    console.log("Resultado de la query:", result.rows);
+
+    if (result.rows.length === 0) {
+      console.log("No hay carreras programadas para este minuto.");
+      return;
+    }
+
+    const carrera = result.rows[0];
+    const fechaHoraCarrera = new Date(carrera.fecha_hora);
+    console.log("Fecha y hora exacta de la carrera (usando fecha_hora):", fechaHoraCarrera.toISOString());
+
+
+    const ahoraRedondeado = new Date(ahora);
+    ahoraRedondeado.setSeconds(0, 0);
+    console.log("Fecha actual redondeada:", ahoraRedondeado.toISOString());
+
+    const diferencia = Math.abs(fechaHoraCarrera.getTime() - ahoraRedondeado.getTime());
+
+    if (diferencia <= 1000 * 60) {
+      console.log(`Hora de lanzar la simulación para ${carrera.gran_premio} (${carrera.nombre_csv})`);
+
+      const simuladorPath = __dirname;
+      const comando = `python -m race_simulator.simulator`;
+
+      simulacionEnCurso = true;
+
+      exec(comando, { cwd: simuladorPath }, (error, stdout, stderr) => {
+        if (error) {
+          console.error('Error al ejecutar simulador:', error);
+          console.error('STDERR:', stderr);
+          simulacionEnCurso = false;
+          return;
+        }
+        console.log('✅ Simulación lanzada correctamente');
+        console.log('STDOUT:', stdout);
+        simulacionEnCurso = false;
+      });
+
+    } else {
+      console.log("La diferencia de tiempo es mayor a 1 minuto, no se lanza simulación.");
+    }
+
+  } catch (err) {
+    console.error("Error al verificar la carrera programada:", err);
+  }
+});
+
 
 app.get('/api/next-race', async (req, res) => {
   try {
