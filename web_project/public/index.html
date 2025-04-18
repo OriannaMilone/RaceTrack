@@ -245,6 +245,7 @@
                 <div id="contador-carrera">
                     <p id="texto-explicativo">Next race in:</p>
                     <div id="display-tiempo">--:--:--</div>
+                    <p id="info-carrera" style="color: #aaa; font-size: 1.1rem; text-align: center; margin-bottom: 6px;"></p>
                     <div id="f1-luces-horizontal">
                         <div class="lucecita"></div>
                         <div class="lucecita"></div>
@@ -301,18 +302,43 @@
 
 
         <script>
-            // FECHA Y HORA DE LA PRÓXIMA CARRERA CAMBIAR ESTO
-            const proximaCarrera = new Date("2025-04-18T14:45:00"); 
-        
-            let simulacionActiva = false;
-        
             const tiempoInicio = new Date();
-            const tiempoFinal = proximaCarrera;
-            const tiempoTotal = tiempoFinal - tiempoInicio;
+
+            let proximaCarrera = null;
+            let tiempoTotal = null;
+            let simulacionActiva = false;
+
+            async function obtenerProximaCarrera() {
+                try {
+                    const res = await fetch('/api/next-race');
+                    const data = await res.json();
+
+                    if (!data.fecha) throw new Error("No date in response");
+
+                    proximaCarrera = new Date(data.fecha);
+
+                    const infoCarrera = document.getElementById("info-carrera");
+                    if (infoCarrera) {
+                        infoCarrera.innerText = `${data.gran_premio} at ${data.circuito}`;
+                    }
+
+                    const tiempoInicio = new Date();
+                    tiempoTotal = proximaCarrera - tiempoInicio;
+
+                    setInterval(() => {
+                        actualizarContador();
+                    }, 1000);
+                } catch (err) {
+                    console.error("Error fetching next race:", err);
+                    document.getElementById("display-tiempo").innerText = "No race scheduled.";
+                }
+            }
+
 
             function actualizarContador() {
+                if (!proximaCarrera) return;
                 const ahora = new Date();
-                const diferencia = tiempoFinal - ahora;
+                const diferencia = proximaCarrera - ahora;
                 const display = document.getElementById("display-tiempo");
                 const luces = document.querySelectorAll(".lucecita");
             
@@ -346,9 +372,7 @@
                     luces.forEach(l => l.classList.remove("encendida"));
                 }
             }
-            
-            
-        
+    
             function activarSimulacion() {
                 console.log("🚦 Activando simulación...");
                 iniciarSimulacion();
@@ -356,6 +380,7 @@
         
             window.onload = () => {
                 setInterval(actualizarContador, 1000); 
+                obtenerProximaCarrera();
             };
         
             function iniciarSimulacion() {
