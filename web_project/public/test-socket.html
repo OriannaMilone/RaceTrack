@@ -62,7 +62,6 @@
 <body>
   <h1>Test de conexión WebSocket</h1>
   <p id="estado-socket">⏳ Esperando conexión...</p>
-  <pre id="log"></pre>
 
   <!-- RACE PART  -->
   <section id="about" class="s-about">
@@ -151,20 +150,20 @@
     };
     
     const actualizarPredicciones = (data, chart) => {
-      const pilotos = Array.isArray(data) ? data : data.pilotos;
-      if (!Array.isArray(pilotos)) {
-        console.error("❌ Los datos de predicción no contienen un array válido:", data);
+      const predicciones = Array.isArray(data) ? data : data.predicciones;
+      if (!Array.isArray(predicciones)) {
+        console.error("Los datos de predicción no contienen un array válido:", data);
         return;
       }
     
-      const pilotosOrdenados = pilotos
+      const pilotosOrdenados = predicciones
         .filter(p => p.Position !== null && !isNaN(p.Position))
         .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
     
       chart.data.datasets[1].data = pilotosOrdenados.map(p => 21 - parseFloat(p.Position));
       chart.update();
     };
-    
+        
 
     const agregarLog = (msg) => {
       const logList = document.getElementById('log-list');
@@ -391,7 +390,7 @@
       });
 
       socket.on('prediccion-vuelta', (data) => {
-        log("🔮 PREDICCIÓN:\n" + JSON.stringify(data, null, 2));
+        log(`🔮 PREDICCIÓN (Lap ${data.vuelta}):\n` + JSON.stringify(data.predicciones, null, 2));
         actualizarPredicciones(data, grafico);
       });
     }
