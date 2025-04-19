@@ -3,374 +3,380 @@
 
 <head>
 
-    <!--- basic page needs
+  <!--- basic page needs
     ================================================== -->
-    <meta charset="utf-8">
-    <title>RaceTrack</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" type="image/ico" href="favicon.ico">
+  <meta charset="utf-8">
+  <title>RaceTrack</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/ico" href="favicon.ico">
 
 
-    <!-- mobile specific metas
+  <!-- mobile specific metas
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSS
+  <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/vendor.css">
 
-    <!-- script
+  <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script defer src="js/fontawesome/all.min.js"></script>
 
-    <!-- favicons
+  <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
 
-    <style>
-        body, html {
-            height: auto;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-        
-        h5 {
-            font-size: 4rem;
-            font-weight: bold;
-            color: #c40000; 
-            font-family: var(--font-2); 
-            line-height: 1.2;
-            text-align: left;
-            margin: 0;
-            white-space: pre-line; 
-            margin-left: 100px;
-          }
-        
-          .admin-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            background-color: #111;
-            padding: 40px;
-            border-radius: 10px;
-            color: #fff;
-            margin-top: 40px;
-        }
-        
-        .admin-form label {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .admin-form input,
-        .admin-form select {
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-        }
-        
-        .admin-lista-carreras {
-            margin-top: 30px;
-            list-style: none;
-            padding-left: 0;
-            color: #fff;
-        }
-        
-        .admin-lista-carreras li {
-            padding: 10px;
-            background: #222;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
+  <style>
+    body,
+    html {
+      height: auto;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
 
-        .s-hero {
-            height: auto !important;
-            overflow-y: auto;
-            padding-top: 150px;
-            padding-bottom: 100px;
-        }
-        .estado-tag {
-            display: inline-block;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 1rem;
-            font-weight: bold;
-            color: white;
-            margin-top: 5px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-          }
-          
-          .estado-upcoming {
-            background-color: #04682d; 
-          }
-          
-          .estado-ongoing {
-            background-color: #ffd600; 
-            color: black;
-          }
-          
-          .estado-finished {
-            background-color: #1f0505;
-          }
-          
-    </style>
+    h5 {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #c40000;
+      font-family: var(--font-2);
+      line-height: 1.2;
+      text-align: left;
+      margin: 0;
+      white-space: pre-line;
+      margin-left: 100px;
+    }
+
+    .admin-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: #111;
+      padding: 40px;
+      border-radius: 10px;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    .admin-form label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .admin-form input,
+    .admin-form select {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .admin-lista-carreras {
+      margin-top: 30px;
+      list-style: none;
+      padding-left: 0;
+      color: #fff;
+    }
+
+    .admin-lista-carreras li {
+      padding: 10px;
+      background: #222;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .s-hero {
+      height: auto !important;
+      overflow-y: auto;
+      padding-top: 150px;
+      padding-bottom: 100px;
+    }
+
+    .estado-tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      margin-top: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .estado-upcoming {
+      background-color: #04682d;
+    }
+
+    .estado-ongoing {
+      background-color: #ffd600;
+      color: black;
+    }
+
+    .estado-finished {
+      background-color: #1f0505;
+    }
+  </style>
 
 </head>
 
 <body id="top">
 
 
-    <!-- preloader
+  <!-- preloader
     ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+  <div id="preloader">
+    <div id="loader" class="dots-fade">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+
+  <!-- header
+    ================================================== -->
+  <header class="s-header">
+
+    <div class="s-header__logo">
+      <a href="index.html"> <!-- <h5>RaceTrack</h5> -->
+        <img src="images/logo.png" alt="Homepage" style="height: 125px; width: 100px;">
+      </a>
+    </div>
+
+    <div class="s-header__content">
+      <nav class="s-header__nav-wrap">
+        <ul class="s-header__nav">
+          <li><a class="smoothscroll" href="#scheduled-races" title="Racetrack agenda">Scheduled Races</a></li>
+          <li><a href="/images/F12025Calendar.jpg" title="Official F1 race calendar" target="_blank">F1 Race
+              Calendar</a></li>
+        </ul>
+      </nav>
+
+      <div class="button-group">
+        <a href="/" class="btn btn--primary btn--small" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+            style="margin-right: 5px; vertical-align: middle;">
+            <path
+              d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
+          </svg>
+          RaceTrack Homepage
+        </a>
+      </div>
+
+      <h5>Admin RaceTrack.</h5>
     </div>
 
 
-    <!-- header
+
+    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+
+  </header> <!-- end s-header -->
+
+
+  <!-- main page
     ================================================== -->
-    <header class="s-header">
+  <section id="hero" class="s-hero target-section">
 
-        <div class="s-header__logo">
-            <a href="index.html"> <!-- <h5>RaceTrack</h5> -->
-                <img src="images/logo.png" alt="Homepage" style="height: 125px; width: 100px;">
-            </a>
+    <div class="s-hero__bg">
+      <div class="gradient-overlay"></div>
+    </div>
+
+    <div class="row s-hero__content">
+      <div class="column">
+        <h3 class="text-center" style="color: #fff;">Admin Panel</h3>
+
+        <form action="/admin/programar" method="POST" class="admin-form">
+
+          <label for="circuito" style="color: #fff;">Circuit</label>
+          <select id="circuito" name="circuito" disabled>
+            <option selected>SPA Francorchamps</option>
+          </select>
+
+          <label for="vueltas" style="color: #fff;">Laps</label>
+          <input type="number" id="vueltas" name="vueltas" value="44" readonly>
+
+          <label for="fecha" style="color: #fff;">Date</label>
+          <input type="date" id="fecha" name="fecha" required>
+
+          <label for="hora" style="color: #fff;">Time</label>
+          <input type="time" id="hora" name="hora" required>
+
+          <label for="temporada" style="color: #fff;">Season (year)</label>
+          <input type="text" id="temporada" name="temporada" required placeholder="2025">
+
+          <label for="gran_premio" style="color: #fff;">Grand Prix Name</label>
+          <input type="text" id="gran_premio" name="gran_premio" required placeholder="Belgian Grand Prix">
+
+          <label style="color: #fff;">
+            <input type="checkbox" name="predicciones" id="predicciones">
+            Enable predictions?
+          </label>
+
+          <button type="submit" class="btn btn--primary">Schedule Race</button>
+        </form>
+
+
+        <hr style="margin: 40px 0; border-color: #444;">
+
+        <h3 id="scheduled-races" class="text-center" style="color: #fff;">Scheduled Races</h3>
+        <ul class="admin-lista-carreras" id="lista-carreras">
+          <!-- Las carreras se insertarán aquí con JS -->
+        </ul>
+
+        <div style="display: flex; justify-content: center;">
+          <a href="/logout" class="btn btn--small" style="opacity: 0.5;">Log out</a>
         </div>
 
-        <div class="s-header__content">
-            <nav class="s-header__nav-wrap">
-                <ul class="s-header__nav">
-                    <li><a class="smoothscroll" href="#scheduled-races" title="Racetrack agenda">Scheduled Races</a></li>
-                    <li><a href="/images/F12025Calendar.jpg" title="Official F1 race calendar" target="_blank">F1 Race Calendar</a></li>
-                </ul>
-            </nav>
-        
-            <div class="button-group">
-                <a href="/" class="btn btn--primary btn--small" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="margin-right: 5px; vertical-align: middle;">
-                        <path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" />
-                    </svg>
-                    RaceTrack Homepage
-                </a>
-            </div>
-        
-            <h5>Admin RaceTrack.</h5>
-        </div>
-        
-        
-
-        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
+      </div>
+    </div>
 
 
-    <!-- main page
-    ================================================== -->
-    <section id="hero" class="s-hero target-section">
-
-        <div class="s-hero__bg">
-            <div class="gradient-overlay"></div>
-        </div>
-
-        <div class="row s-hero__content">
-            <div class="column">
-                <h3 class="text-center" style="color: #fff;">Admin Panel</h3>
-            
-                <form action="/admin/programar" method="POST" class="admin-form">
-
-                    <label for="circuito" style="color: #fff;">Circuit</label>
-                    <select id="circuito" name="circuito" disabled>
-                        <option selected>SPA Francorchamps</option>
-                    </select>
-                
-                    <label for="vueltas" style="color: #fff;">Laps</label>
-                    <input type="number" id="vueltas" name="vueltas" value="44" readonly>
-                
-                    <label for="fecha" style="color: #fff;">Date</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                
-                    <label for="hora" style="color: #fff;">Time</label>
-                    <input type="time" id="hora" name="hora" required>
-                
-                    <label for="temporada" style="color: #fff;">Season (year)</label>
-                    <input type="text" id="temporada" name="temporada" required placeholder="2025">
-                
-                    <label for="gran_premio" style="color: #fff;">Grand Prix Name</label>
-                    <input type="text" id="gran_premio" name="gran_premio" required placeholder="Belgian Grand Prix">
-                
-                    <label style="color: #fff;">
-                        <input type="checkbox" name="predicciones" id="predicciones">
-                        Enable predictions?
-                    </label>
-                
-                    <button type="submit" class="btn btn--primary">Schedule Race</button>
-                </form>
-                
-            
-                <hr style="margin: 40px 0; border-color: #444;">
-            
-                <h3 id="scheduled-races" class="text-center" style="color: #fff;">Scheduled Races</h3>
-                <ul class="admin-lista-carreras" id="lista-carreras">
-                <!-- Las carreras se insertarán aquí con JS -->
-                </ul>
-
-                <div style="display: flex; justify-content: center;">
-                    <a href="/logout" class="btn btn--small" style="opacity: 0.5;">Log out</a>
-                </div>
-                  
-            </div>
-        </div>
-
-
-        <!-- <div class="s-hero__scroll">
+    <!-- <div class="s-hero__scroll">
             <a href="#about" class="s-hero__scroll-link smoothscroll">
                 Scroll Down
             </a>
         </div> -->
 
-    </section> <!-- end s-main page -->
+  </section> <!-- end s-main page -->
 
 
-    <!-- photoswipe background
+  <!-- photoswipe background
     ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+  <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
 
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
 
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+            title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button>
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button
+            class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
             </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
-                        title="Share"></button> <button class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
-                        title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
+          </div>
         </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
 
-    </div> <!-- end photoSwipe background -->
+    </div>
+
+  </div> <!-- end photoSwipe background -->
 
 
-    <!-- Java Script
+  <!-- Java Script
     ================================================== -->
-    <script>
-        document.querySelector('.admin-form').addEventListener('submit', function (e) {
-            const fecha = document.getElementById('fecha').value;
-            const temporada = document.getElementById('temporada').value;
-        
-            if (fecha && temporada) {
-              const anioFecha = new Date(fecha).getFullYear().toString();
-              const anioTemporada = temporada.trim();
-        
-              if (anioFecha !== anioTemporada) {
-                e.preventDefault(); // Bloquear el envío del formulario
-                alert(`⚠️ The selected date is from ${anioFecha}, but the season entered is ${anioTemporada}. They must match.`);
-              }
-            }
-          });
+  <script>
+    document.querySelector('.admin-form').addEventListener('submit', function (e) {
+      const fecha = document.getElementById('fecha').value;
+      const temporada = document.getElementById('temporada').value;
+
+      if (fecha && temporada) {
+        const anioFecha = new Date(fecha).getFullYear().toString();
+        const anioTemporada = temporada.trim();
+
+        if (anioFecha !== anioTemporada) {
+          e.preventDefault(); // Bloquear el envío del formulario
+          alert(`⚠️ The selected date is from ${anioFecha}, but the season entered is ${anioTemporada}. They must match.`);
+        }
+      }
+    });
 
 
-        async function cargarCarreras() {
-            try {
-              const res = await fetch('/admin/carreras');
-              const carreras = await res.json();
-          
-              // Ordenar por temporada, fecha, hora
-              carreras.sort((a, b) => {
-                const tempA = parseInt(a.temporada);
-                const tempB = parseInt(b.temporada);
-                if (tempA !== tempB) return tempA - tempB;
-          
-                const dateA = new Date(a.fecha);
-                const dateB = new Date(b.fecha);
-                if (dateA.getTime() !== dateB.getTime()) return dateA - dateB;
-          
-                const timeA = new Date(`1970-01-01T${a.hora}`);
-                const timeB = new Date(`1970-01-01T${b.hora}`);
-                return timeA - timeB;
-              });
-          
-              const lista = document.getElementById('lista-carreras');
-              lista.innerHTML = '';
-          
-              carreras.forEach(carrera => {
-                if (!carrera.fecha || !carrera.hora || !/^\d{1,2}:\d{2}/.test(carrera.hora)) {
-                  console.warn(`⚠️ Carrera inválida omitida:`, carrera);
-                  return;
-                }
-              
-                const li = document.createElement('li');
-              
-                const fechaObj = new Date(carrera.fecha);
-                const fechaStr = fechaObj.toLocaleDateString('en-GB');
-                const horaStr = carrera.hora.slice(0, 5);
+    async function cargarCarreras() {
+      try {
+        const res = await fetch('/admin/carreras');
+        const carreras = await res.json();
 
-                const [day, month, year] = fechaStr.split('/');
-                const carreraStr = `${year}-${month}-${day}T${horaStr}:00Z`; // UTC
-              
-                const ahora = new Date();
-                const ahoraStr = ahora.toISOString().slice(0, 10) + 'T' + ahora.toISOString().slice(11, 16) + ':00Z'; // UTC
-               
-                
-                // 🔍 Logs de depuración
-                console.log(' A ahoraStr:', ahoraStr);
-                console.log("✅ carreraStr:", carreraStr);
-              
+        // Ordenar por temporada, fecha, hora
+        carreras.sort((a, b) => {
+          const tempA = parseInt(a.temporada);
+          const tempB = parseInt(b.temporada);
+          if (tempA !== tempB) return tempA - tempB;
 
-                const carreraTime = new Date(carreraStr);
-                const carreraFin = new Date(carreraTime.getTime() + 2 * 60 * 60 * 1000);
-                const carreraFinStr = carreraFin.toISOString();
+          const dateA = new Date(a.fecha);
+          const dateB = new Date(b.fecha);
+          if (dateA.getTime() !== dateB.getTime()) return dateA - dateB;
 
-                console.log('⏰ carreraFin:', carreraFinStr);   
+          const timeA = new Date(`1970-01-01T${a.hora}`);
+          const timeB = new Date(`1970-01-01T${b.hora}`);
+          return timeA - timeB;
+        });
 
-                let estado = '';
-                let claseEstado = '';
-              
-                if (ahoraStr < carreraStr) {
-                  estado = 'Upcoming';
-                  claseEstado = 'estado-upcoming';
-                } else if (ahoraStr >= carreraStr && ahoraStr <= carreraFinStr) {
-                  estado = 'Ongoing';
-                  claseEstado = 'estado-ongoing';
-                } else {
-                  estado = 'Finished';
-                  claseEstado = 'estado-finished';
-                }
-              
-                li.innerHTML = `
+        const lista = document.getElementById('lista-carreras');
+        lista.innerHTML = '';
+
+        carreras.forEach(carrera => {
+          if (!carrera.fecha || !carrera.hora || !/^\d{1,2}:\d{2}/.test(carrera.hora)) {
+            console.warn(`⚠️ Carrera inválida omitida:`, carrera);
+            return;
+          }
+
+          const li = document.createElement('li');
+
+          const fechaObj = new Date(carrera.fecha);
+          const fechaStr = fechaObj.toLocaleDateString('en-GB');
+          const horaStr = carrera.hora.slice(0, 5);
+
+          const [day, month, year] = fechaStr.split('/');
+          const carreraStr = `${year}-${month}-${day}T${horaStr}:00Z`; // UTC
+
+          const ahora = new Date();
+          ahora.setSeconds(0, 0); 
+          const ajustada = new Date(ahora.getTime() + 2 * 60 * 60 * 1000); // sumar 2 horas
+          const ahoraStr = ajustada.toISOString().slice(0, 19) + 'Z'; // UTC
+
+
+
+          // 🔍 Logs de depuración
+          console.log(' A ahoraStr:', ahoraStr);
+          console.log("✅ carreraStr:", carreraStr);
+
+
+          const carreraTime = new Date(carreraStr);
+          const carreraFin = new Date(carreraTime.getTime() + 2 * 60 * 60 * 1000);
+          const carreraFinStr = carreraFin.toISOString();
+
+          console.log('⏰ carreraFin:', carreraFinStr);
+
+          let estado = '';
+          let claseEstado = '';
+
+          if (ahoraStr < carreraStr) {
+            estado = 'Upcoming';
+            claseEstado = 'estado-upcoming';
+          } else if (ahoraStr >= carreraStr && ahoraStr <= carreraFinStr) {
+            estado = 'Ongoing';
+            claseEstado = 'estado-ongoing';
+          } else {
+            estado = 'Finished';
+            claseEstado = 'estado-finished';
+          }
+
+          li.innerHTML = `
                   <div style="display: flex; justify-content: space-between; align-items: center;">
                     <div>
                       <strong>${carrera.gran_premio}</strong> (${carrera.temporada}) <br>
@@ -389,24 +395,24 @@
                     </form>
                   </div>
                 `;
-              
-                lista.appendChild(li);
-              });
-              
-          
-            } catch (err) {
-              console.error('❌ Error al cargar carreras:', err);
-            }
-          }
-          
-      
-        window.addEventListener('DOMContentLoaded', cargarCarreras);
-      </script>
-      
-      
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+
+          lista.appendChild(li);
+        });
+
+
+      } catch (err) {
+        console.error('❌ Error al cargar carreras:', err);
+      }
+    }
+
+
+    window.addEventListener('DOMContentLoaded', cargarCarreras);
+  </script>
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
