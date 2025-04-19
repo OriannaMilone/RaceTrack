@@ -269,22 +269,14 @@
     </section> <!-- end s-hero -->
 
 
-    <!-- Race 
-    ================================================== -->
+    <!-- RACE PART  -->
     <section id="about" class="s-about">
 
         <div class="horizontal-line"></div>
             <div class="row">
-                <!--Button to show predictions-->
                 <div class="encabezado-race">
                     <h1 style="margin: 0;">Real-Time Race Simulation</h1>
-
-                    <button id="toggle-predicciones-btn" onclick="togglePredicciones()">
-                        Hide Predictions
-                    </button>
                 </div>
-                <!--End Button to show predictions-->
-
                 <!--Race Timer-->
                 <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
                     <div id="contador-carrera">
@@ -307,6 +299,14 @@
                 <canvas id="graficoCarrera" width="800" height="400"></canvas>
                 <!--End Race Graph-->
 
+                <!--Button to show predictions-->
+                <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
+                    <button id="toggle-predicciones-btn" onclick="togglePredicciones()">
+                        Hide Predictions
+                    </button>
+                </div>
+                <!--End Button to show predictions-->
+                
                 <!--Tyre Information-->
                 <div style="margin-top: 30px; width: 100%;">
                     <p style="font-weight: bold; font-size: 1.7rem; color: #f0f0f0; margin-bottom: 15px;">
@@ -331,7 +331,8 @@
                 <!--End Race Logs-->
             </div>
         </div>
-    </section> <!-- end s-Race -->
+    </section> 
+    <!-- END RACE PART -->
 
     <!--SCRIPT-->
     <script>
@@ -341,13 +342,38 @@
             iniciarSimulacion();
         };
 
-        const tiempoInicio = new Date();
+       
+        let prediccionesVisibles = true;
+        let simulacionActiva = false;
 
         let proximaCarrera = null;
         let tiempoTotal = null;
-        let simulacionActiva = false;
+        const tiempoInicio = new Date();
 
-        let prediccionesVisibles = true;
+        async function obtenerProximaCarrera() {
+            try {
+              const res = await fetch('/api/next-race');
+              const data = await res.json();
+              if (!data.fecha) throw new Error("No date in response");
+      
+              proximaCarrera = new Date(data.fecha);
+      
+              const infoCarrera = document.getElementById("info-carrera");
+              if (infoCarrera) {
+                infoCarrera.innerText = `${data.gran_premio} at ${data.circuito}`;
+              }
+      
+              const tiempoInicio = new Date();
+              tiempoTotal = proximaCarrera - tiempoInicio;
+      
+              setInterval(() => {
+                actualizarContador();
+              }, 1000);
+            } catch (err) {
+              console.error("Error fetching next race:", err);
+              document.getElementById("display-tiempo").innerText = "No race scheduled.";
+            }
+          }
 
         function togglePredicciones() {
             prediccionesVisibles = !prediccionesVisibles;
@@ -359,33 +385,6 @@
             btn.textContent = prediccionesVisibles ? 'Hide Predictions' : 'Show Predictions';
         }
 
-        async function obtenerProximaCarrera() {
-            try {
-                const res = await fetch('/api/next-race');
-                const data = await res.json();
-
-                if (!data.fecha) throw new Error("No date in response");
-
-                proximaCarrera = new Date(data.fecha);
-
-                const infoCarrera = document.getElementById("info-carrera");
-                if (infoCarrera) {
-                    infoCarrera.innerText = `${data.gran_premio} at ${data.circuito}`;
-                }
-
-                const tiempoInicio = new Date();
-                tiempoTotal = proximaCarrera - tiempoInicio;
-
-                setInterval(() => {
-                    actualizarContador();
-                }, 1000);
-            } catch (err) {
-                console.error("Error fetching next race:", err);
-                document.getElementById("display-tiempo").innerText = "No race scheduled.";
-            }
-        }
-
-
         function actualizarContador() {
             if (!proximaCarrera) return;
             const ahora = new Date();
@@ -395,7 +394,7 @@
 
             if (diferencia <= 0) {
                 if (!simulacionActiva) {
-                    activarSimulacion();
+                    iniciarSimulacion();
                     simulacionActiva = true;
                 }
 
@@ -422,11 +421,6 @@
             } else {
                 luces.forEach(l => l.classList.remove("encendida"));
             }
-        }
-
-        function activarSimulacion() {
-            console.log("Activando simulación...");
-            iniciarSimulacion();
         }
 
         function iniciarSimulacion() {
