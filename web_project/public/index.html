@@ -25,6 +25,8 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script defer src="js/fontawesome/all.min.js"></script>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -53,14 +55,19 @@
         }
 
         @keyframes logFlash {
-            0% { background-color: rgba(255, 255, 255, 0.2); }
-            100% { background-color: transparent; }
-          }
-          
-          .log-flash {
+            0% {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            100% {
+                background-color: transparent;
+            }
+        }
+
+        .log-flash {
             animation: logFlash 0.7s ease-out;
-          }
-        
+        }
+
         #toggle-predicciones-btn:hover {
             background-color: #e10600;
             color: #fff;
@@ -70,19 +77,19 @@
             text-align: center;
             margin: 40px 0;
         }
-        
+
         #texto-explicativo {
             color: #ccc;
             font-size: 2rem;
             margin-bottom: 12px;
         }
-        
+
         #display-tiempo {
             font-size: 3rem;
             color: #ffffff;
             letter-spacing: 2px;
         }
-        
+
         #f1-luces-horizontal {
             margin-top: 20px;
             display: flex;
@@ -90,7 +97,7 @@
             align-items: center;
             gap: 14px;
         }
-        
+
         .lucecita {
             width: 40px;
             height: 40px;
@@ -99,11 +106,61 @@
             border-radius: 50%;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .lucecita.encendida {
             background-color: red;
             box-shadow: 0 0 12px red;
-        } 
+        }
+
+        #log {
+            background: #eee;
+            padding: 1em;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        #log-box {
+            min-height: 175px;
+            max-height: 700px;
+            overflow-y: auto;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            padding: 12px;
+            font-family: monospace;
+            font-size: 0.95em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #f5f5f5;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #log-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        #toggle-predicciones-btn {
+            padding: 10px 16px;
+            font-size: 1rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        .encabezado-race {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     </style>
 
 </head>
@@ -217,318 +274,301 @@
     <section id="about" class="s-about">
 
         <div class="horizontal-line"></div>
-
-        <div class="row">
-            <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;">
-                <div>
+            <div class="row">
+                <!--Button to show predictions-->
+                <div class="encabezado-race">
                     <h1 style="margin: 0;">Real-Time Race Simulation</h1>
-                    <!-- <h3 id="vuelta-titulo" style="margin-top: 5px; font-weight: normal;">Waiting for simulation data...</h3> -->
+
+                    <button id="toggle-predicciones-btn" onclick="togglePredicciones()">
+                        Hide Predictions
+                    </button>
                 </div>
-            
-                <button id="toggle-predicciones-btn" onclick="togglePredicciones()" style="
-                    padding: 10px 16px;
-                    font-size: 1rem;
-                    background-color: #333;
-                    color: #fff;
-                    border: none;
-                    border-radius: 6px;
-                    cursor: pointer;
-                    transition: background-color 0.3s ease;
-                    letter-spacing: 1px;
-                    margin-left: 480px; 
-                ">
-                    Hide Predictions
-                </button>
-            </div>
-            
-            <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
-                <div id="contador-carrera">
-                    <p id="texto-explicativo">Next race in:</p>
-                    <div id="display-tiempo">--:--:--</div>
-                    <p id="info-carrera" style="color: #aaa; font-size: 1.1rem; text-align: center; margin-bottom: 6px;"></p>
-                    <div id="f1-luces-horizontal">
-                        <div class="lucecita"></div>
-                        <div class="lucecita"></div>
-                        <div class="lucecita"></div>
-                        <div class="lucecita"></div>
-                        <div class="lucecita"></div>
+                <!--End Button to show predictions-->
+
+                <!--Race Timer-->
+                <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
+                    <div id="contador-carrera">
+                        <p id="texto-explicativo">Next race in:</p>
+                        <div id="display-tiempo">--:--:--</div>
+                        <p id="info-carrera"
+                            style="color: #aaa; font-size: 1.1rem; text-align: center; margin-bottom: 6px;"></p>
+                        <div id="f1-luces-horizontal">
+                            <div class="lucecita"></div>
+                            <div class="lucecita"></div>
+                            <div class="lucecita"></div>
+                            <div class="lucecita"></div>
+                            <div class="lucecita"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            
-            
-            <canvas id="graficoCarrera" width="800" height="400"></canvas>
-            <script src="/socket.io/socket.io.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <!--End Race Timer-->
 
-            <div style="margin-top: 30px; width: 100%;">
-                <p style="font-weight: bold; font-size: 1.7rem; color: #f0f0f0; margin-bottom: 15px;">
-                    Tyre Compounds <span style="font-weight: normal;"></span>
-                </p>
-                <div id="compound-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                    <button onclick="filtrarPorCompuesto('SUPERSOFT')">SUPERSOFT</button>
-                    <button onclick="filtrarPorCompuesto('SOFT')">SOFT</button>
-                    <button onclick="filtrarPorCompuesto('MEDIUM')">MEDIUM</button>
-                    <button onclick="filtrarPorCompuesto('HARD')">HARD</button>
+                <!--Race Graph-->
+                <canvas id="graficoCarrera" width="800" height="400"></canvas>
+                <!--End Race Graph-->
+
+                <!--Tyre Information-->
+                <div style="margin-top: 30px; width: 100%;">
+                    <p style="font-weight: bold; font-size: 1.7rem; color: #f0f0f0; margin-bottom: 15px;">
+                        Tyre Compounds <span style="font-weight: normal;"></span>
+                    </p>
+                    <div id="compound-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <button onclick="filtrarPorCompuesto('SUPERSOFT')">SUPERSOFT</button>
+                        <button onclick="filtrarPorCompuesto('SOFT')">SOFT</button>
+                        <button onclick="filtrarPorCompuesto('MEDIUM')">MEDIUM</button>
+                        <button onclick="filtrarPorCompuesto('HARD')">HARD</button>
+                    </div>
                 </div>
-            </div>
+                <!--End Tyre Information-->
 
-            <!-- Race Logs -->
-            <div id="race-logs" style="margin-top: 30px; width: 100%;">
-                <h3 style="margin-bottom: 10px;">Race Events</h3>
-                <div id="log-box" style="
-                    min-height: 175px;
-                    max-height: 700px;
-                    overflow-y: auto;
-                    background-color: #1e1e1e;
-                    border: 1px solid #333;
-                    padding: 12px;
-                    font-family: monospace;
-                    font-size: 0.95em;
-                    border-radius: 8px;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-                    width: 100%;
-                    box-sizing: border-box;
-                    color: #f5f5f5;
-                    ">
-
-                    <ul id="log-list" style="list-style: none; padding-left: 0; margin: 0;"></ul>
+                <!--Race Logs-->
+                <div id="race-logs" style="margin-top: 30px; width: 100%;">
+                    <h3 style="margin-bottom: 10px;">Race Events</h3>
+                    <div id="log-box">
+                        <ul id="log-list"></ul>
+                    </div>
                 </div>
-
-                <ul id="log-list" style="list-style: none; padding-left: 0; margin: 0;"></ul>
+                <!--End Race Logs-->
             </div>
         </div>
-
-
-        <script>
-            window.onload = () => {
-                setInterval(actualizarContador, 1000); 
-                obtenerProximaCarrera();
-                iniciarSimulacion();
-            };
-        
-            const tiempoInicio = new Date();
-
-            let proximaCarrera = null;
-            let tiempoTotal = null;
-            let simulacionActiva = false;
-
-            async function obtenerProximaCarrera() {
-                try {
-                    const res = await fetch('/api/next-race');
-                    const data = await res.json();
-
-                    if (!data.fecha) throw new Error("No date in response");
-
-                    proximaCarrera = new Date(data.fecha);
-
-                    const infoCarrera = document.getElementById("info-carrera");
-                    if (infoCarrera) {
-                        infoCarrera.innerText = `${data.gran_premio} at ${data.circuito}`;
-                    }
-
-                    const tiempoInicio = new Date();
-                    tiempoTotal = proximaCarrera - tiempoInicio;
-
-                    setInterval(() => {
-                        actualizarContador();
-                    }, 1000);
-                } catch (err) {
-                    console.error("Error fetching next race:", err);
-                    document.getElementById("display-tiempo").innerText = "No race scheduled.";
-                }
-            }
-
-
-            function actualizarContador() {
-                if (!proximaCarrera) return;
-                const ahora = new Date();
-                const diferencia = proximaCarrera - ahora;
-                const display = document.getElementById("display-tiempo");
-                const luces = document.querySelectorAll(".lucecita");
-            
-                if (diferencia <= 0) {
-                    if (!simulacionActiva) {
-                        activarSimulacion();
-                        simulacionActiva = true;
-                    }
-            
-                    display.innerText = "and Away we go...";
-                    luces.forEach(l => l.classList.remove("encendida"));
-                    return;
-                }
-            
-                const horas = Math.floor(diferencia / (1000 * 60 * 60));
-                const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-                const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-            
-                display.innerText = `${horas.toString().padStart(2, '0')}:${minutos
-                    .toString()
-                    .padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
-            
-                if (diferencia <= 10000) {
-                    const segundosRestantes = Math.floor(diferencia / 1000);
-                    const lucesEncendidas = Math.floor((10 - segundosRestantes) / 2);
-            
-                    luces.forEach((luz, idx) => {
-                        luz.classList.toggle("encendida", idx < lucesEncendidas);
-                    });
-                } else {
-                    luces.forEach(l => l.classList.remove("encendida"));
-                }
-            }
-    
-            function activarSimulacion() {
-                console.log("Activando simulación...");
-                iniciarSimulacion();
-            }
-        
-            function iniciarSimulacion() {
-                console.log("IniciarSimulacion() llamada");
-                const ULTIMA_VUELTA = 44; 
-        
-                const socket = io();
-                const ctx = document.getElementById('graficoCarrera').getContext('2d');
-        
-                const gradient = ctx.createLinearGradient(0, 0, 0, 400);
-                gradient.addColorStop(0, 'rgba(190, 120, 255, 0.6)');
-                gradient.addColorStop(1, 'rgba(60, 0, 90, 0.6)');
-        
-                const obtenerColorPorEquipo = (equipo) => {
-                    const coloresPorEquipo = {
-                        'Mercedes': 'rgba(0, 210, 190, 0.7)',
-                        'Ferrari': 'rgba(220, 0, 0, 0.7)',
-                        'Red Bull Racing': 'rgba(0, 0, 255, 0.7)',
-                        'McLaren': 'rgba(255, 128, 0, 0.7)',
-                        'Renault': 'rgba(255, 255, 0, 0.7)',
-                        'Racing Point': 'rgba(255, 105, 180, 0.7)',
-                        'Williams': 'rgba(0, 180, 255, 0.7)',
-                        'Toro Rosso': 'rgba(0, 0, 153, 0.7)',
-                        'Haas F1 Team': 'rgba(128, 128, 128, 0.7)',
-                        'Sauber': 'rgba(102, 0, 204, 0.7)'
-                    };
-        
-                    return coloresPorEquipo[equipo] || 'gray';
-                };
-        
-                const grafico = new Chart(ctx, {
-                    type: 'bar',
-                    data: {
-                        labels: [],
-                        datasets: [
-                            {
-                                label: 'Race Position',
-                                data: [],
-                                backgroundColor: [],
-                                borderWidth: 1,
-                                borderColor: []
-                            },
-                            {
-                                label: 'Predicted Next Lap',
-                                data: [],
-                                backgroundColor: gradient,
-                                borderColor: 'rgba(0, 255, 255, 0.6)',
-                                borderWidth: 1,
-                                borderColor: 'rgba(200,200,200,0.5)'
-                            }
-                        ]
-                    },
-                    options: {
-                        responsive: true,
-                        animation: {
-                            duration: 500,
-                            easing: 'easeOutQuart'
-                        },
-                        plugins: {
-                            legend: { display: false },
-                            tooltip: {
-                                callbacks: {
-                                    label: function (ctx) {
-                                        const valor = ctx.parsed.y;
-                                        const posicionReal = 21 - valor;
-                                        const piloto = ctx.chart.data.labels[ctx.dataIndex];
-                                        const datosPiloto = window.ultimoEstadoPilotos?.find(p => p.Driver === piloto);
-                                        if (!datosPiloto) return `Driver: ${piloto} | DNF`;
-                                        const equipo = datosPiloto.Team || 'Unknown Team';
-                                        return `Driver: ${piloto} | Position: ${posicionReal} | Team: ${equipo}`;
-                                    }
-                                }
-                            }
-                        },
-                        scales: {
-                            y: {
-                                reverse: false,
-                                min: 1,
-                                max: 20,
-                                ticks: {
-                                    stepSize: 1,
-                                    precision: 0,
-                                    callback: function (value) {
-                                        return 21 - value;
-                                    }
-                                },
-                                title: { display: true, text: 'Position (1 = leader)' }
-                            },
-                            x: {
-                                title: { display: true, text: 'Drivers' }
-                            }
-                        }
-                    }
-                });
-        
-                socket.on('prediccion-vuelta', (data) => {
-                    actualizarPredicciones(data, grafico);
-                });
-        
-                socket.on('nueva-vuelta', (data) => {
-                    window.ultimoEstadoPilotos = data.pilotos;
-                    document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
-                    agregarSeparadorDeVuelta(`Lap ${data.vuelta}`);
-        
-                    data.pilotos.forEach(p => {
-                        if (p.IsPersonalBest === 'Yes') {
-                            agregarLog(`🚀 ${p.Driver} set a new personal best: ${p.LapTime}`);
-                        }
-                    });
-        
-                    if (window.pilotosEnVueltaAnterior) {
-                        const retirados = window.pilotosEnVueltaAnterior.filter(prev =>
-                            !data.pilotos.some(p => p.Driver === prev.Driver)
-                        );
-        
-                        retirados.forEach(p => {
-                            if (data.vuelta === ULTIMA_VUELTA) {
-                                agregarLog(`🔵 ${p.Driver} finished +1 Lap`);
-                            } else {
-                                agregarLog(`❌ ${p.Driver} has retired from the race`);
-                            }
-                        });
-                    }
-        
-                    window.pilotosEnVueltaAnterior = data.pilotos;
-        
-                    const pilotosOrdenados = data.pilotos
-                        .filter(p => p.Position !== null && !isNaN(p.Position))
-                        .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
-        
-                    grafico.data.labels = pilotosOrdenados.map(p => p.Driver);
-                    grafico.data.datasets[0].data = pilotosOrdenados.map(p => 21 - parseFloat(p.Position));
-                    grafico.data.datasets[0].backgroundColor = pilotosOrdenados.map(p => obtenerColorPorEquipo(p.Team));
-                    grafico.data.datasets[0].borderWidth = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? 4 : 1);
-                    grafico.data.datasets[0].borderColor = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)');
-                    grafico.data.datasets[1].data = [];
-        
-                    grafico.update();
-                });
-            }
-        </script>
-        
-
-        </div>
-
     </section> <!-- end s-Race -->
 
+    <!--SCRIPT-->
+    <script>
+        window.onload = () => {
+            setInterval(actualizarContador, 1000);
+            obtenerProximaCarrera();
+            iniciarSimulacion();
+        };
+
+        const tiempoInicio = new Date();
+
+        let proximaCarrera = null;
+        let tiempoTotal = null;
+        let simulacionActiva = false;
+
+        let prediccionesVisibles = true;
+
+        function togglePredicciones() {
+            prediccionesVisibles = !prediccionesVisibles;
+
+            grafico.data.datasets[1].hidden = !prediccionesVisibles;
+            grafico.update();
+
+            const btn = document.getElementById('toggle-predicciones-btn');
+            btn.textContent = prediccionesVisibles ? 'Hide Predictions' : 'Show Predictions';
+        }
+
+        async function obtenerProximaCarrera() {
+            try {
+                const res = await fetch('/api/next-race');
+                const data = await res.json();
+
+                if (!data.fecha) throw new Error("No date in response");
+
+                proximaCarrera = new Date(data.fecha);
+
+                const infoCarrera = document.getElementById("info-carrera");
+                if (infoCarrera) {
+                    infoCarrera.innerText = `${data.gran_premio} at ${data.circuito}`;
+                }
+
+                const tiempoInicio = new Date();
+                tiempoTotal = proximaCarrera - tiempoInicio;
+
+                setInterval(() => {
+                    actualizarContador();
+                }, 1000);
+            } catch (err) {
+                console.error("Error fetching next race:", err);
+                document.getElementById("display-tiempo").innerText = "No race scheduled.";
+            }
+        }
+
+
+        function actualizarContador() {
+            if (!proximaCarrera) return;
+            const ahora = new Date();
+            const diferencia = proximaCarrera - ahora;
+            const display = document.getElementById("display-tiempo");
+            const luces = document.querySelectorAll(".lucecita");
+
+            if (diferencia <= 0) {
+                if (!simulacionActiva) {
+                    activarSimulacion();
+                    simulacionActiva = true;
+                }
+
+                display.innerText = "and Away we go...";
+                luces.forEach(l => l.classList.remove("encendida"));
+                return;
+            }
+
+            const horas = Math.floor(diferencia / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            display.innerText = `${horas.toString().padStart(2, '0')}:${minutos
+                .toString()
+                .padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+
+            if (diferencia <= 10000) {
+                const segundosRestantes = Math.floor(diferencia / 1000);
+                const lucesEncendidas = Math.floor((10 - segundosRestantes) / 2);
+
+                luces.forEach((luz, idx) => {
+                    luz.classList.toggle("encendida", idx < lucesEncendidas);
+                });
+            } else {
+                luces.forEach(l => l.classList.remove("encendida"));
+            }
+        }
+
+        function activarSimulacion() {
+            console.log("Activando simulación...");
+            iniciarSimulacion();
+        }
+
+        function iniciarSimulacion() {
+            console.log("IniciarSimulacion() llamada");
+            const ULTIMA_VUELTA = 44;
+
+            const socket = io();
+            const ctx = document.getElementById('graficoCarrera').getContext('2d');
+
+            const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient.addColorStop(0, 'rgba(190, 120, 255, 0.6)');
+            gradient.addColorStop(1, 'rgba(60, 0, 90, 0.6)');
+
+            const obtenerColorPorEquipo = (equipo) => {
+                const coloresPorEquipo = {
+                    'Mercedes': 'rgba(0, 210, 190, 0.7)',
+                    'Ferrari': 'rgba(220, 0, 0, 0.7)',
+                    'Red Bull Racing': 'rgba(0, 0, 255, 0.7)',
+                    'McLaren': 'rgba(255, 128, 0, 0.7)',
+                    'Renault': 'rgba(255, 255, 0, 0.7)',
+                    'Racing Point': 'rgba(255, 105, 180, 0.7)',
+                    'Williams': 'rgba(0, 180, 255, 0.7)',
+                    'Toro Rosso': 'rgba(0, 0, 153, 0.7)',
+                    'Haas F1 Team': 'rgba(128, 128, 128, 0.7)',
+                    'Sauber': 'rgba(102, 0, 204, 0.7)'
+                };
+
+                return coloresPorEquipo[equipo] || 'gray';
+            };
+
+            const grafico = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: [],
+                    datasets: [
+                        {
+                            label: 'Race Position',
+                            data: [],
+                            backgroundColor: [],
+                            borderWidth: 1,
+                            borderColor: []
+                        },
+                        {
+                            label: 'Predicted Next Lap',
+                            data: [],
+                            backgroundColor: gradient,
+                            borderColor: 'rgba(0, 255, 255, 0.6)',
+                            borderWidth: 1,
+                            borderColor: 'rgba(200,200,200,0.5)'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    animation: {
+                        duration: 500,
+                        easing: 'easeOutQuart'
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function (ctx) {
+                                    const valor = ctx.parsed.y;
+                                    const posicionReal = 21 - valor;
+                                    const piloto = ctx.chart.data.labels[ctx.dataIndex];
+                                    const datosPiloto = window.ultimoEstadoPilotos?.find(p => p.Driver === piloto);
+                                    if (!datosPiloto) return `Driver: ${piloto} | DNF`;
+                                    const equipo = datosPiloto.Team || 'Unknown Team';
+                                    return `Driver: ${piloto} | Position: ${posicionReal} | Team: ${equipo}`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            reverse: false,
+                            min: 1,
+                            max: 20,
+                            ticks: {
+                                stepSize: 1,
+                                precision: 0,
+                                callback: function (value) {
+                                    return 21 - value;
+                                }
+                            },
+                            title: { display: true, text: 'Position (1 = leader)' }
+                        },
+                        x: {
+                            title: { display: true, text: 'Drivers' }
+                        }
+                    }
+                }
+            });
+
+            socket.on('prediccion-vuelta', (data) => {
+                actualizarPredicciones(data, grafico);
+            });
+
+            socket.on('nueva-vuelta', (data) => {
+                window.ultimoEstadoPilotos = data.pilotos;
+                document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
+                agregarSeparadorDeVuelta(`Lap ${data.vuelta}`);
+
+                data.pilotos.forEach(p => {
+                    if (p.IsPersonalBest === 'Yes') {
+                        agregarLog(`🚀 ${p.Driver} set a new personal best: ${p.LapTime}`);
+                    }
+                });
+
+                if (window.pilotosEnVueltaAnterior) {
+                    const retirados = window.pilotosEnVueltaAnterior.filter(prev =>
+                        !data.pilotos.some(p => p.Driver === prev.Driver)
+                    );
+
+                    retirados.forEach(p => {
+                        if (data.vuelta === ULTIMA_VUELTA) {
+                            agregarLog(`🔵 ${p.Driver} finished +1 Lap`);
+                        } else {
+                            agregarLog(`❌ ${p.Driver} has retired from the race`);
+                        }
+                    });
+                }
+
+                window.pilotosEnVueltaAnterior = data.pilotos;
+
+                const pilotosOrdenados = data.pilotos
+                    .filter(p => p.Position !== null && !isNaN(p.Position))
+                    .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
+
+                grafico.data.labels = pilotosOrdenados.map(p => p.Driver);
+                grafico.data.datasets[0].data = pilotosOrdenados.map(p => 21 - parseFloat(p.Position));
+                grafico.data.datasets[0].backgroundColor = pilotosOrdenados.map(p => obtenerColorPorEquipo(p.Team));
+                grafico.data.datasets[0].borderWidth = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? 4 : 1);
+                grafico.data.datasets[0].borderColor = pilotosOrdenados.map(p => p.IsPersonalBest === 'Yes' ? '#ffffff' : 'rgba(0,0,0,0.1)');
+                grafico.data.datasets[1].data = [];
+
+                grafico.update();
+            });
+        }
+    </script>
+    <!--SCRIPT-->
 
     <!-- clients
     ================================================== -->
