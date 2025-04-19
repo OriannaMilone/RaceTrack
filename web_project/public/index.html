@@ -350,12 +350,17 @@
     };
 
     const agregarSeparadorDeVuelta = (titulo) => {
-      const logList = document.getElementById('log-list');
-      const item = document.createElement('li');
-      item.textContent = `===== ${titulo} =====`;
-      item.style.fontWeight = 'bold';
-      logList.appendChild(item);
-    };
+        const logList = document.getElementById('log-list');
+      
+        const yaExiste = Array.from(logList.children).some(el => el.textContent === `===== ${titulo} =====`);
+        if (yaExiste) return;
+      
+        const item = document.createElement('li');
+        item.textContent = `===== ${titulo} =====`;
+        item.style.fontWeight = 'bold';
+        logList.insertBefore(item, logList.firstChild);
+      };
+      
     
     const actualizarPredicciones = (data, chart) => {
         console.log("👀 Llamada a actualizarPredicciones con:", data);
@@ -373,15 +378,13 @@
         chart.data.datasets[1].data = pilotosOrdenados.map(p => 21 - parseFloat(p.PredictedFinalPosition));
         chart.update();
       };
-      
-      
+    
         
-
     const agregarLog = (msg) => {
       const logList = document.getElementById('log-list');
       const item = document.createElement('li');
       item.textContent = msg;
-      logList.appendChild(item);
+      logList.insertBefore(item, logList.firstChild);
       logList.scrollTop = logList.scrollHeight;
     };
     
