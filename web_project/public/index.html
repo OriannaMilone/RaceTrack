@@ -273,114 +273,144 @@
     <section id="about" class="s-about">
 
         <div class="horizontal-line"></div>
-            <div class="row">
-                <div class="encabezado-race">
-                    <h1 style="margin: 0;">Real-Time Race Simulation</h1>
-                </div>
-                <!--Race Timer-->
-                <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
-                    <div id="contador-carrera">
-                        <p id="texto-explicativo">Next race in:</p>
-                        <div id="display-tiempo">--:--:--</div>
-                        <p id="info-carrera"
-                            style="color: #aaa; font-size: 1.1rem; text-align: center; margin-bottom: 6px;"></p>
-                        <div id="f1-luces-horizontal">
-                            <div class="lucecita"></div>
-                            <div class="lucecita"></div>
-                            <div class="lucecita"></div>
-                            <div class="lucecita"></div>
-                            <div class="lucecita"></div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Race Timer-->
-
-                <!--Race Graph-->
-                <canvas id="graficoCarrera" width="800" height="400"></canvas>
-                <!--End Race Graph-->
-
-                <!--Button to show predictions-->
-                <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
-                    <button id="toggle-predicciones-btn" onclick="togglePredicciones()">
-                        Hide Predictions
-                    </button>
-                </div>
-                <!--End Button to show predictions-->
-                
-                <!--Tyre Information-->
-                <div style="margin-top: 30px; width: 100%;">
-                    <p style="font-weight: bold; font-size: 1.7rem; color: #f0f0f0; margin-bottom: 15px;">
-                        Tyre Compounds <span style="font-weight: normal;"></span>
-                    </p>
-                    <div id="compound-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <button onclick="filtrarPorCompuesto('SUPERSOFT')">SUPERSOFT</button>
-                        <button onclick="filtrarPorCompuesto('SOFT')">SOFT</button>
-                        <button onclick="filtrarPorCompuesto('MEDIUM')">MEDIUM</button>
-                        <button onclick="filtrarPorCompuesto('HARD')">HARD</button>
-                    </div>
-                </div>
-                <!--End Tyre Information-->
-
-                <!--Race Logs-->
-                <div id="race-logs" style="margin-top: 30px; width: 100%;">
-                    <h3 style="margin-bottom: 10px;">Race Events</h3>
-                    <div id="log-box">
-                        <ul id="log-list"></ul>
-                    </div>
-                </div>
-                <!--End Race Logs-->
+        <div class="row">
+            <div class="encabezado-race">
+                <h1 style="margin: 0;">Real-Time Race Simulation</h1>
             </div>
+            <!--Race Timer-->
+            <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
+                <div id="contador-carrera">
+                    <p id="texto-explicativo">Next race in:</p>
+                    <div id="display-tiempo">--:--:--</div>
+                    <p id="info-carrera"
+                        style="color: #aaa; font-size: 1.1rem; text-align: center; margin-bottom: 6px;"></p>
+                    <div id="f1-luces-horizontal">
+                        <div class="lucecita"></div>
+                        <div class="lucecita"></div>
+                        <div class="lucecita"></div>
+                        <div class="lucecita"></div>
+                        <div class="lucecita"></div>
+                    </div>
+                </div>
+            </div>
+            <!--End Race Timer-->
+
+            <!--Race Graph-->
+            <canvas id="graficoCarrera" width="800" height="400"></canvas>
+            <!--End Race Graph-->
+
+            <!--Button to show predictions-->
+            <div style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
+                <button id="toggle-predicciones-btn" onclick="togglePredicciones()">
+                    Hide Predictions
+                </button>
+            </div>
+            <!--End Button to show predictions-->
+
+            <!--Tyre Information-->
+            <div style="margin-top: 30px; width: 100%;">
+                <p style="font-weight: bold; font-size: 1.7rem; color: #f0f0f0; margin-bottom: 15px;">
+                    Tyre Compounds <span style="font-weight: normal;"></span>
+                </p>
+                <div id="compound-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button onclick="filtrarPorCompuesto('SUPERSOFT')">SUPERSOFT</button>
+                    <button onclick="filtrarPorCompuesto('SOFT')">SOFT</button>
+                    <button onclick="filtrarPorCompuesto('MEDIUM')">MEDIUM</button>
+                    <button onclick="filtrarPorCompuesto('HARD')">HARD</button>
+                </div>
+            </div>
+            <!--End Tyre Information-->
+
+            <!--Race Logs-->
+            <div id="race-logs" style="margin-top: 30px; width: 100%;">
+                <h3 style="margin-bottom: 10px;">Race Events</h3>
+                <div id="log-box">
+                    <ul id="log-list"></ul>
+                </div>
+            </div>
+            <!--End Race Logs-->
         </div>
-    </section> 
+        </div>
+    </section>
     <!-- END RACE PART -->
 
-    <!--SCRIPT-->
+    <!-- SCRIPT -->
     <script>
-        window.onload = () => {
-            setInterval(actualizarContador, 1000);
-            obtenerProximaCarrera();
-            iniciarSimulacion();
-        };
-
-       
-        let prediccionesVisibles = true;
         let simulacionActiva = false;
+        let prediccionesVisibles = true;
+        let grafico;
 
         let proximaCarrera = null;
         let tiempoTotal = null;
         const tiempoInicio = new Date();
 
+        const log = (msg) => {
+            const pre = document.getElementById('log');
+            if (pre) pre.textContent += msg + '\n';
+        };
+
+        const agregarSeparadorDeVuelta = (titulo) => {
+            const logList = document.getElementById('log-list');
+            const item = document.createElement('li');
+            item.textContent = `===== ${titulo} =====`;
+            item.style.fontWeight = 'bold';
+            logList.appendChild(item);
+        };
+
+        const actualizarPredicciones = (data, chart) => {
+            const predicciones = Array.isArray(data) ? data : data.predicciones;
+            if (!Array.isArray(predicciones)) {
+                console.error("Los datos de predicción no contienen un array válido:", data);
+                return;
+            }
+
+            const pilotosOrdenados = predicciones
+                .filter(p => p.Position !== null && !isNaN(p.Position))
+                .sort((a, b) => parseFloat(a.Position) - parseFloat(b.Position));
+
+            chart.data.datasets[1].data = pilotosOrdenados.map(p => 21 - parseFloat(p.Position));
+            chart.update();
+        };
+
+
+        const agregarLog = (msg) => {
+            const logList = document.getElementById('log-list');
+            const item = document.createElement('li');
+            item.textContent = msg;
+            logList.appendChild(item);
+            logList.scrollTop = logList.scrollHeight;
+        };
+
+
         async function obtenerProximaCarrera() {
             try {
-              const res = await fetch('/api/next-race');
-              const data = await res.json();
-              if (!data.fecha) throw new Error("No date in response");
-      
-              proximaCarrera = new Date(data.fecha);
-      
-              const infoCarrera = document.getElementById("info-carrera");
-              if (infoCarrera) {
-                infoCarrera.innerText = `${data.gran_premio} at ${data.circuito}`;
-              }
-      
-              const tiempoInicio = new Date();
-              tiempoTotal = proximaCarrera - tiempoInicio;
-      
-              setInterval(() => {
-                actualizarContador();
-              }, 1000);
+                const res = await fetch('/api/next-race');
+                const data = await res.json();
+                if (!data.fecha) throw new Error("No date in response");
+
+                proximaCarrera = new Date(data.fecha);
+
+                const infoCarrera = document.getElementById("info-carrera");
+                if (infoCarrera) {
+                    infoCarrera.innerText = `${data.gran_premio} at ${data.circuito}`;
+                }
+
+                tiempoTotal = proximaCarrera - tiempoInicio;
+
+                setInterval(actualizarContador, 1000);
             } catch (err) {
-              console.error("Error fetching next race:", err);
-              document.getElementById("display-tiempo").innerText = "No race scheduled.";
+                console.error("Error fetching next race:", err);
+                const display = document.getElementById("display-tiempo");
+                if (display) {
+                    display.innerText = "No race scheduled.";
+                }
             }
-          }
+        }
 
         function togglePredicciones() {
             prediccionesVisibles = !prediccionesVisibles;
-
             grafico.data.datasets[1].hidden = !prediccionesVisibles;
             grafico.update();
-
             const btn = document.getElementById('toggle-predicciones-btn');
             btn.textContent = prediccionesVisibles ? 'Hide Predictions' : 'Show Predictions';
         }
@@ -394,8 +424,8 @@
 
             if (diferencia <= 0) {
                 if (!simulacionActiva) {
-                    iniciarSimulacion();
                     simulacionActiva = true;
+                    iniciarSimulacion();
                 }
 
                 display.innerText = "and Away we go...";
@@ -424,10 +454,10 @@
         }
 
         function iniciarSimulacion() {
-            console.log("IniciarSimulacion() llamada");
+            console.log(" Funcion de la ¡Simulación lanzada!");
+
             const ULTIMA_VUELTA = 44;
 
-            const socket = io();
             const ctx = document.getElementById('graficoCarrera').getContext('2d');
 
             const gradient = ctx.createLinearGradient(0, 0, 0, 400);
@@ -447,11 +477,10 @@
                     'Haas F1 Team': 'rgba(128, 128, 128, 0.7)',
                     'Sauber': 'rgba(102, 0, 204, 0.7)'
                 };
-
                 return coloresPorEquipo[equipo] || 'gray';
             };
 
-            const grafico = new Chart(ctx, {
+            grafico = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: [],
@@ -467,9 +496,8 @@
                             label: 'Predicted Next Lap',
                             data: [],
                             backgroundColor: gradient,
-                            borderColor: 'rgba(0, 255, 255, 0.6)',
-                            borderWidth: 1,
-                            borderColor: 'rgba(200,200,200,0.5)'
+                            borderColor: 'rgba(200,200,200,0.5)',
+                            borderWidth: 1
                         }
                     ]
                 },
@@ -503,9 +531,7 @@
                             ticks: {
                                 stepSize: 1,
                                 precision: 0,
-                                callback: function (value) {
-                                    return 21 - value;
-                                }
+                                callback: value => 21 - value
                             },
                             title: { display: true, text: 'Position (1 = leader)' }
                         },
@@ -516,13 +542,23 @@
                 }
             });
 
-            socket.on('prediccion-vuelta', (data) => {
-                actualizarPredicciones(data, grafico);
+            const socket = io();
+            const estado = document.getElementById('estado-socket');
+
+            socket.on('connect', () => {
+                estado.textContent = "🟢 Conectado al socket.";
+                log("Conexión establecida. ID: " + socket.id);
+            });
+
+            socket.on('disconnect', () => {
+                estado.textContent = "🔴 Desconectado del socket.";
+                log("Desconectado del servidor.");
             });
 
             socket.on('nueva-vuelta', (data) => {
+                log("📈 NUEVA VUELTA:\n" + JSON.stringify(data, null, 2));
+
                 window.ultimoEstadoPilotos = data.pilotos;
-                document.getElementById('vuelta-titulo').innerText = `Lap ${data.vuelta}`;
                 agregarSeparadorDeVuelta(`Lap ${data.vuelta}`);
 
                 data.pilotos.forEach(p => {
@@ -560,9 +596,19 @@
 
                 grafico.update();
             });
+
+            socket.on('prediccion-vuelta', (data) => {
+                log(`🔮 PREDICCIÓN (Lap ${data.vuelta}):\n` + JSON.stringify(data.predicciones, null, 2));
+                actualizarPredicciones(data, grafico);
+            });
         }
+
+        window.onload = () => {
+            obtenerProximaCarrera();
+        };
+
     </script>
-    <!--SCRIPT-->
+    <!--END SCRIPT-->
 
     <!-- clients
     ================================================== -->
