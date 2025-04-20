@@ -323,7 +323,8 @@ app.post('/admin/carreras/:id/eliminar', verificarAdmin, async (req, res) => {
 
 
 app.post('/admin/programar', verificarAdmin, async (req, res) => {
-  const { circuito, vueltas, fecha, hora, temporada, temporada_base_simulacion, gran_premio, predicciones } = req.body;
+  const { circuito, vueltas, fecha, hora, temporada, temporada_base_simulacion, gran_premio} = req.body;
+  predicciones = true; // Habilitar predicciones por defecto
   // Generar nombre del CSV automáticamente
   const nombre_csv = `${circuito.split(' ').join('_')}_${temporada_base_simulacion}_full_H_data.csv`;
 
