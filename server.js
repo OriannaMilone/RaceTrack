@@ -6,6 +6,7 @@ const path = require('path');
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
+const modelo_dinamico = 'rf_model_sectors.pkl';
 
 require('dotenv').config();
 
@@ -14,12 +15,13 @@ app.use(express.static('public'));
 app.use(express.json());
 
 const session = require('express-session');
-const pool = require('./web_project/backend/db'); 
+const pool = require('./web_project/backend/db');
 
 const cron = require('node-cron');
 const { exec } = require('child_process');
 
 let simulacionEnCurso = false;
+let usarModeloDinamico = false;
 
 cron.schedule('* * * * *', async () => {
   console.log("Cron job ejecutado a:", new Date());
@@ -64,7 +66,10 @@ cron.schedule('* * * * *', async () => {
       console.log(`Hora de lanzar la simulación para ${carrera.gran_premio} (${carrera.nombre_csv})`);
 
       const simuladorPath = __dirname;
-      const comando = `python -m race_simulator.simulator ${carrera.nombre_csv}`;
+      const comando = usarModeloDinamico
+        ? `python -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
+        : `python -m race_simulator.simulator ${carrera.nombre_csv}`;
+
 
       simulacionEnCurso = true;
 
@@ -116,7 +121,7 @@ app.get('/api/next-race', async (req, res) => {
       vueltas: race.vueltas
     });
   } catch (error) {
-    console.error(' Error fetching next race:', error); 
+    console.error(' Error fetching next race:', error);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
@@ -124,7 +129,7 @@ app.get('/api/next-race', async (req, res) => {
 
 
 app.use(session({
-  secret: 'clave-super-secreta',  
+  secret: 'clave-super-secreta',
   resave: false,
   saveUninitialized: false,
 }));
@@ -156,12 +161,18 @@ function verificarAdmin(req, res, next) {
         ">Go back to Login</a>
       </div>
     `);
-    
+
   }
 }
 
 // Servir frontend
 app.use(express.static(path.join(__dirname, 'web_project', 'public')));
+
+app.post('/activar-modelo-dinamico', (req, res) => {
+  usarModeloDinamico = true;
+  console.log("Se activó el modelo dinámico con paradas en boxes.");
+  res.sendStatus(200);
+});
 
 app.get('/admin', verificarAdmin, (req, res) => {
   res.sendFile(path.join(__dirname, 'web_project', 'views', 'admin.html'));
@@ -259,7 +270,7 @@ app.get('/admin/carreras/:id/editar', verificarAdmin, async (req, res) => {
         <h2>Edit Race: ${carrera.gran_premio} (${carrera.temporada})</h2>
         <form action="/admin/carreras/${carrera.id}/editar" method="POST">
           <label>Time:</label><br>
-          <input type="time" name="hora" value="${carrera.hora.slice(0,5)}" required><br><br>
+          <input type="time" name="hora" value="${carrera.hora.slice(0, 5)}" required><br><br>
 
           <label>
             <input type="checkbox" name="hacer_prediccion" ${carrera.hacer_prediccion ? 'checked' : ''}>
@@ -312,7 +323,7 @@ app.post('/admin/carreras/:id/eliminar', verificarAdmin, async (req, res) => {
 
 
 app.post('/admin/programar', verificarAdmin, async (req, res) => {
-  const {circuito, vueltas, fecha, hora, temporada, temporada_base_simulacion, gran_premio, predicciones } = req.body;
+  const { circuito, vueltas, fecha, hora, temporada, temporada_base_simulacion, gran_premio, predicciones } = req.body;
   // Generar nombre del CSV automáticamente
   const nombre_csv = `${circuito.split(' ').join('_')}_${temporada_base_simulacion}_full_H_data.csv`;
 
@@ -390,8 +401,8 @@ io.of('/simulador').on('connection', (socket) => {
   });
 
   socket.on('prediccion-vuelta', (data) => {
-      console.log(`🔮 Predicción recibida para vuelta ${data.vuelta}`);
-      io.of('/').emit('prediccion-vuelta', data);  
+    console.log(`🔮 Predicción recibida para vuelta ${data.vuelta}`);
+    io.of('/').emit('prediccion-vuelta', data);
   });
 
 });

@@ -6,7 +6,6 @@ import os
 
 def load_model(path=None, circuit="SPA"):
     if path is None:
-        # path = os.path.join(os.path.dirname(__file__), f"rf_model_{circuit.upper()}.pkl")
         path = os.path.join(os.path.dirname(__file__), "rf_model.pkl")
     
     if not os.path.exists(path):

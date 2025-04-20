@@ -305,8 +305,17 @@
                     Hide Predictions
                 </button>
             </div>
+
+            <div id="boton-modelo-dinamico"
+                style="display: flex; justify-content: center; width: 100%; margin-top: 20px;">
+                <button onclick="activarModeloDinamico()">
+                    Add Sector Times to the prediction system
+                </button>
+            </div>
+
+
             <div style="display: flex; justify-content: center; margin-top: 10px; font-size: 1.7rem; color: #aaa;">
-                <p>Predictions are estimated for the next lap based on the current lap data.*</p> 
+                <p>Predictions are estimated for the next lap based on the current lap data.*</p>
             </div>
             <!--End Button to show predictions-->
 
@@ -416,7 +425,17 @@
             });
         }
 
-
+        function activarModeloDinamico() {
+            fetch('/activar-modelo-dinamico', {
+                method: 'POST'
+            }).then(response => {
+                if (response.ok) {
+                    alert('Modelo dinámico activado correctamente.');
+                } else {
+                    alert('Error al activar el modelo dinámico.');
+                }
+            });
+        }
 
         async function obtenerProximaCarrera() {
             try {
@@ -457,6 +476,11 @@
             const diferencia = proximaCarrera - ahora;
             const display = document.getElementById("display-tiempo");
             const luces = document.querySelectorAll(".lucecita");
+            const botonModelo = document.getElementById("boton-modelo-dinamico");
+            
+            if (botonModelo && !simulacionActiva) {
+                botonModelo.style.display = "flex";
+            }
 
             if (diferencia <= 0) {
                 if (!simulacionActiva) {
@@ -491,6 +515,7 @@
 
         function iniciarSimulacion() {
             console.log(" Funcion de la ¡Simulación lanzada!");
+            document.getElementById("boton-modelo-dinamico").style.display = "none";
 
             const ULTIMA_VUELTA = 44;
 
@@ -520,7 +545,7 @@
                     'RB': 'rgba(0, 51, 102, 0.7)',
                     'Kick Sauber': 'rgba(0, 255, 0, 0.7)'
                 };
-                
+
                 return coloresPorEquipo[equipo] || 'gray';
             };
 

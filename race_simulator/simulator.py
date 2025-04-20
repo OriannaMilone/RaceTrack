@@ -7,6 +7,7 @@ import pandas as pd
 import socketio
 import time
 import sys
+import os
 
 sio = socketio.Client()
 
@@ -36,10 +37,12 @@ def formatear_lap_time(td):
 def main():
     if len(sys.argv) < 2:
         print("Error: Debes proporcionar el nombre del archivo CSV como argumento.")
-        print("Ejemplo: python -m race_simulator.simulator SPA_2018_full_H_data.csv")
+        print("Ejemplo: python -m race_simulator.simulator SPA_2018_full_H_data.csv [dinamico]")
         return
 
     archivo_csv = sys.argv[1]
+    usar_modelo_dinamico = len(sys.argv) >= 3 and sys.argv[2].lower() == "dinamico"
+
     circuito = archivo_csv.split('_')[0].upper()
 
     circuit_folder_map = {
@@ -63,8 +66,15 @@ def main():
     sio.connect('http://localhost:3000', namespaces=['/simulador'])
 
     df = pd.read_csv(csv_path)
-    
-    modelo = load_model(circuit=circuito)
+
+    if usar_modelo_dinamico:
+        model_path = os.path.join(os.path.dirname(__file__), "rf_model_sectors.py")
+        print("Cargando modelo dinámico:", model_path)
+    else:
+        model_path = None
+        print("Cargando modelo por defecto")
+
+    modelo = load_model(path=model_path, circuit=circuito)
  
     carrera = Carrera(df)
     simulador = SimuladorDeCarrera(carrera, tiempo_entre_vueltas=1)
