@@ -340,8 +340,28 @@ app.post('/admin/programar', verificarAdmin, async (req, res) => {
 
   } catch (err) {
     res.status(400).send(`
-      <h1 style="color:red;">A race is already scheduled for that Grand Prix and season.</h1>
-      <a href="/admin">Go back</a>
+      <div style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #111;
+        color: white;
+        font-family: sans-serif;
+        flex-direction: column;
+        text-align: center;
+      ">
+        <h1 style="color: #e10600;"> 🚫 Scheduling Failed</h1>
+        <p>A race is already <strong>scheduled</strong> for that Grand Prix and season.</p>
+        <a href="/admin" style="
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: #e10600;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+        "> ⬅ Return to Admin Race Control</a>
+      </div>
     `);
     console.error('❌ Error al programar carrera:', err);
   }
