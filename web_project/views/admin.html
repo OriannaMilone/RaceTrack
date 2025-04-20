@@ -209,6 +209,9 @@
 
           <label for="temporada" style="color: #fff;">Season (year)</label>
           <input type="text" id="temporada" name="temporada" required placeholder="2025">
+          
+          <label for="temporada_base_simulacion" style="color: #fff;">Season simulation is based on</label>
+          <input type="number" id="temporada_base_simulacion" name="temporada_base_simulacion" required placeholder="2018">
 
           <label for="gran_premio" style="color: #fff;">Grand Prix Name</label>
           <input type="text" id="gran_premio" name="gran_premio" required placeholder="Belgian Grand Prix">
@@ -349,12 +352,8 @@
           const ajustada = new Date(ahora.getTime() + 2 * 60 * 60 * 1000); // sumar 2 horas
           const ahoraStr = ajustada.toISOString().slice(0, 19) + 'Z'; // UTC
 
-
-
-          // 🔍 Logs de depuración
           console.log(' A ahoraStr:', ahoraStr);
           console.log("✅ carreraStr:", carreraStr);
-
 
           const carreraTime = new Date(carreraStr);
           const carreraFin = new Date(carreraTime.getTime() + 2 * 60 * 60 * 1000);

@@ -64,7 +64,7 @@ cron.schedule('* * * * *', async () => {
       console.log(`Hora de lanzar la simulación para ${carrera.gran_premio} (${carrera.nombre_csv})`);
 
       const simuladorPath = __dirname;
-      const comando = `python -m race_simulator.simulator`;
+      const comando = `python -m race_simulator.simulator ${carrera.nombre_csv}`;
 
       simulacionEnCurso = true;
 
@@ -312,17 +312,17 @@ app.post('/admin/carreras/:id/eliminar', verificarAdmin, async (req, res) => {
 
 
 app.post('/admin/programar', verificarAdmin, async (req, res) => {
-  const {vueltas, fecha, hora, temporada, gran_premio, predicciones } = req.body;
+  const {vueltas, fecha, hora, temporada, temporada_base_simulacion, gran_premio, predicciones } = req.body;
   circuito = "SPA"
 
   // Generar nombre del CSV automáticamente
-  const nombre_csv = `${circuito.split(' ').join('_')}_${temporada}_full_H_data.csv`;
+  const nombre_csv = `${circuito.split(' ').join('_')}_${temporada_base_simulacion}_full_H_data.csv`;
 
   try {
     const query = `
       INSERT INTO carreras_programadas 
-      (circuito, vueltas, fecha, hora, temporada, gran_premio, nombre_csv, hacer_prediccion)
-      VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+      (circuito, vueltas, fecha, hora, temporada, temporada_base_simulacion, gran_premio, nombre_csv, hacer_prediccion)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
     `;
     const values = [
       circuito,
@@ -330,6 +330,7 @@ app.post('/admin/programar', verificarAdmin, async (req, res) => {
       fecha,
       hora,
       temporada,
+      parseInt(temporada_base_simulacion),
       gran_premio,
       nombre_csv,
       predicciones ? true : false
