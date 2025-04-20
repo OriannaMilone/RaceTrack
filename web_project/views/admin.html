@@ -214,8 +214,16 @@
           <input type="text" id="temporada" name="temporada" required placeholder="2025">
 
           <label for="temporada_base_simulacion" style="color: #fff;">Season simulation is based on</label>
-          <input type="number" id="temporada_base_simulacion" name="temporada_base_simulacion" required
-            placeholder="2018">
+          <select id="temporada_base_simulacion" name="temporada_base_simulacion">
+            <option value="2018" selected>2018</option> 
+            <option value="2019" selected>2019</option>
+            <option value="2020" selected>2020</option> 
+            <option value="2021" selected>2021</option>
+            <option value="2022" selected>2022</option>
+            <option value="2023" selected>2023</option>
+            <option value="2024" selected>2024</option> 
+          </select>
+          
 
           <label for="gran_premio" style="color: #fff;">Grand Prix Name</label>
           <input type="text" id="gran_premio" name="gran_premio" required placeholder="Belgian Grand Prix">

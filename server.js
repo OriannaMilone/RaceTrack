@@ -339,8 +339,11 @@ app.post('/admin/programar', verificarAdmin, async (req, res) => {
     res.redirect('/admin');
 
   } catch (err) {
+    res.status(400).send(`
+      <h1 style="color:red;">A race is already scheduled for that Grand Prix and season.</h1>
+      <a href="/admin">Go back</a>
+    `);
     console.error('❌ Error al programar carrera:', err);
-    res.status(500).send('Internal server error');
   }
 });
 
