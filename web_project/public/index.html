@@ -405,7 +405,7 @@
                     return;
                 }
 
-                agregarLog(`🛞 Drivers with ${compuesto} tyres:`);
+                agregarLog(`Drivers with ${compuesto} tyres:`);
             } else {
                 pilotosFiltrados = window.ultimoEstadoPilotos;
                 agregarLog("📋 All drivers and their tyre compounds:");
@@ -511,8 +511,16 @@
                     'Williams': 'rgba(0, 180, 255, 0.7)',
                     'Toro Rosso': 'rgba(0, 0, 153, 0.7)',
                     'Haas F1 Team': 'rgba(128, 128, 128, 0.7)',
-                    'Sauber': 'rgba(102, 0, 204, 0.7)'
+                    'Sauber': 'rgba(102, 0, 204, 0.7)',
+                    'Alfa Romeo Racing': 'rgba(153, 0, 0, 0.7)',
+                    'AlphaTauri': 'rgba(0, 0, 102, 0.7)',
+                    'Aston Martin': 'rgba(0, 100, 0, 0.7)',
+                    'Alpine': 'rgba(0, 0, 128, 0.7)',
+                    'Alfa Romeo': 'rgba(153, 0, 0, 0.7)',
+                    'RB': 'rgba(0, 51, 102, 0.7)',
+                    'Kick Sauber': 'rgba(0, 255, 0, 0.7)'
                 };
+                
                 return coloresPorEquipo[equipo] || 'gray';
             };
 

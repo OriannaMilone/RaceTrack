@@ -100,7 +100,7 @@ def main():
                 "vuelta": vuelta,
                 "pilotos": vuel.to_dict(orient="records")
             }
-
+            # tiempo de espera "entre vueltas" para simular el tiempo real
             time.sleep(1)
             print(f"Enviando vuelta {vuelta} al servidor...\n")
             sio.emit('nueva-vuelta', vuelta_completa, namespace='/simulador')
