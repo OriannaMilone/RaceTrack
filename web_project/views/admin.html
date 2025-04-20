@@ -194,12 +194,15 @@
         <form action="/admin/programar" method="POST" class="admin-form">
 
           <label for="circuito" style="color: #fff;">Circuit</label>
-          <select id="circuito" name="circuito" disabled>
-            <option selected>SPA Francorchamps</option>
+          <select id="circuito" name="circuito">
+            <option value="SPA" selected>SPA Francorchamps</option> <!--44-->
+            <option value="JEDDAH" selected>Jeddah Corniche Circuit</option> <!--50-->
+            <option value="MONZA" selected>Autodromo Nazionale Monza</option> <!--53-->
+            <option value="MONACO" selected>Circuit de Monaco</option> <!--78-->
           </select>
 
           <label for="vueltas" style="color: #fff;">Laps</label>
-          <input type="number" id="vueltas" name="vueltas" value="44" readonly>
+          <input type="number" id="vueltas" name="vueltas" value="78" readonly>
 
           <label for="fecha" style="color: #fff;">Date</label>
           <input type="date" id="fecha" name="fecha" required>
@@ -209,9 +212,10 @@
 
           <label for="temporada" style="color: #fff;">Season (year)</label>
           <input type="text" id="temporada" name="temporada" required placeholder="2025">
-          
+
           <label for="temporada_base_simulacion" style="color: #fff;">Season simulation is based on</label>
-          <input type="number" id="temporada_base_simulacion" name="temporada_base_simulacion" required placeholder="2018">
+          <input type="number" id="temporada_base_simulacion" name="temporada_base_simulacion" required
+            placeholder="2018">
 
           <label for="gran_premio" style="color: #fff;">Grand Prix Name</label>
           <input type="text" id="gran_premio" name="gran_premio" required placeholder="Belgian Grand Prix">
@@ -293,6 +297,21 @@
   <!-- Java Script
     ================================================== -->
   <script>
+    const circuitoSelect = document.getElementById('circuito');
+    const vueltasInput = document.getElementById('vueltas');
+
+    const vueltasPorCircuito = {
+      "SPA": 44,
+      "JEDDAH": 50,
+      "MONZA": 53,
+      "MONACO": 78
+    };
+    
+    circuitoSelect.addEventListener('change', function () {
+      const circuitoSeleccionado = circuitoSelect.value;
+      vueltasInput.value = vueltasPorCircuito[circuitoSeleccionado] || 44; 
+    });
+
     document.querySelector('.admin-form').addEventListener('submit', function (e) {
       const fecha = document.getElementById('fecha').value;
       const temporada = document.getElementById('temporada').value;
@@ -348,7 +367,7 @@
           const carreraStr = `${year}-${month}-${day}T${horaStr}:00Z`; // UTC
 
           const ahora = new Date();
-          ahora.setSeconds(0, 0); 
+          ahora.setSeconds(0, 0);
           const ajustada = new Date(ahora.getTime() + 2 * 60 * 60 * 1000); // sumar 2 horas
           const ahoraStr = ajustada.toISOString().slice(0, 19) + 'Z'; // UTC
 
