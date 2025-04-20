@@ -1,0 +1,553 @@
+LapNumber,Driver,DriverNumber,Team,Position,LapTime,IsPersonalBest,Sector1Time,Sector2Time,Sector3Time,Compound,PitInTime,PitOutTime,PitStopDuration,FinishingPosition,GridPosition,FinalStatus,Season,RaceName,RaceType
+1.0,VAN,2,McLaren,20.0,0 days 00:01:27.183000,False,,0 days 00:00:43.038000,0 days 00:00:17.240000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+1.0,RIC,3,Red Bull Racing,10.0,0 days 00:01:22.981000,False,,0 days 00:00:40.564000,0 days 00:00:16.825000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+1.0,VET,5,Ferrari,3.0,0 days 00:01:19.092000,False,,0 days 00:00:38.801000,0 days 00:00:16.827000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+1.0,RAI,7,Ferrari,4.0,0 days 00:01:19.536000,False,,0 days 00:00:38.942000,0 days 00:00:16.757000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+1.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:21.535000,False,,0 days 00:00:40.066000,0 days 00:00:17.062000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+1.0,ERI,9,Sauber,9.0,0 days 00:01:22.707000,False,,0 days 00:00:40.789000,0 days 00:00:16.819000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+1.0,GAS,10,Toro Rosso,8.0,0 days 00:01:22.148000,False,,0 days 00:00:39.787000,0 days 00:00:17.013000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+1.0,PER,11,Racing Point,12.0,0 days 00:01:24.014000,False,,0 days 00:00:41.488000,0 days 00:00:17.016000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+1.0,ALO,14,McLaren,16.0,0 days 00:01:25.634000,False,,0 days 00:00:42.335000,0 days 00:00:17.201000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+1.0,LEC,16,Sauber,6.0,0 days 00:01:20.854000,False,,0 days 00:00:39.761000,0 days 00:00:16.827000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+1.0,STR,18,Williams,18.0,0 days 00:01:26.323000,False,,0 days 00:00:42.687000,0 days 00:00:17.047000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+1.0,MAG,20,Haas F1 Team,11.0,0 days 00:01:23.506000,False,,0 days 00:00:41.393000,0 days 00:00:16.947000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+1.0,HUL,27,Renault,14.0,0 days 00:01:24.806000,False,,0 days 00:00:41.979000,0 days 00:00:17.113000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+1.0,HAR,28,Toro Rosso,15.0,0 days 00:01:25.676000,False,,0 days 00:00:41.885000,0 days 00:00:17.455000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+1.0,OCO,31,Racing Point,19.0,0 days 00:01:26.538000,False,,0 days 00:00:42.632000,0 days 00:00:16.953000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+1.0,VER,33,Red Bull Racing,5.0,0 days 00:01:20.187000,False,,0 days 00:00:39.316000,0 days 00:00:16.995000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+1.0,SIR,35,Williams,17.0,0 days 00:01:26.108000,False,,0 days 00:00:42.989000,0 days 00:00:17.214000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+1.0,HAM,44,Mercedes,1.0,0 days 00:01:17.881000,False,,0 days 00:00:37.964000,0 days 00:00:16.858000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+1.0,SAI,55,Renault,13.0,0 days 00:01:24.498000,False,,0 days 00:00:41.537000,0 days 00:00:17.193000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+1.0,BOT,77,Mercedes,2.0,0 days 00:01:18.487000,False,,0 days 00:00:38.608000,0 days 00:00:16.751000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+2.0,VAN,2,McLaren,20.0,0 days 00:01:17.923000,True,0 days 00:00:19.792000,0 days 00:00:40.732000,0 days 00:00:17.399000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+2.0,RIC,3,Red Bull Racing,9.0,0 days 00:01:15.149000,True,0 days 00:00:19.096000,0 days 00:00:39.199000,0 days 00:00:16.854000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+2.0,VET,5,Ferrari,3.0,0 days 00:01:15.054000,True,0 days 00:00:19.298000,0 days 00:00:38.759000,0 days 00:00:16.997000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+2.0,RAI,7,Ferrari,4.0,0 days 00:01:15.045000,True,0 days 00:00:19.260000,0 days 00:00:38.862000,0 days 00:00:16.923000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+2.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:15.305000,True,0 days 00:00:19.428000,0 days 00:00:38.766000,0 days 00:00:17.111000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+2.0,ERI,9,Sauber,10.0,0 days 00:01:16.762000,True,0 days 00:00:20.017000,0 days 00:00:39.745000,0 days 00:00:17,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+2.0,GAS,10,Toro Rosso,8.0,0 days 00:01:15.926000,True,0 days 00:00:19.550000,0 days 00:00:39.260000,0 days 00:00:17.116000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+2.0,PER,11,Racing Point,12.0,0 days 00:01:16.998000,True,0 days 00:00:19.320000,0 days 00:00:40.568000,0 days 00:00:17.110000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+2.0,ALO,14,McLaren,15.0,0 days 00:01:16.616000,True,0 days 00:00:19.728000,0 days 00:00:39.744000,0 days 00:00:17.144000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+2.0,LEC,16,Sauber,6.0,0 days 00:01:15.204000,True,0 days 00:00:19.258000,0 days 00:00:38.824000,0 days 00:00:17.122000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+2.0,STR,18,Williams,18.0,0 days 00:01:17.638000,True,0 days 00:00:20.166000,0 days 00:00:40.327000,0 days 00:00:17.145000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+2.0,MAG,20,Haas F1 Team,11.0,0 days 00:01:16.693000,True,0 days 00:00:19.341000,0 days 00:00:40.382000,0 days 00:00:16.970000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+2.0,HUL,27,Renault,14.0,,False,0 days 00:01:36.461000,0 days 00:00:39.449000,,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+2.0,HAR,28,Toro Rosso,16.0,0 days 00:01:17.188000,True,0 days 00:00:20.148000,0 days 00:00:39.848000,0 days 00:00:17.192000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+2.0,OCO,31,Racing Point,19.0,0 days 00:01:17.591000,True,0 days 00:00:20.048000,0 days 00:00:40.657000,0 days 00:00:16.886000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+2.0,VER,33,Red Bull Racing,5.0,0 days 00:01:14.517000,True,0 days 00:00:19.279000,0 days 00:00:38.574000,0 days 00:00:16.664000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+2.0,SIR,35,Williams,17.0,0 days 00:01:17.226000,True,0 days 00:00:19.959000,0 days 00:00:40.277000,0 days 00:00:16.990000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+2.0,HAM,44,Mercedes,1.0,0 days 00:01:14.771000,True,0 days 00:00:19.357000,0 days 00:00:38.576000,0 days 00:00:16.838000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+2.0,SAI,55,Renault,13.0,0 days 00:01:17.068000,True,0 days 00:00:19.482000,0 days 00:00:40.254000,0 days 00:00:17.332000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+2.0,BOT,77,Mercedes,2.0,0 days 00:01:15.046000,True,0 days 00:00:19.261000,0 days 00:00:38.873000,0 days 00:00:16.912000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+3.0,VAN,2,McLaren,20.0,0 days 00:01:16.556000,True,0 days 00:00:19.367000,0 days 00:00:39.804000,0 days 00:00:17.385000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+3.0,RIC,3,Red Bull Racing,8.0,0 days 00:01:13.784000,True,0 days 00:00:18.987000,0 days 00:00:38.242000,0 days 00:00:16.555000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+3.0,VET,5,Ferrari,3.0,0 days 00:01:14.321000,True,0 days 00:00:19.161000,0 days 00:00:38.386000,0 days 00:00:16.774000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+3.0,RAI,7,Ferrari,5.0,0 days 00:01:15.160000,False,0 days 00:00:19.466000,0 days 00:00:38.794000,0 days 00:00:16.900000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+3.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:14.792000,True,0 days 00:00:19.154000,0 days 00:00:38.746000,0 days 00:00:16.892000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+3.0,ERI,9,Sauber,10.0,0 days 00:01:15.281000,True,0 days 00:00:19.185000,0 days 00:00:39.196000,0 days 00:00:16.900000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+3.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.796000,True,0 days 00:00:19.598000,0 days 00:00:39.103000,0 days 00:00:17.095000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+3.0,PER,11,Racing Point,12.0,0 days 00:01:15.216000,True,0 days 00:00:19.208000,0 days 00:00:39.167000,0 days 00:00:16.841000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+3.0,ALO,14,McLaren,15.0,0 days 00:01:16.399000,True,0 days 00:00:19.584000,0 days 00:00:39.750000,0 days 00:00:17.065000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+3.0,LEC,16,Sauber,6.0,0 days 00:01:15.055000,True,0 days 00:00:19.113000,0 days 00:00:38.943000,0 days 00:00:16.999000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+3.0,STR,18,Williams,19.0,0 days 00:01:17.054000,True,0 days 00:00:19.865000,0 days 00:00:40.099000,0 days 00:00:17.090000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+3.0,MAG,20,Haas F1 Team,11.0,0 days 00:01:14.939000,True,0 days 00:00:19.159000,0 days 00:00:39.110000,0 days 00:00:16.670000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+3.0,HUL,27,Renault,14.0,0 days 00:01:16.132000,True,,,0 days 00:00:17.022000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+3.0,HAR,28,Toro Rosso,16.0,0 days 00:01:16.572000,True,0 days 00:00:19.465000,0 days 00:00:40.107000,0 days 00:00:17,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+3.0,OCO,31,Racing Point,18.0,0 days 00:01:16.001000,True,0 days 00:00:19.385000,0 days 00:00:39.836000,0 days 00:00:16.780000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+3.0,VER,33,Red Bull Racing,4.0,0 days 00:01:14.036000,True,0 days 00:00:18.886000,0 days 00:00:38.547000,0 days 00:00:16.603000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+3.0,SIR,35,Williams,17.0,0 days 00:01:16.753000,True,0 days 00:00:19.412000,0 days 00:00:40.215000,0 days 00:00:17.126000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+3.0,HAM,44,Mercedes,1.0,0 days 00:01:13.987000,True,0 days 00:00:19.319000,0 days 00:00:37.823000,0 days 00:00:16.845000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+3.0,SAI,55,Renault,13.0,0 days 00:01:15.643000,True,0 days 00:00:19.442000,0 days 00:00:39.102000,0 days 00:00:17.099000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+3.0,BOT,77,Mercedes,2.0,0 days 00:01:14.482000,True,0 days 00:00:19.077000,0 days 00:00:38.501000,0 days 00:00:16.904000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+4.0,VAN,2,McLaren,20.0,0 days 00:01:16.586000,False,0 days 00:00:19.216000,0 days 00:00:40.107000,0 days 00:00:17.263000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+4.0,RIC,3,Red Bull Racing,7.0,0 days 00:01:14.604000,False,0 days 00:00:18.907000,0 days 00:00:38.903000,0 days 00:00:16.794000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+4.0,VET,5,Ferrari,5.0,0 days 00:01:16.562000,False,0 days 00:00:19.884000,0 days 00:00:39.517000,0 days 00:00:17.161000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+4.0,RAI,7,Ferrari,4.0,0 days 00:01:14.001000,True,0 days 00:00:18.863000,0 days 00:00:38.330000,0 days 00:00:16.808000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+4.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:16.056000,False,0 days 00:00:19.568000,0 days 00:00:39.331000,0 days 00:00:17.157000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+4.0,ERI,9,Sauber,10.0,0 days 00:01:15.540000,False,0 days 00:00:19.217000,0 days 00:00:39.283000,0 days 00:00:17.040000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+4.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.470000,True,0 days 00:00:19.361000,0 days 00:00:39.047000,0 days 00:00:17.062000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+4.0,PER,11,Racing Point,12.0,0 days 00:01:15.575000,False,0 days 00:00:19.074000,0 days 00:00:39.484000,0 days 00:00:17.017000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+4.0,ALO,14,McLaren,15.0,0 days 00:01:15.861000,True,0 days 00:00:19.300000,0 days 00:00:39.284000,0 days 00:00:17.277000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+4.0,LEC,16,Sauber,6.0,0 days 00:01:15.205000,False,0 days 00:00:19.242000,0 days 00:00:38.907000,0 days 00:00:17.056000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+4.0,STR,18,Williams,19.0,0 days 00:01:16.692000,True,0 days 00:00:19.306000,0 days 00:00:40.277000,0 days 00:00:17.109000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+4.0,MAG,20,Haas F1 Team,11.0,0 days 00:01:15.422000,False,0 days 00:00:19.238000,0 days 00:00:39.479000,0 days 00:00:16.705000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+4.0,HUL,27,Renault,14.0,0 days 00:01:15.737000,True,0 days 00:00:19.102000,0 days 00:00:39.609000,0 days 00:00:17.026000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+4.0,HAR,28,Toro Rosso,16.0,0 days 00:01:15.765000,True,0 days 00:00:19.123000,0 days 00:00:39.660000,0 days 00:00:16.982000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+4.0,OCO,31,Racing Point,17.0,0 days 00:01:15.889000,True,0 days 00:00:19.166000,0 days 00:00:39.840000,0 days 00:00:16.883000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+4.0,VER,33,Red Bull Racing,3.0,0 days 00:01:13.997000,True,0 days 00:00:19.233000,0 days 00:00:38.072000,0 days 00:00:16.692000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+4.0,SIR,35,Williams,18.0,0 days 00:01:16.755000,False,0 days 00:00:19.129000,0 days 00:00:40.651000,0 days 00:00:16.975000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+4.0,HAM,44,Mercedes,1.0,0 days 00:01:14.101000,False,0 days 00:00:18.875000,0 days 00:00:38.433000,0 days 00:00:16.793000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+4.0,SAI,55,Renault,13.0,0 days 00:01:15.421000,True,0 days 00:00:18.978000,0 days 00:00:39.389000,0 days 00:00:17.054000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+4.0,BOT,77,Mercedes,2.0,0 days 00:01:14.220000,True,0 days 00:00:19.263000,0 days 00:00:38.117000,0 days 00:00:16.840000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+5.0,VAN,2,McLaren,20.0,0 days 00:01:16.147000,True,0 days 00:00:19.213000,0 days 00:00:39.655000,0 days 00:00:17.279000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+5.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:13.899000,False,0 days 00:00:18.842000,0 days 00:00:38.055000,0 days 00:00:17.002000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+5.0,VET,5,Ferrari,5.0,0 days 00:01:13.887000,True,0 days 00:00:19.013000,0 days 00:00:38.017000,0 days 00:00:16.857000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+5.0,RAI,7,Ferrari,4.0,0 days 00:01:14.420000,False,0 days 00:00:18.856000,0 days 00:00:38.462000,0 days 00:00:17.102000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+5.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:15.012000,False,0 days 00:00:19.132000,0 days 00:00:38.856000,0 days 00:00:17.024000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+5.0,ERI,9,Sauber,10.0,0 days 00:01:15.370000,False,0 days 00:00:19.233000,0 days 00:00:39.373000,0 days 00:00:16.764000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+5.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.687000,False,0 days 00:00:19.406000,0 days 00:00:39.252000,0 days 00:00:17.029000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+5.0,PER,11,Racing Point,12.0,0 days 00:01:15.553000,False,0 days 00:00:19.078000,0 days 00:00:39.460000,0 days 00:00:17.015000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+5.0,ALO,14,McLaren,15.0,0 days 00:01:15.669000,True,0 days 00:00:19.159000,0 days 00:00:39.290000,0 days 00:00:17.220000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+5.0,LEC,16,Sauber,7.0,0 days 00:01:15.661000,False,0 days 00:00:19.426000,0 days 00:00:39.211000,0 days 00:00:17.024000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+5.0,STR,18,Williams,19.0,0 days 00:01:16.095000,True,0 days 00:00:19.239000,0 days 00:00:39.680000,0 days 00:00:17.176000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+5.0,MAG,20,Haas F1 Team,11.0,0 days 00:01:15.591000,False,0 days 00:00:19.244000,0 days 00:00:39.569000,0 days 00:00:16.778000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+5.0,HUL,27,Renault,14.0,0 days 00:01:15.684000,True,0 days 00:00:19.150000,0 days 00:00:39.478000,0 days 00:00:17.056000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+5.0,HAR,28,Toro Rosso,16.0,0 days 00:01:15.749000,True,0 days 00:00:19.192000,0 days 00:00:39.537000,0 days 00:00:17.020000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+5.0,OCO,31,Racing Point,17.0,0 days 00:01:15.441000,True,0 days 00:00:18.975000,0 days 00:00:39.570000,0 days 00:00:16.896000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+5.0,VER,33,Red Bull Racing,3.0,0 days 00:01:14.393000,False,0 days 00:00:18.981000,0 days 00:00:38.551000,0 days 00:00:16.861000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+5.0,SIR,35,Williams,18.0,0 days 00:01:15.655000,True,0 days 00:00:19.073000,0 days 00:00:39.544000,0 days 00:00:17.038000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+5.0,HAM,44,Mercedes,1.0,0 days 00:01:14.162000,False,0 days 00:00:19.096000,0 days 00:00:38.181000,0 days 00:00:16.885000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+5.0,SAI,55,Renault,13.0,0 days 00:01:15.529000,False,0 days 00:00:19.035000,0 days 00:00:39.450000,0 days 00:00:17.044000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+5.0,BOT,77,Mercedes,2.0,0 days 00:01:14.330000,False,0 days 00:00:18.980000,0 days 00:00:38.511000,0 days 00:00:16.839000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+6.0,VAN,2,McLaren,20.0,0 days 00:01:16.043000,True,0 days 00:00:19.159000,0 days 00:00:39.601000,0 days 00:00:17.283000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+6.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.415000,False,0 days 00:00:19.038000,0 days 00:00:38.342000,0 days 00:00:17.035000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+6.0,VET,5,Ferrari,5.0,0 days 00:01:14.537000,False,0 days 00:00:19.006000,0 days 00:00:38.581000,0 days 00:00:16.950000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+6.0,RAI,7,Ferrari,4.0,0 days 00:01:14.439000,False,0 days 00:00:18.983000,0 days 00:00:38.429000,0 days 00:00:17.027000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+6.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:15.143000,False,0 days 00:00:19.012000,0 days 00:00:39.015000,0 days 00:00:17.116000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+6.0,ERI,9,Sauber,10.0,0 days 00:01:15.889000,False,0 days 00:00:19.279000,0 days 00:00:39.702000,0 days 00:00:16.908000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+6.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.914000,False,0 days 00:00:19.357000,0 days 00:00:39.459000,0 days 00:00:17.098000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+6.0,PER,11,Racing Point,12.0,0 days 00:01:15.532000,False,0 days 00:00:19.225000,0 days 00:00:39.358000,0 days 00:00:16.949000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+6.0,ALO,14,McLaren,15.0,0 days 00:01:15.697000,False,0 days 00:00:19.306000,0 days 00:00:39.079000,0 days 00:00:17.312000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+6.0,LEC,16,Sauber,7.0,0 days 00:01:14.946000,True,0 days 00:00:19.197000,0 days 00:00:38.725000,0 days 00:00:17.024000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+6.0,STR,18,Williams,19.0,0 days 00:01:16.023000,True,0 days 00:00:19.395000,0 days 00:00:39.409000,0 days 00:00:17.219000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+6.0,MAG,20,Haas F1 Team,11.0,0 days 00:01:15.960000,False,0 days 00:00:19.218000,0 days 00:00:39.659000,0 days 00:00:17.083000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+6.0,HUL,27,Renault,14.0,0 days 00:01:15.489000,True,0 days 00:00:19.281000,0 days 00:00:39.073000,0 days 00:00:17.135000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+6.0,HAR,28,Toro Rosso,16.0,0 days 00:01:15.716000,True,0 days 00:00:19.200000,0 days 00:00:39.502000,0 days 00:00:17.014000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+6.0,OCO,31,Racing Point,17.0,0 days 00:01:15.704000,False,0 days 00:00:19.084000,0 days 00:00:39.661000,0 days 00:00:16.959000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+6.0,VER,33,Red Bull Racing,3.0,0 days 00:01:14.311000,False,0 days 00:00:19.100000,0 days 00:00:38.462000,0 days 00:00:16.749000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+6.0,SIR,35,Williams,18.0,0 days 00:01:15.929000,False,0 days 00:00:19.108000,0 days 00:00:39.581000,0 days 00:00:17.240000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+6.0,HAM,44,Mercedes,1.0,0 days 00:01:14.318000,False,0 days 00:00:19.078000,0 days 00:00:38.385000,0 days 00:00:16.855000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+6.0,SAI,55,Renault,13.0,0 days 00:01:15.602000,False,0 days 00:00:19.125000,0 days 00:00:39.401000,0 days 00:00:17.076000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+6.0,BOT,77,Mercedes,2.0,0 days 00:01:14.497000,False,0 days 00:00:19.174000,0 days 00:00:38.476000,0 days 00:00:16.847000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+7.0,VAN,2,McLaren,20.0,0 days 00:01:15.949000,True,0 days 00:00:19.175000,0 days 00:00:39.517000,0 days 00:00:17.257000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+7.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.364000,False,0 days 00:00:18.967000,0 days 00:00:38.408000,0 days 00:00:16.989000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+7.0,VET,5,Ferrari,5.0,0 days 00:01:14.331000,False,0 days 00:00:18.990000,0 days 00:00:38.438000,0 days 00:00:16.903000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+7.0,RAI,7,Ferrari,4.0,0 days 00:01:14.437000,False,0 days 00:00:19.027000,0 days 00:00:38.435000,0 days 00:00:16.975000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+7.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.913000,False,0 days 00:00:19.161000,0 days 00:00:38.847000,0 days 00:00:16.905000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+7.0,ERI,9,Sauber,10.0,0 days 00:01:16.118000,False,0 days 00:00:19.358000,0 days 00:00:39.696000,0 days 00:00:17.064000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+7.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.904000,False,0 days 00:00:19.460000,0 days 00:00:39.221000,0 days 00:00:17.223000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+7.0,PER,11,Racing Point,12.0,0 days 00:01:15.914000,False,0 days 00:00:19.378000,0 days 00:00:39.545000,0 days 00:00:16.991000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+7.0,ALO,14,McLaren,15.0,0 days 00:01:15.723000,False,0 days 00:00:19.323000,0 days 00:00:39.169000,0 days 00:00:17.231000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+7.0,LEC,16,Sauber,7.0,0 days 00:01:14.922000,True,0 days 00:00:19.128000,0 days 00:00:38.773000,0 days 00:00:17.021000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+7.0,STR,18,Williams,19.0,0 days 00:01:15.890000,True,0 days 00:00:19.263000,0 days 00:00:39.412000,0 days 00:00:17.215000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+7.0,MAG,20,Haas F1 Team,11.0,0 days 00:01:15.707000,False,0 days 00:00:19.348000,0 days 00:00:39.491000,0 days 00:00:16.868000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+7.0,HUL,27,Renault,14.0,0 days 00:01:15.897000,False,0 days 00:00:19.186000,0 days 00:00:39.642000,0 days 00:00:17.069000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+7.0,HAR,28,Toro Rosso,16.0,0 days 00:01:15.750000,False,0 days 00:00:19.294000,0 days 00:00:39.494000,0 days 00:00:16.962000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+7.0,OCO,31,Racing Point,17.0,0 days 00:01:15.826000,False,0 days 00:00:19.156000,0 days 00:00:39.756000,0 days 00:00:16.914000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+7.0,VER,33,Red Bull Racing,3.0,0 days 00:01:14.384000,False,0 days 00:00:19.211000,0 days 00:00:38.471000,0 days 00:00:16.702000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+7.0,SIR,35,Williams,18.0,0 days 00:01:16.011000,False,0 days 00:00:19.137000,0 days 00:00:39.680000,0 days 00:00:17.194000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+7.0,HAM,44,Mercedes,1.0,0 days 00:01:14.372000,False,0 days 00:00:19.080000,0 days 00:00:38.440000,0 days 00:00:16.852000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+7.0,SAI,55,Renault,13.0,0 days 00:01:15.910000,False,0 days 00:00:19.211000,0 days 00:00:39.587000,0 days 00:00:17.112000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+7.0,BOT,77,Mercedes,2.0,0 days 00:01:14.404000,False,0 days 00:00:19.228000,0 days 00:00:38.255000,0 days 00:00:16.921000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+8.0,VAN,2,McLaren,20.0,0 days 00:01:16.025000,False,0 days 00:00:19.430000,0 days 00:00:39.398000,0 days 00:00:17.197000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+8.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.309000,False,0 days 00:00:19.011000,0 days 00:00:38.273000,0 days 00:00:17.025000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+8.0,VET,5,Ferrari,5.0,0 days 00:01:14.155000,False,0 days 00:00:18.931000,0 days 00:00:38.547000,0 days 00:00:16.677000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+8.0,RAI,7,Ferrari,4.0,0 days 00:01:14.438000,False,0 days 00:00:18.839000,0 days 00:00:38.735000,0 days 00:00:16.864000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+8.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.855000,False,0 days 00:00:19.116000,0 days 00:00:38.744000,0 days 00:00:16.995000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+8.0,ERI,9,Sauber,10.0,0 days 00:01:16.516000,False,0 days 00:00:19.844000,0 days 00:00:39.601000,0 days 00:00:17.071000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+8.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.848000,False,0 days 00:00:19.484000,0 days 00:00:39.196000,0 days 00:00:17.168000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+8.0,PER,11,Racing Point,12.0,0 days 00:01:16.571000,False,0 days 00:00:19.120000,0 days 00:00:40.476000,0 days 00:00:16.975000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+8.0,ALO,14,McLaren,15.0,0 days 00:01:16.014000,False,0 days 00:00:19.208000,0 days 00:00:39.565000,0 days 00:00:17.241000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+8.0,LEC,16,Sauber,7.0,0 days 00:01:14.883000,True,0 days 00:00:19.161000,0 days 00:00:38.646000,0 days 00:00:17.076000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+8.0,STR,18,Williams,19.0,0 days 00:01:15.868000,True,0 days 00:00:19.304000,0 days 00:00:39.352000,0 days 00:00:17.212000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+8.0,MAG,20,Haas F1 Team,11.0,0 days 00:01:16.639000,False,0 days 00:00:19.747000,0 days 00:00:39.911000,0 days 00:00:16.981000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+8.0,HUL,27,Renault,14.0,0 days 00:01:16.044000,False,0 days 00:00:19.293000,0 days 00:00:39.628000,0 days 00:00:17.123000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+8.0,HAR,28,Toro Rosso,16.0,0 days 00:01:15.969000,False,0 days 00:00:19.258000,0 days 00:00:39.707000,0 days 00:00:17.004000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+8.0,OCO,31,Racing Point,17.0,0 days 00:01:15.881000,False,0 days 00:00:18.970000,0 days 00:00:40.016000,0 days 00:00:16.895000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+8.0,VER,33,Red Bull Racing,3.0,0 days 00:01:14.940000,False,0 days 00:00:19.246000,0 days 00:00:38.656000,0 days 00:00:17.038000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+8.0,SIR,35,Williams,18.0,0 days 00:01:15.887000,False,0 days 00:00:19.170000,0 days 00:00:39.503000,0 days 00:00:17.214000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+8.0,HAM,44,Mercedes,1.0,0 days 00:01:14.517000,False,0 days 00:00:19.028000,0 days 00:00:38.553000,0 days 00:00:16.936000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+8.0,SAI,55,Renault,13.0,0 days 00:01:16.395000,False,0 days 00:00:19.012000,0 days 00:00:40.139000,0 days 00:00:17.244000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+8.0,BOT,77,Mercedes,2.0,0 days 00:01:14.572000,False,0 days 00:00:19.313000,0 days 00:00:38.376000,0 days 00:00:16.883000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+9.0,VAN,2,McLaren,20.0,0 days 00:01:16.003000,False,0 days 00:00:19.175000,0 days 00:00:39.670000,0 days 00:00:17.158000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+9.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.132000,False,0 days 00:00:18.908000,0 days 00:00:38.286000,0 days 00:00:16.938000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+9.0,VET,5,Ferrari,5.0,0 days 00:01:14.682000,False,0 days 00:00:19.056000,0 days 00:00:38.754000,0 days 00:00:16.872000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+9.0,RAI,7,Ferrari,4.0,0 days 00:01:14.523000,False,0 days 00:00:18.863000,0 days 00:00:38.664000,0 days 00:00:16.996000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+9.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.977000,False,0 days 00:00:19.096000,0 days 00:00:38.689000,0 days 00:00:17.192000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+9.0,ERI,9,Sauber,14.0,0 days 00:01:20.043000,False,0 days 00:00:21.506000,0 days 00:00:41.366000,0 days 00:00:17.171000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+9.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.661000,False,0 days 00:00:19.376000,0 days 00:00:39.081000,0 days 00:00:17.204000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+9.0,PER,11,Racing Point,11.0,0 days 00:01:15.991000,False,0 days 00:00:19.750000,0 days 00:00:39.158000,0 days 00:00:17.083000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+9.0,ALO,14,McLaren,15.0,0 days 00:01:17.129000,False,0 days 00:00:19.178000,0 days 00:00:40.708000,0 days 00:00:17.243000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+9.0,LEC,16,Sauber,7.0,0 days 00:01:14.501000,True,0 days 00:00:19.046000,0 days 00:00:38.352000,0 days 00:00:17.103000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+9.0,STR,18,Williams,19.0,0 days 00:01:16.215000,False,0 days 00:00:19.266000,0 days 00:00:39.556000,0 days 00:00:17.393000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+9.0,MAG,20,Haas F1 Team,10.0,0 days 00:01:15.924000,False,0 days 00:00:20.013000,0 days 00:00:38.780000,0 days 00:00:17.131000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+9.0,HUL,27,Renault,13.0,0 days 00:01:16.604000,False,0 days 00:00:19.179000,0 days 00:00:40.225000,0 days 00:00:17.200000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+9.0,HAR,28,Toro Rosso,17.0,0 days 00:01:16.974000,False,0 days 00:00:19.136000,0 days 00:00:40.613000,0 days 00:00:17.225000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+9.0,OCO,31,Racing Point,16.0,0 days 00:01:16.480000,False,0 days 00:00:19.145000,0 days 00:00:40.496000,0 days 00:00:16.839000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+9.0,VER,33,Red Bull Racing,3.0,0 days 00:01:14.082000,False,0 days 00:00:18.932000,0 days 00:00:38.426000,0 days 00:00:16.724000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+9.0,SIR,35,Williams,18.0,0 days 00:01:16.118000,False,0 days 00:00:19.169000,0 days 00:00:39.799000,0 days 00:00:17.150000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+9.0,HAM,44,Mercedes,1.0,0 days 00:01:14.799000,False,0 days 00:00:19.031000,0 days 00:00:38.885000,0 days 00:00:16.883000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+9.0,SAI,55,Renault,12.0,0 days 00:01:16.124000,False,0 days 00:00:19.458000,0 days 00:00:39.564000,0 days 00:00:17.102000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+9.0,BOT,77,Mercedes,2.0,0 days 00:01:14.628000,False,0 days 00:00:19.155000,0 days 00:00:38.525000,0 days 00:00:16.948000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+10.0,VAN,2,McLaren,20.0,0 days 00:01:16.419000,False,0 days 00:00:19.336000,0 days 00:00:39.812000,0 days 00:00:17.271000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+10.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.718000,False,0 days 00:00:18.800000,0 days 00:00:38.883000,0 days 00:00:17.035000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+10.0,VET,5,Ferrari,5.0,0 days 00:01:15.008000,False,0 days 00:00:18.988000,0 days 00:00:39.009000,0 days 00:00:17.011000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+10.0,RAI,7,Ferrari,4.0,0 days 00:01:14.773000,False,0 days 00:00:18.851000,0 days 00:00:39.231000,0 days 00:00:16.691000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+10.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:15.164000,False,0 days 00:00:19.160000,0 days 00:00:38.758000,0 days 00:00:17.246000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+10.0,ERI,9,Sauber,14.0,0 days 00:01:16.659000,False,0 days 00:00:19.600000,0 days 00:00:39.842000,0 days 00:00:17.217000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+10.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.628000,False,0 days 00:00:19.355000,0 days 00:00:39.069000,0 days 00:00:17.204000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+10.0,PER,11,Racing Point,11.0,0 days 00:01:15.590000,False,0 days 00:00:19.365000,0 days 00:00:39.158000,0 days 00:00:17.067000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+10.0,ALO,14,McLaren,15.0,0 days 00:01:16.760000,False,0 days 00:00:19.546000,0 days 00:00:40.002000,0 days 00:00:17.212000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+10.0,LEC,16,Sauber,7.0,0 days 00:01:14.615000,False,0 days 00:00:19.102000,0 days 00:00:38.450000,0 days 00:00:17.063000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+10.0,STR,18,Williams,19.0,0 days 00:01:16.483000,False,0 days 00:00:19.304000,0 days 00:00:39.990000,0 days 00:00:17.189000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+10.0,MAG,20,Haas F1 Team,10.0,0 days 00:01:15.022000,False,0 days 00:00:19.332000,0 days 00:00:38.600000,0 days 00:00:17.090000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+10.0,HUL,27,Renault,13.0,0 days 00:01:16.395000,False,0 days 00:00:19.228000,0 days 00:00:39.822000,0 days 00:00:17.345000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+10.0,HAR,28,Toro Rosso,17.0,0 days 00:01:17.362000,False,0 days 00:00:19.963000,0 days 00:00:40.345000,0 days 00:00:17.054000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+10.0,OCO,31,Racing Point,16.0,0 days 00:01:16.377000,False,0 days 00:00:19.402000,0 days 00:00:40.080000,0 days 00:00:16.895000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+10.0,VER,33,Red Bull Racing,2.0,0 days 00:01:14.288000,False,0 days 00:00:19.100000,0 days 00:00:38.157000,0 days 00:00:17.031000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+10.0,SIR,35,Williams,18.0,0 days 00:01:16.840000,False,0 days 00:00:19.195000,0 days 00:00:40.633000,0 days 00:00:17.012000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+10.0,HAM,44,Mercedes,1.0,0 days 00:01:14.378000,False,0 days 00:00:18.991000,0 days 00:00:38.507000,0 days 00:00:16.880000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+10.0,SAI,55,Renault,12.0,0 days 00:01:15.970000,False,0 days 00:00:19.209000,0 days 00:00:39.437000,0 days 00:00:17.324000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+10.0,BOT,77,Mercedes,3.0,0 days 00:01:15.805000,False,0 days 00:00:19.589000,0 days 00:00:39.270000,0 days 00:00:16.946000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+11.0,VAN,2,McLaren,20.0,0 days 00:01:16.859000,False,0 days 00:00:19.335000,0 days 00:00:40.261000,0 days 00:00:17.263000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+11.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:15.379000,False,0 days 00:00:18.920000,0 days 00:00:39.437000,0 days 00:00:17.022000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+11.0,VET,5,Ferrari,5.0,0 days 00:01:15.434000,False,0 days 00:00:19.127000,0 days 00:00:39.391000,0 days 00:00:16.916000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+11.0,RAI,7,Ferrari,4.0,0 days 00:01:15.498000,False,0 days 00:00:19.160000,0 days 00:00:39.636000,0 days 00:00:16.702000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+11.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.969000,False,0 days 00:00:19.165000,0 days 00:00:38.727000,0 days 00:00:17.077000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+11.0,ERI,9,Sauber,14.0,0 days 00:01:16.311000,False,0 days 00:00:19.544000,0 days 00:00:39.710000,0 days 00:00:17.057000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+11.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.756000,False,0 days 00:00:19.403000,0 days 00:00:39.227000,0 days 00:00:17.126000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+11.0,PER,11,Racing Point,11.0,0 days 00:01:15.397000,False,0 days 00:00:19.316000,0 days 00:00:39.065000,0 days 00:00:17.016000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+11.0,ALO,14,McLaren,15.0,0 days 00:01:16.460000,False,0 days 00:00:19.423000,0 days 00:00:39.871000,0 days 00:00:17.166000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+11.0,LEC,16,Sauber,7.0,0 days 00:01:14.617000,False,0 days 00:00:19.084000,0 days 00:00:38.531000,0 days 00:00:17.002000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+11.0,STR,18,Williams,19.0,0 days 00:01:16.494000,False,0 days 00:00:19.249000,0 days 00:00:40.200000,0 days 00:00:17.045000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+11.0,MAG,20,Haas F1 Team,10.0,0 days 00:01:14.988000,False,0 days 00:00:19.228000,0 days 00:00:38.831000,0 days 00:00:16.929000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+11.0,HUL,27,Renault,13.0,0 days 00:01:16.331000,False,0 days 00:00:19.539000,0 days 00:00:39.528000,0 days 00:00:17.264000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+11.0,HAR,28,Toro Rosso,17.0,0 days 00:01:16.604000,False,0 days 00:00:19.375000,0 days 00:00:40.222000,0 days 00:00:17.007000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+11.0,OCO,31,Racing Point,16.0,0 days 00:01:16.715000,False,0 days 00:00:19.592000,0 days 00:00:40.211000,0 days 00:00:16.912000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+11.0,VER,33,Red Bull Racing,2.0,0 days 00:01:14.216000,False,0 days 00:00:19.072000,0 days 00:00:38.084000,0 days 00:00:17.060000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+11.0,SIR,35,Williams,18.0,0 days 00:01:16.760000,False,0 days 00:00:19.282000,0 days 00:00:40.425000,0 days 00:00:17.053000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+11.0,HAM,44,Mercedes,1.0,0 days 00:01:14.404000,False,0 days 00:00:18.877000,0 days 00:00:38.680000,0 days 00:00:16.847000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+11.0,SAI,55,Renault,12.0,0 days 00:01:15.965000,False,0 days 00:00:19.268000,0 days 00:00:39.427000,0 days 00:00:17.270000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+11.0,BOT,77,Mercedes,3.0,0 days 00:01:15.497000,False,0 days 00:00:19.450000,0 days 00:00:39.085000,0 days 00:00:16.962000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+12.0,VAN,2,McLaren,20.0,0 days 00:01:16.413000,False,0 days 00:00:19.429000,0 days 00:00:39.709000,0 days 00:00:17.275000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+12.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:15.078000,False,0 days 00:00:18.930000,0 days 00:00:39.237000,0 days 00:00:16.911000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+12.0,VET,5,Ferrari,5.0,0 days 00:01:14.937000,False,0 days 00:00:19.127000,0 days 00:00:38.957000,0 days 00:00:16.853000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+12.0,RAI,7,Ferrari,4.0,0 days 00:01:15.089000,False,0 days 00:00:19.124000,0 days 00:00:38.946000,0 days 00:00:17.019000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+12.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.791000,True,0 days 00:00:19.174000,0 days 00:00:38.478000,0 days 00:00:17.139000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+12.0,ERI,9,Sauber,14.0,0 days 00:01:16.303000,False,0 days 00:00:19.575000,0 days 00:00:39.601000,0 days 00:00:17.127000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+12.0,GAS,10,Toro Rosso,9.0,0 days 00:01:15.698000,False,0 days 00:00:19.328000,0 days 00:00:39.221000,0 days 00:00:17.149000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+12.0,PER,11,Racing Point,11.0,0 days 00:01:15.229000,False,0 days 00:00:19.141000,0 days 00:00:39.017000,0 days 00:00:17.071000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+12.0,ALO,14,McLaren,15.0,0 days 00:01:16.379000,False,0 days 00:00:19.135000,0 days 00:00:40.013000,0 days 00:00:17.231000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+12.0,LEC,16,Sauber,7.0,0 days 00:01:14.771000,False,0 days 00:00:19.108000,0 days 00:00:38.662000,0 days 00:00:17.001000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+12.0,STR,18,Williams,19.0,0 days 00:01:16.462000,False,0 days 00:00:19.232000,0 days 00:00:40.110000,0 days 00:00:17.120000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+12.0,MAG,20,Haas F1 Team,10.0,0 days 00:01:15.116000,False,0 days 00:00:19.142000,0 days 00:00:39.283000,0 days 00:00:16.691000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+12.0,HUL,27,Renault,13.0,0 days 00:01:15.426000,True,0 days 00:00:19.358000,0 days 00:00:38.786000,0 days 00:00:17.282000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+12.0,HAR,28,Toro Rosso,17.0,0 days 00:01:16.375000,False,0 days 00:00:19.341000,0 days 00:00:39.938000,0 days 00:00:17.096000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+12.0,OCO,31,Racing Point,16.0,0 days 00:01:16.198000,False,0 days 00:00:19.247000,0 days 00:00:40.031000,0 days 00:00:16.920000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+12.0,VER,33,Red Bull Racing,2.0,0 days 00:01:13.949000,True,0 days 00:00:19.065000,0 days 00:00:37.861000,0 days 00:00:17.023000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+12.0,SIR,35,Williams,18.0,0 days 00:01:16.342000,False,0 days 00:00:19.148000,0 days 00:00:40.149000,0 days 00:00:17.045000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+12.0,HAM,44,Mercedes,1.0,0 days 00:01:14.299000,False,0 days 00:00:18.882000,0 days 00:00:38.628000,0 days 00:00:16.789000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+12.0,SAI,55,Renault,12.0,0 days 00:01:15.559000,False,0 days 00:00:19.277000,0 days 00:00:39.040000,0 days 00:00:17.242000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+12.0,BOT,77,Mercedes,3.0,0 days 00:01:14.574000,False,0 days 00:00:19.245000,0 days 00:00:38.450000,0 days 00:00:16.879000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+13.0,VAN,2,McLaren,20.0,0 days 00:01:16.406000,False,0 days 00:00:19.196000,0 days 00:00:40.077000,0 days 00:00:17.133000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+13.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.837000,False,0 days 00:00:18.906000,0 days 00:00:39.022000,0 days 00:00:16.909000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+13.0,VET,5,Ferrari,5.0,0 days 00:01:14.749000,False,0 days 00:00:19.024000,0 days 00:00:38.847000,0 days 00:00:16.878000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+13.0,RAI,7,Ferrari,4.0,0 days 00:01:14.332000,False,0 days 00:00:19.015000,0 days 00:00:38.534000,0 days 00:00:16.783000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+13.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:15.298000,False,0 days 00:00:19.192000,0 days 00:00:38.869000,0 days 00:00:17.237000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+13.0,ERI,9,Sauber,14.0,0 days 00:01:16.394000,False,0 days 00:00:19.501000,0 days 00:00:39.712000,0 days 00:00:17.181000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+13.0,GAS,10,Toro Rosso,10.0,0 days 00:01:16.626000,False,0 days 00:00:19.759000,0 days 00:00:39.738000,0 days 00:00:17.129000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+13.0,PER,11,Racing Point,11.0,0 days 00:01:15.768000,False,0 days 00:00:19.349000,0 days 00:00:39.373000,0 days 00:00:17.046000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+13.0,ALO,14,McLaren,15.0,0 days 00:01:16.432000,False,0 days 00:00:19.333000,0 days 00:00:39.818000,0 days 00:00:17.281000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+13.0,LEC,16,Sauber,7.0,0 days 00:01:14.718000,False,0 days 00:00:19.135000,0 days 00:00:38.588000,0 days 00:00:16.995000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+13.0,STR,18,Williams,19.0,0 days 00:01:16.603000,False,0 days 00:00:19.234000,0 days 00:00:40.223000,0 days 00:00:17.146000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+13.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.847000,True,0 days 00:00:19.131000,0 days 00:00:38.630000,0 days 00:00:17.086000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+13.0,HUL,27,Renault,13.0,0 days 00:01:16.022000,False,0 days 00:00:19.347000,0 days 00:00:39.289000,0 days 00:00:17.386000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+13.0,HAR,28,Toro Rosso,17.0,0 days 00:01:16.403000,False,0 days 00:00:19.391000,0 days 00:00:39.975000,0 days 00:00:17.037000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+13.0,OCO,31,Racing Point,16.0,0 days 00:01:16.298000,False,0 days 00:00:19.462000,0 days 00:00:39.967000,0 days 00:00:16.869000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+13.0,VER,33,Red Bull Racing,2.0,0 days 00:01:14.025000,False,0 days 00:00:19.200000,0 days 00:00:37.834000,0 days 00:00:16.991000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+13.0,SIR,35,Williams,18.0,0 days 00:01:16.444000,False,0 days 00:00:19.531000,0 days 00:00:39.947000,0 days 00:00:16.966000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+13.0,HAM,44,Mercedes,1.0,0 days 00:01:13.992000,False,0 days 00:00:18.996000,0 days 00:00:38.181000,0 days 00:00:16.815000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+13.0,SAI,55,Renault,12.0,0 days 00:01:15.788000,False,0 days 00:00:19.335000,0 days 00:00:39.123000,0 days 00:00:17.330000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+13.0,BOT,77,Mercedes,3.0,0 days 00:01:14.517000,False,0 days 00:00:19.113000,0 days 00:00:38.425000,0 days 00:00:16.979000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+14.0,VAN,2,McLaren,20.0,0 days 00:01:16.546000,False,0 days 00:00:19.283000,0 days 00:00:39.930000,0 days 00:00:17.333000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+14.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.776000,False,0 days 00:00:18.796000,0 days 00:00:38.871000,0 days 00:00:17.109000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+14.0,VET,5,Ferrari,5.0,0 days 00:01:14.505000,False,0 days 00:00:18.900000,0 days 00:00:38.616000,0 days 00:00:16.989000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+14.0,RAI,7,Ferrari,4.0,0 days 00:01:14.347000,False,0 days 00:00:18.944000,0 days 00:00:38.597000,0 days 00:00:16.806000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+14.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.741000,True,0 days 00:00:19.208000,0 days 00:00:38.418000,0 days 00:00:17.115000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+14.0,ERI,9,Sauber,14.0,0 days 00:01:16.207000,False,0 days 00:00:19.453000,0 days 00:00:39.653000,0 days 00:00:17.101000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+14.0,GAS,10,Toro Rosso,10.0,0 days 00:01:15.840000,False,0 days 00:00:19.514000,0 days 00:00:39.186000,0 days 00:00:17.140000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+14.0,PER,11,Racing Point,11.0,0 days 00:01:15.061000,True,0 days 00:00:19.172000,0 days 00:00:39.039000,0 days 00:00:16.850000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+14.0,ALO,14,McLaren,16.0,0 days 00:01:17.060000,False,0 days 00:00:19.618000,0 days 00:00:40.299000,0 days 00:00:17.143000,SOFT,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+14.0,LEC,16,Sauber,7.0,0 days 00:01:14.842000,False,0 days 00:00:19.134000,0 days 00:00:38.734000,0 days 00:00:16.974000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+14.0,STR,18,Williams,19.0,0 days 00:01:16.481000,False,0 days 00:00:19.326000,0 days 00:00:40.051000,0 days 00:00:17.104000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+14.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.576000,True,0 days 00:00:19.250000,0 days 00:00:38.223000,0 days 00:00:17.103000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+14.0,HUL,27,Renault,13.0,0 days 00:01:15.634000,False,0 days 00:00:19.214000,0 days 00:00:39.140000,0 days 00:00:17.280000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+14.0,HAR,28,Toro Rosso,17.0,0 days 00:01:16.353000,False,0 days 00:00:19.252000,0 days 00:00:40.092000,0 days 00:00:17.009000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+14.0,OCO,31,Racing Point,15.0,0 days 00:01:15.829000,False,0 days 00:00:19.376000,0 days 00:00:39.544000,0 days 00:00:16.909000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+14.0,VER,33,Red Bull Racing,2.0,0 days 00:01:14.214000,False,0 days 00:00:19.023000,0 days 00:00:38.131000,0 days 00:00:17.060000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+14.0,SIR,35,Williams,18.0,0 days 00:01:16.673000,False,0 days 00:00:19.167000,0 days 00:00:40.414000,0 days 00:00:17.092000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+14.0,HAM,44,Mercedes,1.0,0 days 00:01:14.223000,False,0 days 00:00:19.153000,0 days 00:00:38.240000,0 days 00:00:16.830000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+14.0,SAI,55,Renault,12.0,0 days 00:01:15.561000,False,0 days 00:00:19.325000,0 days 00:00:39.001000,0 days 00:00:17.235000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+14.0,BOT,77,Mercedes,3.0,0 days 00:01:14.404000,False,0 days 00:00:19.128000,0 days 00:00:38.328000,0 days 00:00:16.948000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+15.0,VAN,2,McLaren,19.0,0 days 00:01:16.259000,False,0 days 00:00:19.276000,0 days 00:00:39.882000,0 days 00:00:17.101000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+15.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.591000,False,0 days 00:00:19.062000,0 days 00:00:38.437000,0 days 00:00:17.092000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+15.0,VET,5,Ferrari,5.0,0 days 00:01:14.422000,False,0 days 00:00:19.005000,0 days 00:00:38.457000,0 days 00:00:16.960000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+15.0,RAI,7,Ferrari,4.0,0 days 00:01:14.337000,False,0 days 00:00:19.074000,0 days 00:00:38.615000,0 days 00:00:16.648000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+15.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.853000,False,0 days 00:00:19.266000,0 days 00:00:38.536000,0 days 00:00:17.051000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+15.0,ERI,9,Sauber,14.0,0 days 00:01:16.410000,False,0 days 00:00:19.562000,0 days 00:00:39.808000,0 days 00:00:17.040000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+15.0,GAS,10,Toro Rosso,10.0,0 days 00:01:15.971000,False,0 days 00:00:19.521000,0 days 00:00:39.340000,0 days 00:00:17.110000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+15.0,PER,11,Racing Point,11.0,0 days 00:01:15.976000,False,0 days 00:00:19.303000,0 days 00:00:39.775000,0 days 00:00:16.898000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+15.0,ALO,14,McLaren,20.0,0 days 00:01:19.943000,False,0 days 00:00:19.258000,0 days 00:00:39.608000,0 days 00:00:21.077000,SOFT,0 days 00:52:38.656000,0 days 00:53:12.140000,0 days 00:00:33.484000,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+15.0,LEC,16,Sauber,7.0,0 days 00:01:14.617000,False,0 days 00:00:19.072000,0 days 00:00:38.574000,0 days 00:00:16.971000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+15.0,STR,18,Williams,18.0,0 days 00:01:16.375000,False,0 days 00:00:19.249000,0 days 00:00:40.016000,0 days 00:00:17.110000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+15.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.491000,True,0 days 00:00:19.199000,0 days 00:00:38.234000,0 days 00:00:17.058000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+15.0,HUL,27,Renault,13.0,0 days 00:01:15.659000,False,0 days 00:00:19.320000,0 days 00:00:39.040000,0 days 00:00:17.299000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+15.0,HAR,28,Toro Rosso,16.0,0 days 00:01:16.209000,False,0 days 00:00:19.598000,0 days 00:00:39.616000,0 days 00:00:16.995000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+15.0,OCO,31,Racing Point,15.0,0 days 00:01:15.788000,False,0 days 00:00:19.336000,0 days 00:00:39.721000,0 days 00:00:16.731000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+15.0,VER,33,Red Bull Racing,2.0,0 days 00:01:13.856000,True,0 days 00:00:18.914000,0 days 00:00:37.893000,0 days 00:00:17.049000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+15.0,SIR,35,Williams,17.0,0 days 00:01:16.353000,False,0 days 00:00:19.139000,0 days 00:00:40.034000,0 days 00:00:17.180000,SOFT,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+15.0,HAM,44,Mercedes,1.0,0 days 00:01:13.943000,True,0 days 00:00:18.884000,0 days 00:00:38.140000,0 days 00:00:16.919000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+15.0,SAI,55,Renault,12.0,0 days 00:01:15.313000,True,0 days 00:00:19.277000,0 days 00:00:38.866000,0 days 00:00:17.170000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+15.0,BOT,77,Mercedes,3.0,0 days 00:01:14.566000,False,0 days 00:00:19.094000,0 days 00:00:38.497000,0 days 00:00:16.975000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+16.0,VAN,2,McLaren,18.0,0 days 00:01:16.591000,False,0 days 00:00:19.456000,0 days 00:00:39.940000,0 days 00:00:17.195000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+16.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.684000,False,0 days 00:00:18.962000,0 days 00:00:38.649000,0 days 00:00:17.073000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+16.0,VET,5,Ferrari,5.0,0 days 00:01:14.640000,False,0 days 00:00:19.156000,0 days 00:00:38.640000,0 days 00:00:16.844000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+16.0,RAI,7,Ferrari,4.0,0 days 00:01:14.900000,False,0 days 00:00:18.964000,0 days 00:00:39.264000,0 days 00:00:16.672000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+16.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.978000,False,0 days 00:00:19.303000,0 days 00:00:38.567000,0 days 00:00:17.108000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+16.0,ERI,9,Sauber,15.0,0 days 00:01:17.314000,False,0 days 00:00:20.008000,0 days 00:00:40.153000,0 days 00:00:17.153000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+16.0,GAS,10,Toro Rosso,10.0,0 days 00:01:15.443000,True,0 days 00:00:19.365000,0 days 00:00:38.899000,0 days 00:00:17.179000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+16.0,PER,11,Racing Point,11.0,0 days 00:01:15.558000,False,0 days 00:00:19.185000,0 days 00:00:39.526000,0 days 00:00:16.847000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+16.0,ALO,14,McLaren,20.0,0 days 00:01:42.275000,False,0 days 00:00:47.170000,0 days 00:00:38.094000,0 days 00:00:17.011000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+16.0,LEC,16,Sauber,7.0,0 days 00:01:14.685000,False,0 days 00:00:19.144000,0 days 00:00:38.569000,0 days 00:00:16.972000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+16.0,STR,18,Williams,17.0,0 days 00:01:16.563000,False,0 days 00:00:19.325000,0 days 00:00:40.009000,0 days 00:00:17.229000,SOFT,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+16.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.386000,True,0 days 00:00:19.251000,0 days 00:00:38.129000,0 days 00:00:17.006000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+16.0,HUL,27,Renault,13.0,0 days 00:01:15.173000,True,0 days 00:00:19.305000,0 days 00:00:38.665000,0 days 00:00:17.203000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+16.0,HAR,28,Toro Rosso,16.0,0 days 00:01:15.937000,False,0 days 00:00:19.227000,0 days 00:00:39.671000,0 days 00:00:17.039000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+16.0,OCO,31,Racing Point,14.0,0 days 00:01:15.059000,True,0 days 00:00:18.949000,0 days 00:00:39.119000,0 days 00:00:16.991000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+16.0,VER,33,Red Bull Racing,2.0,0 days 00:01:13.906000,False,0 days 00:00:19.001000,0 days 00:00:37.933000,0 days 00:00:16.972000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+16.0,SIR,35,Williams,19.0,0 days 00:01:19.950000,False,0 days 00:00:19.207000,0 days 00:00:39.899000,0 days 00:00:20.844000,SOFT,0 days 00:53:56.424000,0 days 00:54:19.754000,0 days 00:00:23.330000,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+16.0,HAM,44,Mercedes,1.0,0 days 00:01:13.786000,True,0 days 00:00:18.843000,0 days 00:00:38.139000,0 days 00:00:16.804000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+16.0,SAI,55,Renault,12.0,0 days 00:01:15.564000,False,0 days 00:00:19.271000,0 days 00:00:39.066000,0 days 00:00:17.227000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+16.0,BOT,77,Mercedes,3.0,0 days 00:01:14.913000,False,0 days 00:00:19.163000,0 days 00:00:38.829000,0 days 00:00:16.921000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+17.0,VAN,2,McLaren,17.0,0 days 00:01:16.384000,False,0 days 00:00:19.392000,0 days 00:00:39.705000,0 days 00:00:17.287000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+17.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.757000,False,0 days 00:00:19.002000,0 days 00:00:38.692000,0 days 00:00:17.063000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+17.0,VET,5,Ferrari,5.0,0 days 00:01:14.634000,False,0 days 00:00:18.903000,0 days 00:00:38.859000,0 days 00:00:16.872000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+17.0,RAI,7,Ferrari,4.0,0 days 00:01:14.881000,False,0 days 00:00:19.145000,0 days 00:00:38.777000,0 days 00:00:16.959000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+17.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.751000,False,0 days 00:00:19.206000,0 days 00:00:38.495000,0 days 00:00:17.050000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+17.0,ERI,9,Sauber,15.0,0 days 00:01:16.712000,False,0 days 00:00:19.626000,0 days 00:00:39.931000,0 days 00:00:17.155000,SUPERSOFT,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+17.0,GAS,10,Toro Rosso,10.0,0 days 00:01:15.583000,False,0 days 00:00:19.342000,0 days 00:00:39.079000,0 days 00:00:17.162000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+17.0,PER,11,Racing Point,11.0,0 days 00:01:15.238000,False,0 days 00:00:19.230000,0 days 00:00:39.179000,0 days 00:00:16.829000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+17.0,ALO,14,McLaren,20.0,0 days 00:01:14.269000,True,0 days 00:00:19.151000,0 days 00:00:37.986000,0 days 00:00:17.132000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+17.0,LEC,16,Sauber,7.0,0 days 00:01:14.877000,False,0 days 00:00:19.258000,0 days 00:00:38.688000,0 days 00:00:16.931000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+17.0,STR,18,Williams,18.0,0 days 00:01:20.105000,False,0 days 00:00:19.390000,0 days 00:00:39.489000,0 days 00:00:21.226000,SOFT,0 days 00:55:14.189000,0 days 00:55:38.621000,0 days 00:00:24.432000,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+17.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.353000,True,0 days 00:00:19.206000,0 days 00:00:38.128000,0 days 00:00:17.019000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+17.0,HUL,27,Renault,13.0,0 days 00:01:15.086000,True,0 days 00:00:19.285000,0 days 00:00:38.630000,0 days 00:00:17.171000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+17.0,HAR,28,Toro Rosso,16.0,0 days 00:01:16.400000,False,0 days 00:00:19.477000,0 days 00:00:39.920000,0 days 00:00:17.003000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+17.0,OCO,31,Racing Point,14.0,0 days 00:01:15.107000,False,0 days 00:00:19.255000,0 days 00:00:38.853000,0 days 00:00:16.999000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+17.0,VER,33,Red Bull Racing,2.0,0 days 00:01:14.477000,False,0 days 00:00:19.033000,0 days 00:00:38.435000,0 days 00:00:17.009000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+17.0,SIR,35,Williams,19.0,0 days 00:01:33.570000,False,0 days 00:00:37.256000,0 days 00:00:39.286000,0 days 00:00:17.028000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+17.0,HAM,44,Mercedes,1.0,0 days 00:01:14.084000,False,0 days 00:00:18.870000,0 days 00:00:38.347000,0 days 00:00:16.867000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+17.0,SAI,55,Renault,12.0,0 days 00:01:15.219000,True,0 days 00:00:19.275000,0 days 00:00:38.758000,0 days 00:00:17.186000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+17.0,BOT,77,Mercedes,3.0,0 days 00:01:14.151000,True,0 days 00:00:19.059000,0 days 00:00:38.201000,0 days 00:00:16.891000,SUPERSOFT,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+18.0,VAN,2,McLaren,16.0,0 days 00:01:15.654000,True,0 days 00:00:19.359000,0 days 00:00:39.080000,0 days 00:00:17.215000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+18.0,RIC,3,Red Bull Racing,6.0,0 days 00:01:14.571000,False,0 days 00:00:19.046000,0 days 00:00:38.514000,0 days 00:00:17.011000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+18.0,VET,5,Ferrari,4.0,0 days 00:01:14.530000,False,0 days 00:00:19.079000,0 days 00:00:38.609000,0 days 00:00:16.842000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+18.0,RAI,7,Ferrari,3.0,0 days 00:01:14.170000,False,0 days 00:00:19.183000,0 days 00:00:38.094000,0 days 00:00:16.893000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+18.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:14.806000,False,0 days 00:00:19.232000,0 days 00:00:38.505000,0 days 00:00:17.069000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+18.0,ERI,9,Sauber,17.0,0 days 00:01:21.260000,False,0 days 00:00:19.614000,0 days 00:00:39.913000,0 days 00:00:21.733000,SUPERSOFT,0 days 00:56:29.648000,0 days 00:56:51.844000,0 days 00:00:22.196000,20.0,6.0,Collision,2018,GP São Paulo,historica
+18.0,GAS,10,Toro Rosso,11.0,0 days 00:01:17.305000,False,0 days 00:00:20.450000,0 days 00:00:39.697000,0 days 00:00:17.158000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+18.0,PER,11,Racing Point,10.0,0 days 00:01:15.458000,False,0 days 00:00:19.749000,0 days 00:00:38.738000,0 days 00:00:16.971000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+18.0,ALO,14,McLaren,20.0,0 days 00:01:14.634000,False,0 days 00:00:19.307000,0 days 00:00:38.277000,0 days 00:00:17.050000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+18.0,LEC,16,Sauber,7.0,0 days 00:01:14.796000,False,0 days 00:00:19.218000,0 days 00:00:38.663000,0 days 00:00:16.915000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+18.0,STR,18,Williams,19.0,0 days 00:01:33.402000,False,0 days 00:00:38.765000,0 days 00:00:37.843000,0 days 00:00:16.794000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+18.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.198000,True,0 days 00:00:19.118000,0 days 00:00:38.129000,0 days 00:00:16.951000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+18.0,HUL,27,Renault,13.0,0 days 00:01:14.825000,True,0 days 00:00:19.348000,0 days 00:00:38.491000,0 days 00:00:16.986000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+18.0,HAR,28,Toro Rosso,15.0,0 days 00:01:16.732000,False,0 days 00:00:19.597000,0 days 00:00:40.107000,0 days 00:00:17.028000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+18.0,OCO,31,Racing Point,14.0,0 days 00:01:14.887000,True,0 days 00:00:19.230000,0 days 00:00:38.701000,0 days 00:00:16.956000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+18.0,VER,33,Red Bull Racing,2.0,0 days 00:01:13.599000,True,0 days 00:00:18.945000,0 days 00:00:37.778000,0 days 00:00:16.876000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+18.0,SIR,35,Williams,18.0,0 days 00:01:14.352000,True,0 days 00:00:19.184000,0 days 00:00:38.190000,0 days 00:00:16.978000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+18.0,HAM,44,Mercedes,1.0,0 days 00:01:13.793000,False,0 days 00:00:18.798000,0 days 00:00:38.242000,0 days 00:00:16.753000,SUPERSOFT,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+18.0,SAI,55,Renault,12.0,0 days 00:01:15.486000,False,0 days 00:00:19.212000,0 days 00:00:39.364000,0 days 00:00:16.910000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+18.0,BOT,77,Mercedes,5.0,0 days 00:01:17.068000,False,0 days 00:00:18.925000,0 days 00:00:37.688000,0 days 00:00:20.455000,SUPERSOFT,0 days 00:55:50.637000,0 days 00:56:13.728000,0 days 00:00:23.091000,5.0,3.0,Finished,2018,GP São Paulo,historica
+19.0,VAN,2,McLaren,16.0,0 days 00:01:16.102000,False,0 days 00:00:19.431000,0 days 00:00:39.354000,0 days 00:00:17.317000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+19.0,RIC,3,Red Bull Racing,5.0,0 days 00:01:13.822000,False,0 days 00:00:18.952000,0 days 00:00:37.990000,0 days 00:00:16.880000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+19.0,VET,5,Ferrari,4.0,0 days 00:01:14.128000,False,0 days 00:00:19.148000,0 days 00:00:38.047000,0 days 00:00:16.933000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+19.0,RAI,7,Ferrari,3.0,0 days 00:01:13.811000,True,0 days 00:00:19.030000,0 days 00:00:37.962000,0 days 00:00:16.819000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+19.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:14.605000,True,0 days 00:00:19.220000,0 days 00:00:38.346000,0 days 00:00:17.039000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+19.0,ERI,9,Sauber,18.0,0 days 00:01:33.141000,False,0 days 00:00:37.405000,0 days 00:00:39.035000,0 days 00:00:16.701000,MEDIUM,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+19.0,GAS,10,Toro Rosso,11.0,0 days 00:01:16.050000,False,0 days 00:00:19.525000,0 days 00:00:39.352000,0 days 00:00:17.173000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+19.0,PER,11,Racing Point,10.0,0 days 00:01:14.700000,True,0 days 00:00:19.200000,0 days 00:00:38.468000,0 days 00:00:17.032000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+19.0,ALO,14,McLaren,20.0,0 days 00:01:14.971000,False,0 days 00:00:19.239000,0 days 00:00:38.597000,0 days 00:00:17.135000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+19.0,LEC,16,Sauber,6.0,0 days 00:01:14.654000,False,0 days 00:00:19.153000,0 days 00:00:38.540000,0 days 00:00:16.961000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+19.0,STR,18,Williams,19.0,0 days 00:01:14.980000,True,0 days 00:00:18.913000,0 days 00:00:39.336000,0 days 00:00:16.731000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+19.0,MAG,20,Haas F1 Team,8.0,0 days 00:01:14.449000,False,0 days 00:00:19.252000,0 days 00:00:38.202000,0 days 00:00:16.995000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+19.0,HUL,27,Renault,13.0,0 days 00:01:15.858000,False,0 days 00:00:18.966000,0 days 00:00:39.762000,0 days 00:00:17.130000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+19.0,HAR,28,Toro Rosso,15.0,0 days 00:01:15.237000,True,0 days 00:00:19.180000,0 days 00:00:38.912000,0 days 00:00:17.145000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+19.0,OCO,31,Racing Point,14.0,0 days 00:01:14.749000,True,0 days 00:00:19.097000,0 days 00:00:38.721000,0 days 00:00:16.931000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+19.0,VER,33,Red Bull Racing,1.0,0 days 00:01:13.737000,False,0 days 00:00:18.969000,0 days 00:00:37.855000,0 days 00:00:16.913000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+19.0,SIR,35,Williams,17.0,0 days 00:01:14.456000,False,0 days 00:00:19.074000,0 days 00:00:38.411000,0 days 00:00:16.971000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+19.0,HAM,44,Mercedes,2.0,0 days 00:01:17.295000,False,0 days 00:00:18.806000,0 days 00:00:38.117000,0 days 00:00:20.372000,SUPERSOFT,0 days 00:56:57.720000,0 days 00:57:20.331000,0 days 00:00:22.611000,1.0,1.0,Finished,2018,GP São Paulo,historica
+19.0,SAI,55,Renault,12.0,0 days 00:01:16.002000,False,0 days 00:00:19.224000,0 days 00:00:39.912000,0 days 00:00:16.866000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+19.0,BOT,77,Mercedes,9.0,0 days 00:01:29.713000,False,0 days 00:00:36.308000,0 days 00:00:36.903000,0 days 00:00:16.502000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+20.0,VAN,2,McLaren,16.0,0 days 00:01:15.978000,False,0 days 00:00:19.456000,0 days 00:00:39.169000,0 days 00:00:17.353000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+20.0,RIC,3,Red Bull Racing,4.0,0 days 00:01:14.256000,False,0 days 00:00:18.922000,0 days 00:00:38.382000,0 days 00:00:16.952000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+20.0,VET,5,Ferrari,3.0,0 days 00:01:14.337000,False,0 days 00:00:19.215000,0 days 00:00:38.101000,0 days 00:00:17.021000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+20.0,RAI,7,Ferrari,2.0,0 days 00:01:13.953000,False,0 days 00:00:19.085000,0 days 00:00:37.948000,0 days 00:00:16.920000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+20.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:14.968000,False,0 days 00:00:19.341000,0 days 00:00:38.552000,0 days 00:00:17.075000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+20.0,ERI,9,Sauber,20.0,0 days 00:01:41.630000,False,0 days 00:00:19.253000,0 days 00:00:51.319000,0 days 00:00:31.058000,MEDIUM,,,,20.0,6.0,Collision,2018,GP São Paulo,historica
+20.0,GAS,10,Toro Rosso,11.0,0 days 00:01:15.900000,False,0 days 00:00:19.472000,0 days 00:00:39.312000,0 days 00:00:17.116000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+20.0,PER,11,Racing Point,10.0,0 days 00:01:14.598000,True,0 days 00:00:19.058000,0 days 00:00:38.543000,0 days 00:00:16.997000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+20.0,ALO,14,McLaren,19.0,0 days 00:01:15.048000,False,0 days 00:00:19.307000,0 days 00:00:38.626000,0 days 00:00:17.115000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+20.0,LEC,16,Sauber,5.0,0 days 00:01:14.620000,False,0 days 00:00:19.219000,0 days 00:00:38.437000,0 days 00:00:16.964000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+20.0,STR,18,Williams,18.0,0 days 00:01:14.906000,True,0 days 00:00:19.126000,0 days 00:00:38.861000,0 days 00:00:16.919000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+20.0,MAG,20,Haas F1 Team,8.0,0 days 00:01:14.293000,False,0 days 00:00:19.233000,0 days 00:00:38.105000,0 days 00:00:16.955000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+20.0,HUL,27,Renault,13.0,0 days 00:01:16.356000,False,0 days 00:00:19.131000,0 days 00:00:39.974000,0 days 00:00:17.251000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+20.0,HAR,28,Toro Rosso,15.0,0 days 00:01:15.116000,True,0 days 00:00:19.436000,0 days 00:00:38.556000,0 days 00:00:17.124000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+20.0,OCO,31,Racing Point,14.0,0 days 00:01:14.987000,False,0 days 00:00:19.030000,0 days 00:00:38.975000,0 days 00:00:16.982000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+20.0,VER,33,Red Bull Racing,1.0,0 days 00:01:13.429000,True,0 days 00:00:18.895000,0 days 00:00:37.662000,0 days 00:00:16.872000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+20.0,SIR,35,Williams,17.0,0 days 00:01:14.733000,False,0 days 00:00:19.113000,0 days 00:00:38.621000,0 days 00:00:16.999000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+20.0,HAM,44,Mercedes,6.0,0 days 00:01:29.165000,False,0 days 00:00:35.751000,0 days 00:00:36.904000,0 days 00:00:16.510000,MEDIUM,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+20.0,SAI,55,Renault,12.0,0 days 00:01:15.958000,False,0 days 00:00:19.293000,0 days 00:00:39.782000,0 days 00:00:16.883000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+20.0,BOT,77,Mercedes,9.0,0 days 00:01:13.860000,True,0 days 00:00:18.838000,0 days 00:00:38.371000,0 days 00:00:16.651000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+21.0,VAN,2,McLaren,16.0,0 days 00:01:15.723000,False,0 days 00:00:19.370000,0 days 00:00:38.983000,0 days 00:00:17.370000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+21.0,RIC,3,Red Bull Racing,4.0,0 days 00:01:14.237000,False,0 days 00:00:18.937000,0 days 00:00:38.393000,0 days 00:00:16.907000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+21.0,VET,5,Ferrari,3.0,0 days 00:01:14.202000,False,0 days 00:00:18.971000,0 days 00:00:38.331000,0 days 00:00:16.900000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+21.0,RAI,7,Ferrari,2.0,0 days 00:01:14.002000,False,0 days 00:00:19.054000,0 days 00:00:38.230000,0 days 00:00:16.718000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+21.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:15.314000,False,0 days 00:00:19.559000,0 days 00:00:38.757000,0 days 00:00:16.998000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+21.0,GAS,10,Toro Rosso,11.0,0 days 00:01:15.306000,True,0 days 00:00:19.249000,0 days 00:00:38.917000,0 days 00:00:17.140000,SUPERSOFT,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+21.0,PER,11,Racing Point,10.0,0 days 00:01:14.476000,True,0 days 00:00:19.073000,0 days 00:00:38.404000,0 days 00:00:16.999000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+21.0,ALO,14,McLaren,19.0,0 days 00:01:15.187000,False,0 days 00:00:19.320000,0 days 00:00:38.737000,0 days 00:00:17.130000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+21.0,LEC,16,Sauber,5.0,0 days 00:01:14.616000,False,0 days 00:00:19.104000,0 days 00:00:38.602000,0 days 00:00:16.910000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+21.0,STR,18,Williams,18.0,0 days 00:01:14.720000,True,0 days 00:00:19.111000,0 days 00:00:38.558000,0 days 00:00:17.051000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+21.0,MAG,20,Haas F1 Team,8.0,0 days 00:01:14.609000,False,0 days 00:00:19.252000,0 days 00:00:38.304000,0 days 00:00:17.053000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+21.0,HUL,27,Renault,13.0,0 days 00:01:15.585000,False,0 days 00:00:19.321000,0 days 00:00:39.094000,0 days 00:00:17.170000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+21.0,HAR,28,Toro Rosso,15.0,0 days 00:01:15.407000,False,0 days 00:00:19.380000,0 days 00:00:38.948000,0 days 00:00:17.079000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+21.0,OCO,31,Racing Point,14.0,0 days 00:01:15.448000,False,0 days 00:00:19.171000,0 days 00:00:39.279000,0 days 00:00:16.998000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+21.0,VER,33,Red Bull Racing,1.0,0 days 00:01:13.745000,False,0 days 00:00:18.967000,0 days 00:00:37.920000,0 days 00:00:16.858000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+21.0,SIR,35,Williams,17.0,0 days 00:01:14.488000,False,0 days 00:00:19.079000,0 days 00:00:38.420000,0 days 00:00:16.989000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+21.0,HAM,44,Mercedes,6.0,0 days 00:01:13.025000,True,0 days 00:00:18.590000,0 days 00:00:37.836000,0 days 00:00:16.599000,MEDIUM,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+21.0,SAI,55,Renault,12.0,0 days 00:01:15.611000,False,0 days 00:00:19.325000,0 days 00:00:39.256000,0 days 00:00:17.030000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+21.0,BOT,77,Mercedes,9.0,0 days 00:01:13.755000,True,0 days 00:00:18.896000,0 days 00:00:38.188000,0 days 00:00:16.671000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+22.0,VAN,2,McLaren,16.0,0 days 00:01:15.642000,True,0 days 00:00:19.334000,0 days 00:00:38.914000,0 days 00:00:17.394000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+22.0,RIC,3,Red Bull Racing,4.0,0 days 00:01:14.135000,False,0 days 00:00:18.955000,0 days 00:00:38.253000,0 days 00:00:16.927000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+22.0,VET,5,Ferrari,3.0,0 days 00:01:14.162000,False,0 days 00:00:19.011000,0 days 00:00:38.227000,0 days 00:00:16.924000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+22.0,RAI,7,Ferrari,2.0,0 days 00:01:13.634000,True,0 days 00:00:18.661000,0 days 00:00:38.063000,0 days 00:00:16.910000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+22.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:14.747000,False,0 days 00:00:19.151000,0 days 00:00:38.497000,0 days 00:00:17.099000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+22.0,GAS,10,Toro Rosso,14.0,0 days 00:01:19.208000,False,0 days 00:00:19.576000,0 days 00:00:38.874000,0 days 00:00:20.758000,SUPERSOFT,0 days 01:01:19.287000,0 days 01:01:43.436000,0 days 00:00:24.149000,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+22.0,PER,11,Racing Point,10.0,0 days 00:01:14.367000,True,0 days 00:00:19.014000,0 days 00:00:38.400000,0 days 00:00:16.953000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+22.0,ALO,14,McLaren,19.0,0 days 00:01:15.209000,False,0 days 00:00:19.171000,0 days 00:00:38.709000,0 days 00:00:17.329000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+22.0,LEC,16,Sauber,5.0,0 days 00:01:14.535000,False,0 days 00:00:19.072000,0 days 00:00:38.505000,0 days 00:00:16.958000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+22.0,STR,18,Williams,18.0,0 days 00:01:14.783000,False,0 days 00:00:19.198000,0 days 00:00:38.504000,0 days 00:00:17.081000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+22.0,MAG,20,Haas F1 Team,8.0,0 days 00:01:14.491000,False,0 days 00:00:19.185000,0 days 00:00:38.301000,0 days 00:00:17.005000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+22.0,HUL,27,Renault,12.0,0 days 00:01:15.316000,False,0 days 00:00:19.211000,0 days 00:00:39.041000,0 days 00:00:17.064000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+22.0,HAR,28,Toro Rosso,15.0,0 days 00:01:15.400000,False,0 days 00:00:19.274000,0 days 00:00:39.039000,0 days 00:00:17.087000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+22.0,OCO,31,Racing Point,13.0,0 days 00:01:15.340000,False,0 days 00:00:19.112000,0 days 00:00:39.291000,0 days 00:00:16.937000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+22.0,VER,33,Red Bull Racing,1.0,0 days 00:01:13.652000,False,0 days 00:00:18.848000,0 days 00:00:37.922000,0 days 00:00:16.882000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+22.0,SIR,35,Williams,17.0,0 days 00:01:14.920000,False,0 days 00:00:19.093000,0 days 00:00:38.704000,0 days 00:00:17.123000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+22.0,HAM,44,Mercedes,6.0,0 days 00:01:13.874000,False,0 days 00:00:18.675000,0 days 00:00:38.649000,0 days 00:00:16.550000,MEDIUM,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+22.0,SAI,55,Renault,11.0,0 days 00:01:15.889000,False,0 days 00:00:19.228000,0 days 00:00:39.443000,0 days 00:00:17.218000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+22.0,BOT,77,Mercedes,9.0,0 days 00:01:13.288000,True,0 days 00:00:18.836000,0 days 00:00:37.942000,0 days 00:00:16.510000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+23.0,VAN,2,McLaren,15.0,0 days 00:01:15.787000,False,0 days 00:00:19.342000,0 days 00:00:39.156000,0 days 00:00:17.289000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+23.0,RIC,3,Red Bull Racing,4.0,0 days 00:01:14.104000,False,0 days 00:00:18.885000,0 days 00:00:38.299000,0 days 00:00:16.920000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+23.0,VET,5,Ferrari,3.0,0 days 00:01:14.061000,False,0 days 00:00:18.979000,0 days 00:00:38.078000,0 days 00:00:17.004000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+23.0,RAI,7,Ferrari,2.0,0 days 00:01:13.782000,False,0 days 00:00:18.814000,0 days 00:00:38.021000,0 days 00:00:16.947000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+23.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:14.979000,False,0 days 00:00:19.147000,0 days 00:00:38.746000,0 days 00:00:17.086000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+23.0,GAS,10,Toro Rosso,16.0,0 days 00:01:33.499000,False,0 days 00:00:37.824000,0 days 00:00:38.752000,0 days 00:00:16.923000,MEDIUM,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+23.0,PER,11,Racing Point,10.0,0 days 00:01:14.374000,False,0 days 00:00:18.945000,0 days 00:00:38.546000,0 days 00:00:16.883000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+23.0,ALO,14,McLaren,19.0,0 days 00:01:16.062000,False,0 days 00:00:19.954000,0 days 00:00:38.951000,0 days 00:00:17.157000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+23.0,LEC,16,Sauber,5.0,0 days 00:01:14.244000,True,0 days 00:00:18.951000,0 days 00:00:38.443000,0 days 00:00:16.850000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+23.0,STR,18,Williams,18.0,0 days 00:01:14.950000,False,0 days 00:00:19.239000,0 days 00:00:38.696000,0 days 00:00:17.015000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+23.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:15.696000,False,0 days 00:00:19.083000,0 days 00:00:39.676000,0 days 00:00:16.937000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+23.0,HUL,27,Renault,12.0,0 days 00:01:15.229000,False,0 days 00:00:18.958000,0 days 00:00:39.245000,0 days 00:00:17.026000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+23.0,HAR,28,Toro Rosso,14.0,0 days 00:01:15.280000,False,0 days 00:00:19.245000,0 days 00:00:38.867000,0 days 00:00:17.168000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+23.0,OCO,31,Racing Point,13.0,0 days 00:01:15.312000,False,0 days 00:00:19.029000,0 days 00:00:39.333000,0 days 00:00:16.950000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+23.0,VER,33,Red Bull Racing,1.0,0 days 00:01:13.815000,False,0 days 00:00:18.840000,0 days 00:00:38.131000,0 days 00:00:16.844000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+23.0,SIR,35,Williams,17.0,0 days 00:01:15.124000,False,0 days 00:00:19.137000,0 days 00:00:38.880000,0 days 00:00:17.107000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+23.0,HAM,44,Mercedes,6.0,0 days 00:01:13.393000,False,0 days 00:00:18.786000,0 days 00:00:38.291000,0 days 00:00:16.316000,MEDIUM,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+23.0,SAI,55,Renault,11.0,0 days 00:01:15.379000,False,0 days 00:00:19.369000,0 days 00:00:38.814000,0 days 00:00:17.196000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+23.0,BOT,77,Mercedes,8.0,0 days 00:01:14.203000,False,0 days 00:00:18.655000,0 days 00:00:38.715000,0 days 00:00:16.833000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+24.0,VAN,2,McLaren,15.0,0 days 00:01:16.034000,False,0 days 00:00:19.343000,0 days 00:00:39.310000,0 days 00:00:17.381000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+24.0,RIC,3,Red Bull Racing,4.0,0 days 00:01:14.102000,False,0 days 00:00:18.857000,0 days 00:00:38.273000,0 days 00:00:16.972000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+24.0,VET,5,Ferrari,3.0,0 days 00:01:14.161000,False,0 days 00:00:18.958000,0 days 00:00:38.221000,0 days 00:00:16.982000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+24.0,RAI,7,Ferrari,2.0,0 days 00:01:14.170000,False,0 days 00:00:18.963000,0 days 00:00:38.305000,0 days 00:00:16.902000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+24.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:14.937000,False,0 days 00:00:19.153000,0 days 00:00:38.665000,0 days 00:00:17.119000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+24.0,GAS,10,Toro Rosso,16.0,0 days 00:01:14.787000,True,0 days 00:00:19.207000,0 days 00:00:38.665000,0 days 00:00:16.915000,MEDIUM,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+24.0,PER,11,Racing Point,10.0,0 days 00:01:14.475000,False,0 days 00:00:18.922000,0 days 00:00:38.568000,0 days 00:00:16.985000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+24.0,ALO,14,McLaren,19.0,0 days 00:01:15.531000,False,0 days 00:00:19.231000,0 days 00:00:39.005000,0 days 00:00:17.295000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+24.0,LEC,16,Sauber,6.0,0 days 00:01:15.651000,False,0 days 00:00:19.267000,0 days 00:00:39.426000,0 days 00:00:16.958000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+24.0,STR,18,Williams,18.0,0 days 00:01:15.081000,False,0 days 00:00:19.166000,0 days 00:00:38.797000,0 days 00:00:17.118000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+24.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.881000,False,0 days 00:00:19.289000,0 days 00:00:38.621000,0 days 00:00:16.971000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+24.0,HUL,27,Renault,12.0,0 days 00:01:15.050000,False,0 days 00:00:19.068000,0 days 00:00:38.923000,0 days 00:00:17.059000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+24.0,HAR,28,Toro Rosso,14.0,0 days 00:01:15.516000,False,0 days 00:00:19.351000,0 days 00:00:39.010000,0 days 00:00:17.155000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+24.0,OCO,31,Racing Point,13.0,0 days 00:01:15.234000,False,0 days 00:00:19.046000,0 days 00:00:39.241000,0 days 00:00:16.947000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+24.0,VER,33,Red Bull Racing,1.0,0 days 00:01:13.709000,False,0 days 00:00:18.837000,0 days 00:00:37.923000,0 days 00:00:16.949000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+24.0,SIR,35,Williams,17.0,0 days 00:01:15.274000,False,0 days 00:00:19.149000,0 days 00:00:38.964000,0 days 00:00:17.161000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+24.0,HAM,44,Mercedes,5.0,0 days 00:01:14.539000,False,0 days 00:00:18.737000,0 days 00:00:38.933000,0 days 00:00:16.869000,MEDIUM,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+24.0,SAI,55,Renault,11.0,0 days 00:01:15.225000,False,0 days 00:00:19.266000,0 days 00:00:38.681000,0 days 00:00:17.278000,SOFT,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+24.0,BOT,77,Mercedes,8.0,0 days 00:01:14.245000,False,0 days 00:00:18.913000,0 days 00:00:38.477000,0 days 00:00:16.855000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+25.0,VAN,2,McLaren,15.0,0 days 00:01:15.837000,False,0 days 00:00:19.379000,0 days 00:00:39.080000,0 days 00:00:17.378000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+25.0,RIC,3,Red Bull Racing,4.0,0 days 00:01:13.783000,True,0 days 00:00:18.805000,0 days 00:00:38.039000,0 days 00:00:16.939000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+25.0,VET,5,Ferrari,3.0,0 days 00:01:13.988000,False,0 days 00:00:18.960000,0 days 00:00:38.178000,0 days 00:00:16.850000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+25.0,RAI,7,Ferrari,2.0,0 days 00:01:14.047000,False,0 days 00:00:18.776000,0 days 00:00:38.341000,0 days 00:00:16.930000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+25.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:14.743000,False,0 days 00:00:19.114000,0 days 00:00:38.527000,0 days 00:00:17.102000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+25.0,GAS,10,Toro Rosso,16.0,0 days 00:01:14.777000,True,0 days 00:00:19.194000,0 days 00:00:38.664000,0 days 00:00:16.919000,MEDIUM,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+25.0,PER,11,Racing Point,10.0,0 days 00:01:14.559000,False,0 days 00:00:18.993000,0 days 00:00:38.643000,0 days 00:00:16.923000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+25.0,ALO,14,McLaren,19.0,0 days 00:01:15.366000,False,0 days 00:00:19.299000,0 days 00:00:38.790000,0 days 00:00:17.277000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+25.0,LEC,16,Sauber,6.0,0 days 00:01:14.904000,False,0 days 00:00:19.110000,0 days 00:00:38.785000,0 days 00:00:17.009000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+25.0,STR,18,Williams,18.0,0 days 00:01:16.940000,False,0 days 00:00:19.437000,0 days 00:00:40.455000,0 days 00:00:17.048000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+25.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.754000,False,0 days 00:00:19.164000,0 days 00:00:38.554000,0 days 00:00:17.036000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+25.0,HUL,27,Renault,11.0,0 days 00:01:15.920000,False,0 days 00:00:19.080000,0 days 00:00:39.707000,0 days 00:00:17.133000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+25.0,HAR,28,Toro Rosso,14.0,0 days 00:01:15.916000,False,0 days 00:00:19.489000,0 days 00:00:39.238000,0 days 00:00:17.189000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+25.0,OCO,31,Racing Point,12.0,0 days 00:01:15.399000,False,0 days 00:00:19.029000,0 days 00:00:39.420000,0 days 00:00:16.950000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+25.0,VER,33,Red Bull Racing,1.0,0 days 00:01:14.005000,False,0 days 00:00:18.923000,0 days 00:00:38.123000,0 days 00:00:16.959000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+25.0,SIR,35,Williams,17.0,0 days 00:01:15.238000,False,0 days 00:00:19.257000,0 days 00:00:38.860000,0 days 00:00:17.121000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+25.0,HAM,44,Mercedes,5.0,0 days 00:01:14.569000,False,0 days 00:00:19.011000,0 days 00:00:38.677000,0 days 00:00:16.881000,MEDIUM,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+25.0,SAI,55,Renault,13.0,0 days 00:01:19.572000,False,0 days 00:00:19.394000,0 days 00:00:39.212000,0 days 00:00:20.966000,SOFT,0 days 01:05:06.911000,0 days 01:05:30.792000,0 days 00:00:23.881000,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+25.0,BOT,77,Mercedes,8.0,0 days 00:01:14.256000,False,0 days 00:00:18.970000,0 days 00:00:38.549000,0 days 00:00:16.737000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+26.0,VAN,2,McLaren,14.0,0 days 00:01:15.852000,False,0 days 00:00:19.386000,0 days 00:00:38.996000,0 days 00:00:17.470000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+26.0,RIC,3,Red Bull Racing,4.0,0 days 00:01:13.732000,True,0 days 00:00:18.749000,0 days 00:00:38.137000,0 days 00:00:16.846000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+26.0,VET,5,Ferrari,3.0,0 days 00:01:13.874000,True,0 days 00:00:18.935000,0 days 00:00:38.015000,0 days 00:00:16.924000,SOFT,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+26.0,RAI,7,Ferrari,2.0,0 days 00:01:13.853000,False,0 days 00:00:18.817000,0 days 00:00:38.150000,0 days 00:00:16.886000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+26.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:14.864000,False,0 days 00:00:19.115000,0 days 00:00:38.633000,0 days 00:00:17.116000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+26.0,GAS,10,Toro Rosso,15.0,0 days 00:01:14.664000,True,0 days 00:00:19.214000,0 days 00:00:38.514000,0 days 00:00:16.936000,MEDIUM,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+26.0,PER,11,Racing Point,10.0,0 days 00:01:14.498000,False,0 days 00:00:19.053000,0 days 00:00:38.473000,0 days 00:00:16.972000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+26.0,ALO,14,McLaren,19.0,0 days 00:01:15.401000,False,0 days 00:00:19.468000,0 days 00:00:38.746000,0 days 00:00:17.187000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+26.0,LEC,16,Sauber,6.0,0 days 00:01:14.623000,False,0 days 00:00:19.104000,0 days 00:00:38.572000,0 days 00:00:16.947000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+26.0,STR,18,Williams,18.0,0 days 00:01:15.179000,False,0 days 00:00:19.183000,0 days 00:00:38.953000,0 days 00:00:17.043000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+26.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.517000,False,0 days 00:00:19.158000,0 days 00:00:38.323000,0 days 00:00:17.036000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+26.0,HUL,27,Renault,11.0,0 days 00:01:14.109000,True,0 days 00:00:18.956000,0 days 00:00:37.957000,0 days 00:00:17.196000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+26.0,HAR,28,Toro Rosso,13.0,0 days 00:01:15.161000,False,0 days 00:00:19.253000,0 days 00:00:38.795000,0 days 00:00:17.113000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+26.0,OCO,31,Racing Point,12.0,0 days 00:01:14.730000,True,0 days 00:00:19.034000,0 days 00:00:38.720000,0 days 00:00:16.976000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+26.0,VER,33,Red Bull Racing,1.0,0 days 00:01:13.961000,False,0 days 00:00:18.945000,0 days 00:00:38.046000,0 days 00:00:16.970000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+26.0,SIR,35,Williams,17.0,0 days 00:01:15.170000,False,0 days 00:00:19.278000,0 days 00:00:38.812000,0 days 00:00:17.080000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+26.0,HAM,44,Mercedes,5.0,0 days 00:01:14.944000,False,0 days 00:00:18.960000,0 days 00:00:39.151000,0 days 00:00:16.833000,MEDIUM,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+26.0,SAI,55,Renault,16.0,0 days 00:01:32.234000,False,0 days 00:00:37.403000,0 days 00:00:37.955000,0 days 00:00:16.876000,MEDIUM,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+26.0,BOT,77,Mercedes,8.0,0 days 00:01:14.377000,False,0 days 00:00:18.905000,0 days 00:00:38.693000,0 days 00:00:16.779000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+27.0,VAN,2,McLaren,14.0,0 days 00:01:16.053000,False,0 days 00:00:19.395000,0 days 00:00:39.252000,0 days 00:00:17.406000,SOFT,,,,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+27.0,RIC,3,Red Bull Racing,3.0,0 days 00:01:13.928000,False,0 days 00:00:18.780000,0 days 00:00:38.361000,0 days 00:00:16.787000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+27.0,VET,5,Ferrari,4.0,0 days 00:01:17.511000,False,0 days 00:00:19.028000,0 days 00:00:37.988000,0 days 00:00:20.495000,SOFT,0 days 01:07:00.643000,0 days 01:07:23.160000,0 days 00:00:22.517000,6.0,2.0,Finished,2018,GP São Paulo,historica
+27.0,RAI,7,Ferrari,2.0,0 days 00:01:13.987000,False,0 days 00:00:18.945000,0 days 00:00:38.148000,0 days 00:00:16.894000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+27.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:14.831000,False,0 days 00:00:19.215000,0 days 00:00:38.606000,0 days 00:00:17.010000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+27.0,GAS,10,Toro Rosso,15.0,0 days 00:01:14.791000,False,0 days 00:00:19.200000,0 days 00:00:38.638000,0 days 00:00:16.953000,MEDIUM,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+27.0,PER,11,Racing Point,10.0,0 days 00:01:14.563000,False,0 days 00:00:18.978000,0 days 00:00:38.588000,0 days 00:00:16.997000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+27.0,ALO,14,McLaren,19.0,0 days 00:01:16.605000,False,0 days 00:00:19.286000,0 days 00:00:39.967000,0 days 00:00:17.352000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+27.0,LEC,16,Sauber,6.0,0 days 00:01:14.777000,False,0 days 00:00:19.088000,0 days 00:00:38.772000,0 days 00:00:16.917000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+27.0,STR,18,Williams,18.0,0 days 00:01:14.912000,False,0 days 00:00:19.166000,0 days 00:00:38.679000,0 days 00:00:17.067000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+27.0,MAG,20,Haas F1 Team,9.0,0 days 00:01:14.426000,False,0 days 00:00:19.118000,0 days 00:00:38.316000,0 days 00:00:16.992000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+27.0,HUL,27,Renault,11.0,0 days 00:01:14.389000,False,0 days 00:00:19.062000,0 days 00:00:38.130000,0 days 00:00:17.197000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+27.0,HAR,28,Toro Rosso,13.0,0 days 00:01:15.023000,True,0 days 00:00:19.354000,0 days 00:00:38.600000,0 days 00:00:17.069000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+27.0,OCO,31,Racing Point,12.0,0 days 00:01:14.610000,True,0 days 00:00:18.974000,0 days 00:00:38.679000,0 days 00:00:16.957000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+27.0,VER,33,Red Bull Racing,1.0,0 days 00:01:13.628000,False,0 days 00:00:18.912000,0 days 00:00:37.840000,0 days 00:00:16.876000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+27.0,SIR,35,Williams,17.0,0 days 00:01:15.420000,False,0 days 00:00:19.073000,0 days 00:00:38.844000,0 days 00:00:17.503000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+27.0,HAM,44,Mercedes,5.0,0 days 00:01:14.425000,False,0 days 00:00:18.931000,0 days 00:00:38.716000,0 days 00:00:16.778000,MEDIUM,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+27.0,SAI,55,Renault,16.0,0 days 00:01:13.347000,True,0 days 00:00:19.066000,0 days 00:00:37.671000,0 days 00:00:16.610000,MEDIUM,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+27.0,BOT,77,Mercedes,8.0,0 days 00:01:13.499000,False,0 days 00:00:18.746000,0 days 00:00:38.150000,0 days 00:00:16.603000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica
+28.0,VAN,2,McLaren,16.0,0 days 00:01:19.339000,False,0 days 00:00:19.357000,0 days 00:00:38.972000,0 days 00:00:21.010000,SOFT,0 days 01:09:09.178000,0 days 01:09:31.514000,0 days 00:00:22.336000,14.0,20.0,+1 Lap,2018,GP São Paulo,historica
+28.0,RIC,3,Red Bull Racing,3.0,0 days 00:01:12.919000,True,0 days 00:00:18.601000,0 days 00:00:37.388000,0 days 00:00:16.930000,SUPERSOFT,,,,4.0,11.0,Finished,2018,GP São Paulo,historica
+28.0,VET,5,Ferrari,9.0,0 days 00:01:29.579000,False,0 days 00:00:35.762000,0 days 00:00:37.319000,0 days 00:00:16.498000,MEDIUM,,,,6.0,2.0,Finished,2018,GP São Paulo,historica
+28.0,RAI,7,Ferrari,2.0,0 days 00:01:14.282000,False,0 days 00:00:18.870000,0 days 00:00:38.456000,0 days 00:00:16.956000,SOFT,,,,3.0,4.0,Finished,2018,GP São Paulo,historica
+28.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:15.089000,False,0 days 00:00:19.231000,0 days 00:00:38.765000,0 days 00:00:17.093000,SUPERSOFT,,,,8.0,8.0,Finished,2018,GP São Paulo,historica
+28.0,GAS,10,Toro Rosso,14.0,0 days 00:01:14.021000,True,0 days 00:00:19.089000,0 days 00:00:38.218000,0 days 00:00:16.714000,MEDIUM,,,,13.0,9.0,+1 Lap,2018,GP São Paulo,historica
+28.0,PER,11,Racing Point,10.0,0 days 00:01:14.440000,False,0 days 00:00:18.942000,0 days 00:00:38.515000,0 days 00:00:16.983000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP São Paulo,historica
+28.0,ALO,14,McLaren,19.0,0 days 00:01:16.130000,False,0 days 00:00:19.318000,0 days 00:00:39.775000,0 days 00:00:17.037000,MEDIUM,,,,17.0,17.0,+2 Laps,2018,GP São Paulo,historica
+28.0,LEC,16,Sauber,5.0,0 days 00:01:14.242000,True,0 days 00:00:19.020000,0 days 00:00:38.269000,0 days 00:00:16.953000,SUPERSOFT,,,,7.0,7.0,Finished,2018,GP São Paulo,historica
+28.0,STR,18,Williams,18.0,0 days 00:01:15.207000,False,0 days 00:00:19.214000,0 days 00:00:38.917000,0 days 00:00:17.076000,MEDIUM,,,,18.0,19.0,+2 Laps,2018,GP São Paulo,historica
+28.0,MAG,20,Haas F1 Team,8.0,0 days 00:01:14.368000,False,0 days 00:00:19.107000,0 days 00:00:38.273000,0 days 00:00:16.988000,SOFT,,,,9.0,10.0,Finished,2018,GP São Paulo,historica
+28.0,HUL,27,Renault,11.0,0 days 00:01:14.202000,False,0 days 00:00:18.951000,0 days 00:00:38.022000,0 days 00:00:17.229000,SOFT,,,,19.0,13.0,Overheating,2018,GP São Paulo,historica
+28.0,HAR,28,Toro Rosso,13.0,0 days 00:01:14.854000,True,0 days 00:00:19.289000,0 days 00:00:38.474000,0 days 00:00:17.091000,MEDIUM,,,,11.0,16.0,+1 Lap,2018,GP São Paulo,historica
+28.0,OCO,31,Racing Point,12.0,0 days 00:01:14.432000,True,0 days 00:00:18.869000,0 days 00:00:38.617000,0 days 00:00:16.946000,SOFT,,,,15.0,18.0,+1 Lap,2018,GP São Paulo,historica
+28.0,VER,33,Red Bull Racing,1.0,0 days 00:01:13.586000,False,0 days 00:00:18.930000,0 days 00:00:37.842000,0 days 00:00:16.814000,SUPERSOFT,,,,2.0,5.0,Finished,2018,GP São Paulo,historica
+28.0,SIR,35,Williams,17.0,0 days 00:01:15.972000,False,0 days 00:00:19.618000,0 days 00:00:39.318000,0 days 00:00:17.036000,MEDIUM,,,,16.0,14.0,+2 Laps,2018,GP São Paulo,historica
+28.0,HAM,44,Mercedes,4.0,0 days 00:01:12.930000,True,0 days 00:00:18.690000,0 days 00:00:37.384000,0 days 00:00:16.856000,MEDIUM,,,,1.0,1.0,Finished,2018,GP São Paulo,historica
+28.0,SAI,55,Renault,15.0,0 days 00:01:13.913000,False,0 days 00:00:18.984000,0 days 00:00:38.286000,0 days 00:00:16.643000,MEDIUM,,,,12.0,15.0,+1 Lap,2018,GP São Paulo,historica
+28.0,BOT,77,Mercedes,7.0,0 days 00:01:14.833000,False,0 days 00:00:19.001000,0 days 00:00:39.246000,0 days 00:00:16.586000,MEDIUM,,,,5.0,3.0,Finished,2018,GP São Paulo,historica

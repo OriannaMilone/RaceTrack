@@ -45,7 +45,7 @@ def main():
     circuit_folder_map = {
         "SPA": "SPA_DATA",
         "MONACO": "MONACO_DATA",
-        "JEDDAH": "JEDDAH_DATA",
+        "SAOPAULO": "SAOPAULO_DATA",
         "MONZA": "MONZA_DATA"
     }
 
