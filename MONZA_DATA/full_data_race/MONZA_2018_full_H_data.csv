@@ -1,0 +1,928 @@
+LapNumber,Driver,DriverNumber,Team,Position,LapTime,IsPersonalBest,Sector1Time,Sector2Time,Sector3Time,Compound,PitInTime,PitOutTime,PitStopDuration,FinishingPosition,GridPosition,FinalStatus,Season,RaceName,RaceType
+1.0,GAS,10,Toro Rosso,12.0,0 days 00:02:00.688000,False,,0 days 00:00:33.112000,0 days 00:00:55.266000,nan,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+2.0,GAS,10,Toro Rosso,11.0,0 days 00:02:17.371000,True,0 days 00:00:45.449000,0 days 00:00:46.278000,0 days 00:00:45.644000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+3.0,GAS,10,Toro Rosso,11.0,0 days 00:02:01.011000,True,0 days 00:00:45.960000,0 days 00:00:42.015000,0 days 00:00:33.036000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+4.0,GAS,10,Toro Rosso,11.0,0 days 00:01:29.166000,True,0 days 00:00:29.369000,0 days 00:00:30.811000,0 days 00:00:28.986000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+5.0,GAS,10,Toro Rosso,11.0,0 days 00:01:27.245000,True,0 days 00:00:28.247000,0 days 00:00:29.853000,0 days 00:00:29.145000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+6.0,GAS,10,Toro Rosso,12.0,0 days 00:01:27.275000,False,0 days 00:00:28.679000,0 days 00:00:29.785000,0 days 00:00:28.811000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+7.0,GAS,10,Toro Rosso,12.0,0 days 00:01:28.096000,False,0 days 00:00:28.135000,0 days 00:00:30.291000,0 days 00:00:29.670000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+8.0,GAS,10,Toro Rosso,13.0,0 days 00:01:27.990000,False,0 days 00:00:28.420000,0 days 00:00:30.457000,0 days 00:00:29.113000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+9.0,GAS,10,Toro Rosso,11.0,0 days 00:01:26.915000,True,0 days 00:00:28.150000,0 days 00:00:29.954000,0 days 00:00:28.811000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+10.0,GAS,10,Toro Rosso,12.0,0 days 00:01:27.492000,False,0 days 00:00:28.837000,0 days 00:00:29.772000,0 days 00:00:28.883000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+11.0,GAS,10,Toro Rosso,12.0,0 days 00:01:27.798000,False,0 days 00:00:29.091000,0 days 00:00:29.819000,0 days 00:00:28.888000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+12.0,GAS,10,Toro Rosso,13.0,0 days 00:01:27.819000,False,0 days 00:00:28.911000,0 days 00:00:30.010000,0 days 00:00:28.898000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+13.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.353000,True,0 days 00:00:28.068000,0 days 00:00:29.497000,0 days 00:00:28.788000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+14.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.705000,False,0 days 00:00:28.330000,0 days 00:00:29.537000,0 days 00:00:28.838000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+15.0,GAS,10,Toro Rosso,13.0,0 days 00:01:27.193000,False,0 days 00:00:28.501000,0 days 00:00:29.856000,0 days 00:00:28.836000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+16.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.710000,False,0 days 00:00:28.297000,0 days 00:00:29.488000,0 days 00:00:28.925000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+17.0,GAS,10,Toro Rosso,14.0,0 days 00:01:27.895000,False,0 days 00:00:28.411000,0 days 00:00:30.449000,0 days 00:00:29.035000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+18.0,GAS,10,Toro Rosso,14.0,0 days 00:01:27.358000,False,0 days 00:00:28.619000,0 days 00:00:29.769000,0 days 00:00:28.970000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+19.0,GAS,10,Toro Rosso,14.0,0 days 00:01:27.027000,False,0 days 00:00:28.259000,0 days 00:00:29.664000,0 days 00:00:29.104000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+20.0,GAS,10,Toro Rosso,14.0,0 days 00:01:26.614000,False,0 days 00:00:28.360000,0 days 00:00:29.464000,0 days 00:00:28.790000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+21.0,GAS,10,Toro Rosso,14.0,0 days 00:01:26.417000,False,0 days 00:00:28.165000,0 days 00:00:29.452000,0 days 00:00:28.800000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+22.0,GAS,10,Toro Rosso,14.0,0 days 00:01:26.457000,False,0 days 00:00:28.226000,0 days 00:00:29.549000,0 days 00:00:28.682000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+23.0,GAS,10,Toro Rosso,14.0,0 days 00:01:26.376000,False,0 days 00:00:28.127000,0 days 00:00:29.541000,0 days 00:00:28.708000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+24.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.448000,False,0 days 00:00:28.112000,0 days 00:00:29.588000,0 days 00:00:28.748000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+25.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.303000,True,0 days 00:00:28.010000,0 days 00:00:29.583000,0 days 00:00:28.710000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+26.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.176000,True,0 days 00:00:28.025000,0 days 00:00:29.488000,0 days 00:00:28.663000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+27.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.076000,True,0 days 00:00:28.098000,0 days 00:00:29.376000,0 days 00:00:28.602000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+28.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.773000,False,0 days 00:00:27.994000,0 days 00:00:29.950000,0 days 00:00:28.829000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+29.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.498000,False,0 days 00:00:28.029000,0 days 00:00:29.771000,0 days 00:00:28.698000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+30.0,GAS,10,Toro Rosso,13.0,0 days 00:01:27.056000,False,0 days 00:00:28.252000,0 days 00:00:29.857000,0 days 00:00:28.947000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+31.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.349000,False,0 days 00:00:28.007000,0 days 00:00:29.365000,0 days 00:00:28.977000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+32.0,GAS,10,Toro Rosso,13.0,0 days 00:01:26.229000,False,0 days 00:00:27.962000,0 days 00:00:29.542000,0 days 00:00:28.725000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+33.0,GAS,10,Toro Rosso,13.0,0 days 00:01:25.976000,True,0 days 00:00:28.023000,0 days 00:00:29.203000,0 days 00:00:28.750000,SUPERSOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+34.0,GAS,10,Toro Rosso,13.0,0 days 00:01:30.692000,False,0 days 00:00:28.250000,0 days 00:00:29.575000,0 days 00:00:32.867000,SUPERSOFT,0 days 01:09:45.072000,0 days 01:10:12.884000,0 days 00:00:27.812000,14.0,9.0,+1 Lap,2018,GP Monza,historica
+35.0,GAS,10,Toro Rosso,16.0,0 days 00:01:49.652000,False,0 days 00:00:52.099000,0 days 00:00:29.304000,0 days 00:00:28.249000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+36.0,GAS,10,Toro Rosso,16.0,0 days 00:01:24.920000,True,0 days 00:00:27.883000,0 days 00:00:28.860000,0 days 00:00:28.177000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+37.0,GAS,10,Toro Rosso,16.0,0 days 00:01:25.082000,False,0 days 00:00:27.711000,0 days 00:00:28.957000,0 days 00:00:28.414000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+38.0,GAS,10,Toro Rosso,16.0,0 days 00:01:25.131000,False,0 days 00:00:27.770000,0 days 00:00:29.187000,0 days 00:00:28.174000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+39.0,GAS,10,Toro Rosso,16.0,0 days 00:01:25.396000,False,0 days 00:00:27.802000,0 days 00:00:29.189000,0 days 00:00:28.405000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+40.0,GAS,10,Toro Rosso,16.0,0 days 00:01:25.556000,False,0 days 00:00:27.851000,0 days 00:00:29.330000,0 days 00:00:28.375000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+41.0,GAS,10,Toro Rosso,16.0,0 days 00:01:25.356000,False,0 days 00:00:27.840000,0 days 00:00:29.044000,0 days 00:00:28.472000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+42.0,GAS,10,Toro Rosso,15.0,0 days 00:01:25.278000,False,0 days 00:00:27.790000,0 days 00:00:29.059000,0 days 00:00:28.429000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+43.0,GAS,10,Toro Rosso,14.0,0 days 00:01:25.177000,False,0 days 00:00:27.748000,0 days 00:00:29.149000,0 days 00:00:28.280000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+44.0,GAS,10,Toro Rosso,14.0,0 days 00:01:27.183000,False,0 days 00:00:27.858000,0 days 00:00:30.252000,0 days 00:00:29.073000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+45.0,GAS,10,Toro Rosso,14.0,0 days 00:01:26.839000,False,0 days 00:00:28.667000,0 days 00:00:29.935000,0 days 00:00:28.237000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+46.0,GAS,10,Toro Rosso,14.0,0 days 00:01:24.767000,True,0 days 00:00:27.864000,0 days 00:00:28.779000,0 days 00:00:28.124000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+47.0,GAS,10,Toro Rosso,14.0,0 days 00:01:24.880000,False,0 days 00:00:27.831000,0 days 00:00:28.869000,0 days 00:00:28.180000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+48.0,GAS,10,Toro Rosso,14.0,0 days 00:01:26.035000,False,0 days 00:00:27.845000,0 days 00:00:28.861000,0 days 00:00:29.329000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+49.0,GAS,10,Toro Rosso,15.0,0 days 00:01:25.753000,False,0 days 00:00:27.941000,0 days 00:00:29.490000,0 days 00:00:28.322000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+50.0,GAS,10,Toro Rosso,15.0,0 days 00:01:25.008000,False,0 days 00:00:27.714000,0 days 00:00:28.954000,0 days 00:00:28.340000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+51.0,GAS,10,Toro Rosso,15.0,0 days 00:01:25.180000,False,0 days 00:00:27.915000,0 days 00:00:29.006000,0 days 00:00:28.259000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+52.0,GAS,10,Toro Rosso,15.0,0 days 00:01:25.293000,False,0 days 00:00:27.776000,0 days 00:00:29.037000,0 days 00:00:28.480000,SOFT,,,,14.0,9.0,+1 Lap,2018,GP Monza,historica
+1.0,PER,11,Racing Point,14.0,0 days 00:02:02.352000,False,,0 days 00:00:33.092000,0 days 00:00:56.245000,nan,,,,7.0,14.0,Finished,2018,GP Monza,historica
+2.0,PER,11,Racing Point,13.0,0 days 00:02:18.145000,True,0 days 00:00:45.637000,0 days 00:00:46.731000,0 days 00:00:45.777000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+3.0,PER,11,Racing Point,13.0,0 days 00:02:00.366000,True,0 days 00:00:46.206000,0 days 00:00:41.504000,0 days 00:00:32.656000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+4.0,PER,11,Racing Point,12.0,0 days 00:01:27.999000,True,0 days 00:00:27.811000,0 days 00:00:31.263000,0 days 00:00:28.925000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+5.0,PER,11,Racing Point,12.0,0 days 00:01:26.712000,True,0 days 00:00:27.938000,0 days 00:00:30.053000,0 days 00:00:28.721000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+6.0,PER,11,Racing Point,11.0,0 days 00:01:26.526000,True,0 days 00:00:27.976000,0 days 00:00:29.661000,0 days 00:00:28.889000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+7.0,PER,11,Racing Point,11.0,0 days 00:01:28.130000,False,0 days 00:00:28.149000,0 days 00:00:30.441000,0 days 00:00:29.540000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+8.0,PER,11,Racing Point,10.0,0 days 00:01:25.642000,True,0 days 00:00:27.521000,0 days 00:00:29.518000,0 days 00:00:28.603000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+9.0,PER,11,Racing Point,10.0,0 days 00:01:25.514000,True,0 days 00:00:27.875000,0 days 00:00:29.190000,0 days 00:00:28.449000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+10.0,PER,11,Racing Point,10.0,0 days 00:01:25.635000,False,0 days 00:00:27.762000,0 days 00:00:29.263000,0 days 00:00:28.610000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+11.0,PER,11,Racing Point,10.0,0 days 00:01:25.482000,True,0 days 00:00:27.680000,0 days 00:00:29.291000,0 days 00:00:28.511000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+12.0,PER,11,Racing Point,10.0,0 days 00:01:26.249000,False,0 days 00:00:28.080000,0 days 00:00:29.546000,0 days 00:00:28.623000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+13.0,PER,11,Racing Point,9.0,0 days 00:01:25.943000,False,0 days 00:00:27.653000,0 days 00:00:29.756000,0 days 00:00:28.534000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+14.0,PER,11,Racing Point,9.0,0 days 00:01:26.015000,False,0 days 00:00:27.886000,0 days 00:00:29.405000,0 days 00:00:28.724000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+15.0,PER,11,Racing Point,8.0,0 days 00:01:25.966000,False,0 days 00:00:27.627000,0 days 00:00:29.712000,0 days 00:00:28.627000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+16.0,PER,11,Racing Point,8.0,0 days 00:01:26.031000,False,0 days 00:00:28.308000,0 days 00:00:29.188000,0 days 00:00:28.535000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+17.0,PER,11,Racing Point,8.0,0 days 00:01:25.939000,False,0 days 00:00:28.195000,0 days 00:00:29.192000,0 days 00:00:28.552000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+18.0,PER,11,Racing Point,9.0,0 days 00:01:26.802000,False,0 days 00:00:28.259000,0 days 00:00:29.789000,0 days 00:00:28.754000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+19.0,PER,11,Racing Point,9.0,0 days 00:01:25.750000,False,0 days 00:00:27.800000,0 days 00:00:29.362000,0 days 00:00:28.588000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+20.0,PER,11,Racing Point,9.0,0 days 00:01:25.638000,False,0 days 00:00:27.814000,0 days 00:00:29.257000,0 days 00:00:28.567000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+21.0,PER,11,Racing Point,9.0,0 days 00:01:25.876000,False,0 days 00:00:27.746000,0 days 00:00:29.474000,0 days 00:00:28.656000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+22.0,PER,11,Racing Point,9.0,0 days 00:01:25.564000,False,0 days 00:00:27.686000,0 days 00:00:29.324000,0 days 00:00:28.554000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+23.0,PER,11,Racing Point,9.0,0 days 00:01:26.496000,False,0 days 00:00:27.726000,0 days 00:00:29.986000,0 days 00:00:28.784000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+24.0,PER,11,Racing Point,7.0,0 days 00:01:25.753000,False,0 days 00:00:27.588000,0 days 00:00:29.597000,0 days 00:00:28.568000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+25.0,PER,11,Racing Point,7.0,0 days 00:01:25.910000,False,0 days 00:00:27.974000,0 days 00:00:29.539000,0 days 00:00:28.397000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+26.0,PER,11,Racing Point,7.0,0 days 00:01:25.579000,False,0 days 00:00:27.871000,0 days 00:00:29.214000,0 days 00:00:28.494000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+27.0,PER,11,Racing Point,7.0,0 days 00:01:25.551000,False,0 days 00:00:27.819000,0 days 00:00:29.217000,0 days 00:00:28.515000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+28.0,PER,11,Racing Point,7.0,0 days 00:01:25.185000,True,0 days 00:00:27.721000,0 days 00:00:29.070000,0 days 00:00:28.394000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+29.0,PER,11,Racing Point,7.0,0 days 00:01:25.378000,False,0 days 00:00:27.834000,0 days 00:00:29.122000,0 days 00:00:28.422000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+30.0,PER,11,Racing Point,6.0,0 days 00:01:25.031000,True,0 days 00:00:27.830000,0 days 00:00:28.840000,0 days 00:00:28.361000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+31.0,PER,11,Racing Point,6.0,0 days 00:01:25.249000,False,0 days 00:00:27.827000,0 days 00:00:29.053000,0 days 00:00:28.369000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+32.0,PER,11,Racing Point,6.0,0 days 00:01:25.036000,False,0 days 00:00:27.681000,0 days 00:00:28.943000,0 days 00:00:28.412000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+33.0,PER,11,Racing Point,6.0,0 days 00:01:25.184000,False,0 days 00:00:27.738000,0 days 00:00:29.057000,0 days 00:00:28.389000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+34.0,PER,11,Racing Point,6.0,0 days 00:01:25.018000,True,0 days 00:00:27.777000,0 days 00:00:28.908000,0 days 00:00:28.333000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+35.0,PER,11,Racing Point,6.0,0 days 00:01:25.008000,True,0 days 00:00:27.730000,0 days 00:00:28.952000,0 days 00:00:28.326000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+36.0,PER,11,Racing Point,6.0,0 days 00:01:24.875000,True,0 days 00:00:27.701000,0 days 00:00:28.830000,0 days 00:00:28.344000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+37.0,PER,11,Racing Point,6.0,0 days 00:01:25.039000,False,0 days 00:00:27.764000,0 days 00:00:28.869000,0 days 00:00:28.406000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+38.0,PER,11,Racing Point,6.0,0 days 00:01:26.205000,False,0 days 00:00:27.707000,0 days 00:00:28.968000,0 days 00:00:29.530000,SUPERSOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+39.0,PER,11,Racing Point,6.0,0 days 00:01:29.927000,False,0 days 00:00:27.489000,0 days 00:00:29.386000,0 days 00:00:33.052000,SUPERSOFT,0 days 01:16:21.240000,0 days 01:16:46.884000,0 days 00:00:25.644000,7.0,14.0,Finished,2018,GP Monza,historica
+40.0,PER,11,Racing Point,8.0,0 days 00:01:45.488000,False,0 days 00:00:49.027000,0 days 00:00:28.565000,0 days 00:00:27.896000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+41.0,PER,11,Racing Point,8.0,0 days 00:01:23.704000,True,0 days 00:00:27.631000,0 days 00:00:28.335000,0 days 00:00:27.738000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+42.0,PER,11,Racing Point,8.0,0 days 00:01:23.738000,False,0 days 00:00:27.562000,0 days 00:00:28.317000,0 days 00:00:27.859000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+43.0,PER,11,Racing Point,8.0,0 days 00:01:23.529000,True,0 days 00:00:27.209000,0 days 00:00:28.521000,0 days 00:00:27.799000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+44.0,PER,11,Racing Point,8.0,0 days 00:01:23.656000,False,0 days 00:00:27.481000,0 days 00:00:28.266000,0 days 00:00:27.909000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+45.0,PER,11,Racing Point,8.0,0 days 00:01:23.946000,False,0 days 00:00:27.607000,0 days 00:00:28.490000,0 days 00:00:27.849000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+46.0,PER,11,Racing Point,8.0,0 days 00:01:23.810000,False,0 days 00:00:27.656000,0 days 00:00:28.351000,0 days 00:00:27.803000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+47.0,PER,11,Racing Point,8.0,0 days 00:01:23.861000,False,0 days 00:00:27.634000,0 days 00:00:28.431000,0 days 00:00:27.796000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+48.0,PER,11,Racing Point,8.0,0 days 00:01:24.212000,False,0 days 00:00:27.567000,0 days 00:00:28.766000,0 days 00:00:27.879000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+49.0,PER,11,Racing Point,8.0,0 days 00:01:24.499000,False,0 days 00:00:27.767000,0 days 00:00:28.602000,0 days 00:00:28.130000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+50.0,PER,11,Racing Point,8.0,0 days 00:01:24.476000,False,0 days 00:00:27.519000,0 days 00:00:28.713000,0 days 00:00:28.244000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+51.0,PER,11,Racing Point,8.0,0 days 00:01:24.407000,False,0 days 00:00:27.703000,0 days 00:00:28.765000,0 days 00:00:27.939000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+52.0,PER,11,Racing Point,8.0,0 days 00:01:24.511000,False,0 days 00:00:27.709000,0 days 00:00:28.677000,0 days 00:00:28.125000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+53.0,PER,11,Racing Point,8.0,0 days 00:01:24.625000,False,0 days 00:00:27.745000,0 days 00:00:28.789000,0 days 00:00:28.091000,SOFT,,,,7.0,14.0,Finished,2018,GP Monza,historica
+1.0,ALO,14,McLaren,11.0,0 days 00:01:59.468000,False,,0 days 00:00:32.665000,0 days 00:00:54.452000,nan,,,,18.0,13.0,Engine,2018,GP Monza,historica
+2.0,ALO,14,McLaren,10.0,0 days 00:02:17.507000,True,0 days 00:00:45.790000,0 days 00:00:46.072000,0 days 00:00:45.645000,SUPERSOFT,,,,18.0,13.0,Engine,2018,GP Monza,historica
+3.0,ALO,14,McLaren,10.0,0 days 00:02:01.731000,True,0 days 00:00:45.469000,0 days 00:00:42.917000,0 days 00:00:33.345000,SUPERSOFT,,,,18.0,13.0,Engine,2018,GP Monza,historica
+4.0,ALO,14,McLaren,10.0,0 days 00:01:28.817000,True,0 days 00:00:29.698000,0 days 00:00:30.253000,0 days 00:00:28.866000,SUPERSOFT,,,,18.0,13.0,Engine,2018,GP Monza,historica
+5.0,ALO,14,McLaren,10.0,0 days 00:01:27.095000,True,0 days 00:00:28.282000,0 days 00:00:29.904000,0 days 00:00:28.909000,SUPERSOFT,,,,18.0,13.0,Engine,2018,GP Monza,historica
+6.0,ALO,14,McLaren,10.0,0 days 00:01:27.009000,True,0 days 00:00:28.264000,0 days 00:00:29.741000,0 days 00:00:29.004000,SUPERSOFT,,,,18.0,13.0,Engine,2018,GP Monza,historica
+7.0,ALO,14,McLaren,10.0,0 days 00:01:28.291000,False,0 days 00:00:28.544000,0 days 00:00:30.070000,0 days 00:00:29.677000,SUPERSOFT,,,,18.0,13.0,Engine,2018,GP Monza,historica
+8.0,ALO,14,McLaren,11.0,0 days 00:01:27.534000,False,0 days 00:00:28.674000,0 days 00:00:29.699000,0 days 00:00:29.161000,SUPERSOFT,,,,18.0,13.0,Engine,2018,GP Monza,historica
+9.0,ALO,14,McLaren,18.0,0 days 00:01:45.377000,False,0 days 00:00:28.314000,0 days 00:00:29.667000,0 days 00:00:47.396000,SUPERSOFT,,,,18.0,13.0,Engine,2018,GP Monza,historica
+1.0,LEC,16,Sauber,15.0,0 days 00:02:04.247000,False,,0 days 00:00:32.838000,0 days 00:00:57.881000,nan,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+2.0,LEC,16,Sauber,14.0,0 days 00:02:18.357000,True,0 days 00:00:45.499000,0 days 00:00:46.836000,0 days 00:00:46.022000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+3.0,LEC,16,Sauber,14.0,0 days 00:02:00.528000,True,0 days 00:00:45.743000,0 days 00:00:41.506000,0 days 00:00:33.279000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+4.0,LEC,16,Sauber,13.0,0 days 00:01:27.415000,True,0 days 00:00:28.087000,0 days 00:00:29.723000,0 days 00:00:29.605000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+5.0,LEC,16,Sauber,13.0,0 days 00:01:26.579000,True,0 days 00:00:28.306000,0 days 00:00:29.410000,0 days 00:00:28.863000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+6.0,LEC,16,Sauber,13.0,0 days 00:01:26.556000,True,0 days 00:00:28.238000,0 days 00:00:29.455000,0 days 00:00:28.863000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+7.0,LEC,16,Sauber,13.0,0 days 00:01:27.222000,False,0 days 00:00:28.050000,0 days 00:00:29.916000,0 days 00:00:29.256000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+8.0,LEC,16,Sauber,12.0,0 days 00:01:27.467000,False,0 days 00:00:28.283000,0 days 00:00:30.131000,0 days 00:00:29.053000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+9.0,LEC,16,Sauber,13.0,0 days 00:01:29.165000,False,0 days 00:00:28.626000,0 days 00:00:31.155000,0 days 00:00:29.384000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+10.0,LEC,16,Sauber,14.0,0 days 00:01:28.021000,False,0 days 00:00:28.484000,0 days 00:00:30.474000,0 days 00:00:29.063000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+11.0,LEC,16,Sauber,15.0,0 days 00:01:27.515000,False,0 days 00:00:28.526000,0 days 00:00:29.993000,0 days 00:00:28.996000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+12.0,LEC,16,Sauber,15.0,0 days 00:01:27.248000,False,0 days 00:00:28.167000,0 days 00:00:30.005000,0 days 00:00:29.076000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+13.0,LEC,16,Sauber,15.0,0 days 00:01:26.931000,False,0 days 00:00:28.220000,0 days 00:00:29.778000,0 days 00:00:28.933000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+14.0,LEC,16,Sauber,15.0,0 days 00:01:26.776000,False,0 days 00:00:28.157000,0 days 00:00:29.693000,0 days 00:00:28.926000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+15.0,LEC,16,Sauber,15.0,0 days 00:01:27.006000,False,0 days 00:00:28.280000,0 days 00:00:29.692000,0 days 00:00:29.034000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+16.0,LEC,16,Sauber,15.0,0 days 00:01:26.781000,False,0 days 00:00:28.270000,0 days 00:00:29.539000,0 days 00:00:28.972000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+17.0,LEC,16,Sauber,15.0,0 days 00:01:27.188000,False,0 days 00:00:28.202000,0 days 00:00:30.014000,0 days 00:00:28.972000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+18.0,LEC,16,Sauber,15.0,0 days 00:01:27.014000,False,0 days 00:00:28.246000,0 days 00:00:29.627000,0 days 00:00:29.141000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+19.0,LEC,16,Sauber,15.0,0 days 00:01:26.805000,False,0 days 00:00:28.161000,0 days 00:00:29.674000,0 days 00:00:28.970000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+20.0,LEC,16,Sauber,15.0,0 days 00:01:26.594000,False,0 days 00:00:28.141000,0 days 00:00:29.763000,0 days 00:00:28.690000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+21.0,LEC,16,Sauber,15.0,0 days 00:01:26.581000,False,0 days 00:00:27.971000,0 days 00:00:29.858000,0 days 00:00:28.752000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+22.0,LEC,16,Sauber,15.0,0 days 00:01:26.764000,False,0 days 00:00:28.132000,0 days 00:00:29.761000,0 days 00:00:28.871000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+23.0,LEC,16,Sauber,15.0,0 days 00:01:26.920000,False,0 days 00:00:28.517000,0 days 00:00:29.585000,0 days 00:00:28.818000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+24.0,LEC,16,Sauber,14.0,0 days 00:01:26.648000,False,0 days 00:00:28.226000,0 days 00:00:29.595000,0 days 00:00:28.827000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+25.0,LEC,16,Sauber,14.0,0 days 00:01:26.472000,True,0 days 00:00:28.186000,0 days 00:00:29.610000,0 days 00:00:28.676000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+26.0,LEC,16,Sauber,14.0,0 days 00:01:26.492000,False,0 days 00:00:28.184000,0 days 00:00:29.472000,0 days 00:00:28.836000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+27.0,LEC,16,Sauber,14.0,0 days 00:01:26.229000,True,0 days 00:00:28.163000,0 days 00:00:29.359000,0 days 00:00:28.707000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+28.0,LEC,16,Sauber,14.0,0 days 00:01:26.420000,False,0 days 00:00:28.178000,0 days 00:00:29.404000,0 days 00:00:28.838000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+29.0,LEC,16,Sauber,14.0,0 days 00:01:26.261000,False,0 days 00:00:28.263000,0 days 00:00:29.303000,0 days 00:00:28.695000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+30.0,LEC,16,Sauber,14.0,0 days 00:01:26.360000,False,0 days 00:00:28.150000,0 days 00:00:29.537000,0 days 00:00:28.673000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+31.0,LEC,16,Sauber,14.0,0 days 00:01:26.215000,True,0 days 00:00:28.066000,0 days 00:00:29.419000,0 days 00:00:28.730000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+32.0,LEC,16,Sauber,14.0,0 days 00:01:26.461000,False,0 days 00:00:28.091000,0 days 00:00:29.643000,0 days 00:00:28.727000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+33.0,LEC,16,Sauber,14.0,0 days 00:01:26.472000,False,0 days 00:00:28.137000,0 days 00:00:29.542000,0 days 00:00:28.793000,SOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+34.0,LEC,16,Sauber,15.0,0 days 00:01:30.430000,False,0 days 00:00:28.205000,0 days 00:00:29.371000,0 days 00:00:32.854000,SOFT,0 days 01:09:46.772000,0 days 01:10:10.852000,0 days 00:00:24.080000,11.0,15.0,+1 Lap,2018,GP Monza,historica
+35.0,LEC,16,Sauber,15.0,0 days 00:01:45.465000,False,0 days 00:00:47.849000,0 days 00:00:29.261000,0 days 00:00:28.355000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+36.0,LEC,16,Sauber,14.0,0 days 00:01:25.184000,True,0 days 00:00:27.871000,0 days 00:00:29.117000,0 days 00:00:28.196000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+37.0,LEC,16,Sauber,14.0,0 days 00:01:24.843000,True,0 days 00:00:28.245000,0 days 00:00:28.521000,0 days 00:00:28.077000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+38.0,LEC,16,Sauber,14.0,0 days 00:01:24.588000,True,0 days 00:00:28.009000,0 days 00:00:28.508000,0 days 00:00:28.071000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+39.0,LEC,16,Sauber,14.0,0 days 00:01:24.859000,False,0 days 00:00:28.123000,0 days 00:00:28.603000,0 days 00:00:28.133000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+40.0,LEC,16,Sauber,14.0,0 days 00:01:24.759000,False,0 days 00:00:28.093000,0 days 00:00:28.552000,0 days 00:00:28.114000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+41.0,LEC,16,Sauber,14.0,0 days 00:01:24.820000,False,0 days 00:00:28.033000,0 days 00:00:28.572000,0 days 00:00:28.215000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+42.0,LEC,16,Sauber,13.0,0 days 00:01:24.824000,False,0 days 00:00:28.156000,0 days 00:00:28.597000,0 days 00:00:28.071000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+43.0,LEC,16,Sauber,12.0,0 days 00:01:24.757000,False,0 days 00:00:28.127000,0 days 00:00:28.623000,0 days 00:00:28.007000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+44.0,LEC,16,Sauber,12.0,0 days 00:01:24.821000,False,0 days 00:00:28.168000,0 days 00:00:28.580000,0 days 00:00:28.073000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+45.0,LEC,16,Sauber,12.0,0 days 00:01:24.630000,False,0 days 00:00:28.112000,0 days 00:00:28.517000,0 days 00:00:28.001000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+46.0,LEC,16,Sauber,12.0,0 days 00:01:24.995000,False,0 days 00:00:27.977000,0 days 00:00:28.584000,0 days 00:00:28.434000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+47.0,LEC,16,Sauber,12.0,0 days 00:01:24.642000,False,0 days 00:00:28.036000,0 days 00:00:28.476000,0 days 00:00:28.130000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+48.0,LEC,16,Sauber,12.0,0 days 00:01:24.669000,False,0 days 00:00:27.999000,0 days 00:00:28.533000,0 days 00:00:28.137000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+49.0,LEC,16,Sauber,12.0,0 days 00:01:24.623000,False,0 days 00:00:28.073000,0 days 00:00:28.516000,0 days 00:00:28.034000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+50.0,LEC,16,Sauber,12.0,0 days 00:01:24.506000,True,0 days 00:00:27.986000,0 days 00:00:28.445000,0 days 00:00:28.075000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+51.0,LEC,16,Sauber,12.0,0 days 00:01:24.619000,False,0 days 00:00:28.046000,0 days 00:00:28.590000,0 days 00:00:27.983000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+52.0,LEC,16,Sauber,12.0,0 days 00:01:24.504000,True,0 days 00:00:27.970000,0 days 00:00:28.489000,0 days 00:00:28.045000,SUPERSOFT,,,,11.0,15.0,+1 Lap,2018,GP Monza,historica
+1.0,STR,18,Williams,9.0,0 days 00:01:56.515000,False,,0 days 00:00:32.465000,0 days 00:00:52.353000,nan,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+2.0,STR,18,Williams,8.0,0 days 00:02:18.021000,True,0 days 00:00:46.273000,0 days 00:00:45.857000,0 days 00:00:45.891000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+3.0,STR,18,Williams,8.0,0 days 00:02:02.718000,True,0 days 00:00:45.233000,0 days 00:00:42.414000,0 days 00:00:35.071000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+4.0,STR,18,Williams,8.0,0 days 00:01:28.269000,True,0 days 00:00:28.410000,0 days 00:00:30.533000,0 days 00:00:29.326000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+5.0,STR,18,Williams,8.0,0 days 00:01:27.012000,True,0 days 00:00:28.368000,0 days 00:00:29.659000,0 days 00:00:28.985000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+6.0,STR,18,Williams,8.0,0 days 00:01:26.430000,True,0 days 00:00:28.275000,0 days 00:00:29.392000,0 days 00:00:28.763000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+7.0,STR,18,Williams,8.0,0 days 00:01:26.346000,True,0 days 00:00:28.013000,0 days 00:00:29.500000,0 days 00:00:28.833000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+8.0,STR,18,Williams,8.0,0 days 00:01:26.684000,False,0 days 00:00:28.341000,0 days 00:00:29.571000,0 days 00:00:28.772000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+9.0,STR,18,Williams,8.0,0 days 00:01:26.437000,False,0 days 00:00:28.294000,0 days 00:00:29.488000,0 days 00:00:28.655000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+10.0,STR,18,Williams,8.0,0 days 00:01:26.310000,True,0 days 00:00:28.364000,0 days 00:00:29.281000,0 days 00:00:28.665000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+11.0,STR,18,Williams,8.0,0 days 00:01:26.513000,False,0 days 00:00:28.404000,0 days 00:00:29.278000,0 days 00:00:28.831000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+12.0,STR,18,Williams,8.0,0 days 00:01:25.713000,True,0 days 00:00:27.406000,0 days 00:00:29.486000,0 days 00:00:28.821000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+13.0,STR,18,Williams,8.0,0 days 00:01:26.657000,False,0 days 00:00:28.480000,0 days 00:00:29.453000,0 days 00:00:28.724000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+14.0,STR,18,Williams,8.0,0 days 00:01:26.273000,False,0 days 00:00:28.436000,0 days 00:00:29.204000,0 days 00:00:28.633000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+15.0,STR,18,Williams,9.0,0 days 00:01:27.608000,False,0 days 00:00:28.356000,0 days 00:00:30.285000,0 days 00:00:28.967000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+16.0,STR,18,Williams,10.0,0 days 00:01:26.905000,False,0 days 00:00:28.539000,0 days 00:00:29.723000,0 days 00:00:28.643000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+17.0,STR,18,Williams,10.0,0 days 00:01:26.113000,False,0 days 00:00:28.080000,0 days 00:00:29.382000,0 days 00:00:28.651000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+18.0,STR,18,Williams,10.0,0 days 00:01:26.406000,False,0 days 00:00:28.193000,0 days 00:00:29.544000,0 days 00:00:28.669000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+19.0,STR,18,Williams,10.0,0 days 00:01:26.019000,False,0 days 00:00:28.230000,0 days 00:00:29.264000,0 days 00:00:28.525000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+20.0,STR,18,Williams,10.0,0 days 00:01:26.101000,False,0 days 00:00:28.290000,0 days 00:00:29.263000,0 days 00:00:28.548000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+21.0,STR,18,Williams,10.0,0 days 00:01:26.569000,False,0 days 00:00:28.260000,0 days 00:00:29.569000,0 days 00:00:28.740000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+22.0,STR,18,Williams,10.0,0 days 00:01:26.329000,False,0 days 00:00:28.405000,0 days 00:00:29.336000,0 days 00:00:28.588000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+23.0,STR,18,Williams,10.0,0 days 00:01:26.544000,False,0 days 00:00:28.345000,0 days 00:00:29.481000,0 days 00:00:28.718000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+24.0,STR,18,Williams,9.0,0 days 00:01:26.500000,False,0 days 00:00:28.566000,0 days 00:00:29.277000,0 days 00:00:28.657000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+25.0,STR,18,Williams,9.0,0 days 00:01:26.534000,False,0 days 00:00:28.277000,0 days 00:00:29.620000,0 days 00:00:28.637000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+26.0,STR,18,Williams,9.0,0 days 00:01:26.489000,False,0 days 00:00:28.400000,0 days 00:00:29.358000,0 days 00:00:28.731000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+27.0,STR,18,Williams,9.0,0 days 00:01:26.527000,False,0 days 00:00:28.429000,0 days 00:00:29.433000,0 days 00:00:28.665000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+28.0,STR,18,Williams,9.0,0 days 00:01:26.470000,False,0 days 00:00:28.574000,0 days 00:00:29.255000,0 days 00:00:28.641000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+29.0,STR,18,Williams,9.0,0 days 00:01:26.394000,False,0 days 00:00:28.550000,0 days 00:00:29.172000,0 days 00:00:28.672000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+30.0,STR,18,Williams,8.0,0 days 00:01:26.278000,False,0 days 00:00:28.448000,0 days 00:00:29.181000,0 days 00:00:28.649000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+31.0,STR,18,Williams,8.0,0 days 00:01:25.805000,False,0 days 00:00:28.331000,0 days 00:00:29.018000,0 days 00:00:28.456000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+32.0,STR,18,Williams,9.0,0 days 00:01:26.390000,False,0 days 00:00:28.590000,0 days 00:00:29.282000,0 days 00:00:28.518000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+33.0,STR,18,Williams,9.0,0 days 00:01:26.085000,False,0 days 00:00:28.374000,0 days 00:00:29.135000,0 days 00:00:28.576000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+34.0,STR,18,Williams,9.0,0 days 00:01:25.907000,False,0 days 00:00:28.301000,0 days 00:00:29.077000,0 days 00:00:28.529000,SUPERSOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+35.0,STR,18,Williams,11.0,0 days 00:01:30.407000,False,0 days 00:00:28.371000,0 days 00:00:29.112000,0 days 00:00:32.924000,SUPERSOFT,0 days 01:10:54.873000,0 days 01:11:21.232000,0 days 00:00:26.359000,9.0,10.0,+1 Lap,2018,GP Monza,historica
+36.0,STR,18,Williams,13.0,0 days 00:01:46.822000,False,0 days 00:00:50.006000,0 days 00:00:28.722000,0 days 00:00:28.094000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+37.0,STR,18,Williams,13.0,0 days 00:01:24.608000,True,0 days 00:00:28.039000,0 days 00:00:28.488000,0 days 00:00:28.081000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+38.0,STR,18,Williams,12.0,0 days 00:01:25.107000,False,0 days 00:00:27.962000,0 days 00:00:28.699000,0 days 00:00:28.446000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+39.0,STR,18,Williams,11.0,0 days 00:01:24.580000,True,0 days 00:00:27.581000,0 days 00:00:28.694000,0 days 00:00:28.305000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+40.0,STR,18,Williams,11.0,0 days 00:01:25.225000,False,0 days 00:00:28.162000,0 days 00:00:28.712000,0 days 00:00:28.351000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+41.0,STR,18,Williams,10.0,0 days 00:01:25.031000,False,0 days 00:00:27.942000,0 days 00:00:28.789000,0 days 00:00:28.300000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+42.0,STR,18,Williams,10.0,0 days 00:01:24.988000,False,0 days 00:00:28.137000,0 days 00:00:28.581000,0 days 00:00:28.270000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+43.0,STR,18,Williams,10.0,0 days 00:01:24.743000,False,0 days 00:00:28.070000,0 days 00:00:28.565000,0 days 00:00:28.108000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+44.0,STR,18,Williams,10.0,0 days 00:01:24.670000,False,0 days 00:00:28.059000,0 days 00:00:28.522000,0 days 00:00:28.089000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+45.0,STR,18,Williams,10.0,0 days 00:01:24.656000,False,0 days 00:00:28.015000,0 days 00:00:28.486000,0 days 00:00:28.155000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+46.0,STR,18,Williams,10.0,0 days 00:01:24.686000,False,0 days 00:00:28.062000,0 days 00:00:28.523000,0 days 00:00:28.101000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+47.0,STR,18,Williams,10.0,0 days 00:01:24.616000,False,0 days 00:00:28.021000,0 days 00:00:28.403000,0 days 00:00:28.192000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+48.0,STR,18,Williams,10.0,0 days 00:01:24.982000,False,0 days 00:00:28.108000,0 days 00:00:28.616000,0 days 00:00:28.258000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+49.0,STR,18,Williams,10.0,0 days 00:01:26.719000,False,0 days 00:00:29.374000,0 days 00:00:29.115000,0 days 00:00:28.230000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+50.0,STR,18,Williams,10.0,0 days 00:01:24.910000,False,0 days 00:00:27.934000,0 days 00:00:28.840000,0 days 00:00:28.136000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+51.0,STR,18,Williams,10.0,0 days 00:01:25.148000,False,0 days 00:00:28.021000,0 days 00:00:28.876000,0 days 00:00:28.251000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+52.0,STR,18,Williams,10.0,0 days 00:01:25.456000,False,0 days 00:00:28.024000,0 days 00:00:28.871000,0 days 00:00:28.561000,SOFT,,,,9.0,10.0,+1 Lap,2018,GP Monza,historica
+1.0,VAN,2,McLaren,16.0,0 days 00:02:06.746000,False,,0 days 00:00:33.362000,0 days 00:00:59.738000,nan,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+2.0,VAN,2,McLaren,15.0,0 days 00:02:18.314000,True,0 days 00:00:43.874000,0 days 00:00:47.829000,0 days 00:00:46.611000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+3.0,VAN,2,McLaren,15.0,0 days 00:01:58.785000,True,0 days 00:00:44.575000,0 days 00:00:40.960000,0 days 00:00:33.250000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+4.0,VAN,2,McLaren,14.0,0 days 00:01:27.761000,True,0 days 00:00:28.214000,0 days 00:00:29.783000,0 days 00:00:29.764000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+5.0,VAN,2,McLaren,17.0,0 days 00:01:29.445000,False,0 days 00:00:28.636000,0 days 00:00:31.592000,0 days 00:00:29.217000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+6.0,VAN,2,McLaren,17.0,0 days 00:01:26.808000,True,0 days 00:00:28.179000,0 days 00:00:29.865000,0 days 00:00:28.764000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+7.0,VAN,2,McLaren,17.0,0 days 00:01:26.851000,False,0 days 00:00:28.209000,0 days 00:00:29.758000,0 days 00:00:28.884000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+8.0,VAN,2,McLaren,17.0,0 days 00:01:27.104000,False,0 days 00:00:28.304000,0 days 00:00:29.805000,0 days 00:00:28.995000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+9.0,VAN,2,McLaren,16.0,0 days 00:01:27.809000,False,0 days 00:00:28.323000,0 days 00:00:29.881000,0 days 00:00:29.605000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+10.0,VAN,2,McLaren,16.0,0 days 00:01:27.347000,False,0 days 00:00:28.228000,0 days 00:00:30.011000,0 days 00:00:29.108000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+11.0,VAN,2,McLaren,16.0,0 days 00:01:27.123000,False,0 days 00:00:28.238000,0 days 00:00:29.857000,0 days 00:00:29.028000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+12.0,VAN,2,McLaren,16.0,0 days 00:01:27.179000,False,0 days 00:00:28.191000,0 days 00:00:29.795000,0 days 00:00:29.193000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+13.0,VAN,2,McLaren,16.0,0 days 00:01:27.006000,False,0 days 00:00:28.134000,0 days 00:00:29.751000,0 days 00:00:29.121000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+14.0,VAN,2,McLaren,16.0,0 days 00:01:27.370000,False,0 days 00:00:28.171000,0 days 00:00:30.345000,0 days 00:00:28.854000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+15.0,VAN,2,McLaren,16.0,0 days 00:01:27.079000,False,0 days 00:00:28.396000,0 days 00:00:29.817000,0 days 00:00:28.866000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+16.0,VAN,2,McLaren,16.0,0 days 00:01:26.972000,False,0 days 00:00:28.490000,0 days 00:00:29.671000,0 days 00:00:28.811000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+17.0,VAN,2,McLaren,16.0,0 days 00:01:26.812000,False,0 days 00:00:28.364000,0 days 00:00:29.614000,0 days 00:00:28.834000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+18.0,VAN,2,McLaren,16.0,0 days 00:01:26.613000,True,0 days 00:00:28.289000,0 days 00:00:29.560000,0 days 00:00:28.764000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+19.0,VAN,2,McLaren,16.0,0 days 00:01:26.825000,False,0 days 00:00:28.242000,0 days 00:00:29.690000,0 days 00:00:28.893000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+20.0,VAN,2,McLaren,16.0,0 days 00:01:26.708000,False,0 days 00:00:28.118000,0 days 00:00:29.545000,0 days 00:00:29.045000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+21.0,VAN,2,McLaren,16.0,0 days 00:01:26.586000,True,0 days 00:00:28.108000,0 days 00:00:29.605000,0 days 00:00:28.873000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+22.0,VAN,2,McLaren,16.0,0 days 00:01:26.920000,False,0 days 00:00:28.052000,0 days 00:00:29.640000,0 days 00:00:29.228000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+23.0,VAN,2,McLaren,16.0,0 days 00:01:26.669000,False,0 days 00:00:28.040000,0 days 00:00:29.819000,0 days 00:00:28.810000,SUPERSOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+24.0,VAN,2,McLaren,16.0,0 days 00:01:31.036000,False,0 days 00:00:28.181000,0 days 00:00:29.991000,0 days 00:00:32.864000,SUPERSOFT,0 days 00:55:24.438000,0 days 00:55:48.754000,0 days 00:00:24.316000,12.0,17.0,+1 Lap,2018,GP Monza,historica
+25.0,VAN,2,McLaren,16.0,0 days 00:01:46.180000,False,0 days 00:00:48.128000,0 days 00:00:29.645000,0 days 00:00:28.407000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+26.0,VAN,2,McLaren,16.0,0 days 00:01:25.598000,True,0 days 00:00:28.114000,0 days 00:00:29.185000,0 days 00:00:28.299000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+27.0,VAN,2,McLaren,16.0,0 days 00:01:25.830000,False,0 days 00:00:28.278000,0 days 00:00:29.201000,0 days 00:00:28.351000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+28.0,VAN,2,McLaren,16.0,0 days 00:01:26.105000,False,0 days 00:00:28.562000,0 days 00:00:29.179000,0 days 00:00:28.364000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+29.0,VAN,2,McLaren,16.0,0 days 00:01:25.959000,False,0 days 00:00:28.381000,0 days 00:00:29.115000,0 days 00:00:28.463000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+30.0,VAN,2,McLaren,16.0,0 days 00:01:25.944000,False,0 days 00:00:28.519000,0 days 00:00:29.014000,0 days 00:00:28.411000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+31.0,VAN,2,McLaren,16.0,0 days 00:01:25.977000,False,0 days 00:00:28.547000,0 days 00:00:29.091000,0 days 00:00:28.339000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+32.0,VAN,2,McLaren,16.0,0 days 00:01:25.790000,False,0 days 00:00:28.427000,0 days 00:00:29.009000,0 days 00:00:28.354000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+33.0,VAN,2,McLaren,16.0,0 days 00:01:25.537000,True,0 days 00:00:28.372000,0 days 00:00:28.898000,0 days 00:00:28.267000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+34.0,VAN,2,McLaren,16.0,0 days 00:01:28.726000,False,0 days 00:00:30.176000,0 days 00:00:30.106000,0 days 00:00:28.444000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+35.0,VAN,2,McLaren,14.0,0 days 00:01:25.629000,False,0 days 00:00:28.237000,0 days 00:00:29.105000,0 days 00:00:28.287000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+36.0,VAN,2,McLaren,15.0,0 days 00:01:26.879000,False,0 days 00:00:28.418000,0 days 00:00:29.944000,0 days 00:00:28.517000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+37.0,VAN,2,McLaren,15.0,0 days 00:01:25.437000,True,0 days 00:00:28.177000,0 days 00:00:29.075000,0 days 00:00:28.185000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+38.0,VAN,2,McLaren,15.0,0 days 00:01:25.132000,True,0 days 00:00:28.061000,0 days 00:00:28.914000,0 days 00:00:28.157000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+39.0,VAN,2,McLaren,15.0,0 days 00:01:25.361000,False,0 days 00:00:28.205000,0 days 00:00:28.917000,0 days 00:00:28.239000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+40.0,VAN,2,McLaren,15.0,0 days 00:01:25.377000,False,0 days 00:00:28.190000,0 days 00:00:29.041000,0 days 00:00:28.146000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+41.0,VAN,2,McLaren,15.0,0 days 00:01:25.371000,False,0 days 00:00:28.127000,0 days 00:00:29.022000,0 days 00:00:28.222000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+42.0,VAN,2,McLaren,14.0,0 days 00:01:25.192000,False,0 days 00:00:28.182000,0 days 00:00:28.849000,0 days 00:00:28.161000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+43.0,VAN,2,McLaren,13.0,0 days 00:01:25.172000,False,0 days 00:00:28.014000,0 days 00:00:28.919000,0 days 00:00:28.239000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+44.0,VAN,2,McLaren,13.0,0 days 00:01:25.234000,False,0 days 00:00:28.165000,0 days 00:00:28.862000,0 days 00:00:28.207000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+45.0,VAN,2,McLaren,13.0,0 days 00:01:25.352000,False,0 days 00:00:28.153000,0 days 00:00:28.829000,0 days 00:00:28.370000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+46.0,VAN,2,McLaren,13.0,0 days 00:01:27.209000,False,0 days 00:00:29.457000,0 days 00:00:29.509000,0 days 00:00:28.243000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+47.0,VAN,2,McLaren,13.0,0 days 00:01:24.772000,True,0 days 00:00:27.907000,0 days 00:00:28.874000,0 days 00:00:27.991000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+48.0,VAN,2,McLaren,13.0,0 days 00:01:25.061000,False,0 days 00:00:28.019000,0 days 00:00:28.882000,0 days 00:00:28.160000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+49.0,VAN,2,McLaren,13.0,0 days 00:01:24.954000,False,0 days 00:00:27.930000,0 days 00:00:28.819000,0 days 00:00:28.205000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+50.0,VAN,2,McLaren,13.0,0 days 00:01:25.777000,False,0 days 00:00:28.430000,0 days 00:00:29.218000,0 days 00:00:28.129000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+51.0,VAN,2,McLaren,13.0,0 days 00:01:24.873000,False,0 days 00:00:27.962000,0 days 00:00:28.913000,0 days 00:00:27.998000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+52.0,VAN,2,McLaren,13.0,0 days 00:01:24.899000,False,0 days 00:00:27.937000,0 days 00:00:28.894000,0 days 00:00:28.068000,SOFT,,,,12.0,17.0,+1 Lap,2018,GP Monza,historica
+1.0,MAG,20,Haas F1 Team,13.0,0 days 00:02:01.435000,False,,0 days 00:00:32.743000,0 days 00:00:55.814000,nan,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+2.0,MAG,20,Haas F1 Team,12.0,0 days 00:02:17.918000,True,0 days 00:00:45.840000,0 days 00:00:46.876000,0 days 00:00:45.202000,SOFT,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+3.0,MAG,20,Haas F1 Team,12.0,0 days 00:02:00.736000,True,0 days 00:00:46.534000,0 days 00:00:41.270000,0 days 00:00:32.932000,SOFT,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+4.0,MAG,20,Haas F1 Team,19.0,0 days 00:01:36.469000,False,0 days 00:00:28.460000,0 days 00:00:32.261000,0 days 00:00:35.748000,SOFT,0 days 00:26:23.068000,0 days 00:27:01.650000,0 days 00:00:38.582000,16.0,11.0,+1 Lap,2018,GP Monza,historica
+5.0,MAG,20,Haas F1 Team,19.0,0 days 00:02:02.479000,False,0 days 00:01:03.186000,0 days 00:00:30.183000,0 days 00:00:29.110000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+6.0,MAG,20,Haas F1 Team,19.0,0 days 00:01:27.155000,True,0 days 00:00:28.618000,0 days 00:00:29.536000,0 days 00:00:29.001000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+7.0,MAG,20,Haas F1 Team,19.0,0 days 00:01:27.942000,False,0 days 00:00:29.121000,0 days 00:00:29.809000,0 days 00:00:29.012000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+8.0,MAG,20,Haas F1 Team,19.0,0 days 00:01:27.028000,True,0 days 00:00:28.468000,0 days 00:00:29.584000,0 days 00:00:28.976000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+9.0,MAG,20,Haas F1 Team,19.0,0 days 00:01:28.106000,False,0 days 00:00:29.095000,0 days 00:00:29.883000,0 days 00:00:29.128000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+10.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:27.163000,False,0 days 00:00:28.685000,0 days 00:00:29.520000,0 days 00:00:28.958000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+11.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:28.595000,False,0 days 00:00:29.838000,0 days 00:00:29.723000,0 days 00:00:29.034000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+12.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:27.199000,False,0 days 00:00:28.724000,0 days 00:00:29.581000,0 days 00:00:28.894000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+13.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:27.242000,False,0 days 00:00:28.844000,0 days 00:00:29.532000,0 days 00:00:28.866000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+14.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:27.099000,False,0 days 00:00:28.816000,0 days 00:00:29.534000,0 days 00:00:28.749000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+15.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:26.764000,True,0 days 00:00:28.804000,0 days 00:00:29.235000,0 days 00:00:28.725000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+16.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:26.659000,True,0 days 00:00:28.666000,0 days 00:00:29.255000,0 days 00:00:28.738000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+17.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:29.016000,False,0 days 00:00:30.429000,0 days 00:00:29.791000,0 days 00:00:28.796000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+18.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:27.097000,False,0 days 00:00:28.547000,0 days 00:00:29.715000,0 days 00:00:28.835000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+19.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:26.995000,False,0 days 00:00:28.700000,0 days 00:00:29.385000,0 days 00:00:28.910000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+20.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:29.218000,False,0 days 00:00:30.357000,0 days 00:00:30.089000,0 days 00:00:28.772000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+21.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:26.733000,False,0 days 00:00:28.458000,0 days 00:00:29.456000,0 days 00:00:28.819000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+22.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:26.569000,True,0 days 00:00:28.354000,0 days 00:00:29.420000,0 days 00:00:28.795000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+23.0,MAG,20,Haas F1 Team,18.0,0 days 00:01:26.917000,False,0 days 00:00:28.441000,0 days 00:00:29.645000,0 days 00:00:28.831000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+24.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:28.159000,False,0 days 00:00:29.116000,0 days 00:00:30.231000,0 days 00:00:28.812000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+25.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:27.071000,False,0 days 00:00:28.462000,0 days 00:00:29.684000,0 days 00:00:28.925000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+26.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.818000,False,0 days 00:00:28.595000,0 days 00:00:29.489000,0 days 00:00:28.734000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+27.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.761000,False,0 days 00:00:28.634000,0 days 00:00:29.356000,0 days 00:00:28.771000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+28.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:28.453000,False,0 days 00:00:28.695000,0 days 00:00:30.906000,0 days 00:00:28.852000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+29.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:28.097000,False,0 days 00:00:28.551000,0 days 00:00:30.773000,0 days 00:00:28.773000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+30.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:28.032000,False,0 days 00:00:29.416000,0 days 00:00:29.936000,0 days 00:00:28.680000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+31.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.999000,False,0 days 00:00:28.224000,0 days 00:00:29.378000,0 days 00:00:29.397000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+32.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:27.615000,False,0 days 00:00:28.992000,0 days 00:00:29.633000,0 days 00:00:28.990000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+33.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.882000,False,0 days 00:00:28.570000,0 days 00:00:29.648000,0 days 00:00:28.664000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+34.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:27.700000,False,0 days 00:00:28.400000,0 days 00:00:29.572000,0 days 00:00:29.728000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+35.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.356000,True,0 days 00:00:28.325000,0 days 00:00:29.421000,0 days 00:00:28.610000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+36.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.285000,True,0 days 00:00:28.299000,0 days 00:00:29.358000,0 days 00:00:28.628000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+37.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.235000,True,0 days 00:00:28.494000,0 days 00:00:29.168000,0 days 00:00:28.573000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+38.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:29.379000,False,0 days 00:00:29.968000,0 days 00:00:30.416000,0 days 00:00:28.995000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+39.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.532000,False,0 days 00:00:28.554000,0 days 00:00:29.268000,0 days 00:00:28.710000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+40.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:30.857000,False,0 days 00:00:28.801000,0 days 00:00:31.997000,0 days 00:00:30.059000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+41.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.425000,False,0 days 00:00:28.379000,0 days 00:00:29.226000,0 days 00:00:28.820000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+42.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:27.235000,False,0 days 00:00:29.018000,0 days 00:00:29.583000,0 days 00:00:28.634000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+43.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:25.919000,True,0 days 00:00:28.266000,0 days 00:00:29.141000,0 days 00:00:28.512000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+44.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:25.805000,True,0 days 00:00:28.334000,0 days 00:00:29.092000,0 days 00:00:28.379000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+45.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:25.738000,True,0 days 00:00:28.408000,0 days 00:00:28.994000,0 days 00:00:28.336000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+46.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:25.692000,True,0 days 00:00:28.374000,0 days 00:00:28.966000,0 days 00:00:28.352000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+47.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:25.903000,False,0 days 00:00:28.364000,0 days 00:00:29.024000,0 days 00:00:28.515000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+48.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:25.938000,False,0 days 00:00:28.594000,0 days 00:00:28.899000,0 days 00:00:28.445000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+49.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.795000,False,0 days 00:00:28.715000,0 days 00:00:29.394000,0 days 00:00:28.686000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+50.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:26.587000,False,0 days 00:00:28.625000,0 days 00:00:29.232000,0 days 00:00:28.730000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+51.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:28.017000,False,0 days 00:00:29.409000,0 days 00:00:29.807000,0 days 00:00:28.801000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+52.0,MAG,20,Haas F1 Team,17.0,0 days 00:01:27.303000,False,0 days 00:00:28.471000,0 days 00:00:29.758000,0 days 00:00:29.074000,MEDIUM,,,,16.0,11.0,+1 Lap,2018,GP Monza,historica
+1.0,HUL,27,Renault,17.0,0 days 00:02:08.144000,False,,0 days 00:00:32.725000,0 days 00:01:01.665000,nan,0 days 00:20:38.510000,0 days 00:20:59.902000,0 days 00:00:21.392000,13.0,20.0,+1 Lap,2018,GP Monza,historica
+2.0,HUL,27,Renault,16.0,0 days 00:02:18.181000,False,0 days 00:00:54.063000,0 days 00:00:38.556000,0 days 00:00:45.562000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+3.0,HUL,27,Renault,16.0,0 days 00:01:58.295000,True,0 days 00:00:44.671000,0 days 00:00:40.976000,0 days 00:00:32.648000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+4.0,HUL,27,Renault,15.0,0 days 00:01:27.040000,True,0 days 00:00:28.031000,0 days 00:00:29.832000,0 days 00:00:29.177000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+5.0,HUL,27,Renault,14.0,0 days 00:01:26.843000,True,0 days 00:00:28.013000,0 days 00:00:29.779000,0 days 00:00:29.051000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+6.0,HUL,27,Renault,16.0,0 days 00:01:27.977000,False,0 days 00:00:28.431000,0 days 00:00:30.040000,0 days 00:00:29.506000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+7.0,HUL,27,Renault,16.0,0 days 00:01:27.006000,False,0 days 00:00:28.065000,0 days 00:00:29.851000,0 days 00:00:29.090000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+8.0,HUL,27,Renault,16.0,0 days 00:01:27.362000,False,0 days 00:00:27.982000,0 days 00:00:29.927000,0 days 00:00:29.453000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+9.0,HUL,27,Renault,15.0,0 days 00:01:27.891000,False,0 days 00:00:28.099000,0 days 00:00:29.910000,0 days 00:00:29.882000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+10.0,HUL,27,Renault,15.0,0 days 00:01:27.166000,False,0 days 00:00:28.039000,0 days 00:00:29.792000,0 days 00:00:29.335000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+11.0,HUL,27,Renault,14.0,0 days 00:01:26.713000,True,0 days 00:00:27.873000,0 days 00:00:29.709000,0 days 00:00:29.131000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+12.0,HUL,27,Renault,14.0,0 days 00:01:26.896000,False,0 days 00:00:27.980000,0 days 00:00:29.794000,0 days 00:00:29.122000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+13.0,HUL,27,Renault,14.0,0 days 00:01:26.476000,True,0 days 00:00:27.858000,0 days 00:00:29.632000,0 days 00:00:28.986000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+14.0,HUL,27,Renault,14.0,0 days 00:01:26.809000,False,0 days 00:00:27.942000,0 days 00:00:29.937000,0 days 00:00:28.930000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+15.0,HUL,27,Renault,14.0,0 days 00:01:26.912000,False,0 days 00:00:27.753000,0 days 00:00:30.165000,0 days 00:00:28.994000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+16.0,HUL,27,Renault,14.0,0 days 00:01:26.671000,False,0 days 00:00:27.956000,0 days 00:00:29.880000,0 days 00:00:28.835000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+17.0,HUL,27,Renault,13.0,0 days 00:01:26.630000,False,0 days 00:00:27.944000,0 days 00:00:29.900000,0 days 00:00:28.786000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+18.0,HUL,27,Renault,13.0,0 days 00:01:27.335000,False,0 days 00:00:28.962000,0 days 00:00:29.576000,0 days 00:00:28.797000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+19.0,HUL,27,Renault,13.0,0 days 00:01:26.597000,False,0 days 00:00:28.442000,0 days 00:00:29.382000,0 days 00:00:28.773000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+20.0,HUL,27,Renault,13.0,0 days 00:01:26.769000,False,0 days 00:00:28.518000,0 days 00:00:29.437000,0 days 00:00:28.814000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+21.0,HUL,27,Renault,13.0,0 days 00:01:26.428000,True,0 days 00:00:28.278000,0 days 00:00:29.377000,0 days 00:00:28.773000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+22.0,HUL,27,Renault,13.0,0 days 00:01:26.566000,False,0 days 00:00:28.431000,0 days 00:00:29.392000,0 days 00:00:28.743000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+23.0,HUL,27,Renault,13.0,0 days 00:01:26.310000,True,0 days 00:00:28.301000,0 days 00:00:29.282000,0 days 00:00:28.727000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+24.0,HUL,27,Renault,12.0,0 days 00:01:26.554000,False,0 days 00:00:28.289000,0 days 00:00:29.608000,0 days 00:00:28.657000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+25.0,HUL,27,Renault,12.0,0 days 00:01:26.347000,False,0 days 00:00:28.057000,0 days 00:00:29.602000,0 days 00:00:28.688000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+26.0,HUL,27,Renault,12.0,0 days 00:01:26.147000,True,0 days 00:00:28.097000,0 days 00:00:29.475000,0 days 00:00:28.575000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+27.0,HUL,27,Renault,12.0,0 days 00:01:26.252000,False,0 days 00:00:28.240000,0 days 00:00:29.364000,0 days 00:00:28.648000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+28.0,HUL,27,Renault,12.0,0 days 00:01:26.757000,False,0 days 00:00:28.491000,0 days 00:00:29.571000,0 days 00:00:28.695000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+29.0,HUL,27,Renault,12.0,0 days 00:01:26.578000,False,0 days 00:00:28.448000,0 days 00:00:29.448000,0 days 00:00:28.682000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+30.0,HUL,27,Renault,12.0,0 days 00:01:26.945000,False,0 days 00:00:28.727000,0 days 00:00:29.512000,0 days 00:00:28.706000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+31.0,HUL,27,Renault,12.0,0 days 00:01:26.162000,False,0 days 00:00:28.181000,0 days 00:00:29.404000,0 days 00:00:28.577000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+32.0,HUL,27,Renault,12.0,0 days 00:01:26.176000,False,0 days 00:00:28.246000,0 days 00:00:29.232000,0 days 00:00:28.698000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+33.0,HUL,27,Renault,12.0,0 days 00:01:26.229000,False,0 days 00:00:28.375000,0 days 00:00:29.235000,0 days 00:00:28.619000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+34.0,HUL,27,Renault,12.0,0 days 00:01:26.663000,False,0 days 00:00:28.486000,0 days 00:00:29.375000,0 days 00:00:28.802000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+35.0,HUL,27,Renault,12.0,0 days 00:01:26.483000,False,0 days 00:00:28.375000,0 days 00:00:29.332000,0 days 00:00:28.776000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+36.0,HUL,27,Renault,11.0,0 days 00:01:26.414000,False,0 days 00:00:28.376000,0 days 00:00:29.322000,0 days 00:00:28.716000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+37.0,HUL,27,Renault,11.0,0 days 00:01:26.481000,False,0 days 00:00:28.366000,0 days 00:00:29.360000,0 days 00:00:28.755000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+38.0,HUL,27,Renault,10.0,0 days 00:01:26.504000,False,0 days 00:00:28.346000,0 days 00:00:29.375000,0 days 00:00:28.783000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+39.0,HUL,27,Renault,10.0,0 days 00:01:26.314000,False,0 days 00:00:28.316000,0 days 00:00:29.309000,0 days 00:00:28.689000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+40.0,HUL,27,Renault,10.0,0 days 00:01:28.236000,False,0 days 00:00:28.686000,0 days 00:00:30.667000,0 days 00:00:28.883000,SOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+41.0,HUL,27,Renault,12.0,0 days 00:01:31.629000,False,0 days 00:00:28.617000,0 days 00:00:29.902000,0 days 00:00:33.110000,SOFT,0 days 01:19:55.046000,0 days 01:20:16.869000,0 days 00:00:21.823000,13.0,20.0,+1 Lap,2018,GP Monza,historica
+42.0,HUL,27,Renault,16.0,0 days 00:01:44.790000,False,0 days 00:00:47.771000,0 days 00:00:28.876000,0 days 00:00:28.143000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+43.0,HUL,27,Renault,15.0,0 days 00:01:26.693000,False,0 days 00:00:27.962000,0 days 00:00:30.534000,0 days 00:00:28.197000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+44.0,HUL,27,Renault,15.0,0 days 00:01:24.306000,True,0 days 00:00:27.659000,0 days 00:00:28.589000,0 days 00:00:28.058000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+45.0,HUL,27,Renault,15.0,0 days 00:01:24.540000,False,0 days 00:00:27.820000,0 days 00:00:28.582000,0 days 00:00:28.138000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+46.0,HUL,27,Renault,15.0,0 days 00:01:24.209000,True,0 days 00:00:27.694000,0 days 00:00:28.533000,0 days 00:00:27.982000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+47.0,HUL,27,Renault,15.0,0 days 00:01:24.059000,True,0 days 00:00:27.588000,0 days 00:00:28.501000,0 days 00:00:27.970000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+48.0,HUL,27,Renault,15.0,0 days 00:01:25.640000,False,0 days 00:00:27.762000,0 days 00:00:29.795000,0 days 00:00:28.083000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+49.0,HUL,27,Renault,14.0,0 days 00:01:24.403000,False,0 days 00:00:27.369000,0 days 00:00:29.147000,0 days 00:00:27.887000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+50.0,HUL,27,Renault,14.0,0 days 00:01:24.315000,False,0 days 00:00:27.734000,0 days 00:00:28.685000,0 days 00:00:27.896000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+51.0,HUL,27,Renault,14.0,0 days 00:01:24.533000,False,0 days 00:00:27.658000,0 days 00:00:29.041000,0 days 00:00:27.834000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+52.0,HUL,27,Renault,14.0,0 days 00:01:24.987000,False,0 days 00:00:27.807000,0 days 00:00:28.896000,0 days 00:00:28.284000,SUPERSOFT,,,,13.0,20.0,+1 Lap,2018,GP Monza,historica
+1.0,HAR,28,Toro Rosso,,,False,,,,SUPERSOFT,,,,19.0,16.0,Brakes,2018,GP Monza,historica
+1.0,RIC,3,Red Bull Racing,18.0,0 days 00:02:08.859000,False,,0 days 00:00:32.729000,0 days 00:01:02.183000,nan,0 days 00:20:35.353000,0 days 00:21:00.201000,0 days 00:00:24.848000,17.0,19.0,Engine,2018,GP Monza,historica
+2.0,RIC,3,Red Bull Racing,17.0,0 days 00:02:18.448000,False,0 days 00:00:55.661000,0 days 00:00:37.963000,0 days 00:00:44.824000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+3.0,RIC,3,Red Bull Racing,17.0,0 days 00:01:58.235000,True,0 days 00:00:44.258000,0 days 00:00:41.785000,0 days 00:00:32.192000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+4.0,RIC,3,Red Bull Racing,16.0,0 days 00:01:26.824000,True,0 days 00:00:27.958000,0 days 00:00:29.719000,0 days 00:00:29.147000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+5.0,RIC,3,Red Bull Racing,15.0,0 days 00:01:26.771000,True,0 days 00:00:28.023000,0 days 00:00:30.213000,0 days 00:00:28.535000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+6.0,RIC,3,Red Bull Racing,14.0,0 days 00:01:25.598000,True,0 days 00:00:27.654000,0 days 00:00:29.407000,0 days 00:00:28.537000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+7.0,RIC,3,Red Bull Racing,14.0,0 days 00:01:26.484000,False,0 days 00:00:27.809000,0 days 00:00:29.692000,0 days 00:00:28.983000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+8.0,RIC,3,Red Bull Racing,14.0,0 days 00:01:28.186000,False,0 days 00:00:28.165000,0 days 00:00:30.797000,0 days 00:00:29.224000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+9.0,RIC,3,Red Bull Racing,14.0,0 days 00:01:28.696000,False,0 days 00:00:28.331000,0 days 00:00:30.456000,0 days 00:00:29.909000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+10.0,RIC,3,Red Bull Racing,13.0,0 days 00:01:25.767000,False,0 days 00:00:27.763000,0 days 00:00:29.685000,0 days 00:00:28.319000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+11.0,RIC,3,Red Bull Racing,13.0,0 days 00:01:27.703000,False,0 days 00:00:28.560000,0 days 00:00:30.320000,0 days 00:00:28.823000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+12.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.760000,False,0 days 00:00:27.868000,0 days 00:00:29.178000,0 days 00:00:28.714000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+13.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.930000,False,0 days 00:00:27.952000,0 days 00:00:29.321000,0 days 00:00:28.657000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+14.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.729000,False,0 days 00:00:28.066000,0 days 00:00:29.177000,0 days 00:00:28.486000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+15.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.640000,False,0 days 00:00:27.987000,0 days 00:00:29.236000,0 days 00:00:28.417000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+16.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.424000,True,0 days 00:00:27.965000,0 days 00:00:29.010000,0 days 00:00:28.449000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+17.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.276000,True,0 days 00:00:27.909000,0 days 00:00:28.919000,0 days 00:00:28.448000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+18.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.229000,True,0 days 00:00:27.930000,0 days 00:00:28.921000,0 days 00:00:28.378000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+19.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.732000,False,0 days 00:00:28.123000,0 days 00:00:29.034000,0 days 00:00:28.575000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+20.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.399000,False,0 days 00:00:27.923000,0 days 00:00:28.950000,0 days 00:00:28.526000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+21.0,RIC,3,Red Bull Racing,12.0,0 days 00:01:25.844000,False,0 days 00:00:27.811000,0 days 00:00:29.362000,0 days 00:00:28.671000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+22.0,RIC,3,Red Bull Racing,11.0,0 days 00:01:25.301000,False,0 days 00:00:27.794000,0 days 00:00:29.164000,0 days 00:00:28.343000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+23.0,RIC,3,Red Bull Racing,11.0,0 days 00:01:26.235000,False,0 days 00:00:27.749000,0 days 00:00:29.674000,0 days 00:00:28.812000,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+24.0,RIC,3,Red Bull Racing,,,,,,,SUPERSOFT,,,,17.0,19.0,Engine,2018,GP Monza,historica
+1.0,OCO,31,Racing Point,8.0,0 days 00:01:55.726000,False,,0 days 00:00:32.044000,0 days 00:00:52.118000,nan,,,,6.0,8.0,Finished,2018,GP Monza,historica
+2.0,OCO,31,Racing Point,7.0,0 days 00:02:17.300000,True,0 days 00:00:45.976000,0 days 00:00:46.006000,0 days 00:00:45.318000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+3.0,OCO,31,Racing Point,7.0,0 days 00:02:03.928000,True,0 days 00:00:45.787000,0 days 00:00:42.346000,0 days 00:00:35.795000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+4.0,OCO,31,Racing Point,7.0,0 days 00:01:27.876000,True,0 days 00:00:28.049000,0 days 00:00:30.770000,0 days 00:00:29.057000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+5.0,OCO,31,Racing Point,7.0,0 days 00:01:26.967000,True,0 days 00:00:28.102000,0 days 00:00:29.997000,0 days 00:00:28.868000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+6.0,OCO,31,Racing Point,7.0,0 days 00:01:26.198000,True,0 days 00:00:28.070000,0 days 00:00:29.520000,0 days 00:00:28.608000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+7.0,OCO,31,Racing Point,7.0,0 days 00:01:26.151000,True,0 days 00:00:27.854000,0 days 00:00:29.528000,0 days 00:00:28.769000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+8.0,OCO,31,Racing Point,7.0,0 days 00:01:26.071000,True,0 days 00:00:27.858000,0 days 00:00:29.581000,0 days 00:00:28.632000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+9.0,OCO,31,Racing Point,7.0,0 days 00:01:26.046000,True,0 days 00:00:27.903000,0 days 00:00:29.630000,0 days 00:00:28.513000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+10.0,OCO,31,Racing Point,7.0,0 days 00:01:26.076000,False,0 days 00:00:27.775000,0 days 00:00:29.582000,0 days 00:00:28.719000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+11.0,OCO,31,Racing Point,7.0,0 days 00:01:26.310000,False,0 days 00:00:27.869000,0 days 00:00:29.572000,0 days 00:00:28.869000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+12.0,OCO,31,Racing Point,7.0,0 days 00:01:26.096000,False,0 days 00:00:27.749000,0 days 00:00:29.606000,0 days 00:00:28.741000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+13.0,OCO,31,Racing Point,7.0,0 days 00:01:26.448000,False,0 days 00:00:27.662000,0 days 00:00:30.061000,0 days 00:00:28.725000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+14.0,OCO,31,Racing Point,6.0,0 days 00:01:25.598000,True,0 days 00:00:27.625000,0 days 00:00:29.386000,0 days 00:00:28.587000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+15.0,OCO,31,Racing Point,6.0,0 days 00:01:25.613000,False,0 days 00:00:27.917000,0 days 00:00:29.236000,0 days 00:00:28.460000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+16.0,OCO,31,Racing Point,6.0,0 days 00:01:25.387000,True,0 days 00:00:27.829000,0 days 00:00:29.209000,0 days 00:00:28.349000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+17.0,OCO,31,Racing Point,6.0,0 days 00:01:25.777000,False,0 days 00:00:27.893000,0 days 00:00:29.348000,0 days 00:00:28.536000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+18.0,OCO,31,Racing Point,6.0,0 days 00:01:25.800000,False,0 days 00:00:27.894000,0 days 00:00:29.325000,0 days 00:00:28.581000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+19.0,OCO,31,Racing Point,6.0,0 days 00:01:25.930000,False,0 days 00:00:27.931000,0 days 00:00:29.419000,0 days 00:00:28.580000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+20.0,OCO,31,Racing Point,6.0,0 days 00:01:25.649000,False,0 days 00:00:27.849000,0 days 00:00:29.260000,0 days 00:00:28.540000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+21.0,OCO,31,Racing Point,6.0,0 days 00:01:25.886000,False,0 days 00:00:27.866000,0 days 00:00:29.470000,0 days 00:00:28.550000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+22.0,OCO,31,Racing Point,6.0,0 days 00:01:25.708000,False,0 days 00:00:27.823000,0 days 00:00:29.440000,0 days 00:00:28.445000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+23.0,OCO,31,Racing Point,5.0,0 days 00:01:25.505000,False,0 days 00:00:27.777000,0 days 00:00:29.340000,0 days 00:00:28.388000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+24.0,OCO,31,Racing Point,6.0,0 days 00:01:26.964000,False,0 days 00:00:28.282000,0 days 00:00:30.211000,0 days 00:00:28.471000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+25.0,OCO,31,Racing Point,6.0,0 days 00:01:25.891000,False,0 days 00:00:27.800000,0 days 00:00:29.673000,0 days 00:00:28.418000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+26.0,OCO,31,Racing Point,6.0,0 days 00:01:25.604000,False,0 days 00:00:27.763000,0 days 00:00:29.466000,0 days 00:00:28.375000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+27.0,OCO,31,Racing Point,5.0,0 days 00:01:25.312000,True,0 days 00:00:27.814000,0 days 00:00:29.182000,0 days 00:00:28.316000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+28.0,OCO,31,Racing Point,5.0,0 days 00:01:25.317000,False,0 days 00:00:27.819000,0 days 00:00:29.124000,0 days 00:00:28.374000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+29.0,OCO,31,Racing Point,6.0,0 days 00:01:26.373000,False,0 days 00:00:28.303000,0 days 00:00:29.721000,0 days 00:00:28.349000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+30.0,OCO,31,Racing Point,5.0,0 days 00:01:25.438000,False,0 days 00:00:27.663000,0 days 00:00:29.268000,0 days 00:00:28.507000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+31.0,OCO,31,Racing Point,5.0,0 days 00:01:25.301000,True,0 days 00:00:27.884000,0 days 00:00:29.092000,0 days 00:00:28.325000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+32.0,OCO,31,Racing Point,5.0,0 days 00:01:25.137000,True,0 days 00:00:27.769000,0 days 00:00:29.070000,0 days 00:00:28.298000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+33.0,OCO,31,Racing Point,5.0,0 days 00:01:25.592000,False,0 days 00:00:28.167000,0 days 00:00:29.117000,0 days 00:00:28.308000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+34.0,OCO,31,Racing Point,5.0,0 days 00:01:25.125000,True,0 days 00:00:27.867000,0 days 00:00:28.979000,0 days 00:00:28.279000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+35.0,OCO,31,Racing Point,5.0,0 days 00:01:25.270000,False,0 days 00:00:27.876000,0 days 00:00:29.022000,0 days 00:00:28.372000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+36.0,OCO,31,Racing Point,5.0,0 days 00:01:25.200000,False,0 days 00:00:27.856000,0 days 00:00:28.962000,0 days 00:00:28.382000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+37.0,OCO,31,Racing Point,5.0,0 days 00:01:25.273000,False,0 days 00:00:27.882000,0 days 00:00:29.060000,0 days 00:00:28.331000,SUPERSOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+38.0,OCO,31,Racing Point,7.0,0 days 00:01:29.408000,False,0 days 00:00:27.858000,0 days 00:00:28.980000,0 days 00:00:32.570000,SUPERSOFT,0 days 01:14:51.796000,0 days 01:15:16.657000,0 days 00:00:24.861000,6.0,8.0,Finished,2018,GP Monza,historica
+39.0,OCO,31,Racing Point,9.0,0 days 00:01:44.944000,False,0 days 00:00:48.283000,0 days 00:00:28.676000,0 days 00:00:27.985000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+40.0,OCO,31,Racing Point,7.0,0 days 00:01:24.438000,True,0 days 00:00:27.733000,0 days 00:00:28.575000,0 days 00:00:28.130000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+41.0,OCO,31,Racing Point,7.0,0 days 00:01:24.469000,False,0 days 00:00:27.679000,0 days 00:00:28.781000,0 days 00:00:28.009000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+42.0,OCO,31,Racing Point,7.0,0 days 00:01:24.416000,True,0 days 00:00:27.702000,0 days 00:00:28.611000,0 days 00:00:28.103000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+43.0,OCO,31,Racing Point,7.0,0 days 00:01:24.338000,True,0 days 00:00:27.763000,0 days 00:00:28.509000,0 days 00:00:28.066000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+44.0,OCO,31,Racing Point,7.0,0 days 00:01:24.179000,True,0 days 00:00:27.653000,0 days 00:00:28.626000,0 days 00:00:27.900000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+45.0,OCO,31,Racing Point,7.0,0 days 00:01:24.313000,False,0 days 00:00:27.631000,0 days 00:00:28.657000,0 days 00:00:28.025000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+46.0,OCO,31,Racing Point,7.0,0 days 00:01:24.411000,False,0 days 00:00:27.705000,0 days 00:00:28.760000,0 days 00:00:27.946000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+47.0,OCO,31,Racing Point,7.0,0 days 00:01:24.472000,False,0 days 00:00:27.712000,0 days 00:00:28.749000,0 days 00:00:28.011000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+48.0,OCO,31,Racing Point,7.0,0 days 00:01:24.305000,False,0 days 00:00:27.542000,0 days 00:00:28.820000,0 days 00:00:27.943000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+49.0,OCO,31,Racing Point,7.0,0 days 00:01:24.461000,False,0 days 00:00:27.771000,0 days 00:00:28.657000,0 days 00:00:28.033000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+50.0,OCO,31,Racing Point,7.0,0 days 00:01:24.258000,False,0 days 00:00:27.562000,0 days 00:00:28.709000,0 days 00:00:27.987000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+51.0,OCO,31,Racing Point,7.0,0 days 00:01:24.870000,False,0 days 00:00:27.699000,0 days 00:00:29.047000,0 days 00:00:28.124000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+52.0,OCO,31,Racing Point,7.0,0 days 00:01:24.444000,False,0 days 00:00:27.716000,0 days 00:00:28.728000,0 days 00:00:28,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+53.0,OCO,31,Racing Point,7.0,0 days 00:01:24.676000,False,0 days 00:00:27.663000,0 days 00:00:28.971000,0 days 00:00:28.042000,SOFT,,,,6.0,8.0,Finished,2018,GP Monza,historica
+1.0,VER,33,Red Bull Racing,4.0,0 days 00:01:51.041000,False,,0 days 00:00:30.492000,0 days 00:00:49.734000,nan,,,,5.0,5.0,Finished,2018,GP Monza,historica
+2.0,VER,33,Red Bull Racing,3.0,0 days 00:02:16.204000,True,0 days 00:00:44.392000,0 days 00:00:46.029000,0 days 00:00:45.783000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+3.0,VER,33,Red Bull Racing,3.0,0 days 00:02:07.530000,True,0 days 00:00:45.402000,0 days 00:00:44.745000,0 days 00:00:37.383000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+4.0,VER,33,Red Bull Racing,3.0,0 days 00:01:26.555000,True,0 days 00:00:28.129000,0 days 00:00:29.947000,0 days 00:00:28.479000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+5.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.615000,True,0 days 00:00:27.972000,0 days 00:00:29.267000,0 days 00:00:28.376000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+6.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.475000,True,0 days 00:00:27.983000,0 days 00:00:29.054000,0 days 00:00:28.438000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+7.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.116000,True,0 days 00:00:27.926000,0 days 00:00:28.860000,0 days 00:00:28.330000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+8.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.976000,True,0 days 00:00:27.903000,0 days 00:00:28.884000,0 days 00:00:28.189000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+9.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.145000,False,0 days 00:00:28.006000,0 days 00:00:28.858000,0 days 00:00:28.281000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+10.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.040000,False,0 days 00:00:27.892000,0 days 00:00:28.834000,0 days 00:00:28.314000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+11.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.295000,False,0 days 00:00:28.033000,0 days 00:00:28.938000,0 days 00:00:28.324000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+12.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.189000,False,0 days 00:00:27.996000,0 days 00:00:28.824000,0 days 00:00:28.369000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+13.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.210000,False,0 days 00:00:27.893000,0 days 00:00:29.011000,0 days 00:00:28.306000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+14.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.135000,False,0 days 00:00:28.145000,0 days 00:00:28.727000,0 days 00:00:28.263000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+15.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.080000,False,0 days 00:00:27.889000,0 days 00:00:28.912000,0 days 00:00:28.279000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+16.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.966000,True,0 days 00:00:27.914000,0 days 00:00:28.757000,0 days 00:00:28.295000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+17.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.904000,True,0 days 00:00:27.902000,0 days 00:00:28.747000,0 days 00:00:28.255000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+18.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.980000,False,0 days 00:00:27.942000,0 days 00:00:28.817000,0 days 00:00:28.221000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+19.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.159000,False,0 days 00:00:28.005000,0 days 00:00:28.944000,0 days 00:00:28.210000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+20.0,VER,33,Red Bull Racing,3.0,0 days 00:01:25.356000,False,0 days 00:00:27.899000,0 days 00:00:29.172000,0 days 00:00:28.285000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+21.0,VER,33,Red Bull Racing,2.0,0 days 00:01:25.027000,False,0 days 00:00:27.853000,0 days 00:00:28.891000,0 days 00:00:28.283000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+22.0,VER,33,Red Bull Racing,2.0,0 days 00:01:25.310000,False,0 days 00:00:28.230000,0 days 00:00:28.833000,0 days 00:00:28.247000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+23.0,VER,33,Red Bull Racing,2.0,0 days 00:01:25.021000,False,0 days 00:00:27.981000,0 days 00:00:28.761000,0 days 00:00:28.279000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+24.0,VER,33,Red Bull Racing,2.0,0 days 00:01:25.018000,False,0 days 00:00:27.913000,0 days 00:00:28.883000,0 days 00:00:28.222000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+25.0,VER,33,Red Bull Racing,2.0,0 days 00:01:25.718000,False,0 days 00:00:27.951000,0 days 00:00:29.555000,0 days 00:00:28.212000,SUPERSOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+26.0,VER,33,Red Bull Racing,3.0,0 days 00:01:29.839000,False,0 days 00:00:28.039000,0 days 00:00:29.684000,0 days 00:00:32.116000,SUPERSOFT,0 days 00:57:26.402000,0 days 00:57:50.403000,0 days 00:00:24.001000,5.0,5.0,Finished,2018,GP Monza,historica
+27.0,VER,33,Red Bull Racing,6.0,0 days 00:01:43.711000,False,0 days 00:00:47.256000,0 days 00:00:28.634000,0 days 00:00:27.821000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+28.0,VER,33,Red Bull Racing,6.0,0 days 00:01:23.930000,True,0 days 00:00:27.534000,0 days 00:00:28.440000,0 days 00:00:27.956000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+29.0,VER,33,Red Bull Racing,4.0,0 days 00:01:23.682000,True,0 days 00:00:27.476000,0 days 00:00:28.362000,0 days 00:00:27.844000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+30.0,VER,33,Red Bull Racing,4.0,0 days 00:01:24.414000,False,0 days 00:00:27.629000,0 days 00:00:28.737000,0 days 00:00:28.048000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+31.0,VER,33,Red Bull Racing,4.0,0 days 00:01:24.174000,False,0 days 00:00:27.951000,0 days 00:00:28.369000,0 days 00:00:27.854000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+32.0,VER,33,Red Bull Racing,4.0,0 days 00:01:24.058000,False,0 days 00:00:27.792000,0 days 00:00:28.333000,0 days 00:00:27.933000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+33.0,VER,33,Red Bull Racing,4.0,0 days 00:01:24.266000,False,0 days 00:00:27.912000,0 days 00:00:28.434000,0 days 00:00:27.920000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+34.0,VER,33,Red Bull Racing,4.0,0 days 00:01:24.103000,False,0 days 00:00:27.869000,0 days 00:00:28.356000,0 days 00:00:27.878000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+35.0,VER,33,Red Bull Racing,4.0,0 days 00:01:24.242000,False,0 days 00:00:27.942000,0 days 00:00:28.364000,0 days 00:00:27.936000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+36.0,VER,33,Red Bull Racing,4.0,0 days 00:01:23.888000,False,0 days 00:00:27.753000,0 days 00:00:28.353000,0 days 00:00:27.782000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+37.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.084000,False,0 days 00:00:27.910000,0 days 00:00:28.282000,0 days 00:00:27.892000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+38.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.781000,False,0 days 00:00:27.730000,0 days 00:00:28.267000,0 days 00:00:27.784000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+39.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.633000,True,0 days 00:00:27.654000,0 days 00:00:28.194000,0 days 00:00:27.785000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+40.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.691000,False,0 days 00:00:27.694000,0 days 00:00:28.214000,0 days 00:00:27.783000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+41.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.609000,True,0 days 00:00:27.720000,0 days 00:00:28.161000,0 days 00:00:27.728000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+42.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.171000,False,0 days 00:00:27.882000,0 days 00:00:28.492000,0 days 00:00:27.797000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+43.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.083000,False,0 days 00:00:27.975000,0 days 00:00:28.326000,0 days 00:00:27.782000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+44.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.762000,False,0 days 00:00:27.584000,0 days 00:00:28.382000,0 days 00:00:27.796000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+45.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.774000,False,0 days 00:00:27.639000,0 days 00:00:29.239000,0 days 00:00:27.896000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+46.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.297000,False,0 days 00:00:27.752000,0 days 00:00:28.681000,0 days 00:00:27.864000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+47.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.927000,False,0 days 00:00:27.729000,0 days 00:00:28.313000,0 days 00:00:27.885000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+48.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.982000,False,0 days 00:00:27.934000,0 days 00:00:28.334000,0 days 00:00:27.714000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+49.0,VER,33,Red Bull Racing,3.0,0 days 00:01:24.337000,False,0 days 00:00:27.908000,0 days 00:00:28.658000,0 days 00:00:27.771000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+50.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.705000,False,0 days 00:00:27.788000,0 days 00:00:28.315000,0 days 00:00:27.602000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+51.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.767000,False,0 days 00:00:27.819000,0 days 00:00:28.306000,0 days 00:00:27.642000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+52.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.836000,False,0 days 00:00:27.828000,0 days 00:00:28.336000,0 days 00:00:27.672000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+53.0,VER,33,Red Bull Racing,3.0,0 days 00:01:23.881000,False,0 days 00:00:27.668000,0 days 00:00:28.504000,0 days 00:00:27.709000,SOFT,,,,5.0,5.0,Finished,2018,GP Monza,historica
+1.0,SIR,35,Williams,10.0,0 days 00:01:57.454000,False,,0 days 00:00:32.466000,0 days 00:00:52.986000,nan,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+2.0,SIR,35,Williams,9.0,0 days 00:02:17.479000,True,0 days 00:00:46.079000,0 days 00:00:46.175000,0 days 00:00:45.225000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+3.0,SIR,35,Williams,9.0,0 days 00:02:02.900000,True,0 days 00:00:46.280000,0 days 00:00:41.679000,0 days 00:00:34.941000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+4.0,SIR,35,Williams,9.0,0 days 00:01:28.099000,True,0 days 00:00:28.272000,0 days 00:00:30.541000,0 days 00:00:29.286000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+5.0,SIR,35,Williams,9.0,0 days 00:01:27.234000,True,0 days 00:00:28.325000,0 days 00:00:30.124000,0 days 00:00:28.785000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+6.0,SIR,35,Williams,9.0,0 days 00:01:26.800000,True,0 days 00:00:28.539000,0 days 00:00:29.501000,0 days 00:00:28.760000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+7.0,SIR,35,Williams,9.0,0 days 00:01:26.539000,True,0 days 00:00:28.089000,0 days 00:00:29.600000,0 days 00:00:28.850000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+8.0,SIR,35,Williams,9.0,0 days 00:01:26.509000,True,0 days 00:00:28.343000,0 days 00:00:29.536000,0 days 00:00:28.630000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+9.0,SIR,35,Williams,9.0,0 days 00:01:26.537000,False,0 days 00:00:28.296000,0 days 00:00:29.528000,0 days 00:00:28.713000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+10.0,SIR,35,Williams,9.0,0 days 00:01:26.261000,True,0 days 00:00:28.287000,0 days 00:00:29.403000,0 days 00:00:28.571000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+11.0,SIR,35,Williams,9.0,0 days 00:01:26.262000,False,0 days 00:00:28.134000,0 days 00:00:29.146000,0 days 00:00:28.982000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+12.0,SIR,35,Williams,9.0,0 days 00:01:26.078000,True,0 days 00:00:28.071000,0 days 00:00:29.401000,0 days 00:00:28.606000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+13.0,SIR,35,Williams,10.0,0 days 00:01:27.427000,False,0 days 00:00:28.278000,0 days 00:00:30.424000,0 days 00:00:28.725000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+14.0,SIR,35,Williams,11.0,0 days 00:01:27.396000,False,0 days 00:00:28.321000,0 days 00:00:29.576000,0 days 00:00:29.499000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+15.0,SIR,35,Williams,11.0,0 days 00:01:26.506000,False,0 days 00:00:28.136000,0 days 00:00:29.505000,0 days 00:00:28.865000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+16.0,SIR,35,Williams,11.0,0 days 00:01:26.004000,True,0 days 00:00:28.218000,0 days 00:00:29.233000,0 days 00:00:28.553000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+17.0,SIR,35,Williams,11.0,0 days 00:01:26.244000,False,0 days 00:00:28.145000,0 days 00:00:29.548000,0 days 00:00:28.551000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+18.0,SIR,35,Williams,11.0,0 days 00:01:26.342000,False,0 days 00:00:28.339000,0 days 00:00:29.357000,0 days 00:00:28.646000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+19.0,SIR,35,Williams,11.0,0 days 00:01:26.272000,False,0 days 00:00:28.370000,0 days 00:00:29.301000,0 days 00:00:28.601000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+20.0,SIR,35,Williams,11.0,0 days 00:01:26.162000,False,0 days 00:00:28.254000,0 days 00:00:29.355000,0 days 00:00:28.553000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+21.0,SIR,35,Williams,11.0,0 days 00:01:26.365000,False,0 days 00:00:28.367000,0 days 00:00:29.377000,0 days 00:00:28.621000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+22.0,SIR,35,Williams,12.0,0 days 00:01:27.244000,False,0 days 00:00:28.576000,0 days 00:00:30.038000,0 days 00:00:28.630000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+23.0,SIR,35,Williams,12.0,0 days 00:01:26.515000,False,0 days 00:00:28.220000,0 days 00:00:29.678000,0 days 00:00:28.617000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+24.0,SIR,35,Williams,10.0,0 days 00:01:26.666000,False,0 days 00:00:28.170000,0 days 00:00:29.921000,0 days 00:00:28.575000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+25.0,SIR,35,Williams,10.0,0 days 00:01:26.983000,False,0 days 00:00:28.406000,0 days 00:00:30.004000,0 days 00:00:28.573000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+26.0,SIR,35,Williams,10.0,0 days 00:01:26.212000,False,0 days 00:00:28.288000,0 days 00:00:29.391000,0 days 00:00:28.533000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+27.0,SIR,35,Williams,10.0,0 days 00:01:26.122000,False,0 days 00:00:28.320000,0 days 00:00:29.332000,0 days 00:00:28.470000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+28.0,SIR,35,Williams,10.0,0 days 00:01:26.122000,False,0 days 00:00:28.473000,0 days 00:00:29.220000,0 days 00:00:28.429000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+29.0,SIR,35,Williams,10.0,0 days 00:01:26.148000,False,0 days 00:00:28.375000,0 days 00:00:29.259000,0 days 00:00:28.514000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+30.0,SIR,35,Williams,9.0,0 days 00:01:26.283000,False,0 days 00:00:28.449000,0 days 00:00:29.298000,0 days 00:00:28.536000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+31.0,SIR,35,Williams,10.0,0 days 00:01:26.973000,False,0 days 00:00:28.465000,0 days 00:00:30.017000,0 days 00:00:28.491000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+32.0,SIR,35,Williams,10.0,0 days 00:01:25.803000,True,0 days 00:00:28.109000,0 days 00:00:29.154000,0 days 00:00:28.540000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+33.0,SIR,35,Williams,10.0,0 days 00:01:25.866000,False,0 days 00:00:28.210000,0 days 00:00:29.123000,0 days 00:00:28.533000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+34.0,SIR,35,Williams,10.0,0 days 00:01:26.132000,False,0 days 00:00:28.300000,0 days 00:00:29.255000,0 days 00:00:28.577000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+35.0,SIR,35,Williams,9.0,0 days 00:01:26.134000,False,0 days 00:00:28.324000,0 days 00:00:29.241000,0 days 00:00:28.569000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+36.0,SIR,35,Williams,10.0,0 days 00:01:27.066000,False,0 days 00:00:28.857000,0 days 00:00:29.714000,0 days 00:00:28.495000,SUPERSOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+37.0,SIR,35,Williams,10.0,0 days 00:01:30.478000,False,0 days 00:00:28.316000,0 days 00:00:29.355000,0 days 00:00:32.807000,SUPERSOFT,0 days 01:13:50.228000,0 days 01:14:15.434000,0 days 00:00:25.206000,10.0,12.0,+1 Lap,2018,GP Monza,historica
+38.0,SIR,35,Williams,13.0,0 days 00:01:45.918000,False,0 days 00:00:48.996000,0 days 00:00:28.862000,0 days 00:00:28.060000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+39.0,SIR,35,Williams,13.0,0 days 00:01:24.788000,True,0 days 00:00:28.198000,0 days 00:00:28.469000,0 days 00:00:28.121000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+40.0,SIR,35,Williams,13.0,0 days 00:01:24.693000,True,0 days 00:00:28.125000,0 days 00:00:28.436000,0 days 00:00:28.132000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+41.0,SIR,35,Williams,11.0,0 days 00:01:25.792000,False,0 days 00:00:27.931000,0 days 00:00:29.767000,0 days 00:00:28.094000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+42.0,SIR,35,Williams,11.0,0 days 00:01:27.108000,False,0 days 00:00:29.515000,0 days 00:00:29.386000,0 days 00:00:28.207000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+43.0,SIR,35,Williams,11.0,0 days 00:01:24.734000,False,0 days 00:00:27.952000,0 days 00:00:28.809000,0 days 00:00:27.973000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+44.0,SIR,35,Williams,11.0,0 days 00:01:24.909000,False,0 days 00:00:27.985000,0 days 00:00:28.845000,0 days 00:00:28.079000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+45.0,SIR,35,Williams,11.0,0 days 00:01:24.790000,False,0 days 00:00:28.007000,0 days 00:00:28.703000,0 days 00:00:28.080000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+46.0,SIR,35,Williams,11.0,0 days 00:01:24.708000,False,0 days 00:00:27.860000,0 days 00:00:28.851000,0 days 00:00:27.997000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+47.0,SIR,35,Williams,11.0,0 days 00:01:24.679000,True,0 days 00:00:27.806000,0 days 00:00:28.739000,0 days 00:00:28.134000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+48.0,SIR,35,Williams,11.0,0 days 00:01:25.053000,False,0 days 00:00:27.918000,0 days 00:00:28.923000,0 days 00:00:28.212000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+49.0,SIR,35,Williams,11.0,0 days 00:01:25.438000,False,0 days 00:00:27.976000,0 days 00:00:29.098000,0 days 00:00:28.364000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+50.0,SIR,35,Williams,11.0,0 days 00:01:24.899000,False,0 days 00:00:27.904000,0 days 00:00:28.861000,0 days 00:00:28.134000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+51.0,SIR,35,Williams,11.0,0 days 00:01:25.762000,False,0 days 00:00:27.734000,0 days 00:00:29.523000,0 days 00:00:28.505000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+52.0,SIR,35,Williams,11.0,0 days 00:01:23.768000,True,0 days 00:00:27.638000,0 days 00:00:28.297000,0 days 00:00:27.833000,SOFT,,,,10.0,12.0,+1 Lap,2018,GP Monza,historica
+1.0,HAM,44,Mercedes,3.0,0 days 00:01:50.478000,False,,0 days 00:00:30.140000,0 days 00:00:50.522000,nan,,,,1.0,3.0,Finished,2018,GP Monza,historica
+2.0,HAM,44,Mercedes,2.0,0 days 00:02:15.751000,True,0 days 00:00:44.461000,0 days 00:00:44.951000,0 days 00:00:46.339000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+3.0,HAM,44,Mercedes,2.0,0 days 00:02:07.904000,True,0 days 00:00:45.471000,0 days 00:00:44.529000,0 days 00:00:37.904000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+4.0,HAM,44,Mercedes,2.0,0 days 00:01:26.009000,True,0 days 00:00:27.655000,0 days 00:00:30.086000,0 days 00:00:28.268000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+5.0,HAM,44,Mercedes,2.0,0 days 00:01:25.027000,True,0 days 00:00:27.861000,0 days 00:00:29.086000,0 days 00:00:28.080000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+6.0,HAM,44,Mercedes,2.0,0 days 00:01:24.827000,True,0 days 00:00:27.878000,0 days 00:00:28.908000,0 days 00:00:28.041000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+7.0,HAM,44,Mercedes,2.0,0 days 00:01:24.751000,True,0 days 00:00:27.755000,0 days 00:00:28.914000,0 days 00:00:28.082000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+8.0,HAM,44,Mercedes,2.0,0 days 00:01:24.557000,True,0 days 00:00:27.790000,0 days 00:00:28.812000,0 days 00:00:27.955000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+9.0,HAM,44,Mercedes,2.0,0 days 00:01:24.349000,True,0 days 00:00:27.540000,0 days 00:00:28.704000,0 days 00:00:28.105000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+10.0,HAM,44,Mercedes,2.0,0 days 00:01:24.918000,False,0 days 00:00:27.730000,0 days 00:00:29.048000,0 days 00:00:28.140000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+11.0,HAM,44,Mercedes,2.0,0 days 00:01:24.823000,False,0 days 00:00:27.733000,0 days 00:00:28.994000,0 days 00:00:28.096000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+12.0,HAM,44,Mercedes,2.0,0 days 00:01:24.839000,False,0 days 00:00:27.578000,0 days 00:00:29.127000,0 days 00:00:28.134000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+13.0,HAM,44,Mercedes,2.0,0 days 00:01:24.709000,False,0 days 00:00:27.735000,0 days 00:00:28.953000,0 days 00:00:28.021000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+14.0,HAM,44,Mercedes,2.0,0 days 00:01:24.666000,False,0 days 00:00:27.615000,0 days 00:00:28.892000,0 days 00:00:28.159000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+15.0,HAM,44,Mercedes,2.0,0 days 00:01:24.747000,False,0 days 00:00:27.651000,0 days 00:00:29.027000,0 days 00:00:28.069000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+16.0,HAM,44,Mercedes,2.0,0 days 00:01:24.674000,False,0 days 00:00:27.689000,0 days 00:00:28.974000,0 days 00:00:28.011000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+17.0,HAM,44,Mercedes,2.0,0 days 00:01:24.545000,False,0 days 00:00:27.733000,0 days 00:00:28.809000,0 days 00:00:28.003000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+18.0,HAM,44,Mercedes,2.0,0 days 00:01:24.825000,False,0 days 00:00:27.621000,0 days 00:00:28.990000,0 days 00:00:28.214000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+19.0,HAM,44,Mercedes,2.0,0 days 00:01:24.560000,False,0 days 00:00:27.774000,0 days 00:00:28.865000,0 days 00:00:27.921000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+20.0,HAM,44,Mercedes,1.0,0 days 00:01:24.448000,False,0 days 00:00:27.640000,0 days 00:00:28.908000,0 days 00:00:27.900000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+21.0,HAM,44,Mercedes,1.0,0 days 00:01:23.611000,True,0 days 00:00:27.609000,0 days 00:00:28.270000,0 days 00:00:27.732000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+22.0,HAM,44,Mercedes,1.0,0 days 00:01:23.996000,False,0 days 00:00:27.694000,0 days 00:00:28.436000,0 days 00:00:27.866000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+23.0,HAM,44,Mercedes,1.0,0 days 00:01:23.974000,False,0 days 00:00:27.764000,0 days 00:00:28.454000,0 days 00:00:27.756000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+24.0,HAM,44,Mercedes,1.0,0 days 00:01:24.847000,False,0 days 00:00:27.654000,0 days 00:00:29.296000,0 days 00:00:27.897000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+25.0,HAM,44,Mercedes,1.0,0 days 00:01:24.634000,False,0 days 00:00:27.846000,0 days 00:00:28.971000,0 days 00:00:27.817000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+26.0,HAM,44,Mercedes,1.0,0 days 00:01:24.892000,False,0 days 00:00:27.934000,0 days 00:00:29.066000,0 days 00:00:27.892000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+27.0,HAM,44,Mercedes,1.0,0 days 00:01:24.272000,False,0 days 00:00:27.822000,0 days 00:00:28.576000,0 days 00:00:27.874000,SUPERSOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+28.0,HAM,44,Mercedes,1.0,0 days 00:01:28.176000,False,0 days 00:00:27.799000,0 days 00:00:28.372000,0 days 00:00:32.005000,SUPERSOFT,0 days 01:00:00.320000,0 days 01:00:24.075000,0 days 00:00:23.755000,1.0,3.0,Finished,2018,GP Monza,historica
+29.0,HAM,44,Mercedes,3.0,0 days 00:01:42.820000,False,0 days 00:00:47.241000,0 days 00:00:28.103000,0 days 00:00:27.476000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+30.0,HAM,44,Mercedes,3.0,0 days 00:01:22.497000,True,0 days 00:00:27.483000,0 days 00:00:27.664000,0 days 00:00:27.350000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+31.0,HAM,44,Mercedes,3.0,0 days 00:01:22.718000,False,0 days 00:00:27.376000,0 days 00:00:27.986000,0 days 00:00:27.356000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+32.0,HAM,44,Mercedes,3.0,0 days 00:01:22.839000,False,0 days 00:00:27.346000,0 days 00:00:28.096000,0 days 00:00:27.397000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+33.0,HAM,44,Mercedes,3.0,0 days 00:01:23.807000,False,0 days 00:00:27.424000,0 days 00:00:28.476000,0 days 00:00:27.907000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+34.0,HAM,44,Mercedes,3.0,0 days 00:01:24.755000,False,0 days 00:00:27.776000,0 days 00:00:29.032000,0 days 00:00:27.947000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+35.0,HAM,44,Mercedes,3.0,0 days 00:01:24.456000,False,0 days 00:00:27.570000,0 days 00:00:29.048000,0 days 00:00:27.838000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+36.0,HAM,44,Mercedes,2.0,0 days 00:01:24.322000,False,0 days 00:00:27.684000,0 days 00:00:28.763000,0 days 00:00:27.875000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+37.0,HAM,44,Mercedes,2.0,0 days 00:01:24.240000,False,0 days 00:00:27.657000,0 days 00:00:28.735000,0 days 00:00:27.848000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+38.0,HAM,44,Mercedes,2.0,0 days 00:01:23.894000,False,0 days 00:00:27.529000,0 days 00:00:28.595000,0 days 00:00:27.770000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+39.0,HAM,44,Mercedes,2.0,0 days 00:01:23.757000,False,0 days 00:00:27.605000,0 days 00:00:28.555000,0 days 00:00:27.597000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+40.0,HAM,44,Mercedes,2.0,0 days 00:01:24.116000,False,0 days 00:00:27.650000,0 days 00:00:28.637000,0 days 00:00:27.829000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+41.0,HAM,44,Mercedes,2.0,0 days 00:01:23.768000,False,0 days 00:00:27.425000,0 days 00:00:28.710000,0 days 00:00:27.633000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+42.0,HAM,44,Mercedes,2.0,0 days 00:01:24.423000,False,0 days 00:00:27.510000,0 days 00:00:28.675000,0 days 00:00:28.238000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+43.0,HAM,44,Mercedes,2.0,0 days 00:01:24.310000,False,0 days 00:00:27.730000,0 days 00:00:28.643000,0 days 00:00:27.937000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+44.0,HAM,44,Mercedes,2.0,0 days 00:01:24.392000,False,0 days 00:00:27.769000,0 days 00:00:28.798000,0 days 00:00:27.825000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+45.0,HAM,44,Mercedes,1.0,0 days 00:01:23.711000,False,0 days 00:00:27.769000,0 days 00:00:28.304000,0 days 00:00:27.638000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+46.0,HAM,44,Mercedes,1.0,0 days 00:01:23.512000,False,0 days 00:00:27.717000,0 days 00:00:28.188000,0 days 00:00:27.607000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+47.0,HAM,44,Mercedes,1.0,0 days 00:01:23.759000,False,0 days 00:00:27.609000,0 days 00:00:28.425000,0 days 00:00:27.725000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+48.0,HAM,44,Mercedes,1.0,0 days 00:01:23.776000,False,0 days 00:00:27.658000,0 days 00:00:28.311000,0 days 00:00:27.807000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+49.0,HAM,44,Mercedes,1.0,0 days 00:01:24.251000,False,0 days 00:00:27.802000,0 days 00:00:28.569000,0 days 00:00:27.880000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+50.0,HAM,44,Mercedes,1.0,0 days 00:01:24.534000,False,0 days 00:00:28.055000,0 days 00:00:28.537000,0 days 00:00:27.942000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+51.0,HAM,44,Mercedes,1.0,0 days 00:01:24.525000,False,0 days 00:00:27.921000,0 days 00:00:28.515000,0 days 00:00:28.089000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+52.0,HAM,44,Mercedes,1.0,0 days 00:01:25.368000,False,0 days 00:00:28.116000,0 days 00:00:28.950000,0 days 00:00:28.302000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+53.0,HAM,44,Mercedes,1.0,0 days 00:01:26.125000,False,0 days 00:00:28.094000,0 days 00:00:29.025000,0 days 00:00:29.006000,SOFT,,,,1.0,3.0,Finished,2018,GP Monza,historica
+1.0,VET,5,Ferrari,19.0,0 days 00:02:10.568000,False,,0 days 00:00:39.493000,0 days 00:01:01.357000,nan,0 days 00:20:37.073000,0 days 00:21:09.294000,0 days 00:00:32.221000,4.0,2.0,Finished,2018,GP Monza,historica
+2.0,VET,5,Ferrari,18.0,0 days 00:02:17.828000,False,0 days 00:01:00.779000,0 days 00:00:33.590000,0 days 00:00:43.459000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+3.0,VET,5,Ferrari,18.0,0 days 00:01:59.157000,True,0 days 00:00:44.105000,0 days 00:00:42.359000,0 days 00:00:32.693000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+4.0,VET,5,Ferrari,17.0,0 days 00:01:25.442000,True,0 days 00:00:27.568000,0 days 00:00:29.324000,0 days 00:00:28.550000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+5.0,VET,5,Ferrari,16.0,0 days 00:01:26.672000,False,0 days 00:00:27.584000,0 days 00:00:30.449000,0 days 00:00:28.639000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+6.0,VET,5,Ferrari,15.0,0 days 00:01:26.288000,False,0 days 00:00:27.599000,0 days 00:00:30.030000,0 days 00:00:28.659000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+7.0,VET,5,Ferrari,15.0,0 days 00:01:25.975000,False,0 days 00:00:27.717000,0 days 00:00:29.293000,0 days 00:00:28.965000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+8.0,VET,5,Ferrari,15.0,0 days 00:01:27.526000,False,0 days 00:00:27.952000,0 days 00:00:30.787000,0 days 00:00:28.787000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+9.0,VET,5,Ferrari,12.0,0 days 00:01:26.853000,False,0 days 00:00:27.982000,0 days 00:00:29.842000,0 days 00:00:29.029000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+10.0,VET,5,Ferrari,11.0,0 days 00:01:25.463000,False,0 days 00:00:27.721000,0 days 00:00:29.269000,0 days 00:00:28.473000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+11.0,VET,5,Ferrari,11.0,0 days 00:01:24.933000,True,0 days 00:00:27.797000,0 days 00:00:28.898000,0 days 00:00:28.238000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+12.0,VET,5,Ferrari,11.0,0 days 00:01:24.854000,True,0 days 00:00:27.762000,0 days 00:00:28.942000,0 days 00:00:28.150000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+13.0,VET,5,Ferrari,11.0,0 days 00:01:25.088000,False,0 days 00:00:27.757000,0 days 00:00:29.010000,0 days 00:00:28.321000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+14.0,VET,5,Ferrari,10.0,0 days 00:01:25.551000,False,0 days 00:00:27.628000,0 days 00:00:29.304000,0 days 00:00:28.619000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+15.0,VET,5,Ferrari,10.0,0 days 00:01:25.738000,False,0 days 00:00:27.704000,0 days 00:00:29.260000,0 days 00:00:28.774000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+16.0,VET,5,Ferrari,9.0,0 days 00:01:25.257000,False,0 days 00:00:27.486000,0 days 00:00:29.429000,0 days 00:00:28.342000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+17.0,VET,5,Ferrari,9.0,0 days 00:01:25.979000,False,0 days 00:00:28.445000,0 days 00:00:29.277000,0 days 00:00:28.257000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+18.0,VET,5,Ferrari,8.0,0 days 00:01:24.954000,False,0 days 00:00:27.504000,0 days 00:00:29.175000,0 days 00:00:28.275000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+19.0,VET,5,Ferrari,8.0,0 days 00:01:25.340000,False,0 days 00:00:27.794000,0 days 00:00:29.110000,0 days 00:00:28.436000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+20.0,VET,5,Ferrari,7.0,0 days 00:01:24.564000,True,0 days 00:00:27.664000,0 days 00:00:28.765000,0 days 00:00:28.135000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+21.0,VET,5,Ferrari,7.0,0 days 00:01:24.905000,False,0 days 00:00:27.812000,0 days 00:00:28.985000,0 days 00:00:28.108000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+22.0,VET,5,Ferrari,7.0,0 days 00:01:24.566000,False,0 days 00:00:27.569000,0 days 00:00:28.900000,0 days 00:00:28.097000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+23.0,VET,5,Ferrari,6.0,0 days 00:01:25.055000,False,0 days 00:00:27.559000,0 days 00:00:29.203000,0 days 00:00:28.293000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+24.0,VET,5,Ferrari,5.0,0 days 00:01:24.794000,False,0 days 00:00:27.565000,0 days 00:00:29.140000,0 days 00:00:28.089000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+25.0,VET,5,Ferrari,5.0,0 days 00:01:25.296000,False,0 days 00:00:27.789000,0 days 00:00:29.400000,0 days 00:00:28.107000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+26.0,VET,5,Ferrari,5.0,0 days 00:01:25.108000,False,0 days 00:00:27.798000,0 days 00:00:29.130000,0 days 00:00:28.180000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+27.0,VET,5,Ferrari,4.0,0 days 00:01:24.566000,False,0 days 00:00:27.725000,0 days 00:00:28.800000,0 days 00:00:28.041000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+28.0,VET,5,Ferrari,4.0,0 days 00:01:24.470000,True,0 days 00:00:27.724000,0 days 00:00:28.752000,0 days 00:00:27.994000,SOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+29.0,VET,5,Ferrari,5.0,0 days 00:01:29.444000,False,0 days 00:00:27.862000,0 days 00:00:29.158000,0 days 00:00:32.424000,SOFT,0 days 01:01:58.735000,0 days 01:02:23.035000,0 days 00:00:24.300000,4.0,2.0,Finished,2018,GP Monza,historica
+30.0,VET,5,Ferrari,10.0,0 days 00:01:44.145000,False,0 days 00:00:47.594000,0 days 00:00:28.738000,0 days 00:00:27.813000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+31.0,VET,5,Ferrari,9.0,0 days 00:01:23.663000,True,0 days 00:00:27.295000,0 days 00:00:28.491000,0 days 00:00:27.877000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+32.0,VET,5,Ferrari,8.0,0 days 00:01:23.068000,True,0 days 00:00:27.179000,0 days 00:00:28.241000,0 days 00:00:27.648000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+33.0,VET,5,Ferrari,8.0,0 days 00:01:23.472000,False,0 days 00:00:27.574000,0 days 00:00:28.226000,0 days 00:00:27.672000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+34.0,VET,5,Ferrari,7.0,0 days 00:01:23.199000,False,0 days 00:00:27.283000,0 days 00:00:28.334000,0 days 00:00:27.582000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+35.0,VET,5,Ferrari,7.0,0 days 00:01:23.538000,False,0 days 00:00:27.509000,0 days 00:00:28.422000,0 days 00:00:27.607000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+36.0,VET,5,Ferrari,7.0,0 days 00:01:23.255000,False,0 days 00:00:27.490000,0 days 00:00:28.226000,0 days 00:00:27.539000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+37.0,VET,5,Ferrari,7.0,0 days 00:01:22.952000,True,0 days 00:00:27.431000,0 days 00:00:28.009000,0 days 00:00:27.512000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+38.0,VET,5,Ferrari,5.0,0 days 00:01:24.271000,False,0 days 00:00:27.350000,0 days 00:00:28.509000,0 days 00:00:28.412000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+39.0,VET,5,Ferrari,5.0,0 days 00:01:23.600000,False,0 days 00:00:27.661000,0 days 00:00:28.240000,0 days 00:00:27.699000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+40.0,VET,5,Ferrari,5.0,0 days 00:01:23.473000,False,0 days 00:00:27.641000,0 days 00:00:28.215000,0 days 00:00:27.617000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+41.0,VET,5,Ferrari,5.0,0 days 00:01:23.174000,False,0 days 00:00:27.531000,0 days 00:00:28.155000,0 days 00:00:27.488000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+42.0,VET,5,Ferrari,5.0,0 days 00:01:23.542000,False,0 days 00:00:27.676000,0 days 00:00:28.197000,0 days 00:00:27.669000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+43.0,VET,5,Ferrari,5.0,0 days 00:01:23.270000,False,0 days 00:00:27.565000,0 days 00:00:28.143000,0 days 00:00:27.562000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+44.0,VET,5,Ferrari,5.0,0 days 00:01:23.311000,False,0 days 00:00:27.612000,0 days 00:00:28.121000,0 days 00:00:27.578000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+45.0,VET,5,Ferrari,5.0,0 days 00:01:22.884000,True,0 days 00:00:27.520000,0 days 00:00:27.985000,0 days 00:00:27.379000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+46.0,VET,5,Ferrari,5.0,0 days 00:01:22.927000,False,0 days 00:00:27.555000,0 days 00:00:27.985000,0 days 00:00:27.387000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+47.0,VET,5,Ferrari,5.0,0 days 00:01:22.702000,True,0 days 00:00:27.407000,0 days 00:00:27.970000,0 days 00:00:27.325000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+48.0,VET,5,Ferrari,5.0,0 days 00:01:22.828000,False,0 days 00:00:27.336000,0 days 00:00:28.170000,0 days 00:00:27.322000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+49.0,VET,5,Ferrari,5.0,0 days 00:01:23.405000,False,0 days 00:00:27.190000,0 days 00:00:28.372000,0 days 00:00:27.843000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+50.0,VET,5,Ferrari,5.0,0 days 00:01:23.187000,False,0 days 00:00:27.322000,0 days 00:00:28.235000,0 days 00:00:27.630000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+51.0,VET,5,Ferrari,5.0,0 days 00:01:22.505000,True,0 days 00:00:27.285000,0 days 00:00:27.892000,0 days 00:00:27.328000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+52.0,VET,5,Ferrari,5.0,0 days 00:01:23.116000,False,0 days 00:00:27.455000,0 days 00:00:28.260000,0 days 00:00:27.401000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+53.0,VET,5,Ferrari,5.0,0 days 00:01:22.914000,False,0 days 00:00:27.398000,0 days 00:00:28.241000,0 days 00:00:27.275000,SUPERSOFT,,,,4.0,2.0,Finished,2018,GP Monza,historica
+1.0,SAI,55,Renault,7.0,0 days 00:01:54.630000,False,,0 days 00:00:31.482000,0 days 00:00:51.742000,nan,,,,8.0,7.0,Finished,2018,GP Monza,historica
+2.0,SAI,55,Renault,6.0,0 days 00:02:17.249000,True,0 days 00:00:46.118000,0 days 00:00:45.533000,0 days 00:00:45.598000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+3.0,SAI,55,Renault,6.0,0 days 00:02:04.452000,True,0 days 00:00:45.770000,0 days 00:00:42.851000,0 days 00:00:35.831000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+4.0,SAI,55,Renault,6.0,0 days 00:01:27.748000,True,0 days 00:00:28.552000,0 days 00:00:30.232000,0 days 00:00:28.964000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+5.0,SAI,55,Renault,6.0,0 days 00:01:26.379000,True,0 days 00:00:28.143000,0 days 00:00:29.579000,0 days 00:00:28.657000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+6.0,SAI,55,Renault,6.0,0 days 00:01:26.288000,True,0 days 00:00:28.125000,0 days 00:00:29.368000,0 days 00:00:28.795000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+7.0,SAI,55,Renault,6.0,0 days 00:01:26.275000,True,0 days 00:00:27.928000,0 days 00:00:29.564000,0 days 00:00:28.783000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+8.0,SAI,55,Renault,6.0,0 days 00:01:26.019000,True,0 days 00:00:28.045000,0 days 00:00:29.442000,0 days 00:00:28.532000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+9.0,SAI,55,Renault,6.0,0 days 00:01:26.265000,False,0 days 00:00:28.080000,0 days 00:00:29.523000,0 days 00:00:28.662000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+10.0,SAI,55,Renault,6.0,0 days 00:01:26.272000,False,0 days 00:00:28.237000,0 days 00:00:29.432000,0 days 00:00:28.603000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+11.0,SAI,55,Renault,6.0,0 days 00:01:26.354000,False,0 days 00:00:28.207000,0 days 00:00:29.440000,0 days 00:00:28.707000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+12.0,SAI,55,Renault,6.0,0 days 00:01:26.128000,False,0 days 00:00:28.054000,0 days 00:00:29.411000,0 days 00:00:28.663000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+13.0,SAI,55,Renault,6.0,0 days 00:01:26.665000,False,0 days 00:00:28.233000,0 days 00:00:29.681000,0 days 00:00:28.751000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+14.0,SAI,55,Renault,7.0,0 days 00:01:26.885000,False,0 days 00:00:28.564000,0 days 00:00:29.555000,0 days 00:00:28.766000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+15.0,SAI,55,Renault,7.0,0 days 00:01:26.329000,False,0 days 00:00:28.067000,0 days 00:00:29.442000,0 days 00:00:28.820000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+16.0,SAI,55,Renault,7.0,0 days 00:01:25.909000,True,0 days 00:00:28.153000,0 days 00:00:29.194000,0 days 00:00:28.562000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+17.0,SAI,55,Renault,7.0,0 days 00:01:26.263000,False,0 days 00:00:28.198000,0 days 00:00:29.295000,0 days 00:00:28.770000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+18.0,SAI,55,Renault,7.0,0 days 00:01:26.405000,False,0 days 00:00:28.262000,0 days 00:00:29.283000,0 days 00:00:28.860000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+19.0,SAI,55,Renault,7.0,0 days 00:01:26.238000,False,0 days 00:00:28.241000,0 days 00:00:29.269000,0 days 00:00:28.728000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+20.0,SAI,55,Renault,8.0,0 days 00:01:26.854000,False,0 days 00:00:28.673000,0 days 00:00:29.452000,0 days 00:00:28.729000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+21.0,SAI,55,Renault,8.0,0 days 00:01:25.981000,False,0 days 00:00:28.113000,0 days 00:00:29.308000,0 days 00:00:28.560000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+22.0,SAI,55,Renault,8.0,0 days 00:01:25.938000,False,0 days 00:00:28.073000,0 days 00:00:29.239000,0 days 00:00:28.626000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+23.0,SAI,55,Renault,8.0,0 days 00:01:26.666000,False,0 days 00:00:28.310000,0 days 00:00:29.628000,0 days 00:00:28.728000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+24.0,SAI,55,Renault,8.0,0 days 00:01:27.331000,False,0 days 00:00:28.545000,0 days 00:00:29.910000,0 days 00:00:28.876000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+25.0,SAI,55,Renault,8.0,0 days 00:01:26.353000,False,0 days 00:00:28.017000,0 days 00:00:29.834000,0 days 00:00:28.502000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+26.0,SAI,55,Renault,8.0,0 days 00:01:25.983000,False,0 days 00:00:28.137000,0 days 00:00:29.209000,0 days 00:00:28.637000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+27.0,SAI,55,Renault,8.0,0 days 00:01:26.127000,False,0 days 00:00:28.165000,0 days 00:00:29.312000,0 days 00:00:28.650000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+28.0,SAI,55,Renault,8.0,0 days 00:01:25.935000,False,0 days 00:00:28.119000,0 days 00:00:29.223000,0 days 00:00:28.593000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+29.0,SAI,55,Renault,8.0,0 days 00:01:25.942000,False,0 days 00:00:28.173000,0 days 00:00:29.214000,0 days 00:00:28.555000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+30.0,SAI,55,Renault,7.0,0 days 00:01:25.956000,False,0 days 00:00:28.171000,0 days 00:00:29.180000,0 days 00:00:28.605000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+31.0,SAI,55,Renault,7.0,0 days 00:01:25.963000,False,0 days 00:00:28.170000,0 days 00:00:29.215000,0 days 00:00:28.578000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+32.0,SAI,55,Renault,7.0,0 days 00:01:25.612000,True,0 days 00:00:28.058000,0 days 00:00:28.995000,0 days 00:00:28.559000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+33.0,SAI,55,Renault,7.0,0 days 00:01:26.179000,False,0 days 00:00:28.545000,0 days 00:00:29.115000,0 days 00:00:28.519000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+34.0,SAI,55,Renault,8.0,0 days 00:01:26.489000,False,0 days 00:00:28.190000,0 days 00:00:29.811000,0 days 00:00:28.488000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+35.0,SAI,55,Renault,8.0,0 days 00:01:25.643000,False,0 days 00:00:28.014000,0 days 00:00:29.163000,0 days 00:00:28.466000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+36.0,SAI,55,Renault,8.0,0 days 00:01:25.794000,False,0 days 00:00:27.999000,0 days 00:00:29.184000,0 days 00:00:28.611000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+37.0,SAI,55,Renault,8.0,0 days 00:01:25.827000,False,0 days 00:00:27.994000,0 days 00:00:29.216000,0 days 00:00:28.617000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+38.0,SAI,55,Renault,8.0,0 days 00:01:26.142000,False,0 days 00:00:28.228000,0 days 00:00:29.386000,0 days 00:00:28.528000,SUPERSOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+39.0,SAI,55,Renault,7.0,0 days 00:01:30.536000,False,0 days 00:00:28.259000,0 days 00:00:29.341000,0 days 00:00:32.936000,SUPERSOFT,0 days 01:16:32.569000,0 days 01:16:58.354000,0 days 00:00:25.785000,8.0,7.0,Finished,2018,GP Monza,historica
+40.0,SAI,55,Renault,9.0,0 days 00:01:46.333000,False,0 days 00:00:49.216000,0 days 00:00:28.852000,0 days 00:00:28.265000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+41.0,SAI,55,Renault,9.0,0 days 00:01:24.725000,True,0 days 00:00:28.026000,0 days 00:00:28.531000,0 days 00:00:28.168000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+42.0,SAI,55,Renault,9.0,0 days 00:01:24.921000,False,0 days 00:00:28.068000,0 days 00:00:28.599000,0 days 00:00:28.254000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+43.0,SAI,55,Renault,9.0,0 days 00:01:24.758000,False,0 days 00:00:28.045000,0 days 00:00:28.481000,0 days 00:00:28.232000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+44.0,SAI,55,Renault,9.0,0 days 00:01:24.531000,True,0 days 00:00:27.921000,0 days 00:00:28.458000,0 days 00:00:28.152000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+45.0,SAI,55,Renault,9.0,0 days 00:01:24.565000,False,0 days 00:00:27.996000,0 days 00:00:28.495000,0 days 00:00:28.074000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+46.0,SAI,55,Renault,9.0,0 days 00:01:24.563000,False,0 days 00:00:28.001000,0 days 00:00:28.444000,0 days 00:00:28.118000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+47.0,SAI,55,Renault,9.0,0 days 00:01:24.553000,False,0 days 00:00:27.960000,0 days 00:00:28.467000,0 days 00:00:28.126000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+48.0,SAI,55,Renault,9.0,0 days 00:01:24.612000,False,0 days 00:00:27.980000,0 days 00:00:28.481000,0 days 00:00:28.151000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+49.0,SAI,55,Renault,9.0,0 days 00:01:24.502000,True,0 days 00:00:27.963000,0 days 00:00:28.401000,0 days 00:00:28.138000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+50.0,SAI,55,Renault,9.0,0 days 00:01:24.674000,False,0 days 00:00:27.911000,0 days 00:00:28.428000,0 days 00:00:28.335000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+51.0,SAI,55,Renault,9.0,0 days 00:01:24.804000,False,0 days 00:00:27.881000,0 days 00:00:28.737000,0 days 00:00:28.186000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+52.0,SAI,55,Renault,9.0,0 days 00:01:24.056000,True,0 days 00:00:27.610000,0 days 00:00:28.383000,0 days 00:00:28.063000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+53.0,SAI,55,Renault,9.0,0 days 00:01:25.023000,False,0 days 00:00:27.986000,0 days 00:00:28.892000,0 days 00:00:28.145000,SOFT,,,,8.0,7.0,Finished,2018,GP Monza,historica
+1.0,RAI,7,Ferrari,1.0,0 days 00:01:47.025000,False,,0 days 00:00:29.317000,0 days 00:00:48.145000,nan,,,,2.0,1.0,Finished,2018,GP Monza,historica
+2.0,RAI,7,Ferrari,1.0,0 days 00:02:17.567000,True,0 days 00:00:46.742000,0 days 00:00:44.879000,0 days 00:00:45.946000,nan,,,,2.0,1.0,Finished,2018,GP Monza,historica
+3.0,RAI,7,Ferrari,1.0,0 days 00:02:09.263000,True,0 days 00:00:45.739000,0 days 00:00:45.197000,0 days 00:00:38.327000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+4.0,RAI,7,Ferrari,1.0,0 days 00:01:25.439000,True,0 days 00:00:27.969000,0 days 00:00:29.477000,0 days 00:00:27.993000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+5.0,RAI,7,Ferrari,1.0,0 days 00:01:24.871000,True,0 days 00:00:27.967000,0 days 00:00:28.948000,0 days 00:00:27.956000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+6.0,RAI,7,Ferrari,1.0,0 days 00:01:24.859000,True,0 days 00:00:28.132000,0 days 00:00:28.846000,0 days 00:00:27.881000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+7.0,RAI,7,Ferrari,1.0,0 days 00:01:24.538000,True,0 days 00:00:27.964000,0 days 00:00:28.648000,0 days 00:00:27.926000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+8.0,RAI,7,Ferrari,1.0,0 days 00:01:24.631000,False,0 days 00:00:28.048000,0 days 00:00:28.718000,0 days 00:00:27.865000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+9.0,RAI,7,Ferrari,1.0,0 days 00:01:24.500000,True,0 days 00:00:27.986000,0 days 00:00:28.717000,0 days 00:00:27.797000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+10.0,RAI,7,Ferrari,1.0,0 days 00:01:24.686000,False,0 days 00:00:28.038000,0 days 00:00:28.701000,0 days 00:00:27.947000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+11.0,RAI,7,Ferrari,1.0,0 days 00:01:24.782000,False,0 days 00:00:28.151000,0 days 00:00:28.704000,0 days 00:00:27.927000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+12.0,RAI,7,Ferrari,1.0,0 days 00:01:24.978000,False,0 days 00:00:28.111000,0 days 00:00:28.834000,0 days 00:00:28.033000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+13.0,RAI,7,Ferrari,1.0,0 days 00:01:24.648000,False,0 days 00:00:27.979000,0 days 00:00:28.693000,0 days 00:00:27.976000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+14.0,RAI,7,Ferrari,1.0,0 days 00:01:24.512000,False,0 days 00:00:28.090000,0 days 00:00:28.649000,0 days 00:00:27.773000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+15.0,RAI,7,Ferrari,1.0,0 days 00:01:24.582000,False,0 days 00:00:28.025000,0 days 00:00:28.834000,0 days 00:00:27.723000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+16.0,RAI,7,Ferrari,1.0,0 days 00:01:24.956000,False,0 days 00:00:28.211000,0 days 00:00:28.825000,0 days 00:00:27.920000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+17.0,RAI,7,Ferrari,1.0,0 days 00:01:24.742000,False,0 days 00:00:28.036000,0 days 00:00:28.792000,0 days 00:00:27.914000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+18.0,RAI,7,Ferrari,1.0,0 days 00:01:24.839000,False,0 days 00:00:27.865000,0 days 00:00:29.016000,0 days 00:00:27.958000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+19.0,RAI,7,Ferrari,1.0,0 days 00:01:24.516000,False,0 days 00:00:28.063000,0 days 00:00:28.643000,0 days 00:00:27.810000,SUPERSOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+20.0,RAI,7,Ferrari,2.0,0 days 00:01:29.105000,False,0 days 00:00:28.151000,0 days 00:00:28.705000,0 days 00:00:32.249000,SUPERSOFT,0 days 00:48:45.554000,0 days 00:49:09.425000,0 days 00:00:23.871000,2.0,1.0,Finished,2018,GP Monza,historica
+21.0,RAI,7,Ferrari,4.0,0 days 00:01:42.540000,False,0 days 00:00:46.957000,0 days 00:00:28.238000,0 days 00:00:27.345000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+22.0,RAI,7,Ferrari,4.0,0 days 00:01:23.953000,True,0 days 00:00:28.015000,0 days 00:00:28.505000,0 days 00:00:27.433000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+23.0,RAI,7,Ferrari,4.0,0 days 00:01:23.535000,True,0 days 00:00:27.696000,0 days 00:00:28.353000,0 days 00:00:27.486000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+24.0,RAI,7,Ferrari,4.0,0 days 00:01:23.840000,False,0 days 00:00:27.600000,0 days 00:00:28.655000,0 days 00:00:27.585000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+25.0,RAI,7,Ferrari,4.0,0 days 00:01:23.586000,False,0 days 00:00:27.388000,0 days 00:00:28.845000,0 days 00:00:27.353000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+26.0,RAI,7,Ferrari,4.0,0 days 00:01:23.670000,False,0 days 00:00:27.582000,0 days 00:00:28.607000,0 days 00:00:27.481000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+27.0,RAI,7,Ferrari,3.0,0 days 00:01:23.733000,False,0 days 00:00:27.691000,0 days 00:00:28.537000,0 days 00:00:27.505000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+28.0,RAI,7,Ferrari,3.0,0 days 00:01:23.515000,True,0 days 00:00:27.736000,0 days 00:00:28.420000,0 days 00:00:27.359000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+29.0,RAI,7,Ferrari,2.0,0 days 00:01:24.002000,False,0 days 00:00:27.978000,0 days 00:00:28.369000,0 days 00:00:27.655000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+30.0,RAI,7,Ferrari,2.0,0 days 00:01:24.097000,False,0 days 00:00:27.823000,0 days 00:00:28.435000,0 days 00:00:27.839000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+31.0,RAI,7,Ferrari,2.0,0 days 00:01:23.777000,False,0 days 00:00:27.512000,0 days 00:00:28.525000,0 days 00:00:27.740000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+32.0,RAI,7,Ferrari,2.0,0 days 00:01:23.860000,False,0 days 00:00:27.498000,0 days 00:00:28.676000,0 days 00:00:27.686000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+33.0,RAI,7,Ferrari,2.0,0 days 00:01:24.837000,False,0 days 00:00:27.615000,0 days 00:00:29.249000,0 days 00:00:27.973000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+34.0,RAI,7,Ferrari,2.0,0 days 00:01:24.537000,False,0 days 00:00:27.618000,0 days 00:00:28.949000,0 days 00:00:27.970000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+35.0,RAI,7,Ferrari,2.0,0 days 00:01:24.257000,False,0 days 00:00:27.742000,0 days 00:00:28.633000,0 days 00:00:27.882000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+36.0,RAI,7,Ferrari,1.0,0 days 00:01:24.236000,False,0 days 00:00:27.827000,0 days 00:00:28.652000,0 days 00:00:27.757000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+37.0,RAI,7,Ferrari,1.0,0 days 00:01:24.239000,False,0 days 00:00:27.904000,0 days 00:00:28.545000,0 days 00:00:27.790000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+38.0,RAI,7,Ferrari,1.0,0 days 00:01:23.854000,False,0 days 00:00:27.950000,0 days 00:00:28.423000,0 days 00:00:27.481000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+39.0,RAI,7,Ferrari,1.0,0 days 00:01:23.936000,False,0 days 00:00:27.926000,0 days 00:00:28.393000,0 days 00:00:27.617000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+40.0,RAI,7,Ferrari,1.0,0 days 00:01:23.970000,False,0 days 00:00:28.010000,0 days 00:00:28.534000,0 days 00:00:27.426000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+41.0,RAI,7,Ferrari,1.0,0 days 00:01:23.897000,False,0 days 00:00:27.928000,0 days 00:00:28.550000,0 days 00:00:27.419000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+42.0,RAI,7,Ferrari,1.0,0 days 00:01:24.652000,False,0 days 00:00:27.819000,0 days 00:00:28.712000,0 days 00:00:28.121000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+43.0,RAI,7,Ferrari,1.0,0 days 00:01:24.249000,False,0 days 00:00:27.888000,0 days 00:00:28.678000,0 days 00:00:27.683000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+44.0,RAI,7,Ferrari,1.0,0 days 00:01:24.583000,False,0 days 00:00:28.112000,0 days 00:00:28.647000,0 days 00:00:27.824000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+45.0,RAI,7,Ferrari,2.0,0 days 00:01:26.019000,False,0 days 00:00:28.611000,0 days 00:00:29.417000,0 days 00:00:27.991000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+46.0,RAI,7,Ferrari,2.0,0 days 00:01:24.985000,False,0 days 00:00:27.933000,0 days 00:00:28.935000,0 days 00:00:28.117000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+47.0,RAI,7,Ferrari,2.0,0 days 00:01:24.722000,False,0 days 00:00:27.925000,0 days 00:00:28.756000,0 days 00:00:28.041000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+48.0,RAI,7,Ferrari,2.0,0 days 00:01:24.857000,False,0 days 00:00:27.898000,0 days 00:00:28.894000,0 days 00:00:28.065000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+49.0,RAI,7,Ferrari,2.0,0 days 00:01:25.298000,False,0 days 00:00:27.958000,0 days 00:00:29.080000,0 days 00:00:28.260000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+50.0,RAI,7,Ferrari,2.0,0 days 00:01:25.351000,False,0 days 00:00:28.056000,0 days 00:00:29.034000,0 days 00:00:28.261000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+51.0,RAI,7,Ferrari,2.0,0 days 00:01:25.075000,False,0 days 00:00:27.913000,0 days 00:00:28.894000,0 days 00:00:28.268000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+52.0,RAI,7,Ferrari,2.0,0 days 00:01:25.655000,False,0 days 00:00:28.183000,0 days 00:00:29.146000,0 days 00:00:28.326000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+53.0,RAI,7,Ferrari,2.0,0 days 00:01:26.833000,False,0 days 00:00:28.509000,0 days 00:00:29.764000,0 days 00:00:28.560000,SOFT,,,,2.0,1.0,Finished,2018,GP Monza,historica
+1.0,BOT,77,Mercedes,5.0,0 days 00:01:52.240000,False,,0 days 00:00:31.145000,0 days 00:00:49.794000,nan,,,,3.0,4.0,Finished,2018,GP Monza,historica
+2.0,BOT,77,Mercedes,4.0,0 days 00:02:17.044000,True,0 days 00:00:44.870000,0 days 00:00:45.550000,0 days 00:00:46.624000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+3.0,BOT,77,Mercedes,4.0,0 days 00:02:06.167000,True,0 days 00:00:44.905000,0 days 00:00:44.582000,0 days 00:00:36.680000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+4.0,BOT,77,Mercedes,4.0,0 days 00:01:26.776000,True,0 days 00:00:28.094000,0 days 00:00:29.720000,0 days 00:00:28.962000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+5.0,BOT,77,Mercedes,4.0,0 days 00:01:25.763000,True,0 days 00:00:27.952000,0 days 00:00:29.386000,0 days 00:00:28.425000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+6.0,BOT,77,Mercedes,4.0,0 days 00:01:25.538000,True,0 days 00:00:28.035000,0 days 00:00:29.118000,0 days 00:00:28.385000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+7.0,BOT,77,Mercedes,4.0,0 days 00:01:24.981000,True,0 days 00:00:27.736000,0 days 00:00:29.033000,0 days 00:00:28.212000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+8.0,BOT,77,Mercedes,4.0,0 days 00:01:25.070000,False,0 days 00:00:27.666000,0 days 00:00:29.243000,0 days 00:00:28.161000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+9.0,BOT,77,Mercedes,4.0,0 days 00:01:25.163000,False,0 days 00:00:27.649000,0 days 00:00:29.213000,0 days 00:00:28.301000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+10.0,BOT,77,Mercedes,4.0,0 days 00:01:25.176000,False,0 days 00:00:27.783000,0 days 00:00:29.105000,0 days 00:00:28.288000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+11.0,BOT,77,Mercedes,4.0,0 days 00:01:25.203000,False,0 days 00:00:27.851000,0 days 00:00:29.014000,0 days 00:00:28.338000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+12.0,BOT,77,Mercedes,4.0,0 days 00:01:25.065000,False,0 days 00:00:27.856000,0 days 00:00:29.005000,0 days 00:00:28.204000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+13.0,BOT,77,Mercedes,4.0,0 days 00:01:25.224000,False,0 days 00:00:27.812000,0 days 00:00:29.200000,0 days 00:00:28.212000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+14.0,BOT,77,Mercedes,4.0,0 days 00:01:25.024000,False,0 days 00:00:27.751000,0 days 00:00:29.134000,0 days 00:00:28.139000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+15.0,BOT,77,Mercedes,4.0,0 days 00:01:25.284000,False,0 days 00:00:27.947000,0 days 00:00:29.078000,0 days 00:00:28.259000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+16.0,BOT,77,Mercedes,4.0,0 days 00:01:25.014000,False,0 days 00:00:27.964000,0 days 00:00:28.936000,0 days 00:00:28.114000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+17.0,BOT,77,Mercedes,4.0,0 days 00:01:24.915000,True,0 days 00:00:27.915000,0 days 00:00:28.821000,0 days 00:00:28.179000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+18.0,BOT,77,Mercedes,4.0,0 days 00:01:24.582000,True,0 days 00:00:27.741000,0 days 00:00:28.729000,0 days 00:00:28.112000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+19.0,BOT,77,Mercedes,4.0,0 days 00:01:25.291000,False,0 days 00:00:27.713000,0 days 00:00:29.389000,0 days 00:00:28.189000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+20.0,BOT,77,Mercedes,4.0,0 days 00:01:25.080000,False,0 days 00:00:27.726000,0 days 00:00:29.070000,0 days 00:00:28.284000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+21.0,BOT,77,Mercedes,3.0,0 days 00:01:25.169000,False,0 days 00:00:27.752000,0 days 00:00:29.214000,0 days 00:00:28.203000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+22.0,BOT,77,Mercedes,3.0,0 days 00:01:25.271000,False,0 days 00:00:28.073000,0 days 00:00:29.058000,0 days 00:00:28.140000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+23.0,BOT,77,Mercedes,3.0,0 days 00:01:25.325000,False,0 days 00:00:27.867000,0 days 00:00:29.164000,0 days 00:00:28.294000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+24.0,BOT,77,Mercedes,3.0,0 days 00:01:25.076000,False,0 days 00:00:27.928000,0 days 00:00:29.069000,0 days 00:00:28.079000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+25.0,BOT,77,Mercedes,3.0,0 days 00:01:26.181000,False,0 days 00:00:27.981000,0 days 00:00:30.179000,0 days 00:00:28.021000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+26.0,BOT,77,Mercedes,2.0,0 days 00:01:25.473000,False,0 days 00:00:27.770000,0 days 00:00:29.798000,0 days 00:00:27.905000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+27.0,BOT,77,Mercedes,2.0,0 days 00:01:24.199000,True,0 days 00:00:27.778000,0 days 00:00:28.673000,0 days 00:00:27.748000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+28.0,BOT,77,Mercedes,2.0,0 days 00:01:24.359000,False,0 days 00:00:27.881000,0 days 00:00:28.612000,0 days 00:00:27.866000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+29.0,BOT,77,Mercedes,1.0,0 days 00:01:24.551000,False,0 days 00:00:27.990000,0 days 00:00:28.675000,0 days 00:00:27.886000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+30.0,BOT,77,Mercedes,1.0,0 days 00:01:24.370000,False,0 days 00:00:27.966000,0 days 00:00:28.575000,0 days 00:00:27.829000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+31.0,BOT,77,Mercedes,1.0,0 days 00:01:23.847000,True,0 days 00:00:27.787000,0 days 00:00:28.345000,0 days 00:00:27.715000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+32.0,BOT,77,Mercedes,1.0,0 days 00:01:24.157000,False,0 days 00:00:27.722000,0 days 00:00:28.508000,0 days 00:00:27.927000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+33.0,BOT,77,Mercedes,1.0,0 days 00:01:24.762000,False,0 days 00:00:27.920000,0 days 00:00:28.994000,0 days 00:00:27.848000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+34.0,BOT,77,Mercedes,1.0,0 days 00:01:24.560000,False,0 days 00:00:27.895000,0 days 00:00:28.717000,0 days 00:00:27.948000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+35.0,BOT,77,Mercedes,1.0,0 days 00:01:24.090000,False,0 days 00:00:27.869000,0 days 00:00:28.488000,0 days 00:00:27.733000,SUPERSOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+36.0,BOT,77,Mercedes,3.0,0 days 00:01:28.735000,False,0 days 00:00:27.825000,0 days 00:00:28.505000,0 days 00:00:32.405000,SUPERSOFT,0 days 01:11:31.235000,0 days 01:11:55.002000,0 days 00:00:23.767000,3.0,4.0,Finished,2018,GP Monza,historica
+37.0,BOT,77,Mercedes,4.0,0 days 00:01:42.981000,False,0 days 00:00:46.955000,0 days 00:00:28.542000,0 days 00:00:27.484000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+38.0,BOT,77,Mercedes,4.0,0 days 00:01:23.062000,True,0 days 00:00:27.587000,0 days 00:00:28.108000,0 days 00:00:27.367000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+39.0,BOT,77,Mercedes,4.0,0 days 00:01:22.907000,True,0 days 00:00:27.498000,0 days 00:00:28.044000,0 days 00:00:27.365000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+40.0,BOT,77,Mercedes,4.0,0 days 00:01:23.082000,False,0 days 00:00:27.496000,0 days 00:00:28.177000,0 days 00:00:27.409000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+41.0,BOT,77,Mercedes,4.0,0 days 00:01:23.038000,False,0 days 00:00:27.313000,0 days 00:00:28.128000,0 days 00:00:27.597000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+42.0,BOT,77,Mercedes,4.0,0 days 00:01:24.116000,False,0 days 00:00:27.482000,0 days 00:00:28.925000,0 days 00:00:27.709000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+43.0,BOT,77,Mercedes,4.0,0 days 00:01:27.893000,False,0 days 00:00:31.508000,0 days 00:00:28.768000,0 days 00:00:27.617000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+44.0,BOT,77,Mercedes,4.0,0 days 00:01:23.260000,False,0 days 00:00:27.607000,0 days 00:00:28.155000,0 days 00:00:27.498000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+45.0,BOT,77,Mercedes,4.0,0 days 00:01:23.174000,False,0 days 00:00:27.798000,0 days 00:00:28.070000,0 days 00:00:27.306000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+46.0,BOT,77,Mercedes,4.0,0 days 00:01:23.042000,False,0 days 00:00:27.412000,0 days 00:00:28.125000,0 days 00:00:27.505000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+47.0,BOT,77,Mercedes,4.0,0 days 00:01:23.525000,False,0 days 00:00:27.524000,0 days 00:00:28.166000,0 days 00:00:27.835000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+48.0,BOT,77,Mercedes,4.0,0 days 00:01:23.908000,False,0 days 00:00:27.861000,0 days 00:00:28.422000,0 days 00:00:27.625000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+49.0,BOT,77,Mercedes,4.0,0 days 00:01:24.545000,False,0 days 00:00:27.369000,0 days 00:00:29.358000,0 days 00:00:27.818000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+50.0,BOT,77,Mercedes,4.0,0 days 00:01:23.665000,False,0 days 00:00:27.560000,0 days 00:00:28.528000,0 days 00:00:27.577000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+51.0,BOT,77,Mercedes,4.0,0 days 00:01:23.734000,False,0 days 00:00:27.670000,0 days 00:00:28.407000,0 days 00:00:27.657000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+52.0,BOT,77,Mercedes,4.0,0 days 00:01:23.637000,False,0 days 00:00:27.551000,0 days 00:00:28.534000,0 days 00:00:27.552000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+53.0,BOT,77,Mercedes,4.0,0 days 00:01:24.256000,False,0 days 00:00:27.291000,0 days 00:00:29.083000,0 days 00:00:27.882000,SOFT,,,,3.0,4.0,Finished,2018,GP Monza,historica
+1.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:53.393000,False,,0 days 00:00:31.464000,0 days 00:00:50.665000,nan,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+2.0,GRO,8,Haas F1 Team,5.0,0 days 00:02:17.281000,True,0 days 00:00:45.778000,0 days 00:00:45.391000,0 days 00:00:46.112000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+3.0,GRO,8,Haas F1 Team,5.0,0 days 00:02:05.602000,True,0 days 00:00:45.169000,0 days 00:00:44.029000,0 days 00:00:36.404000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+4.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:27.285000,True,0 days 00:00:28.553000,0 days 00:00:29.895000,0 days 00:00:28.837000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+5.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:26.163000,True,0 days 00:00:28.125000,0 days 00:00:29.530000,0 days 00:00:28.508000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+6.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:26.251000,False,0 days 00:00:28.149000,0 days 00:00:29.556000,0 days 00:00:28.546000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+7.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.981000,True,0 days 00:00:28.116000,0 days 00:00:29.293000,0 days 00:00:28.572000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+8.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.982000,False,0 days 00:00:28.297000,0 days 00:00:29.230000,0 days 00:00:28.455000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+9.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.955000,True,0 days 00:00:27.917000,0 days 00:00:29.440000,0 days 00:00:28.598000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+10.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:26.249000,False,0 days 00:00:28.373000,0 days 00:00:29.279000,0 days 00:00:28.597000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+11.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.985000,False,0 days 00:00:28.379000,0 days 00:00:29.107000,0 days 00:00:28.499000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+12.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.920000,True,0 days 00:00:28.294000,0 days 00:00:29.132000,0 days 00:00:28.494000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+13.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:26.028000,False,0 days 00:00:28.301000,0 days 00:00:29.174000,0 days 00:00:28.553000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+14.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.949000,False,0 days 00:00:28.356000,0 days 00:00:29.113000,0 days 00:00:28.480000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+15.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.976000,False,0 days 00:00:28.336000,0 days 00:00:29.143000,0 days 00:00:28.497000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+16.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.919000,True,0 days 00:00:28.342000,0 days 00:00:29.135000,0 days 00:00:28.442000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+17.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.921000,False,0 days 00:00:28.366000,0 days 00:00:29.055000,0 days 00:00:28.500000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+18.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.956000,False,0 days 00:00:28.314000,0 days 00:00:29.143000,0 days 00:00:28.499000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+19.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.803000,True,0 days 00:00:28.364000,0 days 00:00:29.002000,0 days 00:00:28.437000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+20.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.763000,True,0 days 00:00:28.384000,0 days 00:00:29.036000,0 days 00:00:28.343000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+21.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:26.097000,False,0 days 00:00:28.546000,0 days 00:00:29.158000,0 days 00:00:28.393000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+22.0,GRO,8,Haas F1 Team,5.0,0 days 00:01:25.604000,True,0 days 00:00:28.172000,0 days 00:00:29.083000,0 days 00:00:28.349000,SUPERSOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+23.0,GRO,8,Haas F1 Team,7.0,0 days 00:01:30.276000,False,0 days 00:00:28.210000,0 days 00:00:29.083000,0 days 00:00:32.983000,SUPERSOFT,0 days 00:53:27.883000,0 days 00:53:52.672000,0 days 00:00:24.789000,20.0,6.0,Disqualified,2018,GP Monza,historica
+24.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:46.129000,False,0 days 00:00:48.504000,0 days 00:00:29.448000,0 days 00:00:28.177000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+25.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:25.732000,False,0 days 00:00:28.248000,0 days 00:00:29.319000,0 days 00:00:28.165000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+26.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:24.998000,True,0 days 00:00:28.145000,0 days 00:00:28.760000,0 days 00:00:28.093000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+27.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:25.026000,False,0 days 00:00:28.155000,0 days 00:00:28.688000,0 days 00:00:28.183000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+28.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:25.132000,False,0 days 00:00:28.262000,0 days 00:00:28.707000,0 days 00:00:28.163000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+29.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:25.110000,False,0 days 00:00:28.304000,0 days 00:00:28.696000,0 days 00:00:28.110000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+30.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:25.406000,False,0 days 00:00:28.557000,0 days 00:00:28.666000,0 days 00:00:28.183000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+31.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:25.103000,False,0 days 00:00:28.185000,0 days 00:00:28.714000,0 days 00:00:28.204000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+32.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:24.836000,True,0 days 00:00:28.219000,0 days 00:00:28.614000,0 days 00:00:28.003000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+33.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:25.605000,False,0 days 00:00:28.086000,0 days 00:00:28.803000,0 days 00:00:28.716000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+34.0,GRO,8,Haas F1 Team,11.0,0 days 00:01:26.238000,False,0 days 00:00:28.262000,0 days 00:00:28.951000,0 days 00:00:29.025000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+35.0,GRO,8,Haas F1 Team,10.0,0 days 00:01:25.779000,False,0 days 00:00:28.068000,0 days 00:00:29.166000,0 days 00:00:28.545000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+36.0,GRO,8,Haas F1 Team,9.0,0 days 00:01:24.947000,False,0 days 00:00:27.967000,0 days 00:00:28.790000,0 days 00:00:28.190000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+37.0,GRO,8,Haas F1 Team,9.0,0 days 00:01:25.204000,False,0 days 00:00:28.251000,0 days 00:00:28.805000,0 days 00:00:28.148000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+38.0,GRO,8,Haas F1 Team,9.0,0 days 00:01:24.874000,False,0 days 00:00:28.202000,0 days 00:00:28.592000,0 days 00:00:28.080000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+39.0,GRO,8,Haas F1 Team,8.0,0 days 00:01:24.898000,False,0 days 00:00:28.259000,0 days 00:00:28.595000,0 days 00:00:28.044000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+40.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:25.047000,False,0 days 00:00:28.243000,0 days 00:00:28.743000,0 days 00:00:28.061000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+41.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.926000,False,0 days 00:00:28.141000,0 days 00:00:28.764000,0 days 00:00:28.021000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+42.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.902000,False,0 days 00:00:28.319000,0 days 00:00:28.515000,0 days 00:00:28.068000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+43.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.656000,True,0 days 00:00:28.216000,0 days 00:00:28.456000,0 days 00:00:27.984000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+44.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.623000,True,0 days 00:00:28.230000,0 days 00:00:28.470000,0 days 00:00:27.923000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+45.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.568000,True,0 days 00:00:28.243000,0 days 00:00:28.388000,0 days 00:00:27.937000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+46.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.421000,True,0 days 00:00:28.164000,0 days 00:00:28.429000,0 days 00:00:27.828000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+47.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.559000,False,0 days 00:00:28.236000,0 days 00:00:28.519000,0 days 00:00:27.804000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+48.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.243000,True,0 days 00:00:28.094000,0 days 00:00:28.404000,0 days 00:00:27.745000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+49.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.745000,False,0 days 00:00:28.364000,0 days 00:00:28.525000,0 days 00:00:27.856000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+50.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.436000,False,0 days 00:00:28.117000,0 days 00:00:28.465000,0 days 00:00:27.854000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+51.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.765000,False,0 days 00:00:28.355000,0 days 00:00:28.613000,0 days 00:00:27.797000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+52.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.244000,False,0 days 00:00:28.119000,0 days 00:00:28.382000,0 days 00:00:27.743000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+53.0,GRO,8,Haas F1 Team,6.0,0 days 00:01:24.313000,False,0 days 00:00:28.104000,0 days 00:00:28.480000,0 days 00:00:27.729000,SOFT,,,,20.0,6.0,Disqualified,2018,GP Monza,historica
+1.0,ERI,9,Sauber,20.0,0 days 00:02:23.966000,False,,0 days 00:00:50.101000,0 days 00:00:56.646000,nan,0 days 00:20:50.588000,0 days 00:21:20.498000,0 days 00:00:29.910000,15.0,18.0,+1 Lap,2018,GP Monza,historica
+2.0,ERI,9,Sauber,19.0,0 days 00:02:08.119000,False,0 days 00:01:00.407000,0 days 00:00:33.367000,0 days 00:00:34.345000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+3.0,ERI,9,Sauber,19.0,0 days 00:01:56.316000,True,0 days 00:00:42.312000,0 days 00:00:41.512000,0 days 00:00:32.492000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+4.0,ERI,9,Sauber,18.0,0 days 00:01:27.089000,True,0 days 00:00:28.246000,0 days 00:00:30.012000,0 days 00:00:28.831000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+5.0,ERI,9,Sauber,18.0,0 days 00:01:26.981000,True,0 days 00:00:28.368000,0 days 00:00:29.575000,0 days 00:00:29.038000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+6.0,ERI,9,Sauber,18.0,0 days 00:01:26.881000,True,0 days 00:00:28.230000,0 days 00:00:29.724000,0 days 00:00:28.927000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+7.0,ERI,9,Sauber,18.0,0 days 00:01:27.068000,False,0 days 00:00:28.229000,0 days 00:00:29.764000,0 days 00:00:29.075000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+8.0,ERI,9,Sauber,18.0,0 days 00:01:27.066000,False,0 days 00:00:28.492000,0 days 00:00:29.679000,0 days 00:00:28.895000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+9.0,ERI,9,Sauber,17.0,0 days 00:01:27.119000,False,0 days 00:00:28.254000,0 days 00:00:29.717000,0 days 00:00:29.148000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+10.0,ERI,9,Sauber,17.0,0 days 00:01:27.234000,False,0 days 00:00:28.270000,0 days 00:00:29.854000,0 days 00:00:29.110000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+11.0,ERI,9,Sauber,17.0,0 days 00:01:27.157000,False,0 days 00:00:28.232000,0 days 00:00:29.954000,0 days 00:00:28.971000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+12.0,ERI,9,Sauber,17.0,0 days 00:01:26.902000,False,0 days 00:00:28.118000,0 days 00:00:29.876000,0 days 00:00:28.908000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+13.0,ERI,9,Sauber,17.0,0 days 00:01:26.944000,False,0 days 00:00:28.349000,0 days 00:00:29.732000,0 days 00:00:28.863000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+14.0,ERI,9,Sauber,17.0,0 days 00:01:27.708000,False,0 days 00:00:28.223000,0 days 00:00:30.239000,0 days 00:00:29.246000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+15.0,ERI,9,Sauber,17.0,0 days 00:01:27.331000,False,0 days 00:00:28.683000,0 days 00:00:29.843000,0 days 00:00:28.805000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+16.0,ERI,9,Sauber,17.0,0 days 00:01:26.942000,False,0 days 00:00:28.368000,0 days 00:00:29.768000,0 days 00:00:28.806000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+17.0,ERI,9,Sauber,17.0,0 days 00:01:27.028000,False,0 days 00:00:28.271000,0 days 00:00:29.815000,0 days 00:00:28.942000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+18.0,ERI,9,Sauber,17.0,0 days 00:01:26.738000,True,0 days 00:00:28.305000,0 days 00:00:29.636000,0 days 00:00:28.797000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+19.0,ERI,9,Sauber,17.0,0 days 00:01:26.739000,False,0 days 00:00:28.303000,0 days 00:00:29.625000,0 days 00:00:28.811000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+20.0,ERI,9,Sauber,17.0,0 days 00:01:26.546000,True,0 days 00:00:28.280000,0 days 00:00:29.518000,0 days 00:00:28.748000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+21.0,ERI,9,Sauber,17.0,0 days 00:01:26.719000,False,0 days 00:00:28.229000,0 days 00:00:29.683000,0 days 00:00:28.807000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+22.0,ERI,9,Sauber,17.0,0 days 00:01:26.718000,False,0 days 00:00:28.347000,0 days 00:00:29.696000,0 days 00:00:28.675000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+23.0,ERI,9,Sauber,17.0,0 days 00:01:26.743000,False,0 days 00:00:28.238000,0 days 00:00:29.741000,0 days 00:00:28.764000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+24.0,ERI,9,Sauber,15.0,0 days 00:01:27.156000,False,0 days 00:00:28.323000,0 days 00:00:30.205000,0 days 00:00:28.628000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+25.0,ERI,9,Sauber,15.0,0 days 00:01:27.058000,False,0 days 00:00:28.393000,0 days 00:00:30.100000,0 days 00:00:28.565000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+26.0,ERI,9,Sauber,15.0,0 days 00:01:26.357000,True,0 days 00:00:28.288000,0 days 00:00:29.520000,0 days 00:00:28.549000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+27.0,ERI,9,Sauber,15.0,0 days 00:01:26.492000,False,0 days 00:00:28.474000,0 days 00:00:29.449000,0 days 00:00:28.569000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+28.0,ERI,9,Sauber,15.0,0 days 00:01:26.340000,True,0 days 00:00:28.358000,0 days 00:00:29.473000,0 days 00:00:28.509000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+29.0,ERI,9,Sauber,15.0,0 days 00:01:26.289000,True,0 days 00:00:28.387000,0 days 00:00:29.323000,0 days 00:00:28.579000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+30.0,ERI,9,Sauber,15.0,0 days 00:01:26.236000,True,0 days 00:00:28.287000,0 days 00:00:29.377000,0 days 00:00:28.572000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+31.0,ERI,9,Sauber,15.0,0 days 00:01:26.143000,True,0 days 00:00:28.304000,0 days 00:00:29.304000,0 days 00:00:28.535000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+32.0,ERI,9,Sauber,15.0,0 days 00:01:26.373000,False,0 days 00:00:28.338000,0 days 00:00:29.426000,0 days 00:00:28.609000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+33.0,ERI,9,Sauber,15.0,0 days 00:01:26.260000,False,0 days 00:00:28.349000,0 days 00:00:29.373000,0 days 00:00:28.538000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+34.0,ERI,9,Sauber,14.0,0 days 00:01:26.266000,False,0 days 00:00:28.300000,0 days 00:00:29.398000,0 days 00:00:28.568000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+35.0,ERI,9,Sauber,13.0,0 days 00:01:26.337000,False,0 days 00:00:28.394000,0 days 00:00:29.332000,0 days 00:00:28.611000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+36.0,ERI,9,Sauber,12.0,0 days 00:01:26.375000,False,0 days 00:00:28.451000,0 days 00:00:29.391000,0 days 00:00:28.533000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+37.0,ERI,9,Sauber,12.0,0 days 00:01:26.366000,False,0 days 00:00:28.386000,0 days 00:00:29.432000,0 days 00:00:28.548000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+38.0,ERI,9,Sauber,11.0,0 days 00:01:26.406000,False,0 days 00:00:28.477000,0 days 00:00:29.352000,0 days 00:00:28.577000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+39.0,ERI,9,Sauber,12.0,0 days 00:01:27.353000,False,0 days 00:00:28.776000,0 days 00:00:29.803000,0 days 00:00:28.774000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+40.0,ERI,9,Sauber,12.0,0 days 00:01:26.569000,False,0 days 00:00:28.308000,0 days 00:00:29.607000,0 days 00:00:28.654000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+41.0,ERI,9,Sauber,13.0,0 days 00:01:28.870000,False,0 days 00:00:28.317000,0 days 00:00:30.001000,0 days 00:00:30.552000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+42.0,ERI,9,Sauber,12.0,0 days 00:01:32.048000,False,0 days 00:00:28.419000,0 days 00:00:30.173000,0 days 00:00:33.456000,SUPERSOFT,0 days 01:21:25.968000,0 days 01:21:51.532000,0 days 00:00:25.564000,15.0,18.0,+1 Lap,2018,GP Monza,historica
+43.0,ERI,9,Sauber,16.0,0 days 00:01:46.962000,False,0 days 00:00:50.267000,0 days 00:00:28.882000,0 days 00:00:27.813000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+44.0,ERI,9,Sauber,16.0,0 days 00:01:23.768000,True,0 days 00:00:27.747000,0 days 00:00:28.304000,0 days 00:00:27.717000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+45.0,ERI,9,Sauber,16.0,0 days 00:01:24.171000,False,0 days 00:00:27.938000,0 days 00:00:28.392000,0 days 00:00:27.841000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+46.0,ERI,9,Sauber,16.0,0 days 00:01:24.276000,False,0 days 00:00:27.958000,0 days 00:00:28.462000,0 days 00:00:27.856000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+47.0,ERI,9,Sauber,16.0,0 days 00:01:24.221000,False,0 days 00:00:28,0 days 00:00:28.347000,0 days 00:00:27.874000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+48.0,ERI,9,Sauber,16.0,0 days 00:01:24.444000,False,0 days 00:00:28.155000,0 days 00:00:28.430000,0 days 00:00:27.859000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+49.0,ERI,9,Sauber,16.0,0 days 00:01:24.366000,False,0 days 00:00:28.156000,0 days 00:00:28.387000,0 days 00:00:27.823000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+50.0,ERI,9,Sauber,16.0,0 days 00:01:24.448000,False,0 days 00:00:28.107000,0 days 00:00:28.474000,0 days 00:00:27.867000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+51.0,ERI,9,Sauber,16.0,0 days 00:01:24.317000,False,0 days 00:00:28.105000,0 days 00:00:28.484000,0 days 00:00:27.728000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
+52.0,ERI,9,Sauber,16.0,0 days 00:01:23.827000,False,0 days 00:00:27.865000,0 days 00:00:28.286000,0 days 00:00:27.676000,SUPERSOFT,,,,15.0,18.0,+1 Lap,2018,GP Monza,historica
