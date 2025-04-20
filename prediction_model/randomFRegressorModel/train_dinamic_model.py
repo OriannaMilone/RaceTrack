@@ -46,7 +46,8 @@ def preparar_dataset_con_sectores(df):
 
     return full.dropna()
 
-def entrenar_modelo_rf(df, save_path="./rf_model_sectors.pkl"):
+def entrenar_modelo_rf(df, circuit, year):
+    save_path= f"./rf_model_sectors{circuit}_{year}.pkl"
     X = df.drop(columns=["Driver", "LapNumber", "Position_next"])
     y = df["Position_next"]
 
@@ -63,7 +64,10 @@ def entrenar_modelo_rf(df, save_path="./rf_model_sectors.pkl"):
     print(f"Modelo guardado en {save_path}")
 
 if __name__ == "__main__":
-    filepath = "../../SPA_DATA/full_data_race/SPA_2018_full_H_data.csv"
-    raw_df = load_and_clean_data(filepath)
-    full_df = preparar_dataset_con_sectores(raw_df)
-    entrenar_modelo_rf(full_df)
+    for circuit in ["SPA", "MONACO", "SAOPAULO", "MONZA"]:
+        for year in ["2018", "2019", "2020", "2021", "2022", "2023", "2024"]:
+            filepath = f"../../{circuit}_DATA/full_data_race/{circuit}_{year}_full_H_data.csv"
+            raw_df = load_and_clean_data(filepath)
+            full_df = preparar_dataset_con_sectores(raw_df)
+            entrenar_modelo_rf(full_df, circuit, year)
+        

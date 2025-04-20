@@ -4,14 +4,17 @@ import numpy as np
 import joblib
 import os
 
-def load_model(path=None, circuit="SPA"):
-    if path is None:
-        path = os.path.join(os.path.dirname(__file__), "rf_model.pkl")
-    
+def load_model(dinamico=False, circuit="SPA", year="2018"):
+    if dinamico:
+        path = os.path.join(os.path.dirname(__file__), f"rf_model_sectors{circuit}_{year}.pkl")
+    else:
+        path = os.path.join(os.path.dirname(__file__), f"rf_model{circuit}_{year}.pkl")
+
     if not os.path.exists(path):
-        raise FileNotFoundError(f"⚠️ El modelo no se encontró en: {path}")
+        raise FileNotFoundError(f"El modelo no se encontró en: {path}")
     
-    return joblib.load(path)
+    return joblib.load(path), path
+
 
 def load_and_prepare_vuelta(df, lap_number):
     df_vuelta = df[df["LapNumber"] == lap_number].copy()

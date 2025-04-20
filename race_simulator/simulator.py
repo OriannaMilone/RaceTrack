@@ -67,15 +67,10 @@ def main():
 
     df = pd.read_csv(csv_path)
 
-    if usar_modelo_dinamico:
-        model_path = os.path.join(os.path.dirname(__file__), "rf_model_sectors.py")
-        print("Cargando modelo dinámico:", model_path)
-    else:
-        model_path = None
-        print("Cargando modelo por defecto")
-
-    modelo = load_model(path=model_path, circuit=circuito)
- 
+    modelo, modeloUsado = load_model(dinamico=usar_modelo_dinamico, circuit=circuito, year=archivo_csv.split('_')[1])
+    
+    print(f"Modelo usado: {modeloUsado}")
+    
     carrera = Carrera(df)
     simulador = SimuladorDeCarrera(carrera, tiempo_entre_vueltas=1)
 
@@ -84,17 +79,17 @@ def main():
     try:
         while not simulador.esta_finalizada():
             datos_vuelta = simulador.simular_siguiente_vuelta()
-            
+
             df_pred = predecir_siguiente_vuelta(datos_vuelta, modelo)
             if not df_pred.empty:
                 df_pred["PredictedFinalPosition"] = df_pred["PredictedRank"].astype(int)
-                print("Predicción de posiciones para la próxima vuelta:")
-                print(df_pred[["Driver", "PredictedFinalPosition"]]
-                    .sort_values("PredictedFinalPosition").to_string(index=False))
-            
+                # print("Predicción de posiciones para la próxima vuelta:")
+                # print(df_pred[["Driver", "PredictedFinalPosition"]]
+                #     .sort_values("PredictedFinalPosition").to_string(index=False))
+
             vuelta = simulador.get_vuelta_actual()
 
-            print(f"\nVuelta {vuelta}:")
+            # print(f"\nVuelta {vuelta}:")
             vuel = datos_vuelta[["Driver", "Position", "Team", "LapTime", "Compound", "IsPersonalBest"]].sort_values(by="Position")
             vuel["Compound"] = vuel["Compound"].fillna("TBD")
             vuel["LapTime"] = vuel["LapTime"].apply(lambda x: pd.to_timedelta(x) if isinstance(x, str) else x)
@@ -102,9 +97,9 @@ def main():
 
             if "LapTime" in vuel.columns:
                 vuel["LapTime"] = vuel["LapTime"].apply(formatear_lap_time)
-            
+
             vuel = vuel.fillna("N/A")
-            print(vuel.to_string(index=False))
+            # print(vuel.to_string(index=False))
 
             vuelta_completa = {
                 "vuelta": vuelta,
@@ -112,7 +107,7 @@ def main():
             }
             # tiempo de espera "entre vueltas" para simular el tiempo real
             time.sleep(1)
-            print(f"Enviando vuelta {vuelta} al servidor...\n")
+            # print(f"Enviando vuelta {vuelta} al servidor...\n")
             sio.emit('nueva-vuelta', vuelta_completa, namespace='/simulador')
 
             print("Predicciones generadas por el modelo:")
@@ -124,17 +119,18 @@ def main():
                     "vuelta": vuelta + 1,
                     "predicciones": prediccion_para_frontend.to_dict(orient="records")
                 }, namespace='/simulador')
-                print("Emitiendo predicción:")
-                print(prediccion_para_frontend.to_dict(orient="records"))
+                # print("Emitiendo predicción:")
+                # print(prediccion_para_frontend.to_dict(orient="records"))
 
     except StopIteration as e:
         print(f"\nSimulación detenida: {e}")
 
     finally:
-        salida_nombre = f"simulacion_{circuito.lower()}.csv"
-        simulador.exportar_resultado(salida_nombre)
+        # salida_nombre = f"simulacion_{circuito.lower()}.csv"
+        # simulador.exportar_resultado(salida_nombre)
         sio.disconnect()
-        print(f"Simulación finalizada. Datos exportados a {salida_nombre}")
+        # print(f"Simulación finalizada. Datos exportados a {salida_nombre}")
+        print(f"Simulación finalizada.")
 
 if __name__ == "__main__":
     main()
