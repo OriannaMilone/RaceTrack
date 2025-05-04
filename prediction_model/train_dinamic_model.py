@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 
 import pandas as pd
+import argparse
 import joblib
 import os
 
@@ -85,8 +86,13 @@ def entrenar_modelo_xgb(df, circuit, anio_excluido):
     print(f"Modelo guardado en {save_path}")
 
 if __name__ == "__main__":
-    circuito_objetivo = "MONACO"
-    anio_a_excluir = "2019"
+    parser = argparse.ArgumentParser(description="Entrenamiento modelo XGBoost por circuito excluyendo un año.")
+    parser.add_argument("--circuito", type=str, required=True, help="Nombre del circuito (ej: MONACO)")
+    parser.add_argument("--anio_excluir", type=str, required=True, help="Año a excluir del entrenamiento (ej: 2019)")
+    
+    args = parser.parse_args()
+    circuito_objetivo = args.circuito.upper()
+    anio_a_excluir = args.anio_excluir
 
     nombre_archivo = f"./trainingData/{circuito_objetivo}_sin_{anio_a_excluir}_sectores.csv"
 
