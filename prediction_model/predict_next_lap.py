@@ -1,14 +1,13 @@
-from prediction_model.randomFRegressorModel.visualize_prediction import visualizar_orden_real_vs_predicho
 import pandas as pd
 import numpy as np
 import joblib
 import os
 
-def load_model(dinamico=False, circuit="SPA", year="2018"):
+def load_model(dinamico=False, circuit="", year=""):
     if dinamico:
-        path = os.path.join(os.path.dirname(__file__), f"rf_model_sectors{circuit}_{year}.pkl")
+        path = os.path.join(os.path.dirname(__file__), f"./xgboostModel/xgb_sectores_{circuit}_sin_{year}.pkl")
     else:
-        path = os.path.join(os.path.dirname(__file__), f"rf_model{circuit}_{year}.pkl")
+        path = os.path.join(os.path.dirname(__file__), f"./xgboostModel/xgb_model_{circuit}_sin_{year}.pkl")
 
     if not os.path.exists(path):
         raise FileNotFoundError(f"El modelo no se encontró en: {path}")

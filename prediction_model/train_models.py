@@ -185,8 +185,8 @@ def cargar_datos_circuito_excluyendo_anio(circuit, anio_excluir):
 #     modelo.save_model(save_path)
 #     print(f"Modelo guardado en {save_path}")
     
-def entrenar_modelo_xgb(df, circuit):
-    save_path = f"./xgboostModel/xgb_model_{circuit}.pkl"
+def entrenar_modelo_xgb(df, circuit, year):
+    save_path = f"./xgboostModel/xgb_model_{circuit}_sin_{year}.pkl"
 
     pilotos_unicos = df["Driver"].unique()
     train_pilots, test_pilots = train_test_split(pilotos_unicos, test_size=0.2, random_state=42)
@@ -240,7 +240,7 @@ if __name__ == "__main__":
     full_df = preparar_dataset_vuelta_a_vuelta(raw_df)
     full_df = pd.get_dummies(full_df, columns=["Circuit"], prefix="Circuit")
 
-    entrenar_modelo_xgb(full_df, circuito_objetivo)
+    entrenar_modelo_xgb(full_df, circuito_objetivo, anio_a_excluir)
 
 
     # entrenar_modelo_rf(full_df, "ALL_CIRCUITS", 2000)
