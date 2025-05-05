@@ -388,6 +388,7 @@ io.on('connection', (socket) => {
   });
 });
 
+
 // WebSocket: cuando el simulador envía una vuelta
 io.of('/simulador').on('connection', (socket) => {
   console.log('🚗 Simulador conectado');
@@ -395,7 +396,12 @@ io.of('/simulador').on('connection', (socket) => {
   socket.on('disconnect', () => {
     console.log('💥 Simulador desconectado');
   });
-
+  
+  socket.on('estado-carrera', (data) => {
+    console.log('Estado de carrera:', data.mensaje);
+    io.of('/simulador').emit('estado-carrera', data); // lo reenvía a todos los clientes conectados
+  });
+  
   socket.on('nueva-vuelta', (data) => {
     console.log(`📩 Vuelta ${data.vuelta} recibida con ${data.pilotos.length} pilotos`);
     io.emit('nueva-vuelta', data);

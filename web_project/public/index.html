@@ -623,7 +623,7 @@
                 estado.textContent = "🔴 Desconectado del socket.";
                 log("Desconectado del servidor.");
             });
-
+            
             socket.on('nueva-vuelta', (data) => {
                 log("📈 NUEVA VUELTA:\n" + JSON.stringify(data, null, 2));
 
@@ -889,7 +889,6 @@
         </div>
 
     </div> <!-- end photoSwipe background -->
-
 
     <!-- Java Script
     ================================================== -->

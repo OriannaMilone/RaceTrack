@@ -4,6 +4,7 @@ from race_simulator.core.carrera_simulada import SimuladorDeCarrera
 from core.carrera import Carrera
 from pathlib import Path
 import pandas as pd
+import subprocess
 import socketio
 import time
 import sys
@@ -64,10 +65,9 @@ def main():
         return
 
     sio.connect('http://localhost:3000', namespaces=['/simulador'])
-
+    
     df = pd.read_csv(csv_path)
-
-    #Aqui hay que entrenar primero el modelo
+    
     modelo, modeloUsado = load_model(dinamico=usar_modelo_dinamico, circuit=circuito, year=archivo_csv.split('_')[1])
     
     print(f"Modelo usado: {modeloUsado}")
@@ -84,13 +84,10 @@ def main():
             df_pred = predecir_siguiente_vuelta(datos_vuelta, modelo)
             if not df_pred.empty:
                 df_pred["PredictedFinalPosition"] = df_pred["PredictedRank"].astype(int)
-                # print("Predicción de posiciones para la próxima vuelta:")
-                # print(df_pred[["Driver", "PredictedFinalPosition"]]
-                #     .sort_values("PredictedFinalPosition").to_string(index=False))
+
 
             vuelta = simulador.get_vuelta_actual()
 
-            # print(f"\nVuelta {vuelta}:")
             vuel = datos_vuelta[["Driver", "Position", "Team", "LapTime", "Compound", "IsPersonalBest"]].sort_values(by="Position")
             vuel["Compound"] = vuel["Compound"].fillna("TBD")
             vuel["LapTime"] = vuel["LapTime"].apply(lambda x: pd.to_timedelta(x) if isinstance(x, str) else x)
@@ -100,15 +97,12 @@ def main():
                 vuel["LapTime"] = vuel["LapTime"].apply(formatear_lap_time)
 
             vuel = vuel.fillna("N/A")
-            # print(vuel.to_string(index=False))
 
             vuelta_completa = {
                 "vuelta": vuelta,
                 "pilotos": vuel.to_dict(orient="records")
             }
-            # tiempo de espera "entre vueltas" para simular el tiempo real
             time.sleep(1)
-            # print(f"Enviando vuelta {vuelta} al servidor...\n")
             sio.emit('nueva-vuelta', vuelta_completa, namespace='/simulador')
 
             print("Predicciones generadas por el modelo:")
@@ -120,17 +114,12 @@ def main():
                     "vuelta": vuelta + 1,
                     "predicciones": prediccion_para_frontend.to_dict(orient="records")
                 }, namespace='/simulador')
-                # print("Emitiendo predicción:")
-                # print(prediccion_para_frontend.to_dict(orient="records"))
 
     except StopIteration as e:
         print(f"\nSimulación detenida: {e}")
 
     finally:
-        # salida_nombre = f"simulacion_{circuito.lower()}.csv"
-        # simulador.exportar_resultado(salida_nombre)
         sio.disconnect()
-        # print(f"Simulación finalizada. Datos exportados a {salida_nombre}")
         print(f"Simulación finalizada.")
 
 if __name__ == "__main__":
