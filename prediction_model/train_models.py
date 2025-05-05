@@ -219,28 +219,32 @@ def entrenar_modelo_xgb(df, circuit, year):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Entrenamiento modelo XGBoost por circuito excluyendo un año.")
-    parser.add_argument("--circuito", type=str, required=True, help="Nombre del circuito (ej: MONACO)")
-    parser.add_argument("--anio_excluir", type=str, required=True, help="Año a excluir del entrenamiento (ej: 2019)")
+    # parser = argparse.ArgumentParser(description="Entrenamiento modelo XGBoost por circuito excluyendo un año.")
+    # parser.add_argument("--circuito", type=str, required=True, help="Nombre del circuito (ej: MONACO)")
+    # parser.add_argument("--anio_excluir", type=str, required=True, help="Año a excluir del entrenamiento (ej: 2019)")
     
-    args = parser.parse_args()
-    circuito_objetivo = args.circuito.upper()
-    anio_a_excluir = args.anio_excluir
+    # args = parser.parse_args()
+    # circuito_objetivo = args.circuito.upper()
+    # anio_a_excluir = args.anio_excluir
 
-    nombre_archivo = f"./trainingData/{circuito_objetivo}_sin_{anio_a_excluir}.csv"
+    circuito_objetivo = ["MONACO", "SPA", "MONZA", "SAOPAULO"]
+    anio_a_excluir = ["2018", "2019", "2020", "2021", "2022", "2023"]
+    for circuito in circuito_objetivo:
+        for año in anio_a_excluir: 
+            nombre_archivo = f"./trainingData/{circuito}_sin_{año}.csv"
 
-    if os.path.exists(nombre_archivo):
-        print(f"Archivo ya existe: {nombre_archivo}. Cargando directamente.")
-        raw_df = pd.read_csv(nombre_archivo)
-    else:
-        print(f"Generando archivo: {nombre_archivo}")
-        raw_df = cargar_datos_circuito_excluyendo_anio(circuito_objetivo, anio_a_excluir)
-        raw_df.to_csv(nombre_archivo, index=False)
+            if os.path.exists(nombre_archivo):
+                print(f"Archivo ya existe: {nombre_archivo}. Cargando directamente.")
+                raw_df = pd.read_csv(nombre_archivo)
+            else:
+                print(f"Generando archivo: {nombre_archivo}")
+                raw_df = cargar_datos_circuito_excluyendo_anio(circuito, año)
+                raw_df.to_csv(nombre_archivo, index=False)
 
-    full_df = preparar_dataset_vuelta_a_vuelta(raw_df)
-    full_df = pd.get_dummies(full_df, columns=["Circuit"], prefix="Circuit")
+            full_df = preparar_dataset_vuelta_a_vuelta(raw_df)
+            full_df = pd.get_dummies(full_df, columns=["Circuit"], prefix="Circuit")
 
-    entrenar_modelo_xgb(full_df, circuito_objetivo, anio_a_excluir)
+            entrenar_modelo_xgb(full_df, circuito, año)
 
 
     # entrenar_modelo_rf(full_df, "ALL_CIRCUITS", 2000)
