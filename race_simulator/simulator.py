@@ -1,5 +1,5 @@
-from prediction_model.randomFRegressorModel.predict_interface import predecir_siguiente_vuelta
-from prediction_model.randomFRegressorModel.predict_next_lap import load_model
+from prediction_model.predict_interface import predecir_siguiente_vuelta
+from prediction_model.predict_next_lap import load_model
 from race_simulator.core.carrera_simulada import SimuladorDeCarrera
 from core.carrera import Carrera
 from pathlib import Path
@@ -67,6 +67,7 @@ def main():
 
     df = pd.read_csv(csv_path)
 
+    #Aqui hay que entrenar primero el modelo
     modelo, modeloUsado = load_model(dinamico=usar_modelo_dinamico, circuit=circuito, year=archivo_csv.split('_')[1])
     
     print(f"Modelo usado: {modeloUsado}")

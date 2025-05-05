@@ -1,5 +1,5 @@
 import pandas as pd
-from prediction_model.randomFRegressorModel.predict_next_lap import predecir_vuelta, load_model, load_and_prepare_vuelta
+from prediction_model.predict_next_lap import *
 
 def predecir_siguiente_vuelta(df_vuelta: pd.DataFrame, modelo=None):
     """
