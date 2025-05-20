@@ -1,14 +1,18 @@
 -- Extensión para generar UUID automáticamente
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- Extensión para cifrado y hash
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
 -- Crear la base de datos
+-- Si la base de datos ya existe, se eliminará y se volverá a crear
+DROP DATABASE IF EXISTS racetrack;
 CREATE DATABASE racetrack;
 
 -- Tabla Piloto con UUID
 CREATE TABLE Piloto (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     nombre TEXT NOT NULL,
-    numeroCompeticion INTEGER UNIQUE NOT NULL
+    numeroCompeticion INTEGER NOT NULL
 );
 
 -- Tabla Equipo
@@ -40,10 +44,10 @@ CREATE TABLE Carrera (
 CREATE TABLE ParticipacionCarrera (
     id_piloto UUID NOT NULL,
     id_carrera UUID NOT NULL,
-    dnf BOOLEAN NOT NULL,
+    estado TEXT NOT NULL,
     posicionInicio INTEGER NOT NULL,
     posicionFinal INTEGER,
-    PRIMARY KEY (id_piloto, id_carrera), -- Clave compuesta para evitar duplicados
+    PRIMARY KEY (id_piloto, id_carrera),
     CONSTRAINT fk_piloto_carrera FOREIGN KEY (id_piloto) REFERENCES Piloto(id),
     CONSTRAINT fk_carrera FOREIGN KEY (id_carrera) REFERENCES Carrera(id)
 );
@@ -59,7 +63,7 @@ CREATE TABLE Vuelta (
     sector1Tiempo INTERVAL, 
     sector2Tiempo INTERVAL, 
     sector3Tiempo INTERVAL, 
-    compuestoNeumático INTERVAL,
+    compuestoNeumático TEXT,
     mejorVueltaPersonal BOOLEAN NOT NULL,
     CONSTRAINT fk_piloto_vuelta FOREIGN KEY (id_piloto) REFERENCES Piloto(id),
     CONSTRAINT fk_carrera_vuelta FOREIGN KEY (id_carrera) REFERENCES Carrera(id)
@@ -91,6 +95,41 @@ CREATE TABLE carreras_programadas (
     temporada VARCHAR(10) NOT NULL,                      
     gran_premio VARCHAR(100) NOT NULL,                
     nombre_csv VARCHAR(150) NOT NULL,                  
-    hacer_prediccion BOOLEAN DEFAULT false,
-    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    hacer_prediccion BOOLEAN DEFAULT FALSE,
+    creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    temporada_base_simulacion INTEGER DEFAULT 2018,
+    CONSTRAINT unica_carrera_por_temporada UNIQUE (circuito, temporada)
 );
+
+CREATE TABLE fulldatoscarreras (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    numerovuelta INTEGER NOT NULL,
+    piloto TEXT NOT NULL,
+    numeropiloto INTEGER,
+    equipo TEXT,
+    posicion INTEGER,
+    tiempovuelta INTERVAL,
+    mejorvueltapersonal BOOLEAN,
+    sector1tiempo INTERVAL,
+    sector2tiempo INTERVAL,
+    sector3tiempo INTERVAL,
+    compuestoneumatico TEXT,
+    pittiempoentrada INTERVAL,
+    pittiemposalida INTERVAL,
+    duracionparada INTERVAL,
+    temporada INTEGER,
+    nombregp TEXT,
+    posicionfinal INTEGER,
+    posicioninicio INTEGER,
+    estadofinalcarrera TEXT,
+    tipocarrera TEXT
+);
+
+CREATE TABLE usuarios_admin (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password_hash TEXT NOT NULL
+);
+
+-- Insertar un usuario administrador por defecto
+INSERT INTO usuarios_admin (username, password_hash) VALUES ('admin55', crypt('s00mth0p3r4t0r', gen_salt('bf')));

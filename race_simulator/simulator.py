@@ -64,7 +64,7 @@ def main():
         print(f"Error: El archivo {archivo_csv} no existe en la ruta: {csv_path}")
         return
 
-    sio.connect('http://localhost:3000', namespaces=['/simulador'])
+    sio.connect('https://racetrackthesis.tech', namespaces=['/simulador'])
     
     df = pd.read_csv(csv_path)
     

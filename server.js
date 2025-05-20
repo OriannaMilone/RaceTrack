@@ -3,6 +3,8 @@ const http = require('http');
 const { Server } = require('socket.io');
 const path = require('path');
 
+const PORT = 6101; // Cambia el puerto
+
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
@@ -22,6 +24,10 @@ const { exec } = require('child_process');
 
 let simulacionEnCurso = false;
 let usarModeloDinamico = false;
+
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+});
 
 cron.schedule('* * * * *', async () => {
   console.log("Cron job ejecutado a:", new Date());
@@ -67,8 +73,8 @@ cron.schedule('* * * * *', async () => {
 
       const simuladorPath = __dirname;
       const comando = usarModeloDinamico
-        ? `python -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
-        : `python -m race_simulator.simulator ${carrera.nombre_csv}`;
+        ? `/home/ori/RaceTrack/venv/bin/python -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
+        : `/home/ori/RaceTrack/venv/bin/python -m race_simulator.simulator ${carrera.nombre_csv}`;
 
 
       simulacionEnCurso = true;
@@ -167,6 +173,10 @@ function verificarAdmin(req, res, next) {
 
 // Servir frontend
 app.use(express.static(path.join(__dirname, 'web_project', 'public')));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web_project', 'public', 'index.html'));
+});
 
 app.post('/activar-modelo-dinamico', (req, res) => {
   usarModeloDinamico = true;
@@ -414,7 +424,3 @@ io.of('/simulador').on('connection', (socket) => {
 
 });
 
-
-server.listen(3000, () => {
-  console.log('Servidor corriendo en http://localhost:3000');
-});

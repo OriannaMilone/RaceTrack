@@ -15,7 +15,9 @@ app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'admin.html'));
 });
 
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 6101;
+const PORT = 6101; // Cambia el puerto
 app.listen(PORT, () => {
+  // console.log(`Servidor corriendo en http://localhost:${PORT}`);
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
