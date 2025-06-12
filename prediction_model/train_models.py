@@ -7,9 +7,7 @@ from feature_engineering import preparar_dataset_vuelta_a_vuelta
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
 import pandas as pd
-import argparse
 import joblib
-# import glob
 import os
 
 
