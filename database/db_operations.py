@@ -1,6 +1,6 @@
+from db_connection import get_connection
 import pandas as pd
 import uuid
-from db_connection import get_connection
 
 def format_timedelta(td):
     """Convierte Timedelta a mm:ss.SSS"""

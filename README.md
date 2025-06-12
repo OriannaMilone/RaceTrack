@@ -1,11 +1,5 @@
 # RaceTrack
-
-```
-npm install express nodemon socket.io
-```
-
-
-
+RaceTrack is a web application designed to... 
 
 
 ## 🗄️ Database Setup
@@ -98,3 +92,31 @@ Expected output:
  public | vuelta               | table | postgres
 (10 rows)
 ```
+
+### 5️⃣ Next Step
+Personalize your db credentials and set up environment variables
+#### 🛠️ Personalize Your Database Credentials
+To connect your RaceTrack application to the PostgreSQL database, you need to set up environment variables that contain your database credentials. This is crucial for security and flexibility, allowing you to change configurations without modifying the code directly.
+
+Create the password for the `postgres` user during PostgreSQL installation. This password will be used to connect to the database.
+```bash
+ALTER USER postgres WITH PASSWORD 'YOUR_PASSWORD_HERE';
+```
+Make sure to replace `YOUR_PASSWORD_HERE` with a strong password of your choice.
+
+#### 🗄️ Environment Variables Setup
+##### 5.1 Create a `.env` file
+In the root directory of your RaceTrack project, create a file named `.env` and add the following content:
+
+```plaintext    
+DB_USER=postgres
+DB_PASSWORD=YOUR_PASSWORD_HERE
+DB_HOST=localhost
+DB_NAME=racetrack
+DB_PORT=5432
+```
+Replace `XXXX` with the password you set for the `postgres` user during PostgreSQL installation.
+### 2️⃣ Save the `.env` file
+Make sure to save the `.env` file in the root directory of your RaceTrack project.
+### 3️⃣ Install `python-dotenv`   
+

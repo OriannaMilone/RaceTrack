@@ -1,6 +1,6 @@
+from dotenv import load_dotenv
 import psycopg2
 import os
-from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -15,5 +15,5 @@ def get_connection():
         )
         return conn
     except Exception as e:
-        print("Error al conectar a la base de datos:", e)
+        print("Error connecting to database:", e)
         return None
