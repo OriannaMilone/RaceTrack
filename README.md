@@ -68,3 +68,16 @@ INSERT 0 1
 - The script includes `DROP DATABASE IF EXISTS racetrack`, so **it will delete any existing database with the same name**.
 - It is intended for local or development setup.
 - The default admin user is created with the username and password defined in the script. You can manually edit these values before running the script if needed.
+
+### 4️⃣ Post-Setup Verification
+- Ensure the `racetrack` database is created successfully.
+- Verify that the `racetrack` database contains the necessary tables and the default admin user.
+
+List the databases to confirm:
+```bash
+\l
+```
+- Connect to the `racetrack` database:
+```bash
+\c racetrack
+```

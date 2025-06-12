@@ -8,6 +8,8 @@ CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 DROP DATABASE IF EXISTS racetrack;
 CREATE DATABASE racetrack;
 
+-- Cambiar el contexto a la base de datos recién creada
+\c racetrack
 -- Tabla Piloto con UUID
 CREATE TABLE Piloto (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
