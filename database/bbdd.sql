@@ -1,15 +1,15 @@
+-- Crear la base de datos
+-- Si la base de datos ya existe, se eliminará y se volverá a crear
+DROP DATABASE IF EXISTS racetrack;
+CREATE DATABASE racetrack;
+-- Cambiar el contexto a la base de datos recién creada
+\c racetrack
+
 -- Extensión para generar UUID automáticamente
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 -- Extensión para cifrado y hash
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
--- Crear la base de datos
--- Si la base de datos ya existe, se eliminará y se volverá a crear
-DROP DATABASE IF EXISTS racetrack;
-CREATE DATABASE racetrack;
-
--- Cambiar el contexto a la base de datos recién creada
-\c racetrack
 -- Tabla Piloto con UUID
 CREATE TABLE Piloto (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
