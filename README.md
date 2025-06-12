@@ -77,7 +77,24 @@ List the databases to confirm:
 ```bash
 \l
 ```
-- Connect to the `racetrack` database:
+List the tables in the `racetrack` database to confirm:
 ```bash
-\c racetrack
+\dt
+```
+Expected output:
+```bash
+                List of relations
+ Schema |         Name         | Type  |  Owner   
+--------+----------------------+-------+----------
+ public | carrera              | table | postgres
+ public | carreras_programadas | table | postgres
+ public | equipo               | table | postgres
+ public | fulldatoscarreras    | table | postgres
+ public | paradaenboxes        | table | postgres
+ public | participacioncarrera | table | postgres
+ public | participacionequipo  | table | postgres
+ public | piloto               | table | postgres
+ public | usuarios_admin       | table | postgres
+ public | vuelta               | table | postgres
+(10 rows)
 ```
