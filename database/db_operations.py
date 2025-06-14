@@ -283,7 +283,6 @@ def insert_pitstops_from_csv(csv_file):
         cursor.close()
         conn.close()
 
-
 def insert_full_race_data(csv_file):
     conn = get_connection()
     if not conn:
@@ -337,6 +336,222 @@ def insert_full_race_data(csv_file):
 
     except Exception as e:
         print("Error inserting full race data:", e)
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_all_drivers():
+    conn = get_connection()
+    if not conn:
+        return []
+
+    try:
+        cursor = conn.cursor()
+        cursor.execute("SELECT id, nombre, numerocompeticion FROM Piloto")
+        rows = cursor.fetchall()
+
+        drivers = []
+        for row in rows:
+            drivers.append({
+                "id": row[0],
+                "nombre": row[1],
+                "numerocompeticion": row[2]
+            })
+
+        return drivers
+
+    except Exception as e:
+        print("Error fetching drivers:", e)
+        return []
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_all_teams():
+    conn = get_connection()
+    if not conn:
+        return []
+
+    try:
+        cursor = conn.cursor()
+        cursor.execute("SELECT id, nombreescuderia FROM Equipo")
+        rows = cursor.fetchall()
+
+        teams = []
+        for row in rows:
+            teams.append({
+                "id": row[0],
+                "nombreescuderia": row[1]
+            })
+
+        return teams
+
+    except Exception as e:
+        print("Error fetching teams:", e)
+        return []
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_all_participations():
+    conn = get_connection()
+    if not conn:
+        return []
+
+    try:
+        cursor = conn.cursor()
+        cursor.execute("SELECT id, id_piloto, id_equipo, temporada FROM ParticipacionEquipo")
+        rows = cursor.fetchall()
+
+        participations = []
+        for row in rows:
+            participations.append({
+                "id": row[0],
+                "id_piloto": row[1],
+                "id_equipo": row[2],
+                "temporada": row[3]
+            })
+
+        return participations
+
+    except Exception as e:
+        print("Error fetching participations:", e)
+        return []
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_all_races():
+    conn = get_connection()
+    if not conn:
+        return []
+
+    try:
+        cursor = conn.cursor()
+        cursor.execute("SELECT id, nombre, circuito, tipo, temporada FROM Carrera")
+        rows = cursor.fetchall()
+
+        races = []
+        for row in rows:
+            races.append({
+                "id": row[0],
+                "nombre": row[1],
+                "circuito": row[2],
+                "tipo": row[3],
+                "temporada": row[4]
+            })
+
+        return races
+
+    except Exception as e:
+        print("Error fetching races:", e)
+        return []
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_all_race_participations():
+    conn = get_connection()
+    if not conn:
+        return []
+
+    try:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT id_piloto, id_carrera, estado, posicioninicio, posicionfinal 
+            FROM ParticipacionCarrera
+        """)
+        rows = cursor.fetchall()
+
+        participations = []
+        for row in rows:
+            participations.append({
+                "id_piloto": row[0],
+                "id_carrera": row[1],
+                "estado": row[2],
+                "posicioninicio": row[3],
+                "posicionfinal": row[4]
+            })
+
+        return participations
+
+    except Exception as e:
+        print("Error fetching race participations:", e)
+        return []
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_all_laps():
+    conn = get_connection()
+    if not conn:
+        return []
+
+    try:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT id, id_piloto, id_carrera, numerovuelta, posicion, tiempovuelta, sector1tiempo, sector2tiempo, sector3tiempo, compuestoneumático, mejorvueltapersonal
+            FROM Vuelta
+        """)
+        rows = cursor.fetchall()
+
+        laps = []
+        for row in rows:
+            laps.append({
+                "id": row[0],
+                "id_piloto": row[1],
+                "id_carrera": row[2],
+                "numerovuelta": row[3],
+                "posicion": row[4],
+                "tiempovuelta": row[5],
+                "sector1tiempo": row[6],
+                "sector2tiempo": row[7],
+                "sector3tiempo": row[8],
+                "compuestoneumático": row[9],
+                "mejorvueltapersonal": row[10]
+            })
+
+        return laps
+
+    except Exception as e:
+        print("Error fetching laps:", e)
+        return []
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_all_pitstops():
+    conn = get_connection()
+    if not conn:
+        return []
+
+    try:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT id, id_piloto, id_carrera, id_vuelta_entra, id_vuelta_sale, tiempoentrada, tiemposalida, duracionparada, tipoparada 
+            FROM ParadaEnBoxes
+        """)
+        rows = cursor.fetchall()
+
+        pitstops = []
+        for row in rows:
+            pitstops.append({
+                "id": row[0],
+                "id_piloto": row[1],
+                "id_carrera": row[2],
+                "id_vuelta_entra": row[3],
+                "id_vuelta_sale": row[4],
+                "tiempoentrada": row[5],
+                "tiemposalida": row[6],
+                "duracionparada": row[7],
+                "tipoparada": row[8]
+            })
+
+        return pitstops
+
+    except Exception as e:
+        print("Error fetching pitstops:", e)
+        return []
     finally:
         cursor.close()
         conn.close()
