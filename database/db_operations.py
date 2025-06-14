@@ -267,7 +267,7 @@ def insert_pitstops_from_csv(csv_file):
             lap_out_id = lap_out_result[0]
 
             cursor.execute("""
-                INSERT INTO paradaboxes (id, id_piloto, id_carrera, id_vuelta_entra, id_vuelta_sale, tiempoentrada, tiemposalida, duracionparada, tipoparada)
+                INSERT INTO paradaenboxes (id, id_piloto, id_carrera, id_vuelta_entra, id_vuelta_sale, tiempoentrada, tiemposalida, duracionparada, tipoparada)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
             """,
                 (str(uuid.uuid4()), driver_id, race_id, lap_in_id, lap_out_id, row["PitInTime"], row["PitOutTime"], row["PitStopDuration"], "Cambio de neumáticos")
