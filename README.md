@@ -25,7 +25,7 @@ cd ~/RaceTrack/database/
 
 #### 2.2 (Optional, in case of permission issues)
 ```bash
-chmod +r bbdd.sql
+chmod +r ddbb.sql
 ```
 
 #### 2.3  Access psql as the postgres user:
@@ -37,7 +37,7 @@ psql -h localhost -U postgres -d postgres
 ```bash 
 sudo -u postgres psql
 ```
-#### 2.4 Execute the `bbdd.sql` script. This script will:
+#### 2.4 Execute the `ddbb.sql` script. This script will:
    - Create the `racetrack` database.
    - Create all the necessary tables.
    - Install the required extensions (`uuid-ossp`, `pgcrypto`).
@@ -45,7 +45,7 @@ sudo -u postgres psql
 
 Inside the `psql` console, run the following command:
 ```bash
-\i bbdd.sql
+\i ddbb.sql
 ```
 ✅ You should see output like:
 ```bash
@@ -115,8 +115,12 @@ DB_HOST=localhost
 DB_NAME=racetrack
 DB_PORT=5432
 ```
-Replace `XXXX` with the password you set for the `postgres` user during PostgreSQL installation.
-### 2️⃣ Save the `.env` file
-Make sure to save the `.env` file in the root directory of your RaceTrack project.
-### 3️⃣ Install `python-dotenv`   
+Replace `YOUR_PASSWORD_HERE` with the password you set for the `postgres` user during PostgreSQL installation.
+##### 5.2 Save the `.env` file
 
+
+### Uploading the data
+Next step is to upload the data to the database. You can do this by running the following command in the terminal:
+```bash 
+python /database/db_load_data.py
+```

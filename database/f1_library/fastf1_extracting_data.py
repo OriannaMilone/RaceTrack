@@ -47,7 +47,7 @@ def get_race_status_data():
 
 def get_pitstops_data():
     for season in range(2018, 2025):
-        print(f"\nProcesando temporada {season}...")
+        print(f"\nProcessing season: {season}...")
         laps, _ = load_session_data(season)
         
         pit_in_laps = laps[laps['PitInTime'].notnull()][['LapNumber', 'Driver', 'PitInTime']].rename(columns={'LapNumber': 'LapNumber_In'})
@@ -60,7 +60,7 @@ def get_pitstops_data():
 
         filename = f'Spa_{season}_pitstops_data.csv'
         pit_stops.to_csv(filename, index=False)
-        print(f"Archivo guardado: {filename}")
+        print(f"File saved: {filename}")
 
 def get_full_race_data(race_prefix, race_name, GP_name, season, session_type='H'):
     session = ff1.get_session(season, GP_name, 'R') 
@@ -81,7 +81,6 @@ def get_full_race_data(race_prefix, race_name, GP_name, season, session_type='H'
     pit_stops = pit_stops[pit_stops['LapNumber_Out'] == pit_stops['LapNumber_In'] + 1]
     pit_stops['PitStopDuration'] = pit_stops['PitOutTime'] - pit_stops['PitInTime']
 
-    # Combinar datos de vueltas y paradas en boxes 
     merged_data = laps_data.merge(pit_stops[['LapNumber_In', 'Driver', 'PitInTime', 'PitOutTime', 'PitStopDuration']], 
                           how='left', left_on=['LapNumber', 'Driver'], right_on=['LapNumber_In', 'Driver'])
 
@@ -99,10 +98,9 @@ def get_full_race_data(race_prefix, race_name, GP_name, season, session_type='H'
     merged_data['RaceName'] = race_name 
     merged_data['RaceType'] = 'historica'
 
-    # Guardar archivo CSV
     filename = f'{race_prefix}_{season}_full_{session_type}_data.csv'
     merged_data.to_csv(filename, index=False)
-    print(f"Archivo guardado: {filename}")
+    print(f"File saved: {filename}")
 
 def get_full_races_data(season, session_type='H'):
     session = ff1.get_session(season, 'Belgian Grand Prix', 'R') 
@@ -140,21 +138,9 @@ def get_full_races_data(season, session_type='H'):
 
     return merged_data
 
-# all_years_data = []
-
-# for season in range(2018, 2025):  
-#     try:
-#         data = get_full_races_data(season)
-#         all_years_data.append(data)
-#     except Exception as e:
-#         print(f"Error en la temporada {season}: {e}")
-
-# df_final = pd.concat(all_years_data, ignore_index=True)
-# df_final.to_csv('SPA_2018_2025_full_H_data.csv', index=False)
-# print("Archivo guardado: SPA_2018_2025_full_H_data.csv")
-
-# GPs = ["Brazilian Grand Prix", "Italian Grand Prix", "Belgian Grand Prix", "Monaco Grand Prix"]
 
 for season in range(2018, 2025):
     get_full_race_data('MONZA', 'GP Monza', 'Italian Grand Prix', season)
     get_full_race_data('SAOPAULO', 'GP São Paulo', 'Brazilian Grand Prix', season)
+    get_full_race_data('SPA', 'GP Monza', 'Belgian Grand Prix', season)
+    get_full_race_data('MONACO', 'GP São Paulo', 'Monaco Grand Prix', season)
