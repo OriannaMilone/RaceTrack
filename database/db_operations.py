@@ -206,7 +206,7 @@ def insert_laps_from_csv(csv_file, year):
 
         for driver_id, (_, row) in zip(drivers_ids, df.iterrows()):
             cursor.execute("""
-                INSERT INTO vuelta (id, id_piloto, id_carrera, numerovuelta, posicion, tiempovuelta, sector1tiempo, sector2tiempo, sector3tiempo, compuestoneumatico, mejorvueltapersonal) 
+                INSERT INTO vuelta (id, id_piloto, id_carrera, numerovuelta, posicion, tiempovuelta, sector1tiempo, sector2tiempo, sector3tiempo, compuestoneumático, mejorvueltapersonal) 
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             """,
                 (str(uuid.uuid4()), driver_id, race_id, row["LapNumber"], row["Position"], row["LapTime"], row["Sector1Time"], row["Sector2Time"], row["Sector3Time"], row["Compound"], row["IsPersonalBest"])
@@ -221,9 +221,10 @@ def insert_laps_from_csv(csv_file, year):
         cursor.close()
         conn.close()
 
-def insert_pitstops_from_csv(csv_file):
+def insert_pitstops_from_csv(csv_file): 
     conn = get_connection()
     if not conn:
+        print("No se pudo establecer conexión con la base de datos.")
         return
 
     try:
@@ -236,20 +237,34 @@ def insert_pitstops_from_csv(csv_file):
 
         for _, row in df.iterrows():
             cursor.execute("SELECT id FROM Carrera WHERE temporada = %s", (row["Season"],))
-            race_id = cursor.fetchone()
-            if not race_id:
+            race_result = cursor.fetchone()
+            if not race_result:
                 print(f"Warning: Race not found for season {row['Season']}")
                 continue
-            race_id = race_id[0]
+            race_id = race_result[0]
 
             cursor.execute("SELECT id FROM Piloto WHERE nombre = %s", (row["Driver"],))
-            driver_id = cursor.fetchone()[0]
+            driver_result = cursor.fetchone()
+            if not driver_result:
+                print(f"Warning: Driver not found for name {row['Driver']}")
+                continue
+            driver_id = driver_result[0]
 
-            cursor.execute("SELECT id FROM Vuelta WHERE id_piloto = %s AND id_carrera = %s AND numerovuelta = %s", (driver_id, race_id, row["LapNumber_In"]))
-            lap_in_id = cursor.fetchone()[0]
+            cursor.execute("SELECT id FROM Vuelta WHERE id_piloto = %s AND id_carrera = %s AND numerovuelta = %s", 
+                           (driver_id, race_id, row["LapNumber_In"]))
+            lap_in_result = cursor.fetchone()
+            if not lap_in_result:
+                print(f"Warning: Lap In not found for piloto {driver_id}, carrera {race_id}, vuelta {row['LapNumber_In']}")
+                continue
+            lap_in_id = lap_in_result[0]
 
-            cursor.execute("SELECT id FROM Vuelta WHERE id_piloto = %s AND id_carrera = %s AND numerovuelta = %s", (driver_id, race_id, row["LapNumber_Out"]))
-            lap_out_id = cursor.fetchone()[0]
+            cursor.execute("SELECT id FROM Vuelta WHERE id_piloto = %s AND id_carrera = %s AND numerovuelta = %s", 
+                           (driver_id, race_id, row["LapNumber_Out"]))
+            lap_out_result = cursor.fetchone()
+            if not lap_out_result:
+                print(f"Warning: Lap Out not found for piloto {driver_id}, carrera {race_id}, vuelta {row['LapNumber_Out']}")
+                continue
+            lap_out_id = lap_out_result[0]
 
             cursor.execute("""
                 INSERT INTO paradaboxes (id, id_piloto, id_carrera, id_vuelta_entra, id_vuelta_sale, tiempoentrada, tiemposalida, duracionparada, tipoparada)
@@ -266,6 +281,7 @@ def insert_pitstops_from_csv(csv_file):
     finally:
         cursor.close()
         conn.close()
+
 
 def insert_full_race_data(csv_file):
     conn = get_connection()
