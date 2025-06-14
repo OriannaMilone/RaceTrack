@@ -192,6 +192,7 @@ def insert_laps_from_csv(csv_file, year):
         df["Sector1Time"] = pd.to_timedelta(df["Sector1Time"], errors="coerce").apply(format_timedelta)
         df["Sector2Time"] = pd.to_timedelta(df["Sector2Time"], errors="coerce").apply(format_timedelta)
         df["Sector3Time"] = pd.to_timedelta(df["Sector3Time"], errors="coerce").apply(format_timedelta)
+        df["IsPersonalBest"] = df["IsPersonalBest"].fillna(0).astype(int).astype(bool)
         
         cursor.execute("SELECT id FROM Carrera WHERE temporada = %s", (year,))
         race_id = cursor.fetchone()[0]
