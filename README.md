@@ -119,8 +119,15 @@ Replace `YOUR_PASSWORD_HERE` with the password you set for the `postgres` user d
 ##### 5.2 Save the `.env` file
 
 
-### Uploading the data
+### 6️⃣ Uploading the data
 Next step is to upload the data to the database. You can do this by running the following command in the terminal:
 ```bash 
 python /database/db_load_data.py
 ```
+This script reads the data from the Excel files included in this repository and uploads it to the database.
+
+The original data was extracted using the [FastF1 Python library](https://docs.fastf1.dev/) and its associated repository: [https://github.com/theOehrly/Fast-F1](https://github.com/theOehrly/Fast-F1).
+
+The scripts used to generate these Excel files are located in the `/database/f1_library` folder.
+
+> **Note:** These scripts are included for reference only; they are not required to run the application and can be safely removed if not needed.
