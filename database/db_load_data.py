@@ -5,7 +5,7 @@ if __name__ == "__main__":
     YEARS = range(2018, 2025)
 
     # SPA DATA -------------------------------------------------------------
-    SPA_BASE_PATH = "../SPA_DATA/"
+    SPA_BASE_PATH = "/SPA_DATA/"
     SPA_PATHS = {
         "drivers": "drivers_data/Spa_{year}_drivers_info.csv",
         "drivers_teams": "drivers_teams/Spa_{year}_drivers_teams_info.csv",
@@ -46,9 +46,9 @@ if __name__ == "__main__":
 
     # CIRCUITS FULL DATA ---------------------------------------------------
     BASE_PATHS = {
-        "monaco": "../MONACO_DATA/",
-        "monza": "../MONZA_DATA/",
-        "saopaulo": "../SAOPAULO_DATA/"
+        "monaco": "/MONACO_DATA/",
+        "monza": "/MONZA_DATA/",
+        "saopaulo": "/SAOPAULO_DATA/"
     }
 
     CIRCUIT_PREFIXES = {
