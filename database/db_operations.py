@@ -234,6 +234,7 @@ def insert_pitstops_from_csv(csv_file):
         df["PitInTime"] = pd.to_timedelta(df["PitInTime"], errors="coerce").apply(format_timedelta2)
         df["PitOutTime"] = pd.to_timedelta(df["PitOutTime"], errors="coerce").apply(format_timedelta2)
         df["PitStopDuration"] = pd.to_timedelta(df["PitStopDuration"], errors="coerce").apply(format_timedelta2)
+        df["IsPersonalBest"] = df["IsPersonalBest"].fillna(0).astype(int).astype(bool)
 
         for _, row in df.iterrows():
             cursor.execute("SELECT id FROM Carrera WHERE temporada = %s", (row["Season"],))
