@@ -9,7 +9,7 @@ The system is composed of two main modules:
 ---
 
 ## Project Structure
-
+```bash
 RaceTrack/
 │
 ├── server.js                -> Main backend server (Node.js)
@@ -21,7 +21,7 @@ RaceTrack/
 ├── database/                -> Database scripts 
 ├── .env                     -> Environment variables (database credentials)
 └── etc...
-
+```
 ---
 ## 🗄️ Setup Instructions
 ### 1️⃣ Prerequisites
