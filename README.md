@@ -202,7 +202,7 @@ Also, make sure to set PYTHON_PATH to point to the Python executable inside your
 ### 6️⃣ Uploading the data
 Next step is to upload the data to the database. You can do this by running the following command in the terminal:
 ```bash 
-python /database/db_load_data.py
+python database/db_load_data.py
 ```
 This script reads the data from the Excel files included in this repository and uploads it to the database.
 
