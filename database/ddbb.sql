@@ -134,4 +134,4 @@ CREATE TABLE usuarios_admin (
 );
 
 -- Insertar un usuario administrador por defecto
-INSERT INTO usuarios_admin (username, password_hash) VALUES ('admin55', crypt('s00mth0p3r4t0r', gen_salt('bf')));
+INSERT INTO usuarios_admin (username, password_hash) VALUES ('admin55', crypt('sm00th0p3r4t0r', gen_salt('bf')));
