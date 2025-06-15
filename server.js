@@ -18,6 +18,7 @@ app.use(express.json());
 
 const session = require('express-session');
 const pool = require('./web_project/backend/db');
+const pythonPath = process.env.PYTHON_PATH;
 
 const cron = require('node-cron');
 const { exec } = require('child_process');
@@ -72,7 +73,7 @@ cron.schedule('* * * * *', async () => {
     if (diferencia <= 1000 * 60) {
       console.log(`Hora de lanzar la simulación para ${carrera.gran_premio} (${carrera.nombre_csv})`);
 
-      // RUTAS EN EL SERVIDOR 
+      // RUTAS EN EL SERVIDOR EN PRODUCCIÓN
       // const simuladorPath = __dirname;
       // const comando = usarModeloDinamico
       //   ? `/home/ori/RaceTrack/venv/bin/python -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
@@ -80,10 +81,13 @@ cron.schedule('* * * * *', async () => {
 
       //AQUI CAMBIAR RUTAS LOCALES 
       const simuladorPath = __dirname;
-      const comando = usarModeloDinamico
-        ? `python -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
-        : `python -m race_simulator.simulator ${carrera.nombre_csv}`;
+      // const comando = usarModeloDinamico
+      //   ? `python -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
+      //   : `python -m race_simulator.simulator ${carrera.nombre_csv}`;
 
+      const comando = usarModeloDinamico
+      ? `"${pythonPath}" -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
+      : `"${pythonPath}" -m race_simulator.simulator ${carrera.nombre_csv}`;
 
       simulacionEnCurso = true;
 
