@@ -31,7 +31,7 @@ You need to have **Python** installed locally.
 You can download and install Python from:  
 https://www.python.org/downloads/
 
-> **Recommended version:** Python 13 or higher.
+> **Recommended version:** Python 3.12 or higher.
 
 You need to have **Git** installed locally.
 
@@ -185,8 +185,15 @@ DB_PASSWORD=YOUR_PASSWORD_HERE
 DB_HOST=localhost
 DB_NAME=racetrack
 DB_PORT=5432
+
+# Python interpreter path for the simulation module:
+# (Adjust this according to your system and environment)
+PYTHON_PATH=/home/your_username/RaceTrack/venv/bin/python  # On Linux/Mac
+# or on Windows:
+PYTHON_PATH=C:/Path/To/venv/Scripts/python.exe
 ```
 Replace `YOUR_PASSWORD_HERE` with the password you set for the `postgres` user during PostgreSQL installation.
+Also, make sure to set PYTHON_PATH to point to the Python executable inside your virtual environment.
 ##### 5.2 Save the `.env` file
 
 
@@ -205,7 +212,7 @@ The scripts used to generate these Excel files are located in the `/database/f1_
 
 ## 🚀 Running the project
 ```bash
-node server.js   
+npm start
 ```
 
 By default, the server runs on:
