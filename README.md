@@ -1,6 +1,77 @@
 # RaceTrack
-RaceTrack is a web application designed to... 
+This project was developed as part of my Bachelor's Thesis. It consists of a simulation and prediction platform for Formula 1 races, including visualization and scheduling functionalities.
 
+The system is composed of two main modules:
+
+- Backend & Frontend (Node.js): race scheduling, admin panel, simulation control via cron jobs, and real-time WebSocket communication.
+- Simulation & Prediction Engine (Python): responsible for running race simulations and generating predictions using machine learning models.
+
+---
+
+## Project Structure
+
+RaceTrack/
+│
+├── server.js                -> Main backend server (Node.js)
+├── package.json             -> Backend dependencies
+├── requirements.txt         -> Python dependencies (simulation & ML models)
+├── race_simulator/          -> Simulation logic
+├── prediction_model/        -> Machine Learning models and predictors
+├── web_project/             -> Static frontend (views, public resources)
+├── database/                -> Database scripts 
+├── .env                     -> Environment variables (database credentials)
+└── etc...
+
+---
+## 🗄️ Setup Instructions
+### 1️⃣ Prerequisites
+
+You need to have **Python** installed locally.
+
+You can download and install Python from:  
+https://www.python.org/downloads/
+
+> **Recommended version:** Python 13 or higher.
+
+You need to have **Git** installed locally.
+
+You can download and install Git from:  
+https://git-scm.com/downloads
+
+> **Recommended version:** Git 2.30 or higher.
+
+You need to have **Node.js** installed locally.
+
+You can download and install Node.js from:  
+https://nodejs.org/en/download/
+
+> **Recommended version:** Node.js 18.x or higher.
+---
+
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/OriannaMilone/RaceTrack.git
+cd RaceTrack
+```
+### 2️⃣ Install dependencies
+#### a) Backend (Node.js)
+
+```bash
+npm install
+```
+#### b) Simulator & Prediction Engine (Python)
+
+It is recommended to use a virtual environment:
+
+# Create a virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+---
 
 ## 🗄️ Database Setup
 
@@ -131,3 +202,25 @@ The original data was extracted using the [FastF1 Python library](https://docs.f
 The scripts used to generate these Excel files are located in the `/database/f1_library` folder.
 
 > **Note:** These scripts are included for reference only; they are not required to run the application and can be safely removed if not needed.
+
+## 🚀 Running the project
+```bash
+node server.js   
+```
+
+By default, the server runs on:
+http://localhost:6101
+
+
+## Technology Stack
+
+- Node.js + Express + Socket.IO
+- PostgreSQL (Relational database)
+- Python (Prophet, Scikit-learn, XGBoost for ML)
+- HTML/CSS (Simple static frontend)
+- WebSockets (Real-time communication)
+
+## Author
+
+Orianna Milone
+Bachelor's Degree in Computer Engineering — CEU San Pablo University
