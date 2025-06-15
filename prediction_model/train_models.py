@@ -226,8 +226,7 @@ if __name__ == "__main__":
     # anio_a_excluir = args.anio_excluir
 
     circuito_objetivo = ["MONACO", "SPA", "MONZA", "SAOPAULO"]
-    # anio_a_excluir = ["2018", "2019", "2020", "2021", "2022", "2023"]
-    anio_a_excluir = ["2024"]
+    anio_a_excluir = ["2018", "2019", "2020", "2021", "2022", "2023"]
     for circuito in circuito_objetivo:
         for año in anio_a_excluir: 
             nombre_archivo = f"./trainingData/{circuito}_sin_{año}.csv"
