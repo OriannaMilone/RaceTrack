@@ -226,7 +226,7 @@ http://localhost:6101
 - Node.js + Express + Socket.IO
 - PostgreSQL (Relational database)
 - Python (Prophet, Scikit-learn, XGBoost for ML)
-- HTML/CSS (Simple static frontend)
+- HTML/CSS/JavaScript (Frontend)
 - WebSockets (Real-time communication)
 
 ## Author
