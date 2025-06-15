@@ -64,13 +64,15 @@ npm install
 
 It is recommended to use a virtual environment:
 
-# Create a virtual environment (recommended)
+##### Create a virtual environment (recommended)
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+```
 # Install Python dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ---
 
 ## 🗄️ Database Setup
