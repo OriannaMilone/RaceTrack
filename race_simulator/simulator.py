@@ -1,14 +1,12 @@
 from prediction_model.predict_interface import predecir_siguiente_vuelta
-from prediction_model.predict_next_lap import load_model
 from race_simulator.core.carrera_simulada import SimuladorDeCarrera
+from prediction_model.predict_next_lap import load_model
 from core.carrera import Carrera
 from pathlib import Path
 import pandas as pd
-import subprocess
 import socketio
 import time
 import sys
-import os
 
 sio = socketio.Client()
 
@@ -47,10 +45,10 @@ def main():
     circuito = archivo_csv.split('_')[0].upper()
 
     circuit_folder_map = {
-        "SPA": "SPA_DATA",
-        "MONACO": "MONACO_DATA",
-        "SAOPAULO": "SAOPAULO_DATA",
-        "MONZA": "MONZA_DATA"
+        "SPA": "race_data/SPA_DATA",
+        "MONACO": "race_data/MONACO_DATA",
+        "SAOPAULO": "race_data/SAOPAULO_DATA",
+        "MONZA": "race_data/MONZA_DATA"
     }
 
     if circuito not in circuit_folder_map:
@@ -63,8 +61,10 @@ def main():
     if not csv_path.exists():
         print(f"Error: El archivo {archivo_csv} no existe en la ruta: {csv_path}")
         return
-
-    sio.connect('https://racetrackthesis.tech', namespaces=['/simulador'])
+    # RUTA SERVIDOR 
+    # sio.connect('https://racetrackthesis.tech', namespaces=['/simulador'])
+    # RUTA LCOAL 
+    sio.connect('http://localhost:6101', namespaces=['/simulador'])
     
     df = pd.read_csv(csv_path)
     

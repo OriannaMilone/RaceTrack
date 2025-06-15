@@ -3,7 +3,7 @@ const http = require('http');
 const { Server } = require('socket.io');
 const path = require('path');
 
-const PORT = 6101; // Cambia el puerto
+const PORT = 6101; 
 
 const app = express();
 const server = http.createServer(app);
@@ -25,9 +25,7 @@ const { exec } = require('child_process');
 let simulacionEnCurso = false;
 let usarModeloDinamico = false;
 
-// app.listen(PORT, () => {
-//   console.log(`Servidor corriendo en http://localhost:${PORT}`);
-// });
+
 server.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
@@ -74,10 +72,17 @@ cron.schedule('* * * * *', async () => {
     if (diferencia <= 1000 * 60) {
       console.log(`Hora de lanzar la simulación para ${carrera.gran_premio} (${carrera.nombre_csv})`);
 
+      // RUTAS EN EL SERVIDOR 
+      // const simuladorPath = __dirname;
+      // const comando = usarModeloDinamico
+      //   ? `/home/ori/RaceTrack/venv/bin/python -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
+      //   : `/home/ori/RaceTrack/venv/bin/python -m race_simulator.simulator ${carrera.nombre_csv}`;
+
+      //AQUI CAMBIAR RUTAS LOCALES 
       const simuladorPath = __dirname;
       const comando = usarModeloDinamico
-        ? `/home/ori/RaceTrack/venv/bin/python -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
-        : `/home/ori/RaceTrack/venv/bin/python -m race_simulator.simulator ${carrera.nombre_csv}`;
+        ? `python -m race_simulator.simulator ${carrera.nombre_csv} ${modelo_dinamico}`
+        : `python -m race_simulator.simulator ${carrera.nombre_csv}`;
 
 
       simulacionEnCurso = true;
@@ -337,7 +342,7 @@ app.post('/admin/carreras/:id/eliminar', verificarAdmin, async (req, res) => {
 
 app.post('/admin/programar', verificarAdmin, async (req, res) => {
   const { circuito, vueltas, fecha, hora, temporada, temporada_base_simulacion, gran_premio} = req.body;
-  predicciones = true; // Habilitar predicciones por defecto
+  predicciones = true;
   // Generar nombre del CSV automáticamente
   const nombre_csv = `${circuito.split(' ').join('_')}_${temporada_base_simulacion}_full_H_data.csv`;
 
@@ -412,7 +417,7 @@ io.of('/simulador').on('connection', (socket) => {
   
   socket.on('estado-carrera', (data) => {
     console.log('Estado de carrera:', data.mensaje);
-    io.of('/simulador').emit('estado-carrera', data); // lo reenvía a todos los clientes conectados
+    io.of('/simulador').emit('estado-carrera', data); 
   });
   
   socket.on('nueva-vuelta', (data) => {
